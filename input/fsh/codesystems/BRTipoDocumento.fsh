@@ -1,5 +1,5 @@
 CodeSystem: BRTipoDocumento
-Id: 48e1c9b8-61e5-43a8-9905-2a514f651fa5
+Id: BRTipoDocumento
 Title: "Tipo de documento"
 Description: "Classificação dos tipos de documentos compartilhados no Brasil."
 * ^name = "Tipo de Documento"
