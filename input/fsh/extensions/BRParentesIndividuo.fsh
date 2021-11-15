@@ -23,7 +23,7 @@ Description: "Resource para representar parentescos de indivíduo."
 * extension contains
     relationship 1..1 and
     parent 1..1
-* extension[relationship] from $BRParentesco-1.0 (required)
+//* extension[relationship] from $BRParentesco-1.0 (required)
 * extension[relationship] ^short = "Parentesco"
 * extension[relationship] ^definition = "Distingue entre diferentes tipos de relações parentais com granularidade variável para apoiar a captura da relação \"no grau conhecido\"."
 * extension[relationship] ^isModifier = false

@@ -22,12 +22,12 @@ Description: "Informações sobre as caracteríticas da campanha."
     dataInicio 0..1 and
     dataTermino 0..1 and
     abrangenciaCampanha 1..1
-* extension[estrategiaCampanha] from $BREstrategiaVacinacaoCampanha-1.0 (required)
+//* extension[estrategiaCampanha] from $BREstrategiaVacinacaoCampanha-1.0 (required)
 * extension[estrategiaCampanha] ^short = "Estratégia da campanha"
 * extension[estrategiaCampanha] ^binding.description = "Tipo de estratégia de campanha"
 * extension[estrategiaCampanha].value[x] 1..
 * extension[estrategiaCampanha].value[x] only CodeableConcept
-* extension[campanha] from $BRCampanhaVacinacao-1.0 (required)
+//* extension[campanha] from $BRCampanhaVacinacao-1.0 (required)
 * extension[campanha] ^binding.description = "Nome da campanha de vacina"
 * extension[campanha].value[x] 1..
 * extension[campanha].value[x] only CodeableConcept
@@ -39,7 +39,7 @@ Description: "Informações sobre as caracteríticas da campanha."
 * extension[dataTermino] ^definition = "Data planejada para o término da campanha vacinal."
 * extension[dataTermino].value[x] 1..
 * extension[dataTermino].value[x] only date
-* extension[abrangenciaCampanha] from $BRAbrangencia-1.0 (required)
+//* extension[abrangenciaCampanha] from $BRAbrangencia-1.0 (required)
 * extension[abrangenciaCampanha] ^short = "Abrangência da campanha vacinal"
 * extension[abrangenciaCampanha] ^definition = "Abrangência planejada para a campanha vacinal."
 * extension[abrangenciaCampanha] ^isModifier = false

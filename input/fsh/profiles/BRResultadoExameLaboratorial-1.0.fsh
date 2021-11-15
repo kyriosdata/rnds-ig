@@ -1,4 +1,4 @@
-Profile: BRResultadoExameLaboratorial-1.0
+Profile: BRResultadoExameLaboratorial
 Parent: Composition
 Id: BRResultadoExameLaboratorial-1.0
 Title: "Resultado de Exame Laboratorial"

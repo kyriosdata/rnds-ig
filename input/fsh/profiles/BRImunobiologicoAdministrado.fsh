@@ -45,9 +45,11 @@ Description: "Representa um imunobiológico administrado."
 * patient.extension ^slicing.discriminator.path = "url"
 * patient.extension ^slicing.rules = #open
 * patient.extension ^min = 0
-* patient.extension[unidentifiedPatinet] only BRIndividuoNaoIdentificado
-* patient.extension[unidentifiedPatinet] ^sliceName = "unidentifiedPatinet"
-* patient.extension[unidentifiedPatinet] ^min = 0
+* patient.extension contains
+    BRIndividuoNaoIdentificado named unidentifiedPatient 0..1
+* patient.extension[unidentifiedPatient] only BRIndividuoNaoIdentificado
+* patient.extension[unidentifiedPatient] ^sliceName = "unidentifiedPatient"
+* patient.extension[unidentifiedPatient] ^min = 0
 * patient.identifier.use ..0
 * patient.identifier.type ..0
 * patient.identifier.system 1..

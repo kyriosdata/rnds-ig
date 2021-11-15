@@ -50,6 +50,8 @@ Description: "Documento que representa o registro da administração de imunobio
 * subject.extension ^slicing.discriminator.path = "url"
 * subject.extension ^slicing.rules = #open
 * subject.extension ^min = 0
+* subject.extension contains
+    BRIndividuoNaoIdentificado named unidentifiedPatient 0..1
 * subject.extension[unidentifiedPatient] only BRIndividuoNaoIdentificado
 * subject.extension[unidentifiedPatient] ^sliceName = "unidentifiedPatient"
 * subject.extension[unidentifiedPatient] ^short = "Dados do indivíduo não identificado"

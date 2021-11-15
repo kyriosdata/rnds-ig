@@ -11,5 +11,6 @@ Description: "Classificação da relação familiar entre indivíduos."
 * ^date = "2020-03-11T18:20:06.3399184+00:00"
 * ^publisher = "Ministério da Saúde do Brasil"
 * ^content = #complete
+
 * #mother "Mãe"
 * #father "Pai"

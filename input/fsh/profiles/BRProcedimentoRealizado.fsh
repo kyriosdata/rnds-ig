@@ -75,6 +75,8 @@ Description: "Procedimento realizado em um indivíduo."
 * subject.extension ^slicing.discriminator.path = "url"
 * subject.extension ^slicing.rules = #open
 * subject.extension ^min = 0
+* subject.extension contains
+    BRIndividuoNaoIdentificado named unidentifiedPatient 0..1
 * subject.extension[unidentifiedPatient] only BRIndividuoNaoIdentificado
 * subject.extension[unidentifiedPatient] ^sliceName = "unidentifiedPatient"
 * subject.extension[unidentifiedPatient] ^short = "Dados do Indivíduo Não Identificado"
@@ -109,14 +111,16 @@ Description: "Procedimento realizado em um indivíduo."
 * performed[x] ^definition = "Competência (mês e ano), data ou data e hora que o procedimento foi realizado."
 * recorder ..0
 * asserter ..0
-* performer contains practitioner 1..* MS
+* performer.extension contains 
+    practitioner 1.. MS
 * performer[practitioner] ^short = "Executante"
 * performer[practitioner] ^definition = "Permite identificar:\r\n- o(s) profissional(is) lotado(s) em um Estabelecimento de Saúde inscrito no CNES que realizou(aram) o procedimento, sua(s) respectiva(s) ocupação(ões) e o Estabelecimento de Saúde Terceiro (quando aplicável) - OPÇÃO PREFERENCIAL;\r\n- apenas a(s) ocupação(ões) do(s) profisssional(is) que realizou(aram) o procedimento, seu(s) Estabelecimento(s) de Saúde inscrito(s) no CNES e o Estabelecimento de Saúde Terceiro (quando aplicável) - OPÇÃO ALTERNATIVA quando o profissional não está inscrito no respectivo CNES ou o modelo de origem não disponha dessa informação;\r\n- apenas a(s) ocupação(ões) do(s) profisssional(is) que realizou(aram) o procedimento, a(s) organização(ões) identificada(s) pelo CNPJ (pessoa jurídica) ou CPF (profissional liberal) onde o procedimento foi realizado e o Estabelecimento de Saúde Terceiro (quando aplicável) - ÚLTIMA OPÇÃO, utilizar apenas quando o estabelecimento de saúde não possui inscrição no CNES ou o modelo de origem não disponha dessa informação."
 * performer[practitioner].extension ^slicing.discriminator.type = #value
 * performer[practitioner].extension ^slicing.discriminator.path = "url"
 * performer[practitioner].extension ^slicing.rules = #open
 * performer[practitioner].extension ^min = 0
-* performer[practitioner].extension contains BRIdentificacaoEquipe named healthcareTeam 0..1 MS
+* performer[practitioner].extension contains 
+    BRIdentificacaoEquipe named healthcareTeam 0..1 MS
 * performer[practitioner].extension[healthcareTeam] ^short = "Equipe de Saúde"
 * performer[practitioner].extension[healthcareTeam] ^definition = "Identifica a equipe de saúde que realizou o procedimento utilizando o Identificador Nacional de Equipes."
 * performer[practitioner].function 1.. MS

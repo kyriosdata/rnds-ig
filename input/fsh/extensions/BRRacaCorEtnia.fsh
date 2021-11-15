@@ -23,7 +23,7 @@ Description: "Extensão para para representar dados relacionados à raça/cor e 
 * extension contains
     race 1..1 and
     indigenousEthnicity 0..1
-* extension[race] from $BRRacaCor-1.0 (required)
+//* extension[race] from $BRRacaCor-1.0 (required)
 * extension[race] ^short = "Raça/Cor"
 * extension[race] ^definition = "Raça ou cor autorreferenciada por um indivíduo."
 * extension[race] ^binding.description = "Raça/Cor"
@@ -36,7 +36,7 @@ Description: "Extensão para para representar dados relacionados à raça/cor e 
 * extension[race].value[x].coding.display ..0
 * extension[race].value[x].coding.userSelected ..0
 * extension[race].value[x].text ..0
-* extension[indigenousEthnicity] from $BREtniaIndigena-1.0 (required)
+//* extension[indigenousEthnicity] from $BREtniaIndigena-1.0 (required)
 * extension[indigenousEthnicity] ^short = "Etnia Indígena"
 * extension[indigenousEthnicity] ^definition = "Etnia indígena atribuída a um indivíduo"
 * extension[indigenousEthnicity] ^binding.description = "Etnia Indígena"

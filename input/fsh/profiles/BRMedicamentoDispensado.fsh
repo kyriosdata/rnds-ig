@@ -53,7 +53,7 @@ Description: "Detalha os atos de dispensação de medicamentos."
 * subject.display ..0
 * performer MS
 * performer.function ..0
-* performer.actor only Reference($BRProfissional-1.0 or $BRLotacaoProfissional-1.0 or $BRPessoaJuridicaProfissionalLiberal-1.0)
+* performer.actor only Reference(BRProfissional or BRLotacaoProfissional or BRPessoaJuridicaProfissionalLiberal)
 * performer.actor MS
 * performer.actor.reference 1..
 * performer.actor.type ..0

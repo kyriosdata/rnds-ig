@@ -1,4 +1,4 @@
-Profile: BRResultadoExameLaboratorial-1.1
+Profile: BRResultadoExameLaboratorialV11
 Parent: Composition
 Id: 43822493-10c2-41dc-9fae-962bab3a59e4
 Title: "Resultado de Exame Laboratorial"

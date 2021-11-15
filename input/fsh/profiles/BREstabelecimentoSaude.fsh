@@ -22,7 +22,7 @@ Description: "Espaço físico delimitado e permanente onde são realizadas açõ
 * extension[isSUS] ^short = "Atende SUS"
 * extension[isSUS] ^definition = "True = Sim; False = Não."
 * extension[outsourcedAdministrator] ^definition = "Instituição contratada para administrar o Estabelecimento de Saúde."
-* extension[outsourcedAdministrator].value[x] only Reference($BRPessoaJuridicaProfissionalLiberal-1.0)
+* extension[outsourcedAdministrator].value[x] only Reference(BRPessoaJuridicaProfissionalLiberal)
 * identifier ..0
 * active 1..
 * active ^short = "Estabelecimento de Saúde Ativo"
