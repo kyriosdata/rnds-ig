@@ -111,56 +111,56 @@ Description: "Procedimento realizado em um indivíduo."
 * performed[x] ^definition = "Competência (mês e ano), data ou data e hora que o procedimento foi realizado."
 * recorder ..0
 * asserter ..0
-* performer.extension contains 
-    practitioner 1.. MS
-* performer[practitioner] ^short = "Executante"
-* performer[practitioner] ^definition = "Permite identificar:\r\n- o(s) profissional(is) lotado(s) em um Estabelecimento de Saúde inscrito no CNES que realizou(aram) o procedimento, sua(s) respectiva(s) ocupação(ões) e o Estabelecimento de Saúde Terceiro (quando aplicável) - OPÇÃO PREFERENCIAL;\r\n- apenas a(s) ocupação(ões) do(s) profisssional(is) que realizou(aram) o procedimento, seu(s) Estabelecimento(s) de Saúde inscrito(s) no CNES e o Estabelecimento de Saúde Terceiro (quando aplicável) - OPÇÃO ALTERNATIVA quando o profissional não está inscrito no respectivo CNES ou o modelo de origem não disponha dessa informação;\r\n- apenas a(s) ocupação(ões) do(s) profisssional(is) que realizou(aram) o procedimento, a(s) organização(ões) identificada(s) pelo CNPJ (pessoa jurídica) ou CPF (profissional liberal) onde o procedimento foi realizado e o Estabelecimento de Saúde Terceiro (quando aplicável) - ÚLTIMA OPÇÃO, utilizar apenas quando o estabelecimento de saúde não possui inscrição no CNES ou o modelo de origem não disponha dessa informação."
-* performer[practitioner].extension ^slicing.discriminator.type = #value
-* performer[practitioner].extension ^slicing.discriminator.path = "url"
-* performer[practitioner].extension ^slicing.rules = #open
-* performer[practitioner].extension ^min = 0
-* performer[practitioner].extension contains 
-    BRIdentificacaoEquipe named healthcareTeam 0..1 MS
-* performer[practitioner].extension[healthcareTeam] ^short = "Equipe de Saúde"
-* performer[practitioner].extension[healthcareTeam] ^definition = "Identifica a equipe de saúde que realizou o procedimento utilizando o Identificador Nacional de Equipes."
-* performer[practitioner].function 1.. MS
-* performer[practitioner].function from $BROcupacao-1.0 (required)
-* performer[practitioner].function ^short = "Ocupação do Profissional"
-* performer[practitioner].function ^definition = "Atividade desempenhada pelo profissional que realizou o procedimento."
-* performer[practitioner].function ^binding.description = "Ocupação Profissional"
-* performer[practitioner].function.coding 1..1
-* performer[practitioner].function.coding.system 1..
-* performer[practitioner].function.coding.code 1..
-* performer[practitioner].function.coding.display ..0
-* performer[practitioner].function.coding.userSelected ..0
-* performer[practitioner].function.text ..0
-* performer[practitioner].actor only Reference(BRLotacaoProfissional or BREstabelecimentoSaude or BRPessoaJuridicaProfissionalLiberal)
-* performer[practitioner].actor MS
-* performer[practitioner].actor ^short = "Profissional"
-* performer[practitioner].actor.reference ..0
-* performer[practitioner].actor.type ..0
-* performer[practitioner].actor.identifier 1..
-* performer[practitioner].actor.identifier.use ..0
-* performer[practitioner].actor.identifier.type ..0
-* performer[practitioner].actor.identifier.system 1..
-* performer[practitioner].actor.identifier.value 1..
-* performer[practitioner].actor.identifier.period ..0
-* performer[practitioner].actor.identifier.assigner ..0
-* performer[practitioner].actor.display ..0
-* performer[practitioner].onBehalfOf only Reference(BREstabelecimentoSaude or BRPessoaJuridicaProfissionalLiberal)
-* performer[practitioner].onBehalfOf MS
-* performer[practitioner].onBehalfOf ^short = "Estabelecimento de Saúde Terceiro"
-* performer[practitioner].onBehalfOf ^definition = "Estabelecimento de Saúde que realizou o procedimento como serviço terceiro do Estabelecimento de Saúde onde o procediemento foi realizado."
-* performer[practitioner].onBehalfOf.reference ..0
-* performer[practitioner].onBehalfOf.type ..0
-* performer[practitioner].onBehalfOf.identifier 1..
-* performer[practitioner].onBehalfOf.identifier.use ..0
-* performer[practitioner].onBehalfOf.identifier.type ..0
-* performer[practitioner].onBehalfOf.identifier.system 1..
-* performer[practitioner].onBehalfOf.identifier.value 1..
-* performer[practitioner].onBehalfOf.identifier.period ..0
-* performer[practitioner].onBehalfOf.identifier.assigner ..0
-* performer[practitioner].onBehalfOf.display ..0
+// * performer contains 
+//     practitioner 1.. MS
+// * performer[practitioner] ^short = "Executante"
+// * performer[practitioner] ^definition = "Permite identificar:\r\n- o(s) profissional(is) lotado(s) em um Estabelecimento de Saúde inscrito no CNES que realizou(aram) o procedimento, sua(s) respectiva(s) ocupação(ões) e o Estabelecimento de Saúde Terceiro (quando aplicável) - OPÇÃO PREFERENCIAL;\r\n- apenas a(s) ocupação(ões) do(s) profisssional(is) que realizou(aram) o procedimento, seu(s) Estabelecimento(s) de Saúde inscrito(s) no CNES e o Estabelecimento de Saúde Terceiro (quando aplicável) - OPÇÃO ALTERNATIVA quando o profissional não está inscrito no respectivo CNES ou o modelo de origem não disponha dessa informação;\r\n- apenas a(s) ocupação(ões) do(s) profisssional(is) que realizou(aram) o procedimento, a(s) organização(ões) identificada(s) pelo CNPJ (pessoa jurídica) ou CPF (profissional liberal) onde o procedimento foi realizado e o Estabelecimento de Saúde Terceiro (quando aplicável) - ÚLTIMA OPÇÃO, utilizar apenas quando o estabelecimento de saúde não possui inscrição no CNES ou o modelo de origem não disponha dessa informação."
+// * performer[practitioner].extension ^slicing.discriminator.type = #value
+// * performer[practitioner].extension ^slicing.discriminator.path = "url"
+// * performer[practitioner].extension ^slicing.rules = #open
+// * performer[practitioner].extension ^min = 0
+// * performer[practitioner].extension contains 
+//     BRIdentificacaoEquipe named healthcareTeam 0..1 MS
+// * performer[practitioner].extension[healthcareTeam] ^short = "Equipe de Saúde"
+// * performer[practitioner].extension[healthcareTeam] ^definition = "Identifica a equipe de saúde que realizou o procedimento utilizando o Identificador Nacional de Equipes."
+// * performer[practitioner].function 1.. MS
+// * performer[practitioner].function from $BROcupacao-1.0 (required)
+// * performer[practitioner].function ^short = "Ocupação do Profissional"
+// * performer[practitioner].function ^definition = "Atividade desempenhada pelo profissional que realizou o procedimento."
+// * performer[practitioner].function ^binding.description = "Ocupação Profissional"
+// * performer[practitioner].function.coding 1..1
+// * performer[practitioner].function.coding.system 1..
+// * performer[practitioner].function.coding.code 1..
+// * performer[practitioner].function.coding.display ..0
+// * performer[practitioner].function.coding.userSelected ..0
+// * performer[practitioner].function.text ..0
+// * performer[practitioner].actor only Reference(BRLotacaoProfissional or BREstabelecimentoSaude or BRPessoaJuridicaProfissionalLiberal)
+// * performer[practitioner].actor MS
+// * performer[practitioner].actor ^short = "Profissional"
+// * performer[practitioner].actor.reference ..0
+// * performer[practitioner].actor.type ..0
+// * performer[practitioner].actor.identifier 1..
+// * performer[practitioner].actor.identifier.use ..0
+// * performer[practitioner].actor.identifier.type ..0
+// * performer[practitioner].actor.identifier.system 1..
+// * performer[practitioner].actor.identifier.value 1..
+// * performer[practitioner].actor.identifier.period ..0
+// * performer[practitioner].actor.identifier.assigner ..0
+// * performer[practitioner].actor.display ..0
+// * performer[practitioner].onBehalfOf only Reference(BREstabelecimentoSaude or BRPessoaJuridicaProfissionalLiberal)
+// * performer[practitioner].onBehalfOf MS
+// * performer[practitioner].onBehalfOf ^short = "Estabelecimento de Saúde Terceiro"
+// * performer[practitioner].onBehalfOf ^definition = "Estabelecimento de Saúde que realizou o procedimento como serviço terceiro do Estabelecimento de Saúde onde o procediemento foi realizado."
+// * performer[practitioner].onBehalfOf.reference ..0
+// * performer[practitioner].onBehalfOf.type ..0
+// * performer[practitioner].onBehalfOf.identifier 1..
+// * performer[practitioner].onBehalfOf.identifier.use ..0
+// * performer[practitioner].onBehalfOf.identifier.type ..0
+// * performer[practitioner].onBehalfOf.identifier.system 1..
+// * performer[practitioner].onBehalfOf.identifier.value 1..
+// * performer[practitioner].onBehalfOf.identifier.period ..0
+// * performer[practitioner].onBehalfOf.identifier.assigner ..0
+// * performer[practitioner].onBehalfOf.display ..0
 * location ..0
 * reasonCode ..0
 * reasonReference ..0
