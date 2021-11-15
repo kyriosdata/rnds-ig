@@ -1,5 +1,5 @@
 CodeSystem: BRNomeExameGAL
-Id: 4f4f8584-5313-4614-8399-a536e9bbd23d
+Id: BRNomeExameGAL
 Title: "Exame laboratorial (GAL)"
 Description: "Classifica o exame laboratorial realizado em amostra biológica para diagnóstico laboratorial, de acordo com o Gerenciador de Ambiente Laboratorial (GAL)."
 * ^name = "Exames do GAL"

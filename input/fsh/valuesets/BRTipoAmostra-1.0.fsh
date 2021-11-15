@@ -13,6 +13,7 @@ Description: "Tipo da amostra de um exame ou teste."
 * ^date = "2020-06-30T18:56:47.6561959+00:00"
 * ^publisher = "Ministério da Saúde do Brasil"
 * ^immutable = false
+
 * $v2-0487#FRS "Fluido Respiratório"
 * $v2-0487#LAVG "Lavado Brônquico"
 * $v2-0487#NSECR "Secreção Nasal"
@@ -28,4 +29,5 @@ Description: "Tipo da amostra de um exame ou teste."
 * $v2-0487#CSF "Líquor"
 * $v2-0487#SAL "Saliva"
 * $v2-0487#UR "Urina"
+
 * include codes from system http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoAmostraGAL|*

@@ -1,5 +1,5 @@
 CodeSystem: BRComponenteAssistenciaFarmaceutica
-Id: 46a35341-c9d5-4383-904a-2cd318dc7011
+Id: BRComponenteAssistenciaFarmaceutica
 Title: "Componente da assistência farmacêutica"
 Description: "Identifica o componente da assistência farmacêutica de uma substância ou produto."
 * ^name = "Componente da Assistência Farmacêutica"

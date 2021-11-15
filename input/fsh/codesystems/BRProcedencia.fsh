@@ -1,5 +1,5 @@
 CodeSystem: BRProcedencia
-Id: 87d36c67-e86b-431d-adc4-22a2bc0d6d5f
+Id: BRProcedencia
 Title: "Procedência"
 Description: "Identifica o serviço que encaminhou o indivíduo ou a sua iniciativa/de seu responsável na busca pelo acesso ao serviço de saúde."
 * ^meta.lastUpdated = "2020-04-17T14:46:11.153+00:00"

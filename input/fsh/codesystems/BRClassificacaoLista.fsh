@@ -1,5 +1,5 @@
 CodeSystem: BRClassificacaoLista
-Id: aca99388-4ee6-4d39-a0ae-4760df78cb8a
+Id: BRClassificacaoLista
 Title: "Listas"
 Description: "Classificações das listas utilizadas na Rede Nacional de Dados em Saúde."
 * ^name = "Classificações das listas"

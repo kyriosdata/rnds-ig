@@ -12,5 +12,6 @@ Description: "Tipo de Observação."
 * ^date = "2020-03-12T14:50:59.5025981+00:00"
 * ^publisher = "Ministério da Saúde do Brasil"
 * ^immutable = false
+
 * include codes from system http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoObservacao|*
 * $BRTabelaSUS#0301100039

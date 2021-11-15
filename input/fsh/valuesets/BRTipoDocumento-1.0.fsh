@@ -10,4 +10,5 @@ Description: "Classifica o tipo de documento que está sendo trafegado."
 * ^date = "2020-03-12T13:26:58.6069366+00:00"
 * ^publisher = "Ministério da Saúde do Brasil"
 * ^immutable = false
+
 * include codes from system http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoDocumento|*

@@ -1,5 +1,5 @@
 CodeSystem: BRNomeExameLOINC
-Id: 56d007e3-e37f-452a-af44-566381bd1deb
+Id: BRNomeExameLOINC
 Title: "Exame laboratorial (LOINC)"
 Description: "Classifica o exame laboratorial realizado em amostra biológica para diagnóstico laboratorial, de acordo com a terminologia LOINC."
 * ^name = "Exames LOINC"

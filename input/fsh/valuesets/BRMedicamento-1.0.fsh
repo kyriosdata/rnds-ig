@@ -1,5 +1,5 @@
 ValueSet: BRMedicamento
-Id: ValueSetBRMedicamento
+Id: BRMedicamento-1.0
 Title: "Medicamento"
 Description: "Identifica um medicamento."
 * ^meta.lastUpdated = "2020-03-12T13:12:20.225+00:00"
@@ -10,4 +10,5 @@ Description: "Identifica um medicamento."
 * ^date = "2020-03-12T13:12:19.2820426+00:00"
 * ^publisher = "Ministério da Saúde do Brasil"
 * ^immutable = false
+
 * include codes from system http://www.saude.gov.br/fhir/r4/CodeSystem/BRMedicamento|*

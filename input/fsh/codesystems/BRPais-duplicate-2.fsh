@@ -1,5 +1,5 @@
 CodeSystem: BRPais
-Id: ecac67bb-624f-4ae8-98a9-f4315db5f2d2
+Id: BRPais
 Title: "País"
 Description: "Códigos para representação de países."
 * ^meta.lastUpdated = "2020-03-13T21:11:53.495+00:00"

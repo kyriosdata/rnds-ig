@@ -10,4 +10,5 @@ Description: "Classifica o tipo de responsabilidade de indivíduos ou profission
 * ^date = "2020-03-12T13:25:53.2469711+00:00"
 * ^publisher = "Ministério da Saúde do Brasil"
 * ^immutable = false
+
 * include codes from system http://www.saude.gov.br/fhir/r4/CodeSystem/BRResponsabilidadeParticipante|*

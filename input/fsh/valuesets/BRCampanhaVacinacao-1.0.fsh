@@ -1,5 +1,5 @@
 ValueSet: BRCampanhaVacinacao
-Id: ValueSetBRCampanhaVacinacao
+Id: BRCampanhaVacinacao-1.0
 Title: "Nome da campanha de vacinação"
 Description: "Identifica a campanha de vacinação adotada."
 * ^language = #pt-BR
@@ -10,4 +10,5 @@ Description: "Identifica a campanha de vacinação adotada."
 * ^date = "2020-12-08T13:40:00Z"
 * ^publisher = "Ministério da Saúde do Brasil"
 * ^immutable = false
+
 * include codes from system http://www.saude.gov.br/fhir/r4/CodeSystem/BRNomeCampanhaVacinacao|*

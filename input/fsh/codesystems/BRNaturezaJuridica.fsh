@@ -1,5 +1,5 @@
-CodeSystem: BRNaturezaJuridic
-Id: a422e7b3-47eb-424b-97d8-520400a1b9f6
+CodeSystem: BRNaturezaJuridica
+Id: BRNaturezaJuridica
 Title: "Constituição jurídica de entidades"
 Description: "Identifica a constituição jurídico-institucional das entidades públicas e privadas nos cadastros da administração pública do Brasil."
 * ^name = "Natureza Jurídica"

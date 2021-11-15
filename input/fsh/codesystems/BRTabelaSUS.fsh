@@ -1,5 +1,5 @@
 CodeSystem: BRTabelaSUS
-Id: 7d13cf61-9254-4342-b3cd-708aab2b163a
+Id: BRTabelaSUS
 Title: "Procedimentos da Tabela SUS"
 Description: "Padroniza os códigos e as nomenclaturas dos procedimentos, medicamentos e OPM para as informações trafegadas no SUS."
 * ^name = "Tabela de Procedimentos, medicamentos e OPM do SUS"

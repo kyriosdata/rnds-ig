@@ -11,6 +11,7 @@ Description: "Sexo de um indivíduo."
 * ^date = "2020-04-07T21:07:00.8812267+00:00"
 * ^publisher = "Ministério da Saúde do Brasil"
 * ^immutable = false
+
 * AdministrativeGender#male "Masculino"
 * AdministrativeGender#female "Feminino"
 * AdministrativeGender#unknown "Ignorado"

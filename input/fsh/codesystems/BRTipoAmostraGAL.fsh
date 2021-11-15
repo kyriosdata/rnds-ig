@@ -1,5 +1,5 @@
 CodeSystem: BRTipoAmostraGAL
-Id: 1fe028ce-d3f8-43c9-be1c-00b49a2bc4df
+Id: BRTipoAmostraGAL
 Title: "Tipo de amostra biológica (GAL)"
 Description: "Classifica o tipo de amostra biológica utilizada em exames de acordo com a terminologia Gerenciador de Ambiente Laboratorial (GAL)."
 * ^name = "Tipo de Amostra Biológica"

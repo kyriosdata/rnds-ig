@@ -10,4 +10,5 @@ Description: "Classifica o tipo de logradouro."
 * ^date = "2020-03-12T14:50:47.8940392+00:00"
 * ^publisher = "Ministério da Saúde do Brasil"
 * ^immutable = false
+
 * include codes from system http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoLogradouro|*

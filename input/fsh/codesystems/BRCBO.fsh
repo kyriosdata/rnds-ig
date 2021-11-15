@@ -1,5 +1,5 @@
 CodeSystem: BRCBO
-Id: 9eace61a-fca0-43c9-9846-9f8dd001c943
+Id: BRCBO
 Title: "Ocupações do mercado de trabalho brasileiro"
 Description: "Classifica as profissões do mercado de trabalho brasileiro."
 * ^name = "Classificação Brasileira de Ocupações - CBO"

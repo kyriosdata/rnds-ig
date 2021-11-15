@@ -1,5 +1,5 @@
 CodeSystem: BRCID10
-Id: 26ffd8a9-8510-42e3-9b9d-bbc048a63dac
+Id: BRCID10
 Title: "Doenças"
 Description: "Classifica as doenças e outros problemas em saúde registrados em diversos tipos de documentos clínicos."
 * ^name = "Classificação Internacional de Doenças - Décima Revisão - CID-10"

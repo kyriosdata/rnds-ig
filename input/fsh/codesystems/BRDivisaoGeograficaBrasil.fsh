@@ -1,5 +1,5 @@
 CodeSystem: BRDivisaoGeograficaBrasil
-Id: 14a58b08-366c-4fd4-ab5d-da004a11feb9
+Id: BRDivisaoGeograficaBrasil
 Title: "Divisão geográfica do Brasil"
 Description: "As regiões geográficas, estados, distrito federal e municípios do Brasil."
 * ^name = "Divisão Geográfica do Brasil"

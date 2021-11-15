@@ -1,5 +1,5 @@
 CodeSystem: BRCBHPMTUSS
-Id: a091fd3f-1552-4bd2-8b92-02cfe23c4974
+Id: BRCBHPMTUSS
 Title: "Procedimentos"
 Description: "Classificações de procedimentos utilizadas no Brasil, no contexto da assistência à saúde privada, não complementar ao SUS, e eventualmente no SUS para classificar procedimento inexistente na Tabela SUS."
 * ^name = "Classificação Brasileira Hierarquizada de Procedimentos Médicos - CBHPM e da Terminologia Unificada da Saúde Suplementar - TUSS"

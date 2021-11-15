@@ -1,5 +1,5 @@
 CodeSystem: BRCaraterAtendimento
-Id: 102cd026-c627-48b8-b584-aae681ae2d1d
+Id: BRCaraterAtendimento
 Title: "Caráter de atendimento"
 Description: "Terminologia que classifica a prioridade de realização de um Contato Assistencial."
 * ^name = "BRCaraterAtendimento"

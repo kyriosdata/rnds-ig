@@ -1,5 +1,5 @@
 CodeSystem: BRCIAP2
-Id: 3dfdcc76-dfe4-46fb-859b-48d2f9d04c9f
+Id: BRCIAP2
 Title: "Problema identificado no contato assistencial"
 Description: "Classifica os problemas identificados no contato assistencial pelos profissionais de saúde, os motivos da contato assistencial e as respostas propostas pela equipe seguindo a sistematização SOAP."
 * ^name = "Classificação Internacional de Atenção Primária - Segunda Edição - CIAP2"

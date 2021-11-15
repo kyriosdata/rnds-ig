@@ -1,7 +1,7 @@
 Alias: $BREstrategiaVacinacao = http://www.saude.gov.br/fhir/r4/CodeSystem/BREstrategiaVacinacao
 
 ValueSet: BREstrategiaVacinacao
-Id: ValueSetBREstrategiaVacinacao
+Id: BREstrategiaVacinacao-1.0
 Title: "Estratégia de Vacinação"
 Description: "Identifica a estratégia de vacinação adotada."
 * ^meta.lastUpdated = "2020-03-12T13:10:06.201+00:00"
@@ -12,6 +12,7 @@ Description: "Identifica a estratégia de vacinação adotada."
 * ^date = "2020-03-12T13:10:03.2986924+00:00"
 * ^publisher = "Ministério da Saúde do Brasil"
 * ^immutable = false
+
 * $BREstrategiaVacinacao#1 "Rotina"
 * $BREstrategiaVacinacao#2 "Especial"
 * $BREstrategiaVacinacao#3 "Bloqueio"

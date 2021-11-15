@@ -11,4 +11,5 @@ Description: "ValueSet utilizado para definir o valor atribuído ao resultado de
 * ^date = "2020-03-26T13:21:38.6543319+00:00"
 * ^publisher = "Ministério da Saúde do Brasil"
 * ^immutable = false
+
 * include codes from system http://www.saude.gov.br/fhir/r4/CodeSystem/BRResultadoQualitativoExame|*

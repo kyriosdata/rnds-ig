@@ -13,6 +13,7 @@ Description: "Classifica o tipo de documento que está sendo utilizado para iden
 * ^date = "2020-03-12T13:27:32.6850777+00:00"
 * ^publisher = "Ministério da Saúde do Brasil"
 * ^immutable = false
+
 * $v2-0203#HC "Número do Cartão Nacional de Saúde (CNS)"
 * $v2-0203#RRI "Número do Registro Geral (RG)"
 * $v2-0203#MCT "Número da Certidão de Casamento"
@@ -27,5 +28,6 @@ Description: "Classifica o tipo de documento que está sendo utilizado para iden
 * $v2-0203#MD "Número de inscrição no Conselho Regional de Medicina (CRM)"
 * $v2-0203#DDS "Número de inscrição no Conselho Regional Odontologia (CRO)"
 * $v2-0203#TAX "Número de inscrição no Cadastro de Pessoas Físicas (CPF)"
+
 * include codes from system http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoIdentificador|*
 * exclude $BRTipoIdentificador#AUTH

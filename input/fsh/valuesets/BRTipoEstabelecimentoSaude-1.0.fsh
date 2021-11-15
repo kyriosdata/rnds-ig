@@ -10,4 +10,5 @@ Description: "ValueSet utilizado para classificar o tipo de estabelecimento de s
 * ^date = "2020-03-12T13:27:40.6996671+00:00"
 * ^publisher = "Ministério da Saúde do Brasil"
 * ^immutable = false
+
 * include codes from system http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoEstabelecimentoSaude|*
