@@ -1,0 +1,60 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "BRRacaCor",
+  "meta": {
+    "lastUpdated": "2020-03-11T15:20:19.538-03:00"
+  },
+  "language": "pt-BR",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p>This code system http://www.saude.gov.br/fhir/r4/CodeSystem/BRRacaCor defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">01<a name=\"BRRacaCor-01\"> </a></td><td>Branca</td></tr><tr><td style=\"white-space:nowrap\">02<a name=\"BRRacaCor-02\"> </a></td><td>Preta</td></tr><tr><td style=\"white-space:nowrap\">03<a name=\"BRRacaCor-03\"> </a></td><td>Parda</td></tr><tr><td style=\"white-space:nowrap\">04<a name=\"BRRacaCor-04\"> </a></td><td>Amarela</td></tr><tr><td style=\"white-space:nowrap\">05<a name=\"BRRacaCor-05\"> </a></td><td>Indígena</td></tr></table></div>"
+  },
+  "url": "http://www.saude.gov.br/fhir/r4/CodeSystem/BRRacaCor",
+  "version": "0.1.0",
+  "name": "BRRacaCor",
+  "title": "Raça/cor",
+  "status": "active",
+  "experimental": false,
+  "date": "2020-03-11T18:20:40.0457007+00:00",
+  "publisher": "Rede Nacional de Dados em Saúde",
+  "contact": [
+    {
+      "name": "Rede Nacional de Dados em Saúde",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://github.com/kyriosdata"
+        },
+        {
+          "system": "email",
+          "value": "rnds@saude.gov.br"
+        }
+      ]
+    }
+  ],
+  "description": "Códigos para representação de raça/cor.",
+  "content": "complete",
+  "count": 5,
+  "concept": [
+    {
+      "code": "01",
+      "display": "Branca"
+    },
+    {
+      "code": "02",
+      "display": "Preta"
+    },
+    {
+      "code": "03",
+      "display": "Parda"
+    },
+    {
+      "code": "04",
+      "display": "Amarela"
+    },
+    {
+      "code": "05",
+      "display": "Indígena"
+    }
+  ]
+}

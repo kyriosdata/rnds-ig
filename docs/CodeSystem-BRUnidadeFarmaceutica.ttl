@@ -1,0 +1,259 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://www.saude.gov.br/fhir/r4/CodeSystem/BRUnidadeFarmaceutica> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "BRUnidadeFarmaceutica"];
+  fhir:Resource.meta [
+     fhir:Meta.lastUpdated [ fhir:value "2020-03-11T15:25:47.887-03:00"^^xsd:dateTime ]
+  ];
+  fhir:Resource.language [ fhir:value "pt-BR"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p>This code system http://www.saude.gov.br/fhir/r4/CodeSystem/BRUnidadeFarmaceutica defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">01<a name=\"BRUnidadeFarmaceutica-01\"> </a></td><td>AMP</td></tr><tr><td style=\"white-space:nowrap\">03<a name=\"BRUnidadeFarmaceutica-03\"> </a></td><td>BAR.</td></tr><tr><td style=\"white-space:nowrap\">05<a name=\"BRUnidadeFarmaceutica-05\"> </a></td><td>BAS.</td></tr><tr><td style=\"white-space:nowrap\">06<a name=\"BRUnidadeFarmaceutica-06\"> </a></td><td>BS.</td></tr><tr><td style=\"white-space:nowrap\">09<a name=\"BRUnidadeFarmaceutica-09\"> </a></td><td>BOL.</td></tr><tr><td style=\"white-space:nowrap\">100<a name=\"BRUnidadeFarmaceutica-100\"> </a></td><td>MG</td></tr><tr><td style=\"white-space:nowrap\">11<a name=\"BRUnidadeFarmaceutica-11\"> </a></td><td>CX.</td></tr><tr><td style=\"white-space:nowrap\">114<a name=\"BRUnidadeFarmaceutica-114\"> </a></td><td>UN</td></tr><tr><td style=\"white-space:nowrap\">117<a name=\"BRUnidadeFarmaceutica-117\"> </a></td><td>ENV</td></tr><tr><td style=\"white-space:nowrap\">12<a name=\"BRUnidadeFarmaceutica-12\"> </a></td><td>CPS.</td></tr><tr><td style=\"white-space:nowrap\">14<a name=\"BRUnidadeFarmaceutica-14\"> </a></td><td>CART.</td></tr><tr><td style=\"white-space:nowrap\">17<a name=\"BRUnidadeFarmaceutica-17\"> </a></td><td>CM</td></tr><tr><td style=\"white-space:nowrap\">21<a name=\"BRUnidadeFarmaceutica-21\"> </a></td><td>COMP.</td></tr><tr><td style=\"white-space:nowrap\">23<a name=\"BRUnidadeFarmaceutica-23\"> </a></td><td>DRG.</td></tr><tr><td style=\"white-space:nowrap\">25<a name=\"BRUnidadeFarmaceutica-25\"> </a></td><td>ENV.</td></tr><tr><td style=\"white-space:nowrap\">31<a name=\"BRUnidadeFarmaceutica-31\"> </a></td><td>FR.</td></tr><tr><td style=\"white-space:nowrap\">32<a name=\"BRUnidadeFarmaceutica-32\"> </a></td><td>FR-AMP.</td></tr><tr><td style=\"white-space:nowrap\">36<a name=\"BRUnidadeFarmaceutica-36\"> </a></td><td>GR.</td></tr><tr><td style=\"white-space:nowrap\">37<a name=\"BRUnidadeFarmaceutica-37\"> </a></td><td>GS.</td></tr><tr><td style=\"white-space:nowrap\">39<a name=\"BRUnidadeFarmaceutica-39\"> </a></td><td>LT.</td></tr><tr><td style=\"white-space:nowrap\">46<a name=\"BRUnidadeFarmaceutica-46\"> </a></td><td>ML.</td></tr><tr><td style=\"white-space:nowrap\">48<a name=\"BRUnidadeFarmaceutica-48\"> </a></td><td>OV.</td></tr><tr><td style=\"white-space:nowrap\">51<a name=\"BRUnidadeFarmaceutica-51\"> </a></td><td>PAST.</td></tr><tr><td style=\"white-space:nowrap\">55<a name=\"BRUnidadeFarmaceutica-55\"> </a></td><td>PTE.</td></tr><tr><td style=\"white-space:nowrap\">60<a name=\"BRUnidadeFarmaceutica-60\"> </a></td><td>SUP.</td></tr><tr><td style=\"white-space:nowrap\">61<a name=\"BRUnidadeFarmaceutica-61\"> </a></td><td>TBL.</td></tr><tr><td style=\"white-space:nowrap\">65<a name=\"BRUnidadeFarmaceutica-65\"> </a></td><td>TB.</td></tr><tr><td style=\"white-space:nowrap\">66<a name=\"BRUnidadeFarmaceutica-66\"> </a></td><td>UN</td></tr><tr><td style=\"white-space:nowrap\">70<a name=\"BRUnidadeFarmaceutica-70\"> </a></td><td>TBT.</td></tr><tr><td style=\"white-space:nowrap\">75<a name=\"BRUnidadeFarmaceutica-75\"> </a></td><td>CARTELA</td></tr><tr><td style=\"white-space:nowrap\">78<a name=\"BRUnidadeFarmaceutica-78\"> </a></td><td>SERINGA</td></tr><tr><td style=\"white-space:nowrap\">79<a name=\"BRUnidadeFarmaceutica-79\"> </a></td><td>BLISTER</td></tr><tr><td style=\"white-space:nowrap\">80<a name=\"BRUnidadeFarmaceutica-80\"> </a></td><td>SACHE</td></tr><tr><td style=\"white-space:nowrap\">81<a name=\"BRUnidadeFarmaceutica-81\"> </a></td><td>DOSE</td></tr><tr><td style=\"white-space:nowrap\">82<a name=\"BRUnidadeFarmaceutica-82\"> </a></td><td>CARP</td></tr><tr><td style=\"white-space:nowrap\">83<a name=\"BRUnidadeFarmaceutica-83\"> </a></td><td>FLAC</td></tr><tr><td style=\"white-space:nowrap\">84<a name=\"BRUnidadeFarmaceutica-84\"> </a></td><td>CAP LIB PR</td></tr><tr><td style=\"white-space:nowrap\">85<a name=\"BRUnidadeFarmaceutica-85\"> </a></td><td>CAP LIB RE</td></tr><tr><td style=\"white-space:nowrap\">86<a name=\"BRUnidadeFarmaceutica-86\"> </a></td><td>CAP INAL</td></tr><tr><td style=\"white-space:nowrap\">87<a name=\"BRUnidadeFarmaceutica-87\"> </a></td><td>COMP</td></tr><tr><td style=\"white-space:nowrap\">88<a name=\"BRUnidadeFarmaceutica-88\"> </a></td><td>CP DS LENT</td></tr><tr><td style=\"white-space:nowrap\">89<a name=\"BRUnidadeFarmaceutica-89\"> </a></td><td>COMP/CP LR</td></tr><tr><td style=\"white-space:nowrap\">90<a name=\"BRUnidadeFarmaceutica-90\"> </a></td><td>DRÁG/COMP</td></tr><tr><td style=\"white-space:nowrap\">91<a name=\"BRUnidadeFarmaceutica-91\"> </a></td><td>ENEMA</td></tr><tr><td style=\"white-space:nowrap\">92<a name=\"BRUnidadeFarmaceutica-92\"> </a></td><td>FR 100 DOS</td></tr><tr><td style=\"white-space:nowrap\">93<a name=\"BRUnidadeFarmaceutica-93\"> </a></td><td>FR 200 DOS</td></tr><tr><td style=\"white-space:nowrap\">94<a name=\"BRUnidadeFarmaceutica-94\"> </a></td><td>FR 60 DOS</td></tr><tr><td style=\"white-space:nowrap\">95<a name=\"BRUnidadeFarmaceutica-95\"> </a></td><td>F-AP/SR PR</td></tr><tr><td style=\"white-space:nowrap\">96<a name=\"BRUnidadeFarmaceutica-96\"> </a></td><td>SER PREENC</td></tr><tr><td style=\"white-space:nowrap\">97<a name=\"BRUnidadeFarmaceutica-97\"> </a></td><td>CAP</td></tr><tr><td style=\"white-space:nowrap\">98<a name=\"BRUnidadeFarmaceutica-98\"> </a></td><td>DRÁGEA</td></tr><tr><td style=\"white-space:nowrap\">99<a name=\"BRUnidadeFarmaceutica-99\"> </a></td><td>SUPOS</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://www.saude.gov.br/fhir/r4/CodeSystem/BRUnidadeFarmaceutica"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "Unidade Farmacêutica"];
+  fhir:CodeSystem.title [ fhir:value "Unidade farmacêutica de uma substância"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean];
+  fhir:CodeSystem.date [ fhir:value "2020-03-11T18:26:08.3841005+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "Rede Nacional de Dados em Saúde"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Rede Nacional de Dados em Saúde" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://github.com/kyriosdata" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "rnds@saude.gov.br" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Identifica a unidade farmacêutica de uma substância."];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "52"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "01" ];
+     fhir:CodeSystem.concept.display [ fhir:value "AMP" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "03" ];
+     fhir:CodeSystem.concept.display [ fhir:value "BAR." ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "05" ];
+     fhir:CodeSystem.concept.display [ fhir:value "BAS." ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "06" ];
+     fhir:CodeSystem.concept.display [ fhir:value "BS." ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "09" ];
+     fhir:CodeSystem.concept.display [ fhir:value "BOL." ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "100" ];
+     fhir:CodeSystem.concept.display [ fhir:value "MG" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "11" ];
+     fhir:CodeSystem.concept.display [ fhir:value "CX." ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "114" ];
+     fhir:CodeSystem.concept.display [ fhir:value "UN" ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "117" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ENV" ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "12" ];
+     fhir:CodeSystem.concept.display [ fhir:value "CPS." ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "14" ];
+     fhir:CodeSystem.concept.display [ fhir:value "CART." ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.concept.code [ fhir:value "17" ];
+     fhir:CodeSystem.concept.display [ fhir:value "CM" ]
+  ], [
+     fhir:index 12;
+     fhir:CodeSystem.concept.code [ fhir:value "21" ];
+     fhir:CodeSystem.concept.display [ fhir:value "COMP." ]
+  ], [
+     fhir:index 13;
+     fhir:CodeSystem.concept.code [ fhir:value "23" ];
+     fhir:CodeSystem.concept.display [ fhir:value "DRG." ]
+  ], [
+     fhir:index 14;
+     fhir:CodeSystem.concept.code [ fhir:value "25" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ENV." ]
+  ], [
+     fhir:index 15;
+     fhir:CodeSystem.concept.code [ fhir:value "31" ];
+     fhir:CodeSystem.concept.display [ fhir:value "FR." ]
+  ], [
+     fhir:index 16;
+     fhir:CodeSystem.concept.code [ fhir:value "32" ];
+     fhir:CodeSystem.concept.display [ fhir:value "FR-AMP." ]
+  ], [
+     fhir:index 17;
+     fhir:CodeSystem.concept.code [ fhir:value "36" ];
+     fhir:CodeSystem.concept.display [ fhir:value "GR." ]
+  ], [
+     fhir:index 18;
+     fhir:CodeSystem.concept.code [ fhir:value "37" ];
+     fhir:CodeSystem.concept.display [ fhir:value "GS." ]
+  ], [
+     fhir:index 19;
+     fhir:CodeSystem.concept.code [ fhir:value "39" ];
+     fhir:CodeSystem.concept.display [ fhir:value "LT." ]
+  ], [
+     fhir:index 20;
+     fhir:CodeSystem.concept.code [ fhir:value "46" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ML." ]
+  ], [
+     fhir:index 21;
+     fhir:CodeSystem.concept.code [ fhir:value "48" ];
+     fhir:CodeSystem.concept.display [ fhir:value "OV." ]
+  ], [
+     fhir:index 22;
+     fhir:CodeSystem.concept.code [ fhir:value "51" ];
+     fhir:CodeSystem.concept.display [ fhir:value "PAST." ]
+  ], [
+     fhir:index 23;
+     fhir:CodeSystem.concept.code [ fhir:value "55" ];
+     fhir:CodeSystem.concept.display [ fhir:value "PTE." ]
+  ], [
+     fhir:index 24;
+     fhir:CodeSystem.concept.code [ fhir:value "60" ];
+     fhir:CodeSystem.concept.display [ fhir:value "SUP." ]
+  ], [
+     fhir:index 25;
+     fhir:CodeSystem.concept.code [ fhir:value "61" ];
+     fhir:CodeSystem.concept.display [ fhir:value "TBL." ]
+  ], [
+     fhir:index 26;
+     fhir:CodeSystem.concept.code [ fhir:value "65" ];
+     fhir:CodeSystem.concept.display [ fhir:value "TB." ]
+  ], [
+     fhir:index 27;
+     fhir:CodeSystem.concept.code [ fhir:value "66" ];
+     fhir:CodeSystem.concept.display [ fhir:value "UN" ]
+  ], [
+     fhir:index 28;
+     fhir:CodeSystem.concept.code [ fhir:value "70" ];
+     fhir:CodeSystem.concept.display [ fhir:value "TBT." ]
+  ], [
+     fhir:index 29;
+     fhir:CodeSystem.concept.code [ fhir:value "75" ];
+     fhir:CodeSystem.concept.display [ fhir:value "CARTELA" ]
+  ], [
+     fhir:index 30;
+     fhir:CodeSystem.concept.code [ fhir:value "78" ];
+     fhir:CodeSystem.concept.display [ fhir:value "SERINGA" ]
+  ], [
+     fhir:index 31;
+     fhir:CodeSystem.concept.code [ fhir:value "79" ];
+     fhir:CodeSystem.concept.display [ fhir:value "BLISTER" ]
+  ], [
+     fhir:index 32;
+     fhir:CodeSystem.concept.code [ fhir:value "80" ];
+     fhir:CodeSystem.concept.display [ fhir:value "SACHE" ]
+  ], [
+     fhir:index 33;
+     fhir:CodeSystem.concept.code [ fhir:value "81" ];
+     fhir:CodeSystem.concept.display [ fhir:value "DOSE" ]
+  ], [
+     fhir:index 34;
+     fhir:CodeSystem.concept.code [ fhir:value "82" ];
+     fhir:CodeSystem.concept.display [ fhir:value "CARP" ]
+  ], [
+     fhir:index 35;
+     fhir:CodeSystem.concept.code [ fhir:value "83" ];
+     fhir:CodeSystem.concept.display [ fhir:value "FLAC" ]
+  ], [
+     fhir:index 36;
+     fhir:CodeSystem.concept.code [ fhir:value "84" ];
+     fhir:CodeSystem.concept.display [ fhir:value "CAP LIB PR" ]
+  ], [
+     fhir:index 37;
+     fhir:CodeSystem.concept.code [ fhir:value "85" ];
+     fhir:CodeSystem.concept.display [ fhir:value "CAP LIB RE" ]
+  ], [
+     fhir:index 38;
+     fhir:CodeSystem.concept.code [ fhir:value "86" ];
+     fhir:CodeSystem.concept.display [ fhir:value "CAP INAL" ]
+  ], [
+     fhir:index 39;
+     fhir:CodeSystem.concept.code [ fhir:value "87" ];
+     fhir:CodeSystem.concept.display [ fhir:value "COMP" ]
+  ], [
+     fhir:index 40;
+     fhir:CodeSystem.concept.code [ fhir:value "88" ];
+     fhir:CodeSystem.concept.display [ fhir:value "CP DS LENT" ]
+  ], [
+     fhir:index 41;
+     fhir:CodeSystem.concept.code [ fhir:value "89" ];
+     fhir:CodeSystem.concept.display [ fhir:value "COMP/CP LR" ]
+  ], [
+     fhir:index 42;
+     fhir:CodeSystem.concept.code [ fhir:value "90" ];
+     fhir:CodeSystem.concept.display [ fhir:value "DRÁG/COMP" ]
+  ], [
+     fhir:index 43;
+     fhir:CodeSystem.concept.code [ fhir:value "91" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ENEMA" ]
+  ], [
+     fhir:index 44;
+     fhir:CodeSystem.concept.code [ fhir:value "92" ];
+     fhir:CodeSystem.concept.display [ fhir:value "FR 100 DOS" ]
+  ], [
+     fhir:index 45;
+     fhir:CodeSystem.concept.code [ fhir:value "93" ];
+     fhir:CodeSystem.concept.display [ fhir:value "FR 200 DOS" ]
+  ], [
+     fhir:index 46;
+     fhir:CodeSystem.concept.code [ fhir:value "94" ];
+     fhir:CodeSystem.concept.display [ fhir:value "FR 60 DOS" ]
+  ], [
+     fhir:index 47;
+     fhir:CodeSystem.concept.code [ fhir:value "95" ];
+     fhir:CodeSystem.concept.display [ fhir:value "F-AP/SR PR" ]
+  ], [
+     fhir:index 48;
+     fhir:CodeSystem.concept.code [ fhir:value "96" ];
+     fhir:CodeSystem.concept.display [ fhir:value "SER PREENC" ]
+  ], [
+     fhir:index 49;
+     fhir:CodeSystem.concept.code [ fhir:value "97" ];
+     fhir:CodeSystem.concept.display [ fhir:value "CAP" ]
+  ], [
+     fhir:index 50;
+     fhir:CodeSystem.concept.code [ fhir:value "98" ];
+     fhir:CodeSystem.concept.display [ fhir:value "DRÁGEA" ]
+  ], [
+     fhir:index 51;
+     fhir:CodeSystem.concept.code [ fhir:value "99" ];
+     fhir:CodeSystem.concept.display [ fhir:value "SUPOS" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://www.saude.gov.br/fhir/r4/CodeSystem/BRUnidadeFarmaceutica.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

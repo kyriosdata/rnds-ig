@@ -1,0 +1,74 @@
+{
+  "resourceType": "ValueSet",
+  "id": "BREstrategiaVacinacao-1.0",
+  "meta": {
+    "lastUpdated": "2020-03-12T10:10:06.201-03:00"
+  },
+  "language": "pt-BR",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-BREstrategiaVacinacao.html\"><code>http://www.saude.gov.br/fhir/r4/CodeSystem/BREstrategiaVacinacao</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-BREstrategiaVacinacao.html#BREstrategiaVacinacao-1\">1</a></td><td>Rotina</td></tr><tr><td><a href=\"CodeSystem-BREstrategiaVacinacao.html#BREstrategiaVacinacao-2\">2</a></td><td>Especial</td></tr><tr><td><a href=\"CodeSystem-BREstrategiaVacinacao.html#BREstrategiaVacinacao-3\">3</a></td><td>Bloqueio</td></tr><tr><td><a href=\"CodeSystem-BREstrategiaVacinacao.html#BREstrategiaVacinacao-4\">4</a></td><td>Intensificação</td></tr><tr><td><a href=\"CodeSystem-BREstrategiaVacinacao.html#BREstrategiaVacinacao-7\">7</a></td><td>Soroterapia</td></tr><tr><td><a href=\"CodeSystem-BREstrategiaVacinacao.html#BREstrategiaVacinacao-8\">8</a></td><td>Serviço Privado</td></tr><tr><td><a href=\"CodeSystem-BREstrategiaVacinacao.html#BREstrategiaVacinacao-9\">9</a></td><td>Monitoramento rápido de cobertura vacinal</td></tr></table></li></ul></div>"
+  },
+  "url": "http://www.saude.gov.br/fhir/r4/ValueSet/BREstrategiaVacinacao-1.0",
+  "version": "0.1.0",
+  "name": "BREstrategiaVacinacao",
+  "title": "Estratégia de Vacinação",
+  "status": "active",
+  "experimental": false,
+  "date": "2020-03-12T13:10:03.2986924+00:00",
+  "publisher": "Rede Nacional de Dados em Saúde",
+  "contact": [
+    {
+      "name": "Rede Nacional de Dados em Saúde",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://github.com/kyriosdata"
+        },
+        {
+          "system": "email",
+          "value": "rnds@saude.gov.br"
+        }
+      ]
+    }
+  ],
+  "description": "Identifica a estratégia de vacinação adotada.",
+  "immutable": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://www.saude.gov.br/fhir/r4/CodeSystem/BREstrategiaVacinacao",
+        "concept": [
+          {
+            "code": "1",
+            "display": "Rotina"
+          },
+          {
+            "code": "2",
+            "display": "Especial"
+          },
+          {
+            "code": "3",
+            "display": "Bloqueio"
+          },
+          {
+            "code": "4",
+            "display": "Intensificação"
+          },
+          {
+            "code": "7",
+            "display": "Soroterapia"
+          },
+          {
+            "code": "8",
+            "display": "Serviço Privado"
+          },
+          {
+            "code": "9",
+            "display": "Monitoramento rápido de cobertura vacinal"
+          }
+        ]
+      }
+    ]
+  }
+}

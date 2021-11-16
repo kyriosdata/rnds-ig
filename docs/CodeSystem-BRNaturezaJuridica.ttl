@@ -1,0 +1,77 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://www.saude.gov.br/fhir/r4/CodeSystem/BRNaturezaJuridica> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "BRNaturezaJuridica"];
+  fhir:Resource.meta [
+     fhir:Meta.lastUpdated [ fhir:value "2020-03-30T15:15:21.477-03:00"^^xsd:dateTime ]
+  ];
+  fhir:Resource.language [ fhir:value "pt-BR"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p><b>Properties</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>URL</b></td><td><b>Description</b></td><td><b>Type</b></td></tr><tr><td>type</td><td/><td>tipo</td><td>code</td></tr></table><p>This code system http://www.saude.gov.br/fhir/r4/CodeSystem/BRNaturezaJuridica defines the following codes:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">1<a name=\"BRNaturezaJuridica-1\"> </a></td><td>Administração Pública</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  101-5<a name=\"BRNaturezaJuridica-101-5\"> </a></td><td>Órgão Público do Poder Executivo Federal</td><td>Esta Natureza Jurídica compreende:\r\n- os órgãos públicos do Poder Executivo Federal\r\nEsta Natureza Jurídica compreende também:\r\n- as embaixadas, os consulados, os escritórios de representações e demais unidades diplomáticas e consulares do Governo brasileiro em outros países ou em organizações internacionais\r\n- o Conselho Nacional dos Direitos da Criança e do Adolescente (Conanda)\r\n- a Advocacia-Geral da União\r\nEsta Natureza Jurídica não compreende:\r\n- as autarquias (110-4)\r\n-as fundações públicas (113-9)\r\n- os órgãos do Ministério Público da União (116-3)\r\n- os fundos especiais de natureza contábil e/ou financeira, não dotados de personalidade jurídica, previstos nos artigos 71 a 74 da Lei n. º 4.320, de 17/03/1964, criados no âmbito do Poder Executivo da União (131-7)\r\n- os fundos de avais públicos: União (131-7), Estadual ou do Distrito Federal (132-5) e Municipal (133-3)\r\n- a União (134-1)\r\n- as empresas públicas (201-1)\r\n- as sociedades de economia mista federais (203-8)\r\n- as embaixadas, os consulados, os escritórios de representações e as demais unidades diplomáticas do Governo brasileiro em outros países ou em organizações internacionais (502-9)</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://www.saude.gov.br/fhir/r4/CodeSystem/BRNaturezaJuridica"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "Natureza Jurídica"];
+  fhir:CodeSystem.title [ fhir:value "Constituição jurídica de entidades"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean];
+  fhir:CodeSystem.date [ fhir:value "2020-03-30T18:15:18.1570669+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "Rede Nacional de Dados em Saúde"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Rede Nacional de Dados em Saúde" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://github.com/kyriosdata" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "rnds@saude.gov.br" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Identifica a constituição jurídico-institucional das entidades públicas e privadas nos cadastros da administração pública do Brasil."];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "2"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.property [
+     fhir:index 0;
+     fhir:CodeSystem.property.code [ fhir:value "type" ];
+     fhir:CodeSystem.property.description [ fhir:value "tipo" ];
+     fhir:CodeSystem.property.type [ fhir:value "code" ]
+  ];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Administração Pública" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "grupo" ]
+     ];
+     fhir:CodeSystem.concept.concept [
+       fhir:index 0;
+       fhir:CodeSystem.concept.code [ fhir:value "101-5" ];
+       fhir:CodeSystem.concept.display [ fhir:value "Órgão Público do Poder Executivo Federal" ];
+       fhir:CodeSystem.concept.definition [ fhir:value "Esta Natureza Jurídica compreende:\r\n- os órgãos públicos do Poder Executivo Federal\r\nEsta Natureza Jurídica compreende também:\r\n- as embaixadas, os consulados, os escritórios de representações e demais unidades diplomáticas e consulares do Governo brasileiro em outros países ou em organizações internacionais\r\n- o Conselho Nacional dos Direitos da Criança e do Adolescente (Conanda)\r\n- a Advocacia-Geral da União\r\nEsta Natureza Jurídica não compreende:\r\n- as autarquias (110-4)\r\n-as fundações públicas (113-9)\r\n- os órgãos do Ministério Público da União (116-3)\r\n- os fundos especiais de natureza contábil e/ou financeira, não dotados de personalidade jurídica, previstos nos artigos 71 a 74 da Lei n. º 4.320, de 17/03/1964, criados no âmbito do Poder Executivo da União (131-7)\r\n- os fundos de avais públicos: União (131-7), Estadual ou do Distrito Federal (132-5) e Municipal (133-3)\r\n- a União (134-1)\r\n- as empresas públicas (201-1)\r\n- as sociedades de economia mista federais (203-8)\r\n- as embaixadas, os consulados, os escritórios de representações e as demais unidades diplomáticas do Governo brasileiro em outros países ou em organizações internacionais (502-9)" ];
+       fhir:CodeSystem.concept.property [
+         fhir:index 0;
+         fhir:CodeSystem.concept.property.code [ fhir:value "type" ];
+         fhir:CodeSystem.concept.property.valueCode [ fhir:value "categoria" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://www.saude.gov.br/fhir/r4/CodeSystem/BRNaturezaJuridica.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

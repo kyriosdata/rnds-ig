@@ -1,0 +1,111 @@
+{
+  "resourceType": "ValueSet",
+  "id": "BRTipoAmostra-1.0",
+  "meta": {
+    "versionId": "5",
+    "lastUpdated": "2020-06-30T15:56:50.241-03:00"
+  },
+  "language": "pt-BR",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v2-0487.html\"><code>http://terminology.hl7.org/CodeSystem/v2-0487</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v2-0487.html#v2-0487-FRS\">FRS</a></td><td>Fluido Respiratório</td><td>Fluid, Respiratory</td></tr><tr><td><a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v2-0487.html#v2-0487-LAVG\">LAVG</a></td><td>Lavado Brônquico</td><td>Lavage, Bronhial</td></tr><tr><td><a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v2-0487.html#v2-0487-NSECR\">NSECR</a></td><td>Secreção Nasal</td><td>Secretion, Nasal</td></tr><tr><td><a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v2-0487.html#v2-0487-PLAS\">PLAS</a></td><td>Plasma</td><td>Plasma</td></tr><tr><td><a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v2-0487.html#v2-0487-SPT\">SPT</a></td><td>Escarro</td><td>Sputum</td></tr><tr><td><a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v2-0487.html#v2-0487-TASP\">TASP</a></td><td>Aspirado Traqueal</td><td>Aspirate, Tracheal</td></tr><tr><td><a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v2-0487.html#v2-0487-WB\">WB</a></td><td>Sangue Total</td><td>Blood, Whole</td></tr><tr><td><a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v2-0487.html#v2-0487-SER\">SER</a></td><td>Soro</td><td>Serum</td></tr><tr><td><a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v2-0487.html#v2-0487-SECRE\">SECRE</a></td><td>Secreção Não Especificada</td><td>Secretion(s)</td></tr><tr><td><a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v2-0487.html#v2-0487-ASP\">ASP</a></td><td>Aspirado Não Especificado</td><td>Aspirate</td></tr><tr><td><a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v2-0487.html#v2-0487-SPUTIN\">SPUTIN</a></td><td>Escarro induzido</td><td>Sputum, Inducted</td></tr><tr><td><a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v2-0487.html#v2-0487-WASH\">WASH</a></td><td>Lavado</td><td>Wash</td></tr><tr><td><a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v2-0487.html#v2-0487-CSF\">CSF</a></td><td>Líquor</td><td>Cerebral spinal fluid</td></tr><tr><td><a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v2-0487.html#v2-0487-SAL\">SAL</a></td><td>Saliva</td><td>Saliva</td></tr><tr><td><a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v2-0487.html#v2-0487-UR\">UR</a></td><td>Urina</td><td>Urine</td></tr></table></li><li>Include all codes defined in <a href=\"CodeSystem-BRTipoAmostraGAL.html\"><code>http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoAmostraGAL</code></a></li></ul></div>"
+  },
+  "url": "http://www.saude.gov.br/fhir/r4/ValueSet/BRTipoAmostra-1.0",
+  "version": "0.1.0",
+  "name": "BRTipoAmostra",
+  "title": "Tipo de Amostra de Exame",
+  "status": "active",
+  "experimental": false,
+  "date": "2020-06-30T18:56:47.6561959+00:00",
+  "publisher": "Rede Nacional de Dados em Saúde",
+  "contact": [
+    {
+      "name": "Rede Nacional de Dados em Saúde",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://github.com/kyriosdata"
+        },
+        {
+          "system": "email",
+          "value": "rnds@saude.gov.br"
+        }
+      ]
+    }
+  ],
+  "description": "Tipo da amostra de um exame ou teste.",
+  "immutable": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0487",
+        "concept": [
+          {
+            "code": "FRS",
+            "display": "Fluido Respiratório"
+          },
+          {
+            "code": "LAVG",
+            "display": "Lavado Brônquico"
+          },
+          {
+            "code": "NSECR",
+            "display": "Secreção Nasal"
+          },
+          {
+            "code": "PLAS",
+            "display": "Plasma"
+          },
+          {
+            "code": "SPT",
+            "display": "Escarro"
+          },
+          {
+            "code": "TASP",
+            "display": "Aspirado Traqueal"
+          },
+          {
+            "code": "WB",
+            "display": "Sangue Total"
+          },
+          {
+            "code": "SER",
+            "display": "Soro"
+          },
+          {
+            "code": "SECRE",
+            "display": "Secreção Não Especificada"
+          },
+          {
+            "code": "ASP",
+            "display": "Aspirado Não Especificado"
+          },
+          {
+            "code": "SPUTIN",
+            "display": "Escarro induzido"
+          },
+          {
+            "code": "WASH",
+            "display": "Lavado"
+          },
+          {
+            "code": "CSF",
+            "display": "Líquor"
+          },
+          {
+            "code": "SAL",
+            "display": "Saliva"
+          },
+          {
+            "code": "UR",
+            "display": "Urina"
+          }
+        ]
+      },
+      {
+        "system": "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoAmostraGAL",
+        "version": "*"
+      }
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "BRNomeCampanhaVacinacao",
+  "language": "pt-BR",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p>This code system http://www.saude.gov.br/fhir/r4/CodeSystem/BRNomeCampanhaVacinacao defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">COV<a name=\"BRNomeCampanhaVacinacao-COV\"> </a></td><td>COVID</td></tr><tr><td style=\"white-space:nowrap\">SAR<a name=\"BRNomeCampanhaVacinacao-SAR\"> </a></td><td>Sarampo</td></tr><tr><td style=\"white-space:nowrap\">POL<a name=\"BRNomeCampanhaVacinacao-POL\"> </a></td><td>Poliomielite</td></tr><tr><td style=\"white-space:nowrap\">INFLU<a name=\"BRNomeCampanhaVacinacao-INFLU\"> </a></td><td>Influenza</td></tr><tr><td style=\"white-space:nowrap\">MULTI<a name=\"BRNomeCampanhaVacinacao-MULTI\"> </a></td><td>Multivacinação</td></tr></table></div>"
+  },
+  "url": "http://www.saude.gov.br/fhir/r4/CodeSystem/BRNomeCampanhaVacinacao",
+  "version": "0.1.0",
+  "name": "Nome da Campanha de Vacinação",
+  "title": "Nome de campanha de vacinação",
+  "status": "active",
+  "experimental": false,
+  "date": "2020-12-08T13:49:02Z",
+  "publisher": "Rede Nacional de Dados em Saúde",
+  "contact": [
+    {
+      "name": "Rede Nacional de Dados em Saúde",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://github.com/kyriosdata"
+        },
+        {
+          "system": "email",
+          "value": "rnds@saude.gov.br"
+        }
+      ]
+    }
+  ],
+  "description": "Domínio que identifica o nome da campanha de vacinação.",
+  "content": "complete",
+  "count": 5,
+  "concept": [
+    {
+      "code": "COV",
+      "display": "COVID"
+    },
+    {
+      "code": "SAR",
+      "display": "Sarampo"
+    },
+    {
+      "code": "POL",
+      "display": "Poliomielite"
+    },
+    {
+      "code": "INFLU",
+      "display": "Influenza"
+    },
+    {
+      "code": "MULTI",
+      "display": "Multivacinação"
+    }
+  ]
+}

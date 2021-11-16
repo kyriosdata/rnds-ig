@@ -1,0 +1,313 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "BRGrupoAtendimento",
+  "language": "pt-BR",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p>This code system http://www.saude.gov.br/fhir/r4/CodeSystem/BRGrupoAtendimento defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">000101<a name=\"BRGrupoAtendimento-000101\"> </a></td><td>Anemia Falciforme</td></tr><tr><td style=\"white-space:nowrap\">000102<a name=\"BRGrupoAtendimento-000102\"> </a></td><td>Câncer</td></tr><tr><td style=\"white-space:nowrap\">000103<a name=\"BRGrupoAtendimento-000103\"> </a></td><td>Diabetes Mellitus</td></tr><tr><td style=\"white-space:nowrap\">000104<a name=\"BRGrupoAtendimento-000104\"> </a></td><td>Doença Pulmonar Obstrutiva Crônica</td></tr><tr><td style=\"white-space:nowrap\">000105<a name=\"BRGrupoAtendimento-000105\"> </a></td><td>Doença Renal</td></tr><tr><td style=\"white-space:nowrap\">000106<a name=\"BRGrupoAtendimento-000106\"> </a></td><td>Doenças Cardiovasculares e Cerebrovasculares</td></tr><tr><td style=\"white-space:nowrap\">000107<a name=\"BRGrupoAtendimento-000107\"> </a></td><td>Hipertensão de difícil controle ou com compilcações/lesão de órgão alvo</td></tr><tr><td style=\"white-space:nowrap\">000108<a name=\"BRGrupoAtendimento-000108\"> </a></td><td>Indivíduos Transplantados de Órgão Sólido</td></tr><tr><td style=\"white-space:nowrap\">000109<a name=\"BRGrupoAtendimento-000109\"> </a></td><td>Obesidade Grave (Imc≥40)</td></tr><tr><td style=\"white-space:nowrap\">000201<a name=\"BRGrupoAtendimento-000201\"> </a></td><td>Pessoas de 60 a 64 anos</td></tr><tr><td style=\"white-space:nowrap\">000202<a name=\"BRGrupoAtendimento-000202\"> </a></td><td>Pessoas de 65 a 69 anos</td></tr><tr><td style=\"white-space:nowrap\">000203<a name=\"BRGrupoAtendimento-000203\"> </a></td><td>Pessoas de 70 a 74 anos</td></tr><tr><td style=\"white-space:nowrap\">000204<a name=\"BRGrupoAtendimento-000204\"> </a></td><td>Pessoas de 75 a 79 anos</td></tr><tr><td style=\"white-space:nowrap\">000205<a name=\"BRGrupoAtendimento-000205\"> </a></td><td>Pessoas de 80 anos ou mais</td></tr><tr><td style=\"white-space:nowrap\">000301<a name=\"BRGrupoAtendimento-000301\"> </a></td><td>Pessoas de 60 nos ou mais Institucionalizadas</td></tr><tr><td style=\"white-space:nowrap\">000401<a name=\"BRGrupoAtendimento-000401\"> </a></td><td>Marinha do Brasil - MB</td></tr><tr><td style=\"white-space:nowrap\">000402<a name=\"BRGrupoAtendimento-000402\"> </a></td><td>Exército Brasileiro - EB</td></tr><tr><td style=\"white-space:nowrap\">000403<a name=\"BRGrupoAtendimento-000403\"> </a></td><td>Força Aérea Brasileira - FAB</td></tr><tr><td style=\"white-space:nowrap\">000501<a name=\"BRGrupoAtendimento-000501\"> </a></td><td>Bombeiro Civil</td></tr><tr><td style=\"white-space:nowrap\">000502<a name=\"BRGrupoAtendimento-000502\"> </a></td><td>Bombeiro Militar</td></tr><tr><td style=\"white-space:nowrap\">000503<a name=\"BRGrupoAtendimento-000503\"> </a></td><td>Guarda Municipal</td></tr><tr><td style=\"white-space:nowrap\">000504<a name=\"BRGrupoAtendimento-000504\"> </a></td><td>Policial Rodoviário Federal</td></tr><tr><td style=\"white-space:nowrap\">000505<a name=\"BRGrupoAtendimento-000505\"> </a></td><td>Policial Civil</td></tr><tr><td style=\"white-space:nowrap\">000506<a name=\"BRGrupoAtendimento-000506\"> </a></td><td>Policial Federal</td></tr><tr><td style=\"white-space:nowrap\">000507<a name=\"BRGrupoAtendimento-000507\"> </a></td><td>Policial Militar</td></tr><tr><td style=\"white-space:nowrap\">000601<a name=\"BRGrupoAtendimento-000601\"> </a></td><td>Quilombola</td></tr><tr><td style=\"white-space:nowrap\">000602<a name=\"BRGrupoAtendimento-000602\"> </a></td><td>Ribeirinha</td></tr><tr><td style=\"white-space:nowrap\">000701<a name=\"BRGrupoAtendimento-000701\"> </a></td><td>População indígena em terras indígenas</td></tr><tr><td style=\"white-space:nowrap\">000801<a name=\"BRGrupoAtendimento-000801\"> </a></td><td>Ensino Básico</td></tr><tr><td style=\"white-space:nowrap\">000802<a name=\"BRGrupoAtendimento-000802\"> </a></td><td>Ensino Superior</td></tr><tr><td style=\"white-space:nowrap\">000901<a name=\"BRGrupoAtendimento-000901\"> </a></td><td>Auxiliare Veterinário</td></tr><tr><td style=\"white-space:nowrap\">000902<a name=\"BRGrupoAtendimento-000902\"> </a></td><td>Biólogo</td></tr><tr><td style=\"white-space:nowrap\">000903<a name=\"BRGrupoAtendimento-000903\"> </a></td><td>Biomédico</td></tr><tr><td style=\"white-space:nowrap\">000904<a name=\"BRGrupoAtendimento-000904\"> </a></td><td>Cozinheiro e Auxiliare</td></tr><tr><td style=\"white-space:nowrap\">000905<a name=\"BRGrupoAtendimento-000905\"> </a></td><td>Cuidador de Idosos</td></tr><tr><td style=\"white-space:nowrap\">000906<a name=\"BRGrupoAtendimento-000906\"> </a></td><td>Doula/Parteira</td></tr><tr><td style=\"white-space:nowrap\">000907<a name=\"BRGrupoAtendimento-000907\"> </a></td><td>Enfermeiro(a)</td></tr><tr><td style=\"white-space:nowrap\">000908<a name=\"BRGrupoAtendimento-000908\"> </a></td><td>Farmacêutico</td></tr><tr><td style=\"white-space:nowrap\">000909<a name=\"BRGrupoAtendimento-000909\"> </a></td><td>Fisioterapeutas</td></tr><tr><td style=\"white-space:nowrap\">000910<a name=\"BRGrupoAtendimento-000910\"> </a></td><td>Fonoaudiólogo</td></tr><tr><td style=\"white-space:nowrap\">000911<a name=\"BRGrupoAtendimento-000911\"> </a></td><td>Funcionário do Sistema Funerário que tenham contato com cadáveres potencialmente contaminados</td></tr><tr><td style=\"white-space:nowrap\">000912<a name=\"BRGrupoAtendimento-000912\"> </a></td><td>Médico</td></tr><tr><td style=\"white-space:nowrap\">000913<a name=\"BRGrupoAtendimento-000913\"> </a></td><td>Médico Veterinário</td></tr><tr><td style=\"white-space:nowrap\">000914<a name=\"BRGrupoAtendimento-000914\"> </a></td><td>Motorista de Ambulância</td></tr><tr><td style=\"white-space:nowrap\">000915<a name=\"BRGrupoAtendimento-000915\"> </a></td><td>Nutricionista</td></tr><tr><td style=\"white-space:nowrap\">000916<a name=\"BRGrupoAtendimento-000916\"> </a></td><td>Odontologista</td></tr><tr><td style=\"white-space:nowrap\">000917<a name=\"BRGrupoAtendimento-000917\"> </a></td><td>Pessoal da Limpeza</td></tr><tr><td style=\"white-space:nowrap\">000918<a name=\"BRGrupoAtendimento-000918\"> </a></td><td>Profissionais de Educação Física</td></tr><tr><td style=\"white-space:nowrap\">000919<a name=\"BRGrupoAtendimento-000919\"> </a></td><td>Psicólogo</td></tr><tr><td style=\"white-space:nowrap\">000920<a name=\"BRGrupoAtendimento-000920\"> </a></td><td>Recepcionista</td></tr><tr><td style=\"white-space:nowrap\">000921<a name=\"BRGrupoAtendimento-000921\"> </a></td><td>Segurança</td></tr><tr><td style=\"white-space:nowrap\">000922<a name=\"BRGrupoAtendimento-000922\"> </a></td><td>Serviço Social</td></tr><tr><td style=\"white-space:nowrap\">000923<a name=\"BRGrupoAtendimento-000923\"> </a></td><td>Técnico de Enfermagem</td></tr><tr><td style=\"white-space:nowrap\">000924<a name=\"BRGrupoAtendimento-000924\"> </a></td><td>Técnico Veterinário</td></tr><tr><td style=\"white-space:nowrap\">000925<a name=\"BRGrupoAtendimento-000925\"> </a></td><td>Terapeuta Ocupacional</td></tr><tr><td style=\"white-space:nowrap\">000926<a name=\"BRGrupoAtendimento-000926\"> </a></td><td>Outros</td></tr><tr><td style=\"white-space:nowrap\">001001<a name=\"BRGrupoAtendimento-001001\"> </a></td><td>Aéreo</td></tr><tr><td style=\"white-space:nowrap\">001002<a name=\"BRGrupoAtendimento-001002\"> </a></td><td>Caminhoneiro</td></tr><tr><td style=\"white-space:nowrap\">001003<a name=\"BRGrupoAtendimento-001003\"> </a></td><td>Coletivo Rodoviário de Passageiros</td></tr><tr><td style=\"white-space:nowrap\">001004<a name=\"BRGrupoAtendimento-001004\"> </a></td><td>Ferroviário de Cargas</td></tr><tr><td style=\"white-space:nowrap\">001005<a name=\"BRGrupoAtendimento-001005\"> </a></td><td>Metroferroviário de Passageiros</td></tr><tr><td style=\"white-space:nowrap\">001006<a name=\"BRGrupoAtendimento-001006\"> </a></td><td>Aquaviário</td></tr><tr><td style=\"white-space:nowrap\">001101<a name=\"BRGrupoAtendimento-001101\"> </a></td><td>Pessoas com Deficiência Institucionalizadas</td></tr><tr><td style=\"white-space:nowrap\">001102<a name=\"BRGrupoAtendimento-001102\"> </a></td><td>Pessoas com Deficiência Permanente Severa</td></tr><tr><td style=\"white-space:nowrap\">001201<a name=\"BRGrupoAtendimento-001201\"> </a></td><td>Pessoas em Situação de Rua</td></tr><tr><td style=\"white-space:nowrap\">001301<a name=\"BRGrupoAtendimento-001301\"> </a></td><td>Trabalhadores Portuários</td></tr><tr><td style=\"white-space:nowrap\">001401<a name=\"BRGrupoAtendimento-001401\"> </a></td><td>Funcionário do Sistema de Privação de Liberdade</td></tr><tr><td style=\"white-space:nowrap\">001501<a name=\"BRGrupoAtendimento-001501\"> </a></td><td>População Privada de Liberdade</td></tr><tr><td style=\"white-space:nowrap\">001601<a name=\"BRGrupoAtendimento-001601\"> </a></td><td>Trabalhadores Industriais</td></tr></table></div>"
+  },
+  "url": "http://www.saude.gov.br/fhir/r4/CodeSystem/BRGrupoAtendimento",
+  "version": "0.1.0",
+  "name": "Grupo de Atendimento",
+  "title": "Grupo de atendimento",
+  "status": "active",
+  "experimental": false,
+  "date": "2020-12-15T16:32:27Z",
+  "publisher": "Rede Nacional de Dados em Saúde",
+  "contact": [
+    {
+      "name": "Rede Nacional de Dados em Saúde",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://github.com/kyriosdata"
+        },
+        {
+          "system": "email",
+          "value": "rnds@saude.gov.br"
+        }
+      ]
+    }
+  ],
+  "description": "Domínio que identifica o tipo de grupo de atendimento que o indivíduo apresentou para a vacinação em campanha.",
+  "content": "complete",
+  "count": 69,
+  "concept": [
+    {
+      "code": "000101",
+      "display": "Anemia Falciforme"
+    },
+    {
+      "code": "000102",
+      "display": "Câncer"
+    },
+    {
+      "code": "000103",
+      "display": "Diabetes Mellitus"
+    },
+    {
+      "code": "000104",
+      "display": "Doença Pulmonar Obstrutiva Crônica"
+    },
+    {
+      "code": "000105",
+      "display": "Doença Renal"
+    },
+    {
+      "code": "000106",
+      "display": "Doenças Cardiovasculares e Cerebrovasculares"
+    },
+    {
+      "code": "000107",
+      "display": "Hipertensão de difícil controle ou com compilcações/lesão de órgão alvo"
+    },
+    {
+      "code": "000108",
+      "display": "Indivíduos Transplantados de Órgão Sólido"
+    },
+    {
+      "code": "000109",
+      "display": "Obesidade Grave (Imc≥40)"
+    },
+    {
+      "code": "000201",
+      "display": "Pessoas de 60 a 64 anos"
+    },
+    {
+      "code": "000202",
+      "display": "Pessoas de 65 a 69 anos"
+    },
+    {
+      "code": "000203",
+      "display": "Pessoas de 70 a 74 anos"
+    },
+    {
+      "code": "000204",
+      "display": "Pessoas de 75 a 79 anos"
+    },
+    {
+      "code": "000205",
+      "display": "Pessoas de 80 anos ou mais"
+    },
+    {
+      "code": "000301",
+      "display": "Pessoas de 60 nos ou mais Institucionalizadas"
+    },
+    {
+      "code": "000401",
+      "display": "Marinha do Brasil - MB"
+    },
+    {
+      "code": "000402",
+      "display": "Exército Brasileiro - EB"
+    },
+    {
+      "code": "000403",
+      "display": "Força Aérea Brasileira - FAB"
+    },
+    {
+      "code": "000501",
+      "display": "Bombeiro Civil"
+    },
+    {
+      "code": "000502",
+      "display": "Bombeiro Militar"
+    },
+    {
+      "code": "000503",
+      "display": "Guarda Municipal"
+    },
+    {
+      "code": "000504",
+      "display": "Policial Rodoviário Federal"
+    },
+    {
+      "code": "000505",
+      "display": "Policial Civil"
+    },
+    {
+      "code": "000506",
+      "display": "Policial Federal"
+    },
+    {
+      "code": "000507",
+      "display": "Policial Militar"
+    },
+    {
+      "code": "000601",
+      "display": "Quilombola"
+    },
+    {
+      "code": "000602",
+      "display": "Ribeirinha"
+    },
+    {
+      "code": "000701",
+      "display": "População indígena em terras indígenas"
+    },
+    {
+      "code": "000801",
+      "display": "Ensino Básico"
+    },
+    {
+      "code": "000802",
+      "display": "Ensino Superior"
+    },
+    {
+      "code": "000901",
+      "display": "Auxiliare Veterinário"
+    },
+    {
+      "code": "000902",
+      "display": "Biólogo"
+    },
+    {
+      "code": "000903",
+      "display": "Biomédico"
+    },
+    {
+      "code": "000904",
+      "display": "Cozinheiro e Auxiliare"
+    },
+    {
+      "code": "000905",
+      "display": "Cuidador de Idosos"
+    },
+    {
+      "code": "000906",
+      "display": "Doula/Parteira"
+    },
+    {
+      "code": "000907",
+      "display": "Enfermeiro(a)"
+    },
+    {
+      "code": "000908",
+      "display": "Farmacêutico"
+    },
+    {
+      "code": "000909",
+      "display": "Fisioterapeutas"
+    },
+    {
+      "code": "000910",
+      "display": "Fonoaudiólogo"
+    },
+    {
+      "code": "000911",
+      "display": "Funcionário do Sistema Funerário que tenham contato com cadáveres potencialmente contaminados"
+    },
+    {
+      "code": "000912",
+      "display": "Médico"
+    },
+    {
+      "code": "000913",
+      "display": "Médico Veterinário"
+    },
+    {
+      "code": "000914",
+      "display": "Motorista de Ambulância"
+    },
+    {
+      "code": "000915",
+      "display": "Nutricionista"
+    },
+    {
+      "code": "000916",
+      "display": "Odontologista"
+    },
+    {
+      "code": "000917",
+      "display": "Pessoal da Limpeza"
+    },
+    {
+      "code": "000918",
+      "display": "Profissionais de Educação Física"
+    },
+    {
+      "code": "000919",
+      "display": "Psicólogo"
+    },
+    {
+      "code": "000920",
+      "display": "Recepcionista"
+    },
+    {
+      "code": "000921",
+      "display": "Segurança"
+    },
+    {
+      "code": "000922",
+      "display": "Serviço Social"
+    },
+    {
+      "code": "000923",
+      "display": "Técnico de Enfermagem"
+    },
+    {
+      "code": "000924",
+      "display": "Técnico Veterinário"
+    },
+    {
+      "code": "000925",
+      "display": "Terapeuta Ocupacional"
+    },
+    {
+      "code": "000926",
+      "display": "Outros"
+    },
+    {
+      "code": "001001",
+      "display": "Aéreo"
+    },
+    {
+      "code": "001002",
+      "display": "Caminhoneiro"
+    },
+    {
+      "code": "001003",
+      "display": "Coletivo Rodoviário de Passageiros"
+    },
+    {
+      "code": "001004",
+      "display": "Ferroviário de Cargas"
+    },
+    {
+      "code": "001005",
+      "display": "Metroferroviário de Passageiros"
+    },
+    {
+      "code": "001006",
+      "display": "Aquaviário"
+    },
+    {
+      "code": "001101",
+      "display": "Pessoas com Deficiência Institucionalizadas"
+    },
+    {
+      "code": "001102",
+      "display": "Pessoas com Deficiência Permanente Severa"
+    },
+    {
+      "code": "001201",
+      "display": "Pessoas em Situação de Rua"
+    },
+    {
+      "code": "001301",
+      "display": "Trabalhadores Portuários"
+    },
+    {
+      "code": "001401",
+      "display": "Funcionário do Sistema de Privação de Liberdade"
+    },
+    {
+      "code": "001501",
+      "display": "População Privada de Liberdade"
+    },
+    {
+      "code": "001601",
+      "display": "Trabalhadores Industriais"
+    }
+  ]
+}

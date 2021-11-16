@@ -1,0 +1,219 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://www.saude.gov.br/fhir/r4/CodeSystem/BRDose> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "BRDose"];
+  fhir:Resource.meta [
+     fhir:Meta.lastUpdated [ fhir:value "2020-01-06T15:23:38.349-03:00"^^xsd:dateTime ]
+  ];
+  fhir:Resource.language [ fhir:value "pt-BR"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p>This code system http://www.saude.gov.br/fhir/r4/CodeSystem/BRDose defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"BRDose-1\"> </a></td><td>1ª Dose</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"BRDose-2\"> </a></td><td>2ª Dose</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"BRDose-3\"> </a></td><td>3ª Dose</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"BRDose-4\"> </a></td><td>4ª Dose</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"BRDose-5\"> </a></td><td>5ª Dose</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"BRDose-6\"> </a></td><td>1º Reforço</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"BRDose-7\"> </a></td><td>2º Reforço</td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"BRDose-8\"> </a></td><td>Dose</td></tr><tr><td style=\"white-space:nowrap\">9<a name=\"BRDose-9\"> </a></td><td>Única</td></tr><tr><td style=\"white-space:nowrap\">10<a name=\"BRDose-10\"> </a></td><td>Revacinação</td></tr><tr><td style=\"white-space:nowrap\">11<a name=\"BRDose-11\"> </a></td><td>Tratamento com uma dose</td></tr><tr><td style=\"white-space:nowrap\">12<a name=\"BRDose-12\"> </a></td><td>Tratamento com duas doses</td></tr><tr><td style=\"white-space:nowrap\">13<a name=\"BRDose-13\"> </a></td><td>Tratamento com três doses</td></tr><tr><td style=\"white-space:nowrap\">14<a name=\"BRDose-14\"> </a></td><td>Tratamento com quatro doses</td></tr><tr><td style=\"white-space:nowrap\">15<a name=\"BRDose-15\"> </a></td><td>Tratamento com cinco doses</td></tr><tr><td style=\"white-space:nowrap\">16<a name=\"BRDose-16\"> </a></td><td>Tratamento com seis doses</td></tr><tr><td style=\"white-space:nowrap\">17<a name=\"BRDose-17\"> </a></td><td>Tratamento com sete doses</td></tr><tr><td style=\"white-space:nowrap\">18<a name=\"BRDose-18\"> </a></td><td>Tratamento com oito doses</td></tr><tr><td style=\"white-space:nowrap\">19<a name=\"BRDose-19\"> </a></td><td>Tratamento com nove doses</td></tr><tr><td style=\"white-space:nowrap\">20<a name=\"BRDose-20\"> </a></td><td>Tratamento com dez doses</td></tr><tr><td style=\"white-space:nowrap\">21<a name=\"BRDose-21\"> </a></td><td>Tratamento com onze doses</td></tr><tr><td style=\"white-space:nowrap\">22<a name=\"BRDose-22\"> </a></td><td>Tratamento com doze doses</td></tr><tr><td style=\"white-space:nowrap\">23<a name=\"BRDose-23\"> </a></td><td>Tratamento com treze doses</td></tr><tr><td style=\"white-space:nowrap\">24<a name=\"BRDose-24\"> </a></td><td>Tratamento com quartorze doses</td></tr><tr><td style=\"white-space:nowrap\">25<a name=\"BRDose-25\"> </a></td><td>Tratamento com quinze doses</td></tr><tr><td style=\"white-space:nowrap\">26<a name=\"BRDose-26\"> </a></td><td>Tratamento com dezesseis doses</td></tr><tr><td style=\"white-space:nowrap\">27<a name=\"BRDose-27\"> </a></td><td>Tratamento com dezessete doses</td></tr><tr><td style=\"white-space:nowrap\">28<a name=\"BRDose-28\"> </a></td><td>Tratamento com dezoito doses</td></tr><tr><td style=\"white-space:nowrap\">29<a name=\"BRDose-29\"> </a></td><td>Tratamento com dezenove doses</td></tr><tr><td style=\"white-space:nowrap\">30<a name=\"BRDose-30\"> </a></td><td>Tratamento com vinte doses</td></tr><tr><td style=\"white-space:nowrap\">31<a name=\"BRDose-31\"> </a></td><td>Tratamento com vinte e quatro doses</td></tr><tr><td style=\"white-space:nowrap\">32<a name=\"BRDose-32\"> </a></td><td>1ª Dose Revacinação</td></tr><tr><td style=\"white-space:nowrap\">33<a name=\"BRDose-33\"> </a></td><td>2ª Dose Revacinação</td></tr><tr><td style=\"white-space:nowrap\">34<a name=\"BRDose-34\"> </a></td><td>3ª Dose Revacinação</td></tr><tr><td style=\"white-space:nowrap\">35<a name=\"BRDose-35\"> </a></td><td>4ª Dose Revacinação</td></tr><tr><td style=\"white-space:nowrap\">36<a name=\"BRDose-36\"> </a></td><td>Dose Inicial</td></tr><tr><td style=\"white-space:nowrap\">37<a name=\"BRDose-37\"> </a></td><td>Dose Adicional</td></tr><tr><td style=\"white-space:nowrap\">38<a name=\"BRDose-38\"> </a></td><td>Reforço</td></tr><tr><td style=\"white-space:nowrap\">39<a name=\"BRDose-39\"> </a></td><td>3º Reforço</td></tr><tr><td style=\"white-space:nowrap\">40<a name=\"BRDose-40\"> </a></td><td>4º Reforço</td></tr><tr><td style=\"white-space:nowrap\">41<a name=\"BRDose-41\"> </a></td><td>5º Reforço</td></tr><tr><td style=\"white-space:nowrap\">42<a name=\"BRDose-42\"> </a></td><td>6º Reforço</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://www.saude.gov.br/fhir/r4/CodeSystem/BRDose"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "Dose de Vacina"];
+  fhir:CodeSystem.title [ fhir:value "Dose de vacina"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean];
+  fhir:CodeSystem.date [ fhir:value "2020-01-06T18:23:38.3705+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "Rede Nacional de Dados em Saúde"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Rede Nacional de Dados em Saúde" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://github.com/kyriosdata" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "rnds@saude.gov.br" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Define a dose da administração de uma substância."];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "42"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "1ª Dose" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "2" ];
+     fhir:CodeSystem.concept.display [ fhir:value "2ª Dose" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "3" ];
+     fhir:CodeSystem.concept.display [ fhir:value "3ª Dose" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "4" ];
+     fhir:CodeSystem.concept.display [ fhir:value "4ª Dose" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "5" ];
+     fhir:CodeSystem.concept.display [ fhir:value "5ª Dose" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "6" ];
+     fhir:CodeSystem.concept.display [ fhir:value "1º Reforço" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "7" ];
+     fhir:CodeSystem.concept.display [ fhir:value "2º Reforço" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "8" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dose" ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "9" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Única" ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "10" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Revacinação" ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "11" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tratamento com uma dose" ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.concept.code [ fhir:value "12" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tratamento com duas doses" ]
+  ], [
+     fhir:index 12;
+     fhir:CodeSystem.concept.code [ fhir:value "13" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tratamento com três doses" ]
+  ], [
+     fhir:index 13;
+     fhir:CodeSystem.concept.code [ fhir:value "14" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tratamento com quatro doses" ]
+  ], [
+     fhir:index 14;
+     fhir:CodeSystem.concept.code [ fhir:value "15" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tratamento com cinco doses" ]
+  ], [
+     fhir:index 15;
+     fhir:CodeSystem.concept.code [ fhir:value "16" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tratamento com seis doses" ]
+  ], [
+     fhir:index 16;
+     fhir:CodeSystem.concept.code [ fhir:value "17" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tratamento com sete doses" ]
+  ], [
+     fhir:index 17;
+     fhir:CodeSystem.concept.code [ fhir:value "18" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tratamento com oito doses" ]
+  ], [
+     fhir:index 18;
+     fhir:CodeSystem.concept.code [ fhir:value "19" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tratamento com nove doses" ]
+  ], [
+     fhir:index 19;
+     fhir:CodeSystem.concept.code [ fhir:value "20" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tratamento com dez doses" ]
+  ], [
+     fhir:index 20;
+     fhir:CodeSystem.concept.code [ fhir:value "21" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tratamento com onze doses" ]
+  ], [
+     fhir:index 21;
+     fhir:CodeSystem.concept.code [ fhir:value "22" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tratamento com doze doses" ]
+  ], [
+     fhir:index 22;
+     fhir:CodeSystem.concept.code [ fhir:value "23" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tratamento com treze doses" ]
+  ], [
+     fhir:index 23;
+     fhir:CodeSystem.concept.code [ fhir:value "24" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tratamento com quartorze doses" ]
+  ], [
+     fhir:index 24;
+     fhir:CodeSystem.concept.code [ fhir:value "25" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tratamento com quinze doses" ]
+  ], [
+     fhir:index 25;
+     fhir:CodeSystem.concept.code [ fhir:value "26" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tratamento com dezesseis doses" ]
+  ], [
+     fhir:index 26;
+     fhir:CodeSystem.concept.code [ fhir:value "27" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tratamento com dezessete doses" ]
+  ], [
+     fhir:index 27;
+     fhir:CodeSystem.concept.code [ fhir:value "28" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tratamento com dezoito doses" ]
+  ], [
+     fhir:index 28;
+     fhir:CodeSystem.concept.code [ fhir:value "29" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tratamento com dezenove doses" ]
+  ], [
+     fhir:index 29;
+     fhir:CodeSystem.concept.code [ fhir:value "30" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tratamento com vinte doses" ]
+  ], [
+     fhir:index 30;
+     fhir:CodeSystem.concept.code [ fhir:value "31" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tratamento com vinte e quatro doses" ]
+  ], [
+     fhir:index 31;
+     fhir:CodeSystem.concept.code [ fhir:value "32" ];
+     fhir:CodeSystem.concept.display [ fhir:value "1ª Dose Revacinação" ]
+  ], [
+     fhir:index 32;
+     fhir:CodeSystem.concept.code [ fhir:value "33" ];
+     fhir:CodeSystem.concept.display [ fhir:value "2ª Dose Revacinação" ]
+  ], [
+     fhir:index 33;
+     fhir:CodeSystem.concept.code [ fhir:value "34" ];
+     fhir:CodeSystem.concept.display [ fhir:value "3ª Dose Revacinação" ]
+  ], [
+     fhir:index 34;
+     fhir:CodeSystem.concept.code [ fhir:value "35" ];
+     fhir:CodeSystem.concept.display [ fhir:value "4ª Dose Revacinação" ]
+  ], [
+     fhir:index 35;
+     fhir:CodeSystem.concept.code [ fhir:value "36" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dose Inicial" ]
+  ], [
+     fhir:index 36;
+     fhir:CodeSystem.concept.code [ fhir:value "37" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dose Adicional" ]
+  ], [
+     fhir:index 37;
+     fhir:CodeSystem.concept.code [ fhir:value "38" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Reforço" ]
+  ], [
+     fhir:index 38;
+     fhir:CodeSystem.concept.code [ fhir:value "39" ];
+     fhir:CodeSystem.concept.display [ fhir:value "3º Reforço" ]
+  ], [
+     fhir:index 39;
+     fhir:CodeSystem.concept.code [ fhir:value "40" ];
+     fhir:CodeSystem.concept.display [ fhir:value "4º Reforço" ]
+  ], [
+     fhir:index 40;
+     fhir:CodeSystem.concept.code [ fhir:value "41" ];
+     fhir:CodeSystem.concept.display [ fhir:value "5º Reforço" ]
+  ], [
+     fhir:index 41;
+     fhir:CodeSystem.concept.code [ fhir:value "42" ];
+     fhir:CodeSystem.concept.display [ fhir:value "6º Reforço" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://www.saude.gov.br/fhir/r4/CodeSystem/BRDose.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,248 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "BRUnidadeFarmaceutica",
+  "meta": {
+    "lastUpdated": "2020-03-11T15:25:47.887-03:00"
+  },
+  "language": "pt-BR",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p>This code system http://www.saude.gov.br/fhir/r4/CodeSystem/BRUnidadeFarmaceutica defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">01<a name=\"BRUnidadeFarmaceutica-01\"> </a></td><td>AMP</td></tr><tr><td style=\"white-space:nowrap\">03<a name=\"BRUnidadeFarmaceutica-03\"> </a></td><td>BAR.</td></tr><tr><td style=\"white-space:nowrap\">05<a name=\"BRUnidadeFarmaceutica-05\"> </a></td><td>BAS.</td></tr><tr><td style=\"white-space:nowrap\">06<a name=\"BRUnidadeFarmaceutica-06\"> </a></td><td>BS.</td></tr><tr><td style=\"white-space:nowrap\">09<a name=\"BRUnidadeFarmaceutica-09\"> </a></td><td>BOL.</td></tr><tr><td style=\"white-space:nowrap\">100<a name=\"BRUnidadeFarmaceutica-100\"> </a></td><td>MG</td></tr><tr><td style=\"white-space:nowrap\">11<a name=\"BRUnidadeFarmaceutica-11\"> </a></td><td>CX.</td></tr><tr><td style=\"white-space:nowrap\">114<a name=\"BRUnidadeFarmaceutica-114\"> </a></td><td>UN</td></tr><tr><td style=\"white-space:nowrap\">117<a name=\"BRUnidadeFarmaceutica-117\"> </a></td><td>ENV</td></tr><tr><td style=\"white-space:nowrap\">12<a name=\"BRUnidadeFarmaceutica-12\"> </a></td><td>CPS.</td></tr><tr><td style=\"white-space:nowrap\">14<a name=\"BRUnidadeFarmaceutica-14\"> </a></td><td>CART.</td></tr><tr><td style=\"white-space:nowrap\">17<a name=\"BRUnidadeFarmaceutica-17\"> </a></td><td>CM</td></tr><tr><td style=\"white-space:nowrap\">21<a name=\"BRUnidadeFarmaceutica-21\"> </a></td><td>COMP.</td></tr><tr><td style=\"white-space:nowrap\">23<a name=\"BRUnidadeFarmaceutica-23\"> </a></td><td>DRG.</td></tr><tr><td style=\"white-space:nowrap\">25<a name=\"BRUnidadeFarmaceutica-25\"> </a></td><td>ENV.</td></tr><tr><td style=\"white-space:nowrap\">31<a name=\"BRUnidadeFarmaceutica-31\"> </a></td><td>FR.</td></tr><tr><td style=\"white-space:nowrap\">32<a name=\"BRUnidadeFarmaceutica-32\"> </a></td><td>FR-AMP.</td></tr><tr><td style=\"white-space:nowrap\">36<a name=\"BRUnidadeFarmaceutica-36\"> </a></td><td>GR.</td></tr><tr><td style=\"white-space:nowrap\">37<a name=\"BRUnidadeFarmaceutica-37\"> </a></td><td>GS.</td></tr><tr><td style=\"white-space:nowrap\">39<a name=\"BRUnidadeFarmaceutica-39\"> </a></td><td>LT.</td></tr><tr><td style=\"white-space:nowrap\">46<a name=\"BRUnidadeFarmaceutica-46\"> </a></td><td>ML.</td></tr><tr><td style=\"white-space:nowrap\">48<a name=\"BRUnidadeFarmaceutica-48\"> </a></td><td>OV.</td></tr><tr><td style=\"white-space:nowrap\">51<a name=\"BRUnidadeFarmaceutica-51\"> </a></td><td>PAST.</td></tr><tr><td style=\"white-space:nowrap\">55<a name=\"BRUnidadeFarmaceutica-55\"> </a></td><td>PTE.</td></tr><tr><td style=\"white-space:nowrap\">60<a name=\"BRUnidadeFarmaceutica-60\"> </a></td><td>SUP.</td></tr><tr><td style=\"white-space:nowrap\">61<a name=\"BRUnidadeFarmaceutica-61\"> </a></td><td>TBL.</td></tr><tr><td style=\"white-space:nowrap\">65<a name=\"BRUnidadeFarmaceutica-65\"> </a></td><td>TB.</td></tr><tr><td style=\"white-space:nowrap\">66<a name=\"BRUnidadeFarmaceutica-66\"> </a></td><td>UN</td></tr><tr><td style=\"white-space:nowrap\">70<a name=\"BRUnidadeFarmaceutica-70\"> </a></td><td>TBT.</td></tr><tr><td style=\"white-space:nowrap\">75<a name=\"BRUnidadeFarmaceutica-75\"> </a></td><td>CARTELA</td></tr><tr><td style=\"white-space:nowrap\">78<a name=\"BRUnidadeFarmaceutica-78\"> </a></td><td>SERINGA</td></tr><tr><td style=\"white-space:nowrap\">79<a name=\"BRUnidadeFarmaceutica-79\"> </a></td><td>BLISTER</td></tr><tr><td style=\"white-space:nowrap\">80<a name=\"BRUnidadeFarmaceutica-80\"> </a></td><td>SACHE</td></tr><tr><td style=\"white-space:nowrap\">81<a name=\"BRUnidadeFarmaceutica-81\"> </a></td><td>DOSE</td></tr><tr><td style=\"white-space:nowrap\">82<a name=\"BRUnidadeFarmaceutica-82\"> </a></td><td>CARP</td></tr><tr><td style=\"white-space:nowrap\">83<a name=\"BRUnidadeFarmaceutica-83\"> </a></td><td>FLAC</td></tr><tr><td style=\"white-space:nowrap\">84<a name=\"BRUnidadeFarmaceutica-84\"> </a></td><td>CAP LIB PR</td></tr><tr><td style=\"white-space:nowrap\">85<a name=\"BRUnidadeFarmaceutica-85\"> </a></td><td>CAP LIB RE</td></tr><tr><td style=\"white-space:nowrap\">86<a name=\"BRUnidadeFarmaceutica-86\"> </a></td><td>CAP INAL</td></tr><tr><td style=\"white-space:nowrap\">87<a name=\"BRUnidadeFarmaceutica-87\"> </a></td><td>COMP</td></tr><tr><td style=\"white-space:nowrap\">88<a name=\"BRUnidadeFarmaceutica-88\"> </a></td><td>CP DS LENT</td></tr><tr><td style=\"white-space:nowrap\">89<a name=\"BRUnidadeFarmaceutica-89\"> </a></td><td>COMP/CP LR</td></tr><tr><td style=\"white-space:nowrap\">90<a name=\"BRUnidadeFarmaceutica-90\"> </a></td><td>DRÁG/COMP</td></tr><tr><td style=\"white-space:nowrap\">91<a name=\"BRUnidadeFarmaceutica-91\"> </a></td><td>ENEMA</td></tr><tr><td style=\"white-space:nowrap\">92<a name=\"BRUnidadeFarmaceutica-92\"> </a></td><td>FR 100 DOS</td></tr><tr><td style=\"white-space:nowrap\">93<a name=\"BRUnidadeFarmaceutica-93\"> </a></td><td>FR 200 DOS</td></tr><tr><td style=\"white-space:nowrap\">94<a name=\"BRUnidadeFarmaceutica-94\"> </a></td><td>FR 60 DOS</td></tr><tr><td style=\"white-space:nowrap\">95<a name=\"BRUnidadeFarmaceutica-95\"> </a></td><td>F-AP/SR PR</td></tr><tr><td style=\"white-space:nowrap\">96<a name=\"BRUnidadeFarmaceutica-96\"> </a></td><td>SER PREENC</td></tr><tr><td style=\"white-space:nowrap\">97<a name=\"BRUnidadeFarmaceutica-97\"> </a></td><td>CAP</td></tr><tr><td style=\"white-space:nowrap\">98<a name=\"BRUnidadeFarmaceutica-98\"> </a></td><td>DRÁGEA</td></tr><tr><td style=\"white-space:nowrap\">99<a name=\"BRUnidadeFarmaceutica-99\"> </a></td><td>SUPOS</td></tr></table></div>"
+  },
+  "url": "http://www.saude.gov.br/fhir/r4/CodeSystem/BRUnidadeFarmaceutica",
+  "version": "0.1.0",
+  "name": "Unidade Farmacêutica",
+  "title": "Unidade farmacêutica de uma substância",
+  "status": "active",
+  "experimental": false,
+  "date": "2020-03-11T18:26:08.3841005+00:00",
+  "publisher": "Rede Nacional de Dados em Saúde",
+  "contact": [
+    {
+      "name": "Rede Nacional de Dados em Saúde",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://github.com/kyriosdata"
+        },
+        {
+          "system": "email",
+          "value": "rnds@saude.gov.br"
+        }
+      ]
+    }
+  ],
+  "description": "Identifica a unidade farmacêutica de uma substância.",
+  "content": "complete",
+  "count": 52,
+  "concept": [
+    {
+      "code": "01",
+      "display": "AMP"
+    },
+    {
+      "code": "03",
+      "display": "BAR."
+    },
+    {
+      "code": "05",
+      "display": "BAS."
+    },
+    {
+      "code": "06",
+      "display": "BS."
+    },
+    {
+      "code": "09",
+      "display": "BOL."
+    },
+    {
+      "code": "100",
+      "display": "MG"
+    },
+    {
+      "code": "11",
+      "display": "CX."
+    },
+    {
+      "code": "114",
+      "display": "UN"
+    },
+    {
+      "code": "117",
+      "display": "ENV"
+    },
+    {
+      "code": "12",
+      "display": "CPS."
+    },
+    {
+      "code": "14",
+      "display": "CART."
+    },
+    {
+      "code": "17",
+      "display": "CM"
+    },
+    {
+      "code": "21",
+      "display": "COMP."
+    },
+    {
+      "code": "23",
+      "display": "DRG."
+    },
+    {
+      "code": "25",
+      "display": "ENV."
+    },
+    {
+      "code": "31",
+      "display": "FR."
+    },
+    {
+      "code": "32",
+      "display": "FR-AMP."
+    },
+    {
+      "code": "36",
+      "display": "GR."
+    },
+    {
+      "code": "37",
+      "display": "GS."
+    },
+    {
+      "code": "39",
+      "display": "LT."
+    },
+    {
+      "code": "46",
+      "display": "ML."
+    },
+    {
+      "code": "48",
+      "display": "OV."
+    },
+    {
+      "code": "51",
+      "display": "PAST."
+    },
+    {
+      "code": "55",
+      "display": "PTE."
+    },
+    {
+      "code": "60",
+      "display": "SUP."
+    },
+    {
+      "code": "61",
+      "display": "TBL."
+    },
+    {
+      "code": "65",
+      "display": "TB."
+    },
+    {
+      "code": "66",
+      "display": "UN"
+    },
+    {
+      "code": "70",
+      "display": "TBT."
+    },
+    {
+      "code": "75",
+      "display": "CARTELA"
+    },
+    {
+      "code": "78",
+      "display": "SERINGA"
+    },
+    {
+      "code": "79",
+      "display": "BLISTER"
+    },
+    {
+      "code": "80",
+      "display": "SACHE"
+    },
+    {
+      "code": "81",
+      "display": "DOSE"
+    },
+    {
+      "code": "82",
+      "display": "CARP"
+    },
+    {
+      "code": "83",
+      "display": "FLAC"
+    },
+    {
+      "code": "84",
+      "display": "CAP LIB PR"
+    },
+    {
+      "code": "85",
+      "display": "CAP LIB RE"
+    },
+    {
+      "code": "86",
+      "display": "CAP INAL"
+    },
+    {
+      "code": "87",
+      "display": "COMP"
+    },
+    {
+      "code": "88",
+      "display": "CP DS LENT"
+    },
+    {
+      "code": "89",
+      "display": "COMP/CP LR"
+    },
+    {
+      "code": "90",
+      "display": "DRÁG/COMP"
+    },
+    {
+      "code": "91",
+      "display": "ENEMA"
+    },
+    {
+      "code": "92",
+      "display": "FR 100 DOS"
+    },
+    {
+      "code": "93",
+      "display": "FR 200 DOS"
+    },
+    {
+      "code": "94",
+      "display": "FR 60 DOS"
+    },
+    {
+      "code": "95",
+      "display": "F-AP/SR PR"
+    },
+    {
+      "code": "96",
+      "display": "SER PREENC"
+    },
+    {
+      "code": "97",
+      "display": "CAP"
+    },
+    {
+      "code": "98",
+      "display": "DRÁGEA"
+    },
+    {
+      "code": "99",
+      "display": "SUPOS"
+    }
+  ]
+}

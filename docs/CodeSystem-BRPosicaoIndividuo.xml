@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="BRPosicaoIndividuo"/>
+  <meta>
+    <lastUpdated value="2020-03-11T15:19:54.794-03:00"/>
+  </meta>
+  <language value="pt-BR"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-BR" lang="pt-BR"><p>This code system http://www.saude.gov.br/fhir/r4/CodeSystem/BRPosicaoIndividuo defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">1<a name="BRPosicaoIndividuo-1"> </a></td><td>Em pé</td></tr><tr><td style="white-space:nowrap">2<a name="BRPosicaoIndividuo-2"> </a></td><td>Sentado</td></tr><tr><td style="white-space:nowrap">3<a name="BRPosicaoIndividuo-3"> </a></td><td>Reclinado</td></tr><tr><td style="white-space:nowrap">4<a name="BRPosicaoIndividuo-4"> </a></td><td>Deitado</td></tr><tr><td style="white-space:nowrap">5<a name="BRPosicaoIndividuo-5"> </a></td><td>Deitado com inclinação para esquerda</td></tr></table></div>
+  </text>
+  <url value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRPosicaoIndividuo"/>
+  <version value="0.1.0"/>
+  <name value="Posição do Indivíduo"/>
+  <title value="Posição do indivíduo"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2020-03-11T18:20:15.3085069+00:00"/>
+  <publisher value="Rede Nacional de Dados em Saúde"/>
+  <contact>
+    <name value="Rede Nacional de Dados em Saúde"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/kyriosdata"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rnds@saude.gov.br"/>
+    </telecom>
+  </contact>
+  <description value="Identifica a posição de um indivíduo em um determinado contexto."/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="1"/>
+    <display value="Em pé"/>
+  </concept>
+  <concept>
+    <code value="2"/>
+    <display value="Sentado"/>
+  </concept>
+  <concept>
+    <code value="3"/>
+    <display value="Reclinado"/>
+  </concept>
+  <concept>
+    <code value="4"/>
+    <display value="Deitado"/>
+  </concept>
+  <concept>
+    <code value="5"/>
+    <display value="Deitado com inclinação para esquerda"/>
+  </concept>
+</CodeSystem>

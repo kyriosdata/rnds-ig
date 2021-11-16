@@ -1,0 +1,2550 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://www.saude.gov.br/fhir/r4/ImplementationGuide/rnds> a fhir:ImplementationGuide;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "rnds"];
+  fhir:Resource.language [ fhir:value "pt-BR"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><h2>GuiaImplementacaoFhirRnds</h2><p>The official URL for this implementation guide is: </p><pre>http://www.saude.gov.br/fhir/r4/ImplementationGuide/rnds</pre><div><p>Experimento com o SUSHI para geração de Guia de Implementação</p>\n</div></div>"
+  ];
+  fhir:ImplementationGuide.url [ fhir:value "http://www.saude.gov.br/fhir/r4/ImplementationGuide/rnds"];
+  fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
+  fhir:ImplementationGuide.name [ fhir:value "GuiaImplementacaoFhirRnds"];
+  fhir:ImplementationGuide.title [ fhir:value "RNDS (Guia de Implementação)"];
+  fhir:ImplementationGuide.status [ fhir:value "draft"];
+  fhir:ImplementationGuide.date [ fhir:value "2021-11-16T07:50:50-03:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.publisher [ fhir:value "Rede Nacional de Dados em Saúde"];
+  fhir:ImplementationGuide.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Rede Nacional de Dados em Saúde" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://github.com/kyriosdata" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "rnds@saude.gov.br" ]
+     ]
+  ];
+  fhir:ImplementationGuide.description [ fhir:value "Experimento com o SUSHI para geração de Guia de Implementação"];
+  fhir:ImplementationGuide.packageId [ fhir:value "rnds"];
+  fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
+  fhir:ImplementationGuide.fhirVersion [
+     fhir:value "4.0.1";
+     fhir:index 0
+  ];
+  fhir:ImplementationGuide.definition [
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "copyrightyear" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "2021+" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "releaselabel" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "ci-build" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template/liquid" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "input/liquid" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-qa" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "temp/qa" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-temp" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "temp/pages" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-output" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "output" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-suppressed-warnings" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "input/ignoreWarnings.txt" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-history" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "http://www.saude.gov.br/fhir/r4/history.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "template-html" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template-page.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "template-md" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template-page-md.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-contact" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-context" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-copyright" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-jurisdiction" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-license" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-publisher" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-version" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "active-tables" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ];
+     fhir:ImplementationGuide.definition.resource [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/BRAmostraBiologica>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/BRAmostraBiologica" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Amostra Biológica" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Amostra de origem humana/animal usada em investigações biológicas/laboratoriais para fins diagnósticos." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/8e81a097-e1cb-422f-8262-014d7ca329b2>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/8e81a097-e1cb-422f-8262-014d7ca329b2" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CIAP2 Avaliado" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Problema atribuído pelo profissional de saúde ao indivíduo no contato assistencial." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/d3d10a8f-46bc-4d9d-850f-b8ab5b778709>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/d3d10a8f-46bc-4d9d-850f-b8ab5b778709" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CID10 Avaliado" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Diagnóstico atribuído pelo profissional de saúde ao indivíduo no contato assistencial." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/e95fd8e8-3e10-4824-8227-99576192fb81>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/e95fd8e8-3e10-4824-8227-99576192fb81" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Conjunto Mínimo de Dados" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Documento público que coleta os dados dos atendimentos em saúde realizados em qualquer estabelecimento de saúde do país, público ou privado, em cada contato assistencial" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/521287f6-fd07-498d-aec2-1dff41af31ba>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/521287f6-fd07-498d-aec2-1dff41af31ba" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Conjunto Mínimo de Dados" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Documento público que coleta os dados dos atendimentos em saúde realizados em qualquer estabelecimento de saúde do país, público ou privado, em cada contato assistencial" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/9e02be1a-ccd7-41d3-a10e-2c031a4979b4>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/9e02be1a-ccd7-41d3-a10e-2c031a4979b4" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Contato Assistencial" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Resumo ou sumário referente a um atendimento ininterrupto dispensado a um indivíduo em uma mesma modalidade assistencial e em um mesmo estabelecimento de saúde, gerado após a conclusão deste atendimento.\nReferência: <a href=\"https://wiki.saude.gov.br/cmd/index.php/Página_principal#Contato_Assistencial\">https://wiki.saude.gov.br/cmd/index.php/Página_principal#Contato_Assistencial</a>" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/10adbc3a-b1e9-4620-8c02-6f530e2caae0>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/10adbc3a-b1e9-4620-8c02-6f530e2caae0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Diagnóstico em Laboratório Clínico" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exame ou teste realizado em laboratório com finalidade diagnóstica ou investigativa." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:complex-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/BRDocumentoIndividuo>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/BRDocumentoIndividuo" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Documento do Indivíduo" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:complex-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/BREndereco>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/BREndereco" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Endereço" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Padronização de endereços no Brasil." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/a3bc0180-3d3d-469f-af04-7117f87db5be>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/a3bc0180-3d3d-469f-af04-7117f87db5be" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Estabelecimento de Saúde" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Espaço físico delimitado e permanente onde são realizadas ações e serviços de saúde humana sob responsabilidade técnica." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/31468be2-a66e-427d-b07e-c217627c069d>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/31468be2-a66e-427d-b07e-c217627c069d" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Imunobiológico Administrado" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Representa um imunobiológico administrado." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/BRImunobiologicoAdministradoCampanha>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/BRImunobiologicoAdministradoCampanha" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Imunobiológico Administrado em Campanha" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Representa um imunobiológico administrado em campanha vacinal." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/BRImunobiologicoAdministradoCarga>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/BRImunobiologicoAdministradoCarga" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Imunobiologico Administrado - Carga" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Registro de imunobiológicos administrados no legado do SIPNI." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/7ba7dc20-9251-417f-bc02-0a08c2986710>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/7ba7dc20-9251-417f-bc02-0a08c2986710" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Indivíduo" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indíviduo, sujeito da assistência à saúde." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/270156fd-40f7-44b0-979d-1165022df8da>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/270156fd-40f7-44b0-979d-1165022df8da" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Lista da Timeline" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Lista de de itens agregados na timeline um paciente." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/BRLocalAtendimento>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/BRLocalAtendimento" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Local de Atendimento" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Uma referência genérica aos locais onde um Contato Assistencial pode acontecer." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/abe19423-94f2-490a-911e-a82ff5665164>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/abe19423-94f2-490a-911e-a82ff5665164" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Lotação Profissional" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Lotação de um profissional em um Estabelecimento de Saúde." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/af21adb7-867b-4862-8e26-814b2e805f37>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/af21adb7-867b-4862-8e26-814b2e805f37" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medicamento" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Drogas dirigidas para uso humano." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/17e2d3ae-3c74-4b22-8e95-560ab209d7df>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/17e2d3ae-3c74-4b22-8e95-560ab209d7df" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medicamento Dispensado" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Detalha os atos de dispensação de medicamentos." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:complex-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/BRMeioContato>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/BRMeioContato" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Meio de Contato" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Padronização de meios de contato no Brasil." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 20;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:complex-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/BRNomeIndividuo>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/BRNomeIndividuo" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Nome de Indivíduos" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Padronização de uso de nomes de indivíduo no Brasil." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 21;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/f0d41273-772c-425f-bb60-2507efddff01>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/f0d41273-772c-425f-bb60-2507efddff01" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observação Descritiva" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Descrições textuais simples sobre um paciente." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 22;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/BRPessoaJuridicaProfissionalLiberal>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/BRPessoaJuridicaProfissionalLiberal" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Pessoa Jurídica e Profissional Liberal" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Pessoa jurídica identificada no âmbito da Receita Federal do Brasil pelo Cadastro Nacional da Pessoa Jurídica (CNPJ) ou profissional liberal identificado pelo Cadastro de Pessoas Físicas (CPF)." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 23;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/33f94efe-eda9-4cdf-b3a1-4b2e0d5dfba9>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/33f94efe-eda9-4cdf-b3a1-4b2e0d5dfba9" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Procedimento Realizado" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Procedimento realizado em um indivíduo." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 24;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/BRProfissional>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/BRProfissional" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Profissional" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indivíduo que realiza atividades profissionais." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 25;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/BRRegistroImunobiologicoAdministrado>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/BRRegistroImunobiologicoAdministrado" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Registro de Imunobiológico Administrado" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Documento que representa o registro da administração de imunobiológicos." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 26;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/BRRegistroImunobiologicoAdministradoCampanha>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/BRRegistroImunobiologicoAdministradoCampanha" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Registro de Imunobiológico Administrado na Campanha" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Documento que aprepresenta o registro da administração de imunobiológicos em campanha vacinal." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 27;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/BRRegistroImunobiologicoAdministradoCarga>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/BRRegistroImunobiologicoAdministradoCarga" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Registro de Imunobiológico Administrado - Carga" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Documento que representa o registro da administração de imunobiológicos, provenientes da carga do SIPNI." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 28;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/BRResultadoExameLaboratorial-1.0>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/BRResultadoExameLaboratorial-1.0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Resultado de Exame Laboratorial" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Documento que apresenta resultados de exames laboratoriais." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 29;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/43822493-10c2-41dc-9fae-962bab3a59e4>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/43822493-10c2-41dc-9fae-962bab3a59e4" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Resultado de Exame Laboratorial" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Documento que apresenta resultados de exames laboratoriais." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 30;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/BRAdministradorTerceiro>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/BRAdministradorTerceiro" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Gerente/Administrador (Terceiro) ou Interveniente" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Identifica organizações que são gerentes/administradoras (terceiras) ou intervenientes de outras." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 31;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/BRAtendeSUS>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/BRAtendeSUS" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Atende SUS?" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extensão utilizada para identificar se um profissional ou Estabelecimento de Saúde oferece atendimento pelo Sistema Único de Saúde (SUS)." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 32;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/6ca9186a-6b71-4837-9ee6-50cb5da88645>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/6ca9186a-6b71-4837-9ee6-50cb5da88645" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Componente da Assistência Farmacêutica" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extensão para identificar o componente de Assistência Farmacêutica." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 33;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/BREstrategiaCampanha>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/BREstrategiaCampanha" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Estratégia de campanha de vacinação" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Informações sobre as caracteríticas da campanha." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 34;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/BREstrategiaVacinacao>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/BREstrategiaVacinacao" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Estratégia de Vacinação" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Identifica a estratégia de vacinação adotada." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 35;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/3d75211e-ccb6-4e01-b965-05382abfae5d>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/3d75211e-ccb6-4e01-b965-05382abfae5d" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Financiamento" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extensão utilizada para identificar financiamento." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 36;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/BRGrupoAtendimento>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/BRGrupoAtendimento" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Grupo de Atendimento" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Identificação do grupo de atendimento para vacinação." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 37;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/2cc4e4e3-0f97-4b54-ab87-e73fe0758cc7>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/2cc4e4e3-0f97-4b54-ab87-e73fe0758cc7" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Identificador Nacional de Equipe" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extensão para permitir informar o código do Identificador Nacional de Equipe." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 38;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/66fe4a9e-184c-435c-ac3e-680bac8346cf>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/66fe4a9e-184c-435c-ac3e-680bac8346cf" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Indicador de Presença na Admissão" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extensão para a informação do Indicador de Presença na Admissão." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 39;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndividuoNaoIdentificado>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/BRIndividuoNaoIdentificado" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Informações Complementares de Indivíduos Não Identificados" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Informações complementares necessárias ao Contato Assistencial na hipótese do indivíduo não poder ser identificado." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 40;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/bd2268df-7a8f-4e9b-8674-547f3b20a52b>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/bd2268df-7a8f-4e9b-8674-547f3b20a52b" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Indivíduo Protegido?" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extensão utilizada para identificar indivíduos que possuem  maior restrição à disponibilização de seus dados, por possuirem grande exposição pública (ex.: político, esportista, artista famoso etc.), estarem em programa de proteção à testemunha, o objeto de seu trabalho colocá-los em risco (investigadores da inteligência, p.ex.), dentre outros." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 41;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/e93a2b50-3f50-4670-8242-8b9af26a3584>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/e93a2b50-3f50-4670-8242-8b9af26a3584" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Jurisdição do Órgão Expedidor" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Jurisdição de Órgãos Expedidores" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 42;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/BRMunicipio>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/BRMunicipio" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Município" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extensão para informar um município." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 43;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/209cde9a-5393-4f3d-b456-294c954ea6fc>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/209cde9a-5393-4f3d-b456-294c954ea6fc" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Dados de Naturalização" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extensão para as informações de naturalização de um indivíduo." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 44;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/c8f43e8f-28c7-4872-9aa1-1405d22f0f51>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/c8f43e8f-28c7-4872-9aa1-1405d22f0f51" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Ocupação" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 45;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/BROperadorDigitador>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/BROperadorDigitador" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Identificador do digitador" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Identificação do operador / digitador que realizou a entrada de dados a partir da transcrição do registro de um profissional de saúde." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 46;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/26b68721-2e7f-48a1-84b2-4d71cc9751f5>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/26b68721-2e7f-48a1-84b2-4d71cc9751f5" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "País" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extensão para representar um país." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 47;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/BRParentesIndividuo>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/BRParentesIndividuo" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Parentes do Indivíduo" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Resource para representar parentescos de indivíduo." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 48;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/BRPosicaoIndividuo>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/BRPosicaoIndividuo" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Posição do Indivíduo" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extensão para indicar a posição do indivíduo." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 49;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/a495e791-173d-4175-bced-da4b42fa0ce1>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/a495e791-173d-4175-bced-da4b42fa0ce1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Programa de Saúde" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extensão para identificar o programa de saúde." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 50;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/BRQualidadeCadastroIndividuo>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/BRQualidadeCadastroIndividuo" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Qualidade do Cadastro do Indivíduo" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Grau de qualidade de um registro de um indivíduo, vai de 0 até 100." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 51;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/ee0344fa-7d1d-488d-9356-479b885bfedd>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ee0344fa-7d1d-488d-9356-479b885bfedd" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Quantidade" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extensão para identificar quantidades." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 52;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/0d945af8-3a09-4663-8ce2-0e4175d5cb09>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/0d945af8-3a09-4663-8ce2-0e4175d5cb09" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Raça/Cor e Etnina" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extensão para para representar dados relacionados à raça/cor e etnia de um indivíduo." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 53;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/BRReferencia>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/BRReferencia" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Referência" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Uma referência para qualquer finalidade." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 54;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/BRSituacaoCondicaoIndividuo>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/BRSituacaoCondicaoIndividuo" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Situação/Condição do Indivíduo" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extensão para especificar a situação ou condicação de um indivíduo num contexto." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 55;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/StructureDefinition/0a10269f-4d8d-4cbc-b06f-762fb595e248>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/0a10269f-4d8d-4cbc-b06f-762fb595e248" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Valor Monetário" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Um valor monetário em Reais brasileiros / BRL / R$ para qualquer finalidade." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 56;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/ValueSet/BRAbrangencia-1.0>;
+         fhir:Reference.reference [ fhir:value "ValueSet/BRAbrangencia-1.0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BRAbrangencia" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Identifica a abrangência territorial da atividade adotada." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 57;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/ValueSet/BRCBO-1.0>;
+         fhir:Reference.reference [ fhir:value "ValueSet/BRCBO-1.0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Classificação Brasileira de Ocupações" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Classifica as ocupações no mercado brasileiro" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 58;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/ValueSet/BRCIAP2-1.0>;
+         fhir:Reference.reference [ fhir:value "ValueSet/BRCIAP2-1.0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Classificação Internacional de Atenção Primária - Segunda Edição - CIAP2" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Classifica os problemas identificados no contato assistencial pelos profissionais de saúde, os motivos da contato assistencial e as respostas propostas pela equipe seguindo a sistematização SOA." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 59;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/ValueSet/BRCID10-1.0>;
+         fhir:Reference.reference [ fhir:value "ValueSet/BRCID10-1.0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Classificação Internacional de Doenças - Décima Revisão - CID-10" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Classificação Internacional de Doenças - Décima Revisão - CID-10" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 60;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/ValueSet/BRCampanhaVacinacao-1.0>;
+         fhir:Reference.reference [ fhir:value "ValueSet/BRCampanhaVacinacao-1.0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Nome da campanha de vacinação" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Identifica a campanha de vacinação adotada." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 61;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/ValueSet/BRCaraterAtendimento-1.0>;
+         fhir:Reference.reference [ fhir:value "ValueSet/BRCaraterAtendimento-1.0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Caráter de atendimento do Contato Assistencial" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet utilizado para classificar a prioridade de realização de um Contato Assistencial." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 62;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/ValueSet/BRCategoriaExame-1.0>;
+         fhir:Reference.reference [ fhir:value "ValueSet/BRCategoriaExame-1.0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Categoria do exame" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Categoriza exames ou testes utilizando os subgrupos do grupo 02 - Procedimentos com finalidade diagnóstica da Tabela SUS." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 63;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/ValueSet/BRClassificacaoLista-1.0>;
+         fhir:Reference.reference [ fhir:value "ValueSet/BRClassificacaoLista-1.0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Classificação das Listas" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet utilizado para classificar os tipos de listas utilizados na Rede Nacional de Dados em Saúde." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 64;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/ValueSet/BRComponenteAssistenciaFarmaceutica-1.0>;
+         fhir:Reference.reference [ fhir:value "ValueSet/BRComponenteAssistenciaFarmaceutica-1.0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Componente da Assistência Farmacêutica" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Classifica o componente da assistência farmacêutica o qual o produto dispensado é vinculado." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 65;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/ValueSet/BRDose-1.0>;
+         fhir:Reference.reference [ fhir:value "ValueSet/BRDose-1.0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Dose do Imunobiológico" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet utilizado para definir o tipo da dose administrada no indivíduo." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 66;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/ValueSet/BREstadoCivil-1.0>;
+         fhir:Reference.reference [ fhir:value "ValueSet/BREstadoCivil-1.0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Estado Civil" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Complexo das qualidades de um indivíudo referentes à ordem pública, à ordem privada e à ordem física do ser humano. Refere-se, assim, à cidadania, à família, e à capacidade civil." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 67;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/ValueSet/BREstadoContatoAssistencial-1.0>;
+         fhir:Reference.reference [ fhir:value "ValueSet/BREstadoContatoAssistencial-1.0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Estado do Contato Assistencial" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Classifica o estado de um Contato Assistencial." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 68;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/ValueSet/BREstadoDocumento-1.0>;
+         fhir:Reference.reference [ fhir:value "ValueSet/BREstadoDocumento-1.0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Estados de um documento" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Classifica o estado de um documento." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 69;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/ValueSet/BREstadoEvento-1.0>;
+         fhir:Reference.reference [ fhir:value "ValueSet/BREstadoEvento-1.0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Estado do Evento" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Identificação do estado de um evento." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 70;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/ValueSet/BREstadoMedicamentoLista-1.0>;
+         fhir:Reference.reference [ fhir:value "ValueSet/BREstadoMedicamentoLista-1.0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Estados do Medicamento numa Lista." ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Classifica os estados de um medicamento em uma lista." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 71;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/ValueSet/BREstadoObservacao-1.0>;
+         fhir:Reference.reference [ fhir:value "ValueSet/BREstadoObservacao-1.0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Estado da Observação." ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Tipos de estados de uma observação." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 72;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/ValueSet/BREstadoResolucaoDiagnosticoProblema-1.0>;
+         fhir:Reference.reference [ fhir:value "ValueSet/BREstadoResolucaoDiagnosticoProblema-1.0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Estado da Resolução de Diagnóstico ou Problema." ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Estado da resolução de um diagnóstico ou problema." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 73;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/ValueSet/BREstrategiaVacinacao-1.0>;
+         fhir:Reference.reference [ fhir:value "ValueSet/BREstrategiaVacinacao-1.0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Estratégia de Vacinação" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Identifica a estratégia de vacinação adotada." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 74;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/ValueSet/BREstrategiaVacinacaoCampanha-1.0>;
+         fhir:Reference.reference [ fhir:value "ValueSet/BREstrategiaVacinacaoCampanha-1.0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Estratégia de Vacinação em Campanha" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Identifica a estratégia de vacinação adotada.na campanha" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 75;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/ValueSet/BREtniaIndigena-1.0>;
+         fhir:Reference.reference [ fhir:value "ValueSet/BREtniaIndigena-1.0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Etnia Indígena" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Códigos para representação de etnias indígenas no Brasil." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 76;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/ValueSet/BRFinanciamento-1.0>;
+         fhir:Reference.reference [ fhir:value "ValueSet/BRFinanciamento-1.0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Financiamento do procedimento realizado" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Descreve o agente, instituição ou entidade responsável por custear as ações e serviços de saúde." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 77;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/ValueSet/BRGrupoAtendimento-1.0>;
+         fhir:Reference.reference [ fhir:value "ValueSet/BRGrupoAtendimento-1.0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Tipo de grupo de atendimento" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Identifica o tipo de grupo de atendimento que o indivíduo apresentou para a vacinação em campanha." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 78;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/ValueSet/BRImunobiologico-1.0>;
+         fhir:Reference.reference [ fhir:value "ValueSet/BRImunobiologico-1.0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Imunobiológico" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Tipos de imunobiológicos disponíveis no Brasil." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 79;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/ValueSet/BRJustificativaIndividuoNaoIdentificado-1.0>;
+         fhir:Reference.reference [ fhir:value "ValueSet/BRJustificativaIndividuoNaoIdentificado-1.0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Justificativa para não identificação do indivíduo" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Classifica as razões pelo qual não foi possível obter os dados de identificação do indivíduo em um contato assistencial. (Port. nº 84/SAS/MS/1997 e Port. nº02/SAS/SGEP/MS/2012)" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 80;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/ValueSet/ValueSetBRLocalAfericao>;
+         fhir:Reference.reference [ fhir:value "ValueSet/ValueSetBRLocalAfericao" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Local de Aferição" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet utilizado para identificar a parte do corpo utilizada para aferir a pressão arterial." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 81;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/ValueSet/BRLocalAPlicacao-1.0>;
+         fhir:Reference.reference [ fhir:value "ValueSet/BRLocalAPlicacao-1.0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Local de Aplicação" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Localização anatômica para aplicação de um injetável." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 82;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/ValueSet/BRMedicamento-1.0>;
+         fhir:Reference.reference [ fhir:value "ValueSet/BRMedicamento-1.0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medicamento" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Identifica um medicamento." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 83;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/ValueSet/BRModalidadeAssistencial-1.0>;
+         fhir:Reference.reference [ fhir:value "ValueSet/BRModalidadeAssistencial-1.0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Modalidade Assistencial" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Classificação dos documentos e contatos assistenciais de acordo com as especificidades do modo, local e duração do atendimento." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 84;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/ValueSet/BRMotivoDesfecho-1.0>;
+         fhir:Reference.reference [ fhir:value "ValueSet/BRMotivoDesfecho-1.0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Motivo do desfecho do Contato assistencial" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet utilizado para classificar o motivo de conclusão total ou parcial do contato assistencial." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 85;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/ValueSet/BRMunicipio-1.0>;
+         fhir:Reference.reference [ fhir:value "ValueSet/BRMunicipio-1.0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Município" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Municípios brasileiros, entes subnacionais." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 86;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/ValueSet/BRNaturezaJuridica-1.0>;
+         fhir:Reference.reference [ fhir:value "ValueSet/BRNaturezaJuridica-1.0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Natureza Jurídica" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Identifica a constituição jurídico-institucional das entidades públicas e privadas nos cadastros da administração pública do Brasil." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 87;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/ValueSet/BRNomeExame-1.0>;
+         fhir:Reference.reference [ fhir:value "ValueSet/BRNomeExame-1.0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Nome do Exame" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Classifica o exame laboratorial realizado." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 88;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/ValueSet/BROcupacao-1.0>;
+         fhir:Reference.reference [ fhir:value "ValueSet/BROcupacao-1.0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Classificação Brasileira de Ocupações - CBO" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Classifica as profissões do mercado de trabalho brasileiro." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 89;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/ValueSet/BROrgaoExpedidor-1.0>;
+         fhir:Reference.reference [ fhir:value "ValueSet/BROrgaoExpedidor-1.0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Órgão Expedidor" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Lista de órgãos responsáveis por expedir documentos no Brasil." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 90;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/ValueSet/BRPais-1.0>;
+         fhir:Reference.reference [ fhir:value "ValueSet/BRPais-1.0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "País" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Códigos para representação de países." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 91;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/ValueSet/BRParentesco-1.0>;
+         fhir:Reference.reference [ fhir:value "ValueSet/BRParentesco-1.0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Parentesco" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Classificação da relação familiar entre indivíduos." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 92;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/ValueSet/BRPosicaoIndividuo-1.0>;
+         fhir:Reference.reference [ fhir:value "ValueSet/BRPosicaoIndividuo-1.0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Posição do Indivíduo" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet utilizado para identificar a posição do indivíduo no momento da ação / procedimento." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 93;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/ValueSet/BRProcedencia-1.0>;
+         fhir:Reference.reference [ fhir:value "ValueSet/BRProcedencia-1.0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Procedência do Contato Assistencial" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Classifica o serviço que encaminhou o indivíduo ou a sua iniciativa/de seu responsável na busca pelo acesso ao serviço de saúde." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 94;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/ValueSet/BRProcedimentosNacionais-1.0>;
+         fhir:Reference.reference [ fhir:value "ValueSet/BRProcedimentosNacionais-1.0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Procedimento realizado" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Value Set das classificações brasileiras para procedimentos adotadas em contexto nacional." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 95;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/ValueSet/BRProgramaSaude-1.0>;
+         fhir:Reference.reference [ fhir:value "ValueSet/BRProgramaSaude-1.0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Programa de Saúde" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Identifica programas de saúde." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 96;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/ValueSet/BRRacaCor-1.0>;
+         fhir:Reference.reference [ fhir:value "ValueSet/BRRacaCor-1.0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Raça/Cor" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Códigos para representação de raça/cor no Brasil." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 97;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/ValueSet/BRResponsabilidadeParticipante-1.0>;
+         fhir:Reference.reference [ fhir:value "ValueSet/BRResponsabilidadeParticipante-1.0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Reponsabilidade no Contato Assistencial" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Classifica o tipo de responsabilidade de indivíduos ou profissionais no Contato Assistencial." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 98;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/ValueSet/BRResultadoQualitativoExame-1.0>;
+         fhir:Reference.reference [ fhir:value "ValueSet/BRResultadoQualitativoExame-1.0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Resultado Qualitativo do Exame" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet utilizado para definir o valor atribuído ao resultado de um exame laboratorial realizado por método de análise qualitativo." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 99;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/ValueSet/BRSexo-1.0>;
+         fhir:Reference.reference [ fhir:value "ValueSet/BRSexo-1.0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Sexo" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Sexo de um indivíduo." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 100;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/ValueSet/BRSituacaoCOndicaoIndividuo-1.0>;
+         fhir:Reference.reference [ fhir:value "ValueSet/BRSituacaoCOndicaoIndividuo-1.0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Situação/Condição do Indivíduo na Administração de Imunobiológico" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Classifica a situação/condição de um indivíudo em um contexto." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 101;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/ValueSet/BRTipoAmostra-1.0>;
+         fhir:Reference.reference [ fhir:value "ValueSet/BRTipoAmostra-1.0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Tipo de Amostra de Exame" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Tipo da amostra de um exame ou teste." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 102;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/ValueSet/BRTipoDocumento-1.0>;
+         fhir:Reference.reference [ fhir:value "ValueSet/BRTipoDocumento-1.0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Tipo de Documento" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Classifica o tipo de documento que está sendo trafegado." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 103;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/ValueSet/BRTipoDocumentoIndividuo-1.0>;
+         fhir:Reference.reference [ fhir:value "ValueSet/BRTipoDocumentoIndividuo-1.0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Tipo de Documento do Indivíduo" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Classifica o tipo de documento que está sendo utilizado para identificar o indivíduo." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 104;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/ValueSet/BRTipoEstabelecimentoSaude-1.0>;
+         fhir:Reference.reference [ fhir:value "ValueSet/BRTipoEstabelecimentoSaude-1.0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Tipo de Estabelecimento de Saúde" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ValueSet utilizado para classificar o tipo de estabelecimento de saúde." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 105;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/ValueSet/BRTipoIdentificadorProcedimento-1.0>;
+         fhir:Reference.reference [ fhir:value "ValueSet/BRTipoIdentificadorProcedimento-1.0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Tipo de Identificador do Procedimento" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Classifica o tipo de identificador que está sendo utilizado para o procedimento." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 106;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/ValueSet/BRTipoLogradouro-1.0>;
+         fhir:Reference.reference [ fhir:value "ValueSet/BRTipoLogradouro-1.0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Tipo de Logradouro" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Classifica o tipo de logradouro." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 107;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/ValueSet/BRTipoObservacao-1.0>;
+         fhir:Reference.reference [ fhir:value "ValueSet/BRTipoObservacao-1.0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Tipo de Observação" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Tipo de Observação." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 108;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/ValueSet/BRUnidadeFarmaceutica-1.0>;
+         fhir:Reference.reference [ fhir:value "ValueSet/BRUnidadeFarmaceutica-1.0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Unidade Farmacêutica" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Identifica a unidade farmacêutica do medicamento conforme Base Nacional da Assistência Farmacêutica (BNAFAR)." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 109;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/ValueSet/BRUnidadeFederativa-1.0>;
+         fhir:Reference.reference [ fhir:value "ValueSet/BRUnidadeFederativa-1.0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Unidade Federativa" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Os estados e o Distrito Federal, entes subnacionais brasileiros." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 110;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/ValueSet/BRViaAdministracao-1.0>;
+         fhir:Reference.reference [ fhir:value "ValueSet/BRViaAdministracao-1.0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Via de Administração do Imunobiológico" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Via de administração de um imunobiológico." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 111;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/CodeSystem/BRAbrangencia>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BRAbrangencia" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Abrangência territorial" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Classifica a abrangência territorial da atividade." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 112;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/CodeSystem/BRCaraterAtendimento>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BRCaraterAtendimento" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Caráter de atendimento" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Terminologia que classifica a prioridade de realização de um Contato Assistencial." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 113;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/CodeSystem/BRFinanciamento>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BRFinanciamento" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Forma de financiamento" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Terminologia que descreve o agente, instituição ou entidade responsável por custear as ações e serviços de saúde." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 114;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/CodeSystem/BRImunobiologico>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BRImunobiologico" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Tipo de imunobiológico" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Classifica os tipos de imunobiológicos." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 115;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/CodeSystem/BRMedicamento>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BRMedicamento" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Medicamento" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Drogas dirigidas para uso humano, apresentadas em sua formulação final." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 116;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/CodeSystem/BRPais>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BRPais" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "País" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Códigos para representação de países." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 117;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/CodeSystem/BRParentesco>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BRParentesco" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Parentesco" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Classificação da relação familiar entre indivíduos." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 118;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/CodeSystem/BRProcedencia>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BRProcedencia" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Procedência" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Identifica o serviço que encaminhou o indivíduo ou a sua iniciativa/de seu responsável na busca pelo acesso ao serviço de saúde." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 119;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/CodeSystem/BRRacaCor>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BRRacaCor" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Raça/cor" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Códigos para representação de raça/cor." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 120;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/CodeSystem/BRCBHPMTUSS>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BRCBHPMTUSS" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Procedimentos" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Classificações de procedimentos utilizadas no Brasil, no contexto da assistência à saúde privada, não complementar ao SUS, e eventualmente no SUS para classificar procedimento inexistente na Tabela SUS." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 121;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/CodeSystem/BRCBO>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BRCBO" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Ocupações do mercado de trabalho brasileiro" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Classifica as profissões do mercado de trabalho brasileiro." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 122;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/CodeSystem/BRCIAP2>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BRCIAP2" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Problema identificado no contato assistencial" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Classifica os problemas identificados no contato assistencial pelos profissionais de saúde, os motivos da contato assistencial e as respostas propostas pela equipe seguindo a sistematização SOAP." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 123;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/CodeSystem/BRCID10>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BRCID10" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Doenças" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Classifica as doenças e outros problemas em saúde registrados em diversos tipos de documentos clínicos." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 124;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/CodeSystem/BRClassificacaoLista>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BRClassificacaoLista" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Listas" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Classificações das listas utilizadas na Rede Nacional de Dados em Saúde." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 125;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/CodeSystem/BRComponenteAssistenciaFarmaceutica>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BRComponenteAssistenciaFarmaceutica" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Componente da assistência farmacêutica" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Identifica o componente da assistência farmacêutica de uma substância ou produto." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 126;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/CodeSystem/BRDivisaoGeograficaBrasil>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BRDivisaoGeograficaBrasil" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Divisão geográfica do Brasil" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "As regiões geográficas, estados, distrito federal e municípios do Brasil." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 127;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/CodeSystem/BRDose>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BRDose" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Dose de vacina" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Define a dose da administração de uma substância." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 128;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/CodeSystem/BREstadoMedicamentoLista>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BREstadoMedicamentoLista" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Estado de medicamento" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Classificação do estado de um medicamento na lista de medicamentos da Rede Nacional de Dados em Saúde." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 129;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/CodeSystem/BREstrategiaVacinacao>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BREstrategiaVacinacao" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Estratégia de vacinação" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Classifica a estratégia de vacinação adotada." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 130;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/CodeSystem/BREtniaIndigena>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BREtniaIndigena" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Etnia indígena" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Códigos para representação de etnias indígenas no Brasil." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 131;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/CodeSystem/BRNomeExameLOINC>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BRNomeExameLOINC" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Exame laboratorial (LOINC)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Classifica o exame laboratorial realizado em amostra biológica para diagnóstico laboratorial, de acordo com a terminologia LOINC." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 132;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/CodeSystem/BRNomeExameGAL>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BRNomeExameGAL" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Exame laboratorial (GAL)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Classifica o exame laboratorial realizado em amostra biológica para diagnóstico laboratorial, de acordo com o Gerenciador de Ambiente Laboratorial (GAL)." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 133;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/CodeSystem/BRGrupoAtendimento>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BRGrupoAtendimento" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Grupo de atendimento" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Domínio que identifica o tipo de grupo de atendimento que o indivíduo apresentou para a vacinação em campanha." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 134;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BRJustificativaIndividuoNaoIdentificado" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Justificativa para não identificação de indivíduo" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Classifica as razões pelo qual não foi possível obter os dados de identificação do indivíduo em um contato assistencial. (Port. nº 84/SAS/MS/1997 e Port. nº02/SAS/SGEP/MS/2012)" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 135;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/CodeSystem/BRLocalAfericao>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BRLocalAfericao" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Local de aferição" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Identifica a parte do corpo utilizada para realizar uma mensuração ou aferição." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 136;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/CodeSystem/BRLocalAplicacao>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BRLocalAplicacao" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Local anatômico de aplicação de injetável" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Define a localização anatômica de aplicação de um injetável" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 137;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/CodeSystem/BRModalidadeAssistencial>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BRModalidadeAssistencial" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Modalidade de assistência" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Classifica os contatos assistenciais de acordo com as especificidades do modo, local e duração do atendimento" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 138;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/CodeSystem/BRMotivoDesfecho>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BRMotivoDesfecho" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Motivo do desfecho" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Caracteriza o motivo de conclusão total ou parcial do contato assistencial." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 139;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/CodeSystem/BRNaturezaJuridica>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BRNaturezaJuridica" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Constituição jurídica de entidades" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Identifica a constituição jurídico-institucional das entidades públicas e privadas nos cadastros da administração pública do Brasil." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 140;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/CodeSystem/BRNomeCampanhaVacinacao>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BRNomeCampanhaVacinacao" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Nome de campanha de vacinação" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Domínio que identifica o nome da campanha de vacinação." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 141;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/CodeSystem/BRPosicaoIndividuo>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BRPosicaoIndividuo" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Posição do indivíduo" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Identifica a posição de um indivíduo em um determinado contexto." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 142;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/CodeSystem/BRProgramaSaude>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BRProgramaSaude" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Programa de saúde" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Identifica um programa nacional de saúde brasileiro ou uma situação específica que exija monitoramento no mesmo formato de uma política pública." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 143;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/CodeSystem/BRResponsabilidadeParticipante>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BRResponsabilidadeParticipante" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Papel do profissional no contato assistencial" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Classifica o tipo de responsabilidade de indivíduos ou profissionais no Contato Assisntecial." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 144;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/CodeSystem/BRResultadoQualitativoExame>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BRResultadoQualitativoExame" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Resultado qualitativo" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Code System utilizado para definir o valor atribuído ao resultado de um exame laboratorial realizado por método de análise qualitativo." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 145;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/CodeSystem/BRSituacaoCondicaoIndividuo>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BRSituacaoCondicaoIndividuo" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Situação/condição de um indivíduo" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Classifica a situação/condição de um indivíudo em um contexto." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 146;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/CodeSystem/BRSubgrupoTabelaSUS>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BRSubgrupoTabelaSUS" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Subgrupo Tabela SUS" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "O subgrupo é o segundo nível da hierarquia da Tabela SUS e seus códigos ajudam a classificar e localizar procedimentos." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 147;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/CodeSystem/BRTabelaSUS>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BRTabelaSUS" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Procedimentos da Tabela SUS" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Padroniza os códigos e as nomenclaturas dos procedimentos, medicamentos e OPM para as informações trafegadas no SUS." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 148;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoAmostraGAL>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BRTipoAmostraGAL" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Tipo de amostra biológica (GAL)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Classifica o tipo de amostra biológica utilizada em exames de acordo com a terminologia Gerenciador de Ambiente Laboratorial (GAL)." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 149;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoDocumento>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BRTipoDocumento" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Tipo de documento" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Classificação dos tipos de documentos compartilhados no Brasil." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 150;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoEstabelecimentoSaude>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BRTipoEstabelecimentoSaude" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Tipo de estabelecimento de saúde" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Códigos para representação de tipos de estabelecimentos de saúde, de acordo com codificação já existente para o Cadastro Nacional de Estabelecimentos de Saúde (CNES)." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 151;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoIdentificador>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BRTipoIdentificador" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Tipo de identificador" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Classifica o tipo de indicador que está sendo utilizado." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 152;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoLogradouro>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BRTipoLogradouro" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Tipo de logradouro" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Classificação os tipos de logradouros existentes para uso em endereços estruturados." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 153;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoObservacao>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BRTipoObservacao" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Tipo de observação" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Tipo de Observação." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 154;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/CodeSystem/BRUnidadeFarmaceutica>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BRUnidadeFarmaceutica" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Unidade farmacêutica de uma substância" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Identifica a unidade farmacêutica de uma substância." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 155;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/CodeSystem/BRViaAdministracao>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BRViaAdministracao" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Via empregada para administrar substância" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Classifica a via na qual foi administrada uma substância em um indivíduo." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 156;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.saude.gov.br/fhir/r4/CodeSystem/BROrgaoExpedidor>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/BROrgaoExpedidor" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Órgão expedidor de documento" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Órgãos responsáveis por expedir documentos no Brasil." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ];
+     fhir:ImplementationGuide.definition.page [
+       fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];
+       fhir:ImplementationGuide.definition.page.title [ fhir:value "Table of Contents" ];
+       fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ];
+       fhir:ImplementationGuide.definition.page.page [
+         fhir:index 0;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "index.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Home" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ]
+     ];
+     fhir:ImplementationGuide.definition.parameter [
+       fhir:index 0;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/capabilities" ]
+     ], [
+       fhir:index 1;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/examples" ]
+     ], [
+       fhir:index 2;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/extensions" ]
+     ], [
+       fhir:index 3;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/models" ]
+     ], [
+       fhir:index 4;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/operations" ]
+     ], [
+       fhir:index 5;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/profiles" ]
+     ], [
+       fhir:index 6;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/resources" ]
+     ], [
+       fhir:index 7;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/vocabulary" ]
+     ], [
+       fhir:index 8;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/maps" ]
+     ], [
+       fhir:index 9;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/testing" ]
+     ], [
+       fhir:index 10;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/history" ]
+     ], [
+       fhir:index 11;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "fsh-generated/resources" ]
+     ], [
+       fhir:index 12;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "template/config" ]
+     ], [
+       fhir:index 13;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/images" ]
+     ], [
+       fhir:index 14;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-tx-cache" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input-cache/txcache" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://www.saude.gov.br/fhir/r4/ImplementationGuide/rnds.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

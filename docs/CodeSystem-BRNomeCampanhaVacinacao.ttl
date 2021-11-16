@@ -1,0 +1,68 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://www.saude.gov.br/fhir/r4/CodeSystem/BRNomeCampanhaVacinacao> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "BRNomeCampanhaVacinacao"];
+  fhir:Resource.language [ fhir:value "pt-BR"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p>This code system http://www.saude.gov.br/fhir/r4/CodeSystem/BRNomeCampanhaVacinacao defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">COV<a name=\"BRNomeCampanhaVacinacao-COV\"> </a></td><td>COVID</td></tr><tr><td style=\"white-space:nowrap\">SAR<a name=\"BRNomeCampanhaVacinacao-SAR\"> </a></td><td>Sarampo</td></tr><tr><td style=\"white-space:nowrap\">POL<a name=\"BRNomeCampanhaVacinacao-POL\"> </a></td><td>Poliomielite</td></tr><tr><td style=\"white-space:nowrap\">INFLU<a name=\"BRNomeCampanhaVacinacao-INFLU\"> </a></td><td>Influenza</td></tr><tr><td style=\"white-space:nowrap\">MULTI<a name=\"BRNomeCampanhaVacinacao-MULTI\"> </a></td><td>Multivacinação</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://www.saude.gov.br/fhir/r4/CodeSystem/BRNomeCampanhaVacinacao"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "Nome da Campanha de Vacinação"];
+  fhir:CodeSystem.title [ fhir:value "Nome de campanha de vacinação"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean];
+  fhir:CodeSystem.date [ fhir:value "2020-12-08T13:49:02Z"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "Rede Nacional de Dados em Saúde"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Rede Nacional de Dados em Saúde" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://github.com/kyriosdata" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "rnds@saude.gov.br" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Domínio que identifica o nome da campanha de vacinação."];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "5"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "COV" ];
+     fhir:CodeSystem.concept.display [ fhir:value "COVID" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "SAR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Sarampo" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "POL" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Poliomielite" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "INFLU" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Influenza" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "MULTI" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Multivacinação" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://www.saude.gov.br/fhir/r4/CodeSystem/BRNomeCampanhaVacinacao.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

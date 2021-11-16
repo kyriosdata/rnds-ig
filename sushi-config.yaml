@@ -7,7 +7,8 @@ id: rnds
 canonical: http://www.saude.gov.br/fhir/r4
 name: GuiaImplementacaoFhirRnds
 title: RNDS (Guia de Implementação)
-# description: Example Implementation Guide for getting started with SUSHI
+description: Experimento com o SUSHI para geração de Guia de Implementação
+language: pt-BR
 status: draft # draft | active | retired | unknown
 version: 0.1.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html

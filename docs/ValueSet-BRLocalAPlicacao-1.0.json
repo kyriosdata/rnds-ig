@@ -1,0 +1,45 @@
+{
+  "resourceType": "ValueSet",
+  "id": "BRLocalAPlicacao-1.0",
+  "meta": {
+    "lastUpdated": "2020-03-12T10:11:20.977-03:00"
+  },
+  "language": "pt-BR",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><ul><li>Include all codes defined in <a href=\"CodeSystem-BRLocalAplicacao.html\"><code>http://www.saude.gov.br/fhir/r4/CodeSystem/BRLocalAplicacao</code></a></li></ul></div>"
+  },
+  "url": "http://www.saude.gov.br/fhir/r4/ValueSet/BRLocalAplicacao-1.0",
+  "version": "0.1.0",
+  "name": "BRLocalAplicacao",
+  "title": "Local de Aplicação",
+  "status": "active",
+  "experimental": false,
+  "date": "2020-03-12T13:11:19.8133038+00:00",
+  "publisher": "Rede Nacional de Dados em Saúde",
+  "contact": [
+    {
+      "name": "Rede Nacional de Dados em Saúde",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://github.com/kyriosdata"
+        },
+        {
+          "system": "email",
+          "value": "rnds@saude.gov.br"
+        }
+      ]
+    }
+  ],
+  "description": "Localização anatômica para aplicação de um injetável.",
+  "immutable": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://www.saude.gov.br/fhir/r4/CodeSystem/BRLocalAplicacao",
+        "version": "*"
+      }
+    ]
+  }
+}

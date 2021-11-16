@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="BRLocalAplicacao"/>
+  <meta>
+    <lastUpdated value="2020-03-11T15:15:34.465-03:00"/>
+  </meta>
+  <language value="pt-BR"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-BR" lang="pt-BR"><p>This code system http://www.saude.gov.br/fhir/r4/CodeSystem/BRLocalAplicacao defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">1<a name="BRLocalAplicacao-1"> </a></td><td>Déltoide Direito</td></tr><tr><td style="white-space:nowrap">2<a name="BRLocalAplicacao-2"> </a></td><td>Deltóide Esquerdo</td></tr><tr><td style="white-space:nowrap">3<a name="BRLocalAplicacao-3"> </a></td><td>Vasto Lateral da Coxa Direita</td></tr><tr><td style="white-space:nowrap">4<a name="BRLocalAplicacao-4"> </a></td><td>Vasto Lateral da Coxa Esquerda</td></tr><tr><td style="white-space:nowrap">5<a name="BRLocalAplicacao-5"> </a></td><td>Ventroglúteo Direito</td></tr><tr><td style="white-space:nowrap">6<a name="BRLocalAplicacao-6"> </a></td><td>Ventroglúteo Esquerdo</td></tr><tr><td style="white-space:nowrap">7<a name="BRLocalAplicacao-7"> </a></td><td>Glúteo</td></tr><tr><td style="white-space:nowrap">8<a name="BRLocalAplicacao-8"> </a></td><td>Ferimento Local</td></tr></table></div>
+  </text>
+  <url value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRLocalAplicacao"/>
+  <version value="0.1.0"/>
+  <name value="Local de Aplicação"/>
+  <title value="Local anatômico de aplicação de injetável"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2020-03-11T18:15:54.9540124+00:00"/>
+  <publisher value="Rede Nacional de Dados em Saúde"/>
+  <contact>
+    <name value="Rede Nacional de Dados em Saúde"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/kyriosdata"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rnds@saude.gov.br"/>
+    </telecom>
+  </contact>
+  <description value="Define a localização anatômica de aplicação de um injetável"/>
+  <content value="complete"/>
+  <count value="8"/>
+  <concept>
+    <code value="1"/>
+    <display value="Déltoide Direito"/>
+  </concept>
+  <concept>
+    <code value="2"/>
+    <display value="Deltóide Esquerdo"/>
+  </concept>
+  <concept>
+    <code value="3"/>
+    <display value="Vasto Lateral da Coxa Direita"/>
+  </concept>
+  <concept>
+    <code value="4"/>
+    <display value="Vasto Lateral da Coxa Esquerda"/>
+  </concept>
+  <concept>
+    <code value="5"/>
+    <display value="Ventroglúteo Direito"/>
+  </concept>
+  <concept>
+    <code value="6"/>
+    <display value="Ventroglúteo Esquerdo"/>
+  </concept>
+  <concept>
+    <code value="7"/>
+    <display value="Glúteo"/>
+  </concept>
+  <concept>
+    <code value="8"/>
+    <display value="Ferimento Local"/>
+  </concept>
+</CodeSystem>

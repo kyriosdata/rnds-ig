@@ -1,0 +1,52 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "BRResultadoQualitativoExame",
+  "meta": {
+    "lastUpdated": "2020-03-26T10:16:11.587-03:00"
+  },
+  "language": "pt-BR",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p>This code system http://www.saude.gov.br/fhir/r4/CodeSystem/BRResultadoQualitativoExame defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"BRResultadoQualitativoExame-1\"> </a></td><td>Detectável</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"BRResultadoQualitativoExame-2\"> </a></td><td>Não Detectável</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"BRResultadoQualitativoExame-3\"> </a></td><td>Inconclusivo</td></tr></table></div>"
+  },
+  "url": "http://www.saude.gov.br/fhir/r4/CodeSystem/BRResultadoQualitativoExame",
+  "version": "0.1.0",
+  "name": "Resultado qualitativo do Exame",
+  "title": "Resultado qualitativo",
+  "status": "active",
+  "experimental": false,
+  "date": "2020-03-26T13:16:09.8385573+00:00",
+  "publisher": "Rede Nacional de Dados em Saúde",
+  "contact": [
+    {
+      "name": "Rede Nacional de Dados em Saúde",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://github.com/kyriosdata"
+        },
+        {
+          "system": "email",
+          "value": "rnds@saude.gov.br"
+        }
+      ]
+    }
+  ],
+  "description": "Code System utilizado para definir o valor atribuído ao resultado de um exame laboratorial realizado por método de análise qualitativo.",
+  "content": "complete",
+  "count": 3,
+  "concept": [
+    {
+      "code": "1",
+      "display": "Detectável"
+    },
+    {
+      "code": "2",
+      "display": "Não Detectável"
+    },
+    {
+      "code": "3",
+      "display": "Inconclusivo"
+    }
+  ]
+}

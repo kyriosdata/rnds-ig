@@ -1,0 +1,172 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "BRSituacaoCondicaoIndividuo",
+  "meta": {
+    "lastUpdated": "2020-03-11T15:20:37.637-03:00"
+  },
+  "language": "pt-BR",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p>This code system http://www.saude.gov.br/fhir/r4/CodeSystem/BRSituacaoCondicaoIndividuo defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"BRSituacaoCondicaoIndividuo-1\"> </a></td><td>Indígenas</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"BRSituacaoCondicaoIndividuo-2\"> </a></td><td>Assentados</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"BRSituacaoCondicaoIndividuo-3\"> </a></td><td>Acampados</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"BRSituacaoCondicaoIndividuo-4\"> </a></td><td>Militares</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"BRSituacaoCondicaoIndividuo-5\"> </a></td><td>Quilombola</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"BRSituacaoCondicaoIndividuo-6\"> </a></td><td>População privada de liberdade</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"BRSituacaoCondicaoIndividuo-7\"> </a></td><td>População geral</td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"BRSituacaoCondicaoIndividuo-8\"> </a></td><td>Crianças</td></tr><tr><td style=\"white-space:nowrap\">9<a name=\"BRSituacaoCondicaoIndividuo-9\"> </a></td><td>Gestantes</td></tr><tr><td style=\"white-space:nowrap\">10<a name=\"BRSituacaoCondicaoIndividuo-10\"> </a></td><td>Trabalhadores de saúde</td></tr><tr><td style=\"white-space:nowrap\">11<a name=\"BRSituacaoCondicaoIndividuo-11\"> </a></td><td>Puérperas</td></tr><tr><td style=\"white-space:nowrap\">12<a name=\"BRSituacaoCondicaoIndividuo-12\"> </a></td><td>Idosos</td></tr><tr><td style=\"white-space:nowrap\">13<a name=\"BRSituacaoCondicaoIndividuo-13\"> </a></td><td>Funcionários do sistema prisional</td></tr><tr><td style=\"white-space:nowrap\">14<a name=\"BRSituacaoCondicaoIndividuo-14\"> </a></td><td>Comorbidades</td></tr><tr><td style=\"white-space:nowrap\">15<a name=\"BRSituacaoCondicaoIndividuo-15\"> </a></td><td>Outros grupos sem comorbidades</td></tr><tr><td style=\"white-space:nowrap\">16<a name=\"BRSituacaoCondicaoIndividuo-16\"> </a></td><td>Doença respiratória crônica</td></tr><tr><td style=\"white-space:nowrap\">17<a name=\"BRSituacaoCondicaoIndividuo-17\"> </a></td><td>Doença cardíaca crônica</td></tr><tr><td style=\"white-space:nowrap\">18<a name=\"BRSituacaoCondicaoIndividuo-18\"> </a></td><td>Doença renal crônica</td></tr><tr><td style=\"white-space:nowrap\">19<a name=\"BRSituacaoCondicaoIndividuo-19\"> </a></td><td>Doença hepática crônica</td></tr><tr><td style=\"white-space:nowrap\">20<a name=\"BRSituacaoCondicaoIndividuo-20\"> </a></td><td>Doença neurológica crônica</td></tr><tr><td style=\"white-space:nowrap\">21<a name=\"BRSituacaoCondicaoIndividuo-21\"> </a></td><td>Diabetes</td></tr><tr><td style=\"white-space:nowrap\">22<a name=\"BRSituacaoCondicaoIndividuo-22\"> </a></td><td>Obesos</td></tr><tr><td style=\"white-space:nowrap\">23<a name=\"BRSituacaoCondicaoIndividuo-23\"> </a></td><td>Imunossupressão</td></tr><tr><td style=\"white-space:nowrap\">24<a name=\"BRSituacaoCondicaoIndividuo-24\"> </a></td><td>Transplantados</td></tr><tr><td style=\"white-space:nowrap\">25<a name=\"BRSituacaoCondicaoIndividuo-25\"> </a></td><td>Trissomias</td></tr><tr><td style=\"white-space:nowrap\">26<a name=\"BRSituacaoCondicaoIndividuo-26\"> </a></td><td>Professores-Ensino Básico e Superior</td></tr><tr><td style=\"white-space:nowrap\">27<a name=\"BRSituacaoCondicaoIndividuo-27\"> </a></td><td>Policiais Civis, Militares, Bombeiros e membros ativos das Forças Armadas</td></tr><tr><td style=\"white-space:nowrap\">28<a name=\"BRSituacaoCondicaoIndividuo-28\"> </a></td><td>Adultos</td></tr><tr><td style=\"white-space:nowrap\">29<a name=\"BRSituacaoCondicaoIndividuo-29\"> </a></td><td>Forças de Segurança e Salvamento</td></tr><tr><td style=\"white-space:nowrap\">30<a name=\"BRSituacaoCondicaoIndividuo-30\"> </a></td><td>Pessoas com deficiência</td></tr><tr><td style=\"white-space:nowrap\">31<a name=\"BRSituacaoCondicaoIndividuo-31\"> </a></td><td>Caminhoneiros</td></tr><tr><td style=\"white-space:nowrap\">32<a name=\"BRSituacaoCondicaoIndividuo-32\"> </a></td><td>Trabalhadores de transporte coletivo</td></tr><tr><td style=\"white-space:nowrap\">33<a name=\"BRSituacaoCondicaoIndividuo-33\"> </a></td><td>Trabalhadores Portuários</td></tr></table></div>"
+  },
+  "url": "http://www.saude.gov.br/fhir/r4/CodeSystem/BRSituacaoCondicaoIndividuo",
+  "version": "0.1.0",
+  "name": "Situação/Condição do Indivíduo",
+  "title": "Situação/condição de um indivíduo",
+  "status": "active",
+  "experimental": false,
+  "date": "2020-03-11T18:20:58.1470379+00:00",
+  "publisher": "Rede Nacional de Dados em Saúde",
+  "contact": [
+    {
+      "name": "Rede Nacional de Dados em Saúde",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://github.com/kyriosdata"
+        },
+        {
+          "system": "email",
+          "value": "rnds@saude.gov.br"
+        }
+      ]
+    }
+  ],
+  "description": "Classifica a situação/condição de um indivíudo em um contexto.",
+  "content": "complete",
+  "count": 33,
+  "concept": [
+    {
+      "code": "1",
+      "display": "Indígenas"
+    },
+    {
+      "code": "2",
+      "display": "Assentados"
+    },
+    {
+      "code": "3",
+      "display": "Acampados"
+    },
+    {
+      "code": "4",
+      "display": "Militares"
+    },
+    {
+      "code": "5",
+      "display": "Quilombola"
+    },
+    {
+      "code": "6",
+      "display": "População privada de liberdade"
+    },
+    {
+      "code": "7",
+      "display": "População geral"
+    },
+    {
+      "code": "8",
+      "display": "Crianças"
+    },
+    {
+      "code": "9",
+      "display": "Gestantes"
+    },
+    {
+      "code": "10",
+      "display": "Trabalhadores de saúde"
+    },
+    {
+      "code": "11",
+      "display": "Puérperas"
+    },
+    {
+      "code": "12",
+      "display": "Idosos"
+    },
+    {
+      "code": "13",
+      "display": "Funcionários do sistema prisional"
+    },
+    {
+      "code": "14",
+      "display": "Comorbidades"
+    },
+    {
+      "code": "15",
+      "display": "Outros grupos sem comorbidades"
+    },
+    {
+      "code": "16",
+      "display": "Doença respiratória crônica"
+    },
+    {
+      "code": "17",
+      "display": "Doença cardíaca crônica"
+    },
+    {
+      "code": "18",
+      "display": "Doença renal crônica"
+    },
+    {
+      "code": "19",
+      "display": "Doença hepática crônica"
+    },
+    {
+      "code": "20",
+      "display": "Doença neurológica crônica"
+    },
+    {
+      "code": "21",
+      "display": "Diabetes"
+    },
+    {
+      "code": "22",
+      "display": "Obesos"
+    },
+    {
+      "code": "23",
+      "display": "Imunossupressão"
+    },
+    {
+      "code": "24",
+      "display": "Transplantados"
+    },
+    {
+      "code": "25",
+      "display": "Trissomias"
+    },
+    {
+      "code": "26",
+      "display": "Professores-Ensino Básico e Superior"
+    },
+    {
+      "code": "27",
+      "display": "Policiais Civis, Militares, Bombeiros e membros ativos das Forças Armadas"
+    },
+    {
+      "code": "28",
+      "display": "Adultos"
+    },
+    {
+      "code": "29",
+      "display": "Forças de Segurança e Salvamento"
+    },
+    {
+      "code": "30",
+      "display": "Pessoas com deficiência"
+    },
+    {
+      "code": "31",
+      "display": "Caminhoneiros"
+    },
+    {
+      "code": "32",
+      "display": "Trabalhadores de transporte coletivo"
+    },
+    {
+      "code": "33",
+      "display": "Trabalhadores Portuários"
+    }
+  ]
+}

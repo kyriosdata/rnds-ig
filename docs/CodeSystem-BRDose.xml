@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="BRDose"/>
+  <meta>
+    <lastUpdated value="2020-01-06T15:23:38.349-03:00"/>
+  </meta>
+  <language value="pt-BR"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-BR" lang="pt-BR"><p>This code system http://www.saude.gov.br/fhir/r4/CodeSystem/BRDose defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">1<a name="BRDose-1"> </a></td><td>1ª Dose</td></tr><tr><td style="white-space:nowrap">2<a name="BRDose-2"> </a></td><td>2ª Dose</td></tr><tr><td style="white-space:nowrap">3<a name="BRDose-3"> </a></td><td>3ª Dose</td></tr><tr><td style="white-space:nowrap">4<a name="BRDose-4"> </a></td><td>4ª Dose</td></tr><tr><td style="white-space:nowrap">5<a name="BRDose-5"> </a></td><td>5ª Dose</td></tr><tr><td style="white-space:nowrap">6<a name="BRDose-6"> </a></td><td>1º Reforço</td></tr><tr><td style="white-space:nowrap">7<a name="BRDose-7"> </a></td><td>2º Reforço</td></tr><tr><td style="white-space:nowrap">8<a name="BRDose-8"> </a></td><td>Dose</td></tr><tr><td style="white-space:nowrap">9<a name="BRDose-9"> </a></td><td>Única</td></tr><tr><td style="white-space:nowrap">10<a name="BRDose-10"> </a></td><td>Revacinação</td></tr><tr><td style="white-space:nowrap">11<a name="BRDose-11"> </a></td><td>Tratamento com uma dose</td></tr><tr><td style="white-space:nowrap">12<a name="BRDose-12"> </a></td><td>Tratamento com duas doses</td></tr><tr><td style="white-space:nowrap">13<a name="BRDose-13"> </a></td><td>Tratamento com três doses</td></tr><tr><td style="white-space:nowrap">14<a name="BRDose-14"> </a></td><td>Tratamento com quatro doses</td></tr><tr><td style="white-space:nowrap">15<a name="BRDose-15"> </a></td><td>Tratamento com cinco doses</td></tr><tr><td style="white-space:nowrap">16<a name="BRDose-16"> </a></td><td>Tratamento com seis doses</td></tr><tr><td style="white-space:nowrap">17<a name="BRDose-17"> </a></td><td>Tratamento com sete doses</td></tr><tr><td style="white-space:nowrap">18<a name="BRDose-18"> </a></td><td>Tratamento com oito doses</td></tr><tr><td style="white-space:nowrap">19<a name="BRDose-19"> </a></td><td>Tratamento com nove doses</td></tr><tr><td style="white-space:nowrap">20<a name="BRDose-20"> </a></td><td>Tratamento com dez doses</td></tr><tr><td style="white-space:nowrap">21<a name="BRDose-21"> </a></td><td>Tratamento com onze doses</td></tr><tr><td style="white-space:nowrap">22<a name="BRDose-22"> </a></td><td>Tratamento com doze doses</td></tr><tr><td style="white-space:nowrap">23<a name="BRDose-23"> </a></td><td>Tratamento com treze doses</td></tr><tr><td style="white-space:nowrap">24<a name="BRDose-24"> </a></td><td>Tratamento com quartorze doses</td></tr><tr><td style="white-space:nowrap">25<a name="BRDose-25"> </a></td><td>Tratamento com quinze doses</td></tr><tr><td style="white-space:nowrap">26<a name="BRDose-26"> </a></td><td>Tratamento com dezesseis doses</td></tr><tr><td style="white-space:nowrap">27<a name="BRDose-27"> </a></td><td>Tratamento com dezessete doses</td></tr><tr><td style="white-space:nowrap">28<a name="BRDose-28"> </a></td><td>Tratamento com dezoito doses</td></tr><tr><td style="white-space:nowrap">29<a name="BRDose-29"> </a></td><td>Tratamento com dezenove doses</td></tr><tr><td style="white-space:nowrap">30<a name="BRDose-30"> </a></td><td>Tratamento com vinte doses</td></tr><tr><td style="white-space:nowrap">31<a name="BRDose-31"> </a></td><td>Tratamento com vinte e quatro doses</td></tr><tr><td style="white-space:nowrap">32<a name="BRDose-32"> </a></td><td>1ª Dose Revacinação</td></tr><tr><td style="white-space:nowrap">33<a name="BRDose-33"> </a></td><td>2ª Dose Revacinação</td></tr><tr><td style="white-space:nowrap">34<a name="BRDose-34"> </a></td><td>3ª Dose Revacinação</td></tr><tr><td style="white-space:nowrap">35<a name="BRDose-35"> </a></td><td>4ª Dose Revacinação</td></tr><tr><td style="white-space:nowrap">36<a name="BRDose-36"> </a></td><td>Dose Inicial</td></tr><tr><td style="white-space:nowrap">37<a name="BRDose-37"> </a></td><td>Dose Adicional</td></tr><tr><td style="white-space:nowrap">38<a name="BRDose-38"> </a></td><td>Reforço</td></tr><tr><td style="white-space:nowrap">39<a name="BRDose-39"> </a></td><td>3º Reforço</td></tr><tr><td style="white-space:nowrap">40<a name="BRDose-40"> </a></td><td>4º Reforço</td></tr><tr><td style="white-space:nowrap">41<a name="BRDose-41"> </a></td><td>5º Reforço</td></tr><tr><td style="white-space:nowrap">42<a name="BRDose-42"> </a></td><td>6º Reforço</td></tr></table></div>
+  </text>
+  <url value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRDose"/>
+  <version value="0.1.0"/>
+  <name value="Dose de Vacina"/>
+  <title value="Dose de vacina"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2020-01-06T18:23:38.3705+00:00"/>
+  <publisher value="Rede Nacional de Dados em Saúde"/>
+  <contact>
+    <name value="Rede Nacional de Dados em Saúde"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/kyriosdata"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rnds@saude.gov.br"/>
+    </telecom>
+  </contact>
+  <description value="Define a dose da administração de uma substância."/>
+  <content value="complete"/>
+  <count value="42"/>
+  <concept>
+    <code value="1"/>
+    <display value="1ª Dose"/>
+  </concept>
+  <concept>
+    <code value="2"/>
+    <display value="2ª Dose"/>
+  </concept>
+  <concept>
+    <code value="3"/>
+    <display value="3ª Dose"/>
+  </concept>
+  <concept>
+    <code value="4"/>
+    <display value="4ª Dose"/>
+  </concept>
+  <concept>
+    <code value="5"/>
+    <display value="5ª Dose"/>
+  </concept>
+  <concept>
+    <code value="6"/>
+    <display value="1º Reforço"/>
+  </concept>
+  <concept>
+    <code value="7"/>
+    <display value="2º Reforço"/>
+  </concept>
+  <concept>
+    <code value="8"/>
+    <display value="Dose"/>
+  </concept>
+  <concept>
+    <code value="9"/>
+    <display value="Única"/>
+  </concept>
+  <concept>
+    <code value="10"/>
+    <display value="Revacinação"/>
+  </concept>
+  <concept>
+    <code value="11"/>
+    <display value="Tratamento com uma dose"/>
+  </concept>
+  <concept>
+    <code value="12"/>
+    <display value="Tratamento com duas doses"/>
+  </concept>
+  <concept>
+    <code value="13"/>
+    <display value="Tratamento com três doses"/>
+  </concept>
+  <concept>
+    <code value="14"/>
+    <display value="Tratamento com quatro doses"/>
+  </concept>
+  <concept>
+    <code value="15"/>
+    <display value="Tratamento com cinco doses"/>
+  </concept>
+  <concept>
+    <code value="16"/>
+    <display value="Tratamento com seis doses"/>
+  </concept>
+  <concept>
+    <code value="17"/>
+    <display value="Tratamento com sete doses"/>
+  </concept>
+  <concept>
+    <code value="18"/>
+    <display value="Tratamento com oito doses"/>
+  </concept>
+  <concept>
+    <code value="19"/>
+    <display value="Tratamento com nove doses"/>
+  </concept>
+  <concept>
+    <code value="20"/>
+    <display value="Tratamento com dez doses"/>
+  </concept>
+  <concept>
+    <code value="21"/>
+    <display value="Tratamento com onze doses"/>
+  </concept>
+  <concept>
+    <code value="22"/>
+    <display value="Tratamento com doze doses"/>
+  </concept>
+  <concept>
+    <code value="23"/>
+    <display value="Tratamento com treze doses"/>
+  </concept>
+  <concept>
+    <code value="24"/>
+    <display value="Tratamento com quartorze doses"/>
+  </concept>
+  <concept>
+    <code value="25"/>
+    <display value="Tratamento com quinze doses"/>
+  </concept>
+  <concept>
+    <code value="26"/>
+    <display value="Tratamento com dezesseis doses"/>
+  </concept>
+  <concept>
+    <code value="27"/>
+    <display value="Tratamento com dezessete doses"/>
+  </concept>
+  <concept>
+    <code value="28"/>
+    <display value="Tratamento com dezoito doses"/>
+  </concept>
+  <concept>
+    <code value="29"/>
+    <display value="Tratamento com dezenove doses"/>
+  </concept>
+  <concept>
+    <code value="30"/>
+    <display value="Tratamento com vinte doses"/>
+  </concept>
+  <concept>
+    <code value="31"/>
+    <display value="Tratamento com vinte e quatro doses"/>
+  </concept>
+  <concept>
+    <code value="32"/>
+    <display value="1ª Dose Revacinação"/>
+  </concept>
+  <concept>
+    <code value="33"/>
+    <display value="2ª Dose Revacinação"/>
+  </concept>
+  <concept>
+    <code value="34"/>
+    <display value="3ª Dose Revacinação"/>
+  </concept>
+  <concept>
+    <code value="35"/>
+    <display value="4ª Dose Revacinação"/>
+  </concept>
+  <concept>
+    <code value="36"/>
+    <display value="Dose Inicial"/>
+  </concept>
+  <concept>
+    <code value="37"/>
+    <display value="Dose Adicional"/>
+  </concept>
+  <concept>
+    <code value="38"/>
+    <display value="Reforço"/>
+  </concept>
+  <concept>
+    <code value="39"/>
+    <display value="3º Reforço"/>
+  </concept>
+  <concept>
+    <code value="40"/>
+    <display value="4º Reforço"/>
+  </concept>
+  <concept>
+    <code value="41"/>
+    <display value="5º Reforço"/>
+  </concept>
+  <concept>
+    <code value="42"/>
+    <display value="6º Reforço"/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,76 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "BREstrategiaVacinacao",
+  "meta": {
+    "lastUpdated": "2020-03-11T15:11:59.742-03:00"
+  },
+  "language": "pt-BR",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p>This code system http://www.saude.gov.br/fhir/r4/CodeSystem/BREstrategiaVacinacao defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"BREstrategiaVacinacao-1\"> </a></td><td>Rotina</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"BREstrategiaVacinacao-2\"> </a></td><td>Especial</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"BREstrategiaVacinacao-3\"> </a></td><td>Bloqueio</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"BREstrategiaVacinacao-4\"> </a></td><td>Intensificação</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"BREstrategiaVacinacao-5\"> </a></td><td>Campanha indiscriminada</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"BREstrategiaVacinacao-6\"> </a></td><td>Campanha seletiva</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"BREstrategiaVacinacao-7\"> </a></td><td>Soroterapia</td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"BREstrategiaVacinacao-8\"> </a></td><td>Serviço Privado</td></tr><tr><td style=\"white-space:nowrap\">9<a name=\"BREstrategiaVacinacao-9\"> </a></td><td>Monitoramento rápido de cobertura vacinal</td></tr></table></div>"
+  },
+  "url": "http://www.saude.gov.br/fhir/r4/CodeSystem/BREstrategiaVacinacao",
+  "version": "0.1.0",
+  "name": "Estratégia de Vacinação",
+  "title": "Estratégia de vacinação",
+  "status": "active",
+  "experimental": false,
+  "date": "2020-03-11T18:12:20.2627546+00:00",
+  "publisher": "Rede Nacional de Dados em Saúde",
+  "contact": [
+    {
+      "name": "Rede Nacional de Dados em Saúde",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://github.com/kyriosdata"
+        },
+        {
+          "system": "email",
+          "value": "rnds@saude.gov.br"
+        }
+      ]
+    }
+  ],
+  "description": "Classifica a estratégia de vacinação adotada.",
+  "content": "complete",
+  "count": 9,
+  "concept": [
+    {
+      "code": "1",
+      "display": "Rotina"
+    },
+    {
+      "code": "2",
+      "display": "Especial"
+    },
+    {
+      "code": "3",
+      "display": "Bloqueio"
+    },
+    {
+      "code": "4",
+      "display": "Intensificação"
+    },
+    {
+      "code": "5",
+      "display": "Campanha indiscriminada"
+    },
+    {
+      "code": "6",
+      "display": "Campanha seletiva"
+    },
+    {
+      "code": "7",
+      "display": "Soroterapia"
+    },
+    {
+      "code": "8",
+      "display": "Serviço Privado"
+    },
+    {
+      "code": "9",
+      "display": "Monitoramento rápido de cobertura vacinal"
+    }
+  ]
+}

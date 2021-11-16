@@ -1,0 +1,64 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "BRViaAdministracao",
+  "meta": {
+    "lastUpdated": "2020-03-11T15:28:22.708-03:00"
+  },
+  "language": "pt-BR",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p>This code system http://www.saude.gov.br/fhir/r4/CodeSystem/BRViaAdministracao defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"BRViaAdministracao-1\"> </a></td><td>Oral</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"BRViaAdministracao-2\"> </a></td><td>Intramuscular</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"BRViaAdministracao-3\"> </a></td><td>Subcutânea</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"BRViaAdministracao-4\"> </a></td><td>Intradérmica</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"BRViaAdministracao-5\"> </a></td><td>Endovenosa</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"BRViaAdministracao-6\"> </a></td><td>Intravenosa</td></tr></table></div>"
+  },
+  "url": "http://www.saude.gov.br/fhir/r4/CodeSystem/BRViaAdministracao",
+  "version": "0.1.0",
+  "name": "Via de Administração",
+  "title": "Via empregada para administrar substância",
+  "status": "active",
+  "experimental": false,
+  "date": "2020-03-11T18:28:42.5310735+00:00",
+  "publisher": "Rede Nacional de Dados em Saúde",
+  "contact": [
+    {
+      "name": "Rede Nacional de Dados em Saúde",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://github.com/kyriosdata"
+        },
+        {
+          "system": "email",
+          "value": "rnds@saude.gov.br"
+        }
+      ]
+    }
+  ],
+  "description": "Classifica a via na qual foi administrada uma substância em um indivíduo.",
+  "content": "complete",
+  "count": 6,
+  "concept": [
+    {
+      "code": "1",
+      "display": "Oral"
+    },
+    {
+      "code": "2",
+      "display": "Intramuscular"
+    },
+    {
+      "code": "3",
+      "display": "Subcutânea"
+    },
+    {
+      "code": "4",
+      "display": "Intradérmica"
+    },
+    {
+      "code": "5",
+      "display": "Endovenosa"
+    },
+    {
+      "code": "6",
+      "display": "Intravenosa"
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="BRSituacaoCondicaoIndividuo"/>
+  <meta>
+    <lastUpdated value="2020-03-11T15:20:37.637-03:00"/>
+  </meta>
+  <language value="pt-BR"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-BR" lang="pt-BR"><p>This code system http://www.saude.gov.br/fhir/r4/CodeSystem/BRSituacaoCondicaoIndividuo defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">1<a name="BRSituacaoCondicaoIndividuo-1"> </a></td><td>Indígenas</td></tr><tr><td style="white-space:nowrap">2<a name="BRSituacaoCondicaoIndividuo-2"> </a></td><td>Assentados</td></tr><tr><td style="white-space:nowrap">3<a name="BRSituacaoCondicaoIndividuo-3"> </a></td><td>Acampados</td></tr><tr><td style="white-space:nowrap">4<a name="BRSituacaoCondicaoIndividuo-4"> </a></td><td>Militares</td></tr><tr><td style="white-space:nowrap">5<a name="BRSituacaoCondicaoIndividuo-5"> </a></td><td>Quilombola</td></tr><tr><td style="white-space:nowrap">6<a name="BRSituacaoCondicaoIndividuo-6"> </a></td><td>População privada de liberdade</td></tr><tr><td style="white-space:nowrap">7<a name="BRSituacaoCondicaoIndividuo-7"> </a></td><td>População geral</td></tr><tr><td style="white-space:nowrap">8<a name="BRSituacaoCondicaoIndividuo-8"> </a></td><td>Crianças</td></tr><tr><td style="white-space:nowrap">9<a name="BRSituacaoCondicaoIndividuo-9"> </a></td><td>Gestantes</td></tr><tr><td style="white-space:nowrap">10<a name="BRSituacaoCondicaoIndividuo-10"> </a></td><td>Trabalhadores de saúde</td></tr><tr><td style="white-space:nowrap">11<a name="BRSituacaoCondicaoIndividuo-11"> </a></td><td>Puérperas</td></tr><tr><td style="white-space:nowrap">12<a name="BRSituacaoCondicaoIndividuo-12"> </a></td><td>Idosos</td></tr><tr><td style="white-space:nowrap">13<a name="BRSituacaoCondicaoIndividuo-13"> </a></td><td>Funcionários do sistema prisional</td></tr><tr><td style="white-space:nowrap">14<a name="BRSituacaoCondicaoIndividuo-14"> </a></td><td>Comorbidades</td></tr><tr><td style="white-space:nowrap">15<a name="BRSituacaoCondicaoIndividuo-15"> </a></td><td>Outros grupos sem comorbidades</td></tr><tr><td style="white-space:nowrap">16<a name="BRSituacaoCondicaoIndividuo-16"> </a></td><td>Doença respiratória crônica</td></tr><tr><td style="white-space:nowrap">17<a name="BRSituacaoCondicaoIndividuo-17"> </a></td><td>Doença cardíaca crônica</td></tr><tr><td style="white-space:nowrap">18<a name="BRSituacaoCondicaoIndividuo-18"> </a></td><td>Doença renal crônica</td></tr><tr><td style="white-space:nowrap">19<a name="BRSituacaoCondicaoIndividuo-19"> </a></td><td>Doença hepática crônica</td></tr><tr><td style="white-space:nowrap">20<a name="BRSituacaoCondicaoIndividuo-20"> </a></td><td>Doença neurológica crônica</td></tr><tr><td style="white-space:nowrap">21<a name="BRSituacaoCondicaoIndividuo-21"> </a></td><td>Diabetes</td></tr><tr><td style="white-space:nowrap">22<a name="BRSituacaoCondicaoIndividuo-22"> </a></td><td>Obesos</td></tr><tr><td style="white-space:nowrap">23<a name="BRSituacaoCondicaoIndividuo-23"> </a></td><td>Imunossupressão</td></tr><tr><td style="white-space:nowrap">24<a name="BRSituacaoCondicaoIndividuo-24"> </a></td><td>Transplantados</td></tr><tr><td style="white-space:nowrap">25<a name="BRSituacaoCondicaoIndividuo-25"> </a></td><td>Trissomias</td></tr><tr><td style="white-space:nowrap">26<a name="BRSituacaoCondicaoIndividuo-26"> </a></td><td>Professores-Ensino Básico e Superior</td></tr><tr><td style="white-space:nowrap">27<a name="BRSituacaoCondicaoIndividuo-27"> </a></td><td>Policiais Civis, Militares, Bombeiros e membros ativos das Forças Armadas</td></tr><tr><td style="white-space:nowrap">28<a name="BRSituacaoCondicaoIndividuo-28"> </a></td><td>Adultos</td></tr><tr><td style="white-space:nowrap">29<a name="BRSituacaoCondicaoIndividuo-29"> </a></td><td>Forças de Segurança e Salvamento</td></tr><tr><td style="white-space:nowrap">30<a name="BRSituacaoCondicaoIndividuo-30"> </a></td><td>Pessoas com deficiência</td></tr><tr><td style="white-space:nowrap">31<a name="BRSituacaoCondicaoIndividuo-31"> </a></td><td>Caminhoneiros</td></tr><tr><td style="white-space:nowrap">32<a name="BRSituacaoCondicaoIndividuo-32"> </a></td><td>Trabalhadores de transporte coletivo</td></tr><tr><td style="white-space:nowrap">33<a name="BRSituacaoCondicaoIndividuo-33"> </a></td><td>Trabalhadores Portuários</td></tr></table></div>
+  </text>
+  <url value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRSituacaoCondicaoIndividuo"/>
+  <version value="0.1.0"/>
+  <name value="Situação/Condição do Indivíduo"/>
+  <title value="Situação/condição de um indivíduo"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2020-03-11T18:20:58.1470379+00:00"/>
+  <publisher value="Rede Nacional de Dados em Saúde"/>
+  <contact>
+    <name value="Rede Nacional de Dados em Saúde"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/kyriosdata"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rnds@saude.gov.br"/>
+    </telecom>
+  </contact>
+  <description value="Classifica a situação/condição de um indivíudo em um contexto."/>
+  <content value="complete"/>
+  <count value="33"/>
+  <concept>
+    <code value="1"/>
+    <display value="Indígenas"/>
+  </concept>
+  <concept>
+    <code value="2"/>
+    <display value="Assentados"/>
+  </concept>
+  <concept>
+    <code value="3"/>
+    <display value="Acampados"/>
+  </concept>
+  <concept>
+    <code value="4"/>
+    <display value="Militares"/>
+  </concept>
+  <concept>
+    <code value="5"/>
+    <display value="Quilombola"/>
+  </concept>
+  <concept>
+    <code value="6"/>
+    <display value="População privada de liberdade"/>
+  </concept>
+  <concept>
+    <code value="7"/>
+    <display value="População geral"/>
+  </concept>
+  <concept>
+    <code value="8"/>
+    <display value="Crianças"/>
+  </concept>
+  <concept>
+    <code value="9"/>
+    <display value="Gestantes"/>
+  </concept>
+  <concept>
+    <code value="10"/>
+    <display value="Trabalhadores de saúde"/>
+  </concept>
+  <concept>
+    <code value="11"/>
+    <display value="Puérperas"/>
+  </concept>
+  <concept>
+    <code value="12"/>
+    <display value="Idosos"/>
+  </concept>
+  <concept>
+    <code value="13"/>
+    <display value="Funcionários do sistema prisional"/>
+  </concept>
+  <concept>
+    <code value="14"/>
+    <display value="Comorbidades"/>
+  </concept>
+  <concept>
+    <code value="15"/>
+    <display value="Outros grupos sem comorbidades"/>
+  </concept>
+  <concept>
+    <code value="16"/>
+    <display value="Doença respiratória crônica"/>
+  </concept>
+  <concept>
+    <code value="17"/>
+    <display value="Doença cardíaca crônica"/>
+  </concept>
+  <concept>
+    <code value="18"/>
+    <display value="Doença renal crônica"/>
+  </concept>
+  <concept>
+    <code value="19"/>
+    <display value="Doença hepática crônica"/>
+  </concept>
+  <concept>
+    <code value="20"/>
+    <display value="Doença neurológica crônica"/>
+  </concept>
+  <concept>
+    <code value="21"/>
+    <display value="Diabetes"/>
+  </concept>
+  <concept>
+    <code value="22"/>
+    <display value="Obesos"/>
+  </concept>
+  <concept>
+    <code value="23"/>
+    <display value="Imunossupressão"/>
+  </concept>
+  <concept>
+    <code value="24"/>
+    <display value="Transplantados"/>
+  </concept>
+  <concept>
+    <code value="25"/>
+    <display value="Trissomias"/>
+  </concept>
+  <concept>
+    <code value="26"/>
+    <display value="Professores-Ensino Básico e Superior"/>
+  </concept>
+  <concept>
+    <code value="27"/>
+    <display value="Policiais Civis, Militares, Bombeiros e membros ativos das Forças Armadas"/>
+  </concept>
+  <concept>
+    <code value="28"/>
+    <display value="Adultos"/>
+  </concept>
+  <concept>
+    <code value="29"/>
+    <display value="Forças de Segurança e Salvamento"/>
+  </concept>
+  <concept>
+    <code value="30"/>
+    <display value="Pessoas com deficiência"/>
+  </concept>
+  <concept>
+    <code value="31"/>
+    <display value="Caminhoneiros"/>
+  </concept>
+  <concept>
+    <code value="32"/>
+    <display value="Trabalhadores de transporte coletivo"/>
+  </concept>
+  <concept>
+    <code value="33"/>
+    <display value="Trabalhadores Portuários"/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="BRViaAdministracao"/>
+  <meta>
+    <lastUpdated value="2020-03-11T15:28:22.708-03:00"/>
+  </meta>
+  <language value="pt-BR"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-BR" lang="pt-BR"><p>This code system http://www.saude.gov.br/fhir/r4/CodeSystem/BRViaAdministracao defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">1<a name="BRViaAdministracao-1"> </a></td><td>Oral</td></tr><tr><td style="white-space:nowrap">2<a name="BRViaAdministracao-2"> </a></td><td>Intramuscular</td></tr><tr><td style="white-space:nowrap">3<a name="BRViaAdministracao-3"> </a></td><td>Subcutânea</td></tr><tr><td style="white-space:nowrap">4<a name="BRViaAdministracao-4"> </a></td><td>Intradérmica</td></tr><tr><td style="white-space:nowrap">5<a name="BRViaAdministracao-5"> </a></td><td>Endovenosa</td></tr><tr><td style="white-space:nowrap">6<a name="BRViaAdministracao-6"> </a></td><td>Intravenosa</td></tr></table></div>
+  </text>
+  <url value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRViaAdministracao"/>
+  <version value="0.1.0"/>
+  <name value="Via de Administração"/>
+  <title value="Via empregada para administrar substância"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2020-03-11T18:28:42.5310735+00:00"/>
+  <publisher value="Rede Nacional de Dados em Saúde"/>
+  <contact>
+    <name value="Rede Nacional de Dados em Saúde"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/kyriosdata"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rnds@saude.gov.br"/>
+    </telecom>
+  </contact>
+  <description value="Classifica a via na qual foi administrada uma substância em um indivíduo."/>
+  <content value="complete"/>
+  <count value="6"/>
+  <concept>
+    <code value="1"/>
+    <display value="Oral"/>
+  </concept>
+  <concept>
+    <code value="2"/>
+    <display value="Intramuscular"/>
+  </concept>
+  <concept>
+    <code value="3"/>
+    <display value="Subcutânea"/>
+  </concept>
+  <concept>
+    <code value="4"/>
+    <display value="Intradérmica"/>
+  </concept>
+  <concept>
+    <code value="5"/>
+    <display value="Endovenosa"/>
+  </concept>
+  <concept>
+    <code value="6"/>
+    <display value="Intravenosa"/>
+  </concept>
+</CodeSystem>

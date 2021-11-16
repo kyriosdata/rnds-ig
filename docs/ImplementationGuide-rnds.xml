@@ -1,0 +1,1981 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="rnds"/>
+  <language value="pt-BR"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-BR" lang="pt-BR"><h2>GuiaImplementacaoFhirRnds</h2><p>The official URL for this implementation guide is: </p><pre>http://www.saude.gov.br/fhir/r4/ImplementationGuide/rnds</pre><div><p>Experimento com o SUSHI para geração de Guia de Implementação</p>
+</div></div>
+  </text>
+  <url value="http://www.saude.gov.br/fhir/r4/ImplementationGuide/rnds"/>
+  <version value="0.1.0"/>
+  <name value="GuiaImplementacaoFhirRnds"/>
+  <title value="RNDS (Guia de Implementação)"/>
+  <status value="draft"/>
+  <date value="2021-11-16T07:50:50-03:00"/>
+  <publisher value="Rede Nacional de Dados em Saúde"/>
+  <contact>
+    <name value="Rede Nacional de Dados em Saúde"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/kyriosdata"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rnds@saude.gov.br"/>
+    </telecom>
+  </contact>
+  <description value="Experimento com o SUSHI para geração de Guia de Implementação"/>
+  <packageId value="rnds"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.0.1"/>
+  <definition>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2021+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="ci-build"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://www.saude.gov.br/fhir/r4/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BRAmostraBiologica"/>
+      </reference>
+      <name value="Amostra Biológica"/>
+      <description value="Amostra de origem humana/animal usada em investigações biológicas/laboratoriais para fins diagnósticos."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/8e81a097-e1cb-422f-8262-014d7ca329b2"/>
+      </reference>
+      <name value="CIAP2 Avaliado"/>
+      <description value="Problema atribuído pelo profissional de saúde ao indivíduo no contato assistencial."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/d3d10a8f-46bc-4d9d-850f-b8ab5b778709"/>
+      </reference>
+      <name value="CID10 Avaliado"/>
+      <description value="Diagnóstico atribuído pelo profissional de saúde ao indivíduo no contato assistencial."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/e95fd8e8-3e10-4824-8227-99576192fb81"/>
+      </reference>
+      <name value="Conjunto Mínimo de Dados"/>
+      <description value="Documento público que coleta os dados dos atendimentos em saúde realizados em qualquer estabelecimento de saúde do país, público ou privado, em cada contato assistencial"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/521287f6-fd07-498d-aec2-1dff41af31ba"/>
+      </reference>
+      <name value="Conjunto Mínimo de Dados"/>
+      <description value="Documento público que coleta os dados dos atendimentos em saúde realizados em qualquer estabelecimento de saúde do país, público ou privado, em cada contato assistencial"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/9e02be1a-ccd7-41d3-a10e-2c031a4979b4"/>
+      </reference>
+      <name value="Contato Assistencial"/>
+      <description value="Resumo ou sumário referente a um atendimento ininterrupto dispensado a um indivíduo em uma mesma modalidade assistencial e em um mesmo estabelecimento de saúde, gerado após a conclusão deste atendimento.&#xA;Referência: &lt;a href=&quot;https://wiki.saude.gov.br/cmd/index.php/Página_principal#Contato_Assistencial&quot;&gt;https://wiki.saude.gov.br/cmd/index.php/Página_principal#Contato_Assistencial&lt;/a&gt;"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/10adbc3a-b1e9-4620-8c02-6f530e2caae0"/>
+      </reference>
+      <name value="Diagnóstico em Laboratório Clínico"/>
+      <description value="Exame ou teste realizado em laboratório com finalidade diagnóstica ou investigativa."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BRDocumentoIndividuo"/>
+      </reference>
+      <name value="Documento do Indivíduo"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BREndereco"/>
+      </reference>
+      <name value="Endereço"/>
+      <description value="Padronização de endereços no Brasil."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/a3bc0180-3d3d-469f-af04-7117f87db5be"/>
+      </reference>
+      <name value="Estabelecimento de Saúde"/>
+      <description value="Espaço físico delimitado e permanente onde são realizadas ações e serviços de saúde humana sob responsabilidade técnica."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/31468be2-a66e-427d-b07e-c217627c069d"/>
+      </reference>
+      <name value="Imunobiológico Administrado"/>
+      <description value="Representa um imunobiológico administrado."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BRImunobiologicoAdministradoCampanha"/>
+      </reference>
+      <name value="Imunobiológico Administrado em Campanha"/>
+      <description value="Representa um imunobiológico administrado em campanha vacinal."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BRImunobiologicoAdministradoCarga"/>
+      </reference>
+      <name value="Imunobiologico Administrado - Carga"/>
+      <description value="Registro de imunobiológicos administrados no legado do SIPNI."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/7ba7dc20-9251-417f-bc02-0a08c2986710"/>
+      </reference>
+      <name value="Indivíduo"/>
+      <description value="Indíviduo, sujeito da assistência à saúde."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/270156fd-40f7-44b0-979d-1165022df8da"/>
+      </reference>
+      <name value="Lista da Timeline"/>
+      <description value="Lista de de itens agregados na timeline um paciente."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BRLocalAtendimento"/>
+      </reference>
+      <name value="Local de Atendimento"/>
+      <description value="Uma referência genérica aos locais onde um Contato Assistencial pode acontecer."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/abe19423-94f2-490a-911e-a82ff5665164"/>
+      </reference>
+      <name value="Lotação Profissional"/>
+      <description value="Lotação de um profissional em um Estabelecimento de Saúde."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/af21adb7-867b-4862-8e26-814b2e805f37"/>
+      </reference>
+      <name value="Medicamento"/>
+      <description value="Drogas dirigidas para uso humano."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/17e2d3ae-3c74-4b22-8e95-560ab209d7df"/>
+      </reference>
+      <name value="Medicamento Dispensado"/>
+      <description value="Detalha os atos de dispensação de medicamentos."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BRMeioContato"/>
+      </reference>
+      <name value="Meio de Contato"/>
+      <description value="Padronização de meios de contato no Brasil."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BRNomeIndividuo"/>
+      </reference>
+      <name value="Nome de Indivíduos"/>
+      <description value="Padronização de uso de nomes de indivíduo no Brasil."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/f0d41273-772c-425f-bb60-2507efddff01"/>
+      </reference>
+      <name value="Observação Descritiva"/>
+      <description value="Descrições textuais simples sobre um paciente."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BRPessoaJuridicaProfissionalLiberal"/>
+      </reference>
+      <name value="Pessoa Jurídica e Profissional Liberal"/>
+      <description value="Pessoa jurídica identificada no âmbito da Receita Federal do Brasil pelo Cadastro Nacional da Pessoa Jurídica (CNPJ) ou profissional liberal identificado pelo Cadastro de Pessoas Físicas (CPF)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/33f94efe-eda9-4cdf-b3a1-4b2e0d5dfba9"/>
+      </reference>
+      <name value="Procedimento Realizado"/>
+      <description value="Procedimento realizado em um indivíduo."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BRProfissional"/>
+      </reference>
+      <name value="Profissional"/>
+      <description value="Indivíduo que realiza atividades profissionais."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BRRegistroImunobiologicoAdministrado"/>
+      </reference>
+      <name value="Registro de Imunobiológico Administrado"/>
+      <description value="Documento que representa o registro da administração de imunobiológicos."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BRRegistroImunobiologicoAdministradoCampanha"/>
+      </reference>
+      <name value="Registro de Imunobiológico Administrado na Campanha"/>
+      <description value="Documento que aprepresenta o registro da administração de imunobiológicos em campanha vacinal."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BRRegistroImunobiologicoAdministradoCarga"/>
+      </reference>
+      <name value="Registro de Imunobiológico Administrado - Carga"/>
+      <description value="Documento que representa o registro da administração de imunobiológicos, provenientes da carga do SIPNI."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BRResultadoExameLaboratorial-1.0"/>
+      </reference>
+      <name value="Resultado de Exame Laboratorial"/>
+      <description value="Documento que apresenta resultados de exames laboratoriais."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/43822493-10c2-41dc-9fae-962bab3a59e4"/>
+      </reference>
+      <name value="Resultado de Exame Laboratorial"/>
+      <description value="Documento que apresenta resultados de exames laboratoriais."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BRAdministradorTerceiro"/>
+      </reference>
+      <name value="Gerente/Administrador (Terceiro) ou Interveniente"/>
+      <description value="Identifica organizações que são gerentes/administradoras (terceiras) ou intervenientes de outras."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BRAtendeSUS"/>
+      </reference>
+      <name value="Atende SUS?"/>
+      <description value="Extensão utilizada para identificar se um profissional ou Estabelecimento de Saúde oferece atendimento pelo Sistema Único de Saúde (SUS)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/6ca9186a-6b71-4837-9ee6-50cb5da88645"/>
+      </reference>
+      <name value="Componente da Assistência Farmacêutica"/>
+      <description value="Extensão para identificar o componente de Assistência Farmacêutica."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BREstrategiaCampanha"/>
+      </reference>
+      <name value="Estratégia de campanha de vacinação"/>
+      <description value="Informações sobre as caracteríticas da campanha."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BREstrategiaVacinacao"/>
+      </reference>
+      <name value="Estratégia de Vacinação"/>
+      <description value="Identifica a estratégia de vacinação adotada."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/3d75211e-ccb6-4e01-b965-05382abfae5d"/>
+      </reference>
+      <name value="Financiamento"/>
+      <description value="Extensão utilizada para identificar financiamento."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BRGrupoAtendimento"/>
+      </reference>
+      <name value="Grupo de Atendimento"/>
+      <description value="Identificação do grupo de atendimento para vacinação."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/2cc4e4e3-0f97-4b54-ab87-e73fe0758cc7"/>
+      </reference>
+      <name value="Identificador Nacional de Equipe"/>
+      <description value="Extensão para permitir informar o código do Identificador Nacional de Equipe."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/66fe4a9e-184c-435c-ac3e-680bac8346cf"/>
+      </reference>
+      <name value="Indicador de Presença na Admissão"/>
+      <description value="Extensão para a informação do Indicador de Presença na Admissão."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BRIndividuoNaoIdentificado"/>
+      </reference>
+      <name value="Informações Complementares de Indivíduos Não Identificados"/>
+      <description value="Informações complementares necessárias ao Contato Assistencial na hipótese do indivíduo não poder ser identificado."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/bd2268df-7a8f-4e9b-8674-547f3b20a52b"/>
+      </reference>
+      <name value="Indivíduo Protegido?"/>
+      <description value="Extensão utilizada para identificar indivíduos que possuem  maior restrição à disponibilização de seus dados, por possuirem grande exposição pública (ex.: político, esportista, artista famoso etc.), estarem em programa de proteção à testemunha, o objeto de seu trabalho colocá-los em risco (investigadores da inteligência, p.ex.), dentre outros."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/e93a2b50-3f50-4670-8242-8b9af26a3584"/>
+      </reference>
+      <name value="Jurisdição do Órgão Expedidor"/>
+      <description value="Jurisdição de Órgãos Expedidores"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BRMunicipio"/>
+      </reference>
+      <name value="Município"/>
+      <description value="Extensão para informar um município."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/209cde9a-5393-4f3d-b456-294c954ea6fc"/>
+      </reference>
+      <name value="Dados de Naturalização"/>
+      <description value="Extensão para as informações de naturalização de um indivíduo."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/c8f43e8f-28c7-4872-9aa1-1405d22f0f51"/>
+      </reference>
+      <name value="Ocupação"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BROperadorDigitador"/>
+      </reference>
+      <name value="Identificador do digitador"/>
+      <description value="Identificação do operador / digitador que realizou a entrada de dados a partir da transcrição do registro de um profissional de saúde."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/26b68721-2e7f-48a1-84b2-4d71cc9751f5"/>
+      </reference>
+      <name value="País"/>
+      <description value="Extensão para representar um país."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BRParentesIndividuo"/>
+      </reference>
+      <name value="Parentes do Indivíduo"/>
+      <description value="Resource para representar parentescos de indivíduo."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BRPosicaoIndividuo"/>
+      </reference>
+      <name value="Posição do Indivíduo"/>
+      <description value="Extensão para indicar a posição do indivíduo."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/a495e791-173d-4175-bced-da4b42fa0ce1"/>
+      </reference>
+      <name value="Programa de Saúde"/>
+      <description value="Extensão para identificar o programa de saúde."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BRQualidadeCadastroIndividuo"/>
+      </reference>
+      <name value="Qualidade do Cadastro do Indivíduo"/>
+      <description value="Grau de qualidade de um registro de um indivíduo, vai de 0 até 100."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee0344fa-7d1d-488d-9356-479b885bfedd"/>
+      </reference>
+      <name value="Quantidade"/>
+      <description value="Extensão para identificar quantidades."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/0d945af8-3a09-4663-8ce2-0e4175d5cb09"/>
+      </reference>
+      <name value="Raça/Cor e Etnina"/>
+      <description value="Extensão para para representar dados relacionados à raça/cor e etnia de um indivíduo."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BRReferencia"/>
+      </reference>
+      <name value="Referência"/>
+      <description value="Uma referência para qualquer finalidade."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BRSituacaoCondicaoIndividuo"/>
+      </reference>
+      <name value="Situação/Condição do Indivíduo"/>
+      <description value="Extensão para especificar a situação ou condicação de um indivíduo num contexto."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/0a10269f-4d8d-4cbc-b06f-762fb595e248"/>
+      </reference>
+      <name value="Valor Monetário"/>
+      <description value="Um valor monetário em Reais brasileiros / BRL / R$ para qualquer finalidade."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BRAbrangencia-1.0"/>
+      </reference>
+      <name value="BRAbrangencia"/>
+      <description value="Identifica a abrangência territorial da atividade adotada."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BRCBO-1.0"/>
+      </reference>
+      <name value="Classificação Brasileira de Ocupações"/>
+      <description value="Classifica as ocupações no mercado brasileiro"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BRCIAP2-1.0"/>
+      </reference>
+      <name value="Classificação Internacional de Atenção Primária - Segunda Edição - CIAP2"/>
+      <description value="Classifica os problemas identificados no contato assistencial pelos profissionais de saúde, os motivos da contato assistencial e as respostas propostas pela equipe seguindo a sistematização SOA."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BRCID10-1.0"/>
+      </reference>
+      <name value="Classificação Internacional de Doenças - Décima Revisão - CID-10"/>
+      <description value="Classificação Internacional de Doenças - Décima Revisão - CID-10"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BRCampanhaVacinacao-1.0"/>
+      </reference>
+      <name value="Nome da campanha de vacinação"/>
+      <description value="Identifica a campanha de vacinação adotada."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BRCaraterAtendimento-1.0"/>
+      </reference>
+      <name value="Caráter de atendimento do Contato Assistencial"/>
+      <description value="ValueSet utilizado para classificar a prioridade de realização de um Contato Assistencial."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BRCategoriaExame-1.0"/>
+      </reference>
+      <name value="Categoria do exame"/>
+      <description value="Categoriza exames ou testes utilizando os subgrupos do grupo 02 - Procedimentos com finalidade diagnóstica da Tabela SUS."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BRClassificacaoLista-1.0"/>
+      </reference>
+      <name value="Classificação das Listas"/>
+      <description value="ValueSet utilizado para classificar os tipos de listas utilizados na Rede Nacional de Dados em Saúde."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BRComponenteAssistenciaFarmaceutica-1.0"/>
+      </reference>
+      <name value="Componente da Assistência Farmacêutica"/>
+      <description value="Classifica o componente da assistência farmacêutica o qual o produto dispensado é vinculado."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BRDose-1.0"/>
+      </reference>
+      <name value="Dose do Imunobiológico"/>
+      <description value="ValueSet utilizado para definir o tipo da dose administrada no indivíduo."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BREstadoCivil-1.0"/>
+      </reference>
+      <name value="Estado Civil"/>
+      <description value="Complexo das qualidades de um indivíudo referentes à ordem pública, à ordem privada e à ordem física do ser humano. Refere-se, assim, à cidadania, à família, e à capacidade civil."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BREstadoContatoAssistencial-1.0"/>
+      </reference>
+      <name value="Estado do Contato Assistencial"/>
+      <description value="Classifica o estado de um Contato Assistencial."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BREstadoDocumento-1.0"/>
+      </reference>
+      <name value="Estados de um documento"/>
+      <description value="Classifica o estado de um documento."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BREstadoEvento-1.0"/>
+      </reference>
+      <name value="Estado do Evento"/>
+      <description value="Identificação do estado de um evento."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BREstadoMedicamentoLista-1.0"/>
+      </reference>
+      <name value="Estados do Medicamento numa Lista."/>
+      <description value="Classifica os estados de um medicamento em uma lista."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BREstadoObservacao-1.0"/>
+      </reference>
+      <name value="Estado da Observação."/>
+      <description value="Tipos de estados de uma observação."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BREstadoResolucaoDiagnosticoProblema-1.0"/>
+      </reference>
+      <name value="Estado da Resolução de Diagnóstico ou Problema."/>
+      <description value="Estado da resolução de um diagnóstico ou problema."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BREstrategiaVacinacao-1.0"/>
+      </reference>
+      <name value="Estratégia de Vacinação"/>
+      <description value="Identifica a estratégia de vacinação adotada."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BREstrategiaVacinacaoCampanha-1.0"/>
+      </reference>
+      <name value="Estratégia de Vacinação em Campanha"/>
+      <description value="Identifica a estratégia de vacinação adotada.na campanha"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BREtniaIndigena-1.0"/>
+      </reference>
+      <name value="Etnia Indígena"/>
+      <description value="Códigos para representação de etnias indígenas no Brasil."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BRFinanciamento-1.0"/>
+      </reference>
+      <name value="Financiamento do procedimento realizado"/>
+      <description value="Descreve o agente, instituição ou entidade responsável por custear as ações e serviços de saúde."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BRGrupoAtendimento-1.0"/>
+      </reference>
+      <name value="Tipo de grupo de atendimento"/>
+      <description value="Identifica o tipo de grupo de atendimento que o indivíduo apresentou para a vacinação em campanha."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BRImunobiologico-1.0"/>
+      </reference>
+      <name value="Imunobiológico"/>
+      <description value="Tipos de imunobiológicos disponíveis no Brasil."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BRJustificativaIndividuoNaoIdentificado-1.0"/>
+      </reference>
+      <name value="Justificativa para não identificação do indivíduo"/>
+      <description value="Classifica as razões pelo qual não foi possível obter os dados de identificação do indivíduo em um contato assistencial. (Port. nº 84/SAS/MS/1997 e Port. nº02/SAS/SGEP/MS/2012)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ValueSetBRLocalAfericao"/>
+      </reference>
+      <name value="Local de Aferição"/>
+      <description value="ValueSet utilizado para identificar a parte do corpo utilizada para aferir a pressão arterial."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BRLocalAPlicacao-1.0"/>
+      </reference>
+      <name value="Local de Aplicação"/>
+      <description value="Localização anatômica para aplicação de um injetável."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BRMedicamento-1.0"/>
+      </reference>
+      <name value="Medicamento"/>
+      <description value="Identifica um medicamento."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BRModalidadeAssistencial-1.0"/>
+      </reference>
+      <name value="Modalidade Assistencial"/>
+      <description value="Classificação dos documentos e contatos assistenciais de acordo com as especificidades do modo, local e duração do atendimento."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BRMotivoDesfecho-1.0"/>
+      </reference>
+      <name value="Motivo do desfecho do Contato assistencial"/>
+      <description value="ValueSet utilizado para classificar o motivo de conclusão total ou parcial do contato assistencial."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BRMunicipio-1.0"/>
+      </reference>
+      <name value="Município"/>
+      <description value="Municípios brasileiros, entes subnacionais."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BRNaturezaJuridica-1.0"/>
+      </reference>
+      <name value="Natureza Jurídica"/>
+      <description value="Identifica a constituição jurídico-institucional das entidades públicas e privadas nos cadastros da administração pública do Brasil."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BRNomeExame-1.0"/>
+      </reference>
+      <name value="Nome do Exame"/>
+      <description value="Classifica o exame laboratorial realizado."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BROcupacao-1.0"/>
+      </reference>
+      <name value="Classificação Brasileira de Ocupações - CBO"/>
+      <description value="Classifica as profissões do mercado de trabalho brasileiro."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BROrgaoExpedidor-1.0"/>
+      </reference>
+      <name value="Órgão Expedidor"/>
+      <description value="Lista de órgãos responsáveis por expedir documentos no Brasil."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BRPais-1.0"/>
+      </reference>
+      <name value="País"/>
+      <description value="Códigos para representação de países."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BRParentesco-1.0"/>
+      </reference>
+      <name value="Parentesco"/>
+      <description value="Classificação da relação familiar entre indivíduos."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BRPosicaoIndividuo-1.0"/>
+      </reference>
+      <name value="Posição do Indivíduo"/>
+      <description value="ValueSet utilizado para identificar a posição do indivíduo no momento da ação / procedimento."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BRProcedencia-1.0"/>
+      </reference>
+      <name value="Procedência do Contato Assistencial"/>
+      <description value="Classifica o serviço que encaminhou o indivíduo ou a sua iniciativa/de seu responsável na busca pelo acesso ao serviço de saúde."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BRProcedimentosNacionais-1.0"/>
+      </reference>
+      <name value="Procedimento realizado"/>
+      <description value="Value Set das classificações brasileiras para procedimentos adotadas em contexto nacional."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BRProgramaSaude-1.0"/>
+      </reference>
+      <name value="Programa de Saúde"/>
+      <description value="Identifica programas de saúde."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BRRacaCor-1.0"/>
+      </reference>
+      <name value="Raça/Cor"/>
+      <description value="Códigos para representação de raça/cor no Brasil."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BRResponsabilidadeParticipante-1.0"/>
+      </reference>
+      <name value="Reponsabilidade no Contato Assistencial"/>
+      <description value="Classifica o tipo de responsabilidade de indivíduos ou profissionais no Contato Assistencial."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BRResultadoQualitativoExame-1.0"/>
+      </reference>
+      <name value="Resultado Qualitativo do Exame"/>
+      <description value="ValueSet utilizado para definir o valor atribuído ao resultado de um exame laboratorial realizado por método de análise qualitativo."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BRSexo-1.0"/>
+      </reference>
+      <name value="Sexo"/>
+      <description value="Sexo de um indivíduo."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BRSituacaoCOndicaoIndividuo-1.0"/>
+      </reference>
+      <name value="Situação/Condição do Indivíduo na Administração de Imunobiológico"/>
+      <description value="Classifica a situação/condição de um indivíudo em um contexto."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BRTipoAmostra-1.0"/>
+      </reference>
+      <name value="Tipo de Amostra de Exame"/>
+      <description value="Tipo da amostra de um exame ou teste."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BRTipoDocumento-1.0"/>
+      </reference>
+      <name value="Tipo de Documento"/>
+      <description value="Classifica o tipo de documento que está sendo trafegado."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BRTipoDocumentoIndividuo-1.0"/>
+      </reference>
+      <name value="Tipo de Documento do Indivíduo"/>
+      <description value="Classifica o tipo de documento que está sendo utilizado para identificar o indivíduo."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BRTipoEstabelecimentoSaude-1.0"/>
+      </reference>
+      <name value="Tipo de Estabelecimento de Saúde"/>
+      <description value="ValueSet utilizado para classificar o tipo de estabelecimento de saúde."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BRTipoIdentificadorProcedimento-1.0"/>
+      </reference>
+      <name value="Tipo de Identificador do Procedimento"/>
+      <description value="Classifica o tipo de identificador que está sendo utilizado para o procedimento."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BRTipoLogradouro-1.0"/>
+      </reference>
+      <name value="Tipo de Logradouro"/>
+      <description value="Classifica o tipo de logradouro."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BRTipoObservacao-1.0"/>
+      </reference>
+      <name value="Tipo de Observação"/>
+      <description value="Tipo de Observação."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BRUnidadeFarmaceutica-1.0"/>
+      </reference>
+      <name value="Unidade Farmacêutica"/>
+      <description value="Identifica a unidade farmacêutica do medicamento conforme Base Nacional da Assistência Farmacêutica (BNAFAR)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BRUnidadeFederativa-1.0"/>
+      </reference>
+      <name value="Unidade Federativa"/>
+      <description value="Os estados e o Distrito Federal, entes subnacionais brasileiros."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/BRViaAdministracao-1.0"/>
+      </reference>
+      <name value="Via de Administração do Imunobiológico"/>
+      <description value="Via de administração de um imunobiológico."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/BRAbrangencia"/>
+      </reference>
+      <name value="Abrangência territorial"/>
+      <description value="Classifica a abrangência territorial da atividade."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/BRCaraterAtendimento"/>
+      </reference>
+      <name value="Caráter de atendimento"/>
+      <description value="Terminologia que classifica a prioridade de realização de um Contato Assistencial."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/BRFinanciamento"/>
+      </reference>
+      <name value="Forma de financiamento"/>
+      <description value="Terminologia que descreve o agente, instituição ou entidade responsável por custear as ações e serviços de saúde."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/BRImunobiologico"/>
+      </reference>
+      <name value="Tipo de imunobiológico"/>
+      <description value="Classifica os tipos de imunobiológicos."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/BRMedicamento"/>
+      </reference>
+      <name value="Medicamento"/>
+      <description value="Drogas dirigidas para uso humano, apresentadas em sua formulação final."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/BRPais"/>
+      </reference>
+      <name value="País"/>
+      <description value="Códigos para representação de países."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/BRParentesco"/>
+      </reference>
+      <name value="Parentesco"/>
+      <description value="Classificação da relação familiar entre indivíduos."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/BRProcedencia"/>
+      </reference>
+      <name value="Procedência"/>
+      <description value="Identifica o serviço que encaminhou o indivíduo ou a sua iniciativa/de seu responsável na busca pelo acesso ao serviço de saúde."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/BRRacaCor"/>
+      </reference>
+      <name value="Raça/cor"/>
+      <description value="Códigos para representação de raça/cor."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/BRCBHPMTUSS"/>
+      </reference>
+      <name value="Procedimentos"/>
+      <description value="Classificações de procedimentos utilizadas no Brasil, no contexto da assistência à saúde privada, não complementar ao SUS, e eventualmente no SUS para classificar procedimento inexistente na Tabela SUS."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/BRCBO"/>
+      </reference>
+      <name value="Ocupações do mercado de trabalho brasileiro"/>
+      <description value="Classifica as profissões do mercado de trabalho brasileiro."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/BRCIAP2"/>
+      </reference>
+      <name value="Problema identificado no contato assistencial"/>
+      <description value="Classifica os problemas identificados no contato assistencial pelos profissionais de saúde, os motivos da contato assistencial e as respostas propostas pela equipe seguindo a sistematização SOAP."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/BRCID10"/>
+      </reference>
+      <name value="Doenças"/>
+      <description value="Classifica as doenças e outros problemas em saúde registrados em diversos tipos de documentos clínicos."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/BRClassificacaoLista"/>
+      </reference>
+      <name value="Listas"/>
+      <description value="Classificações das listas utilizadas na Rede Nacional de Dados em Saúde."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/BRComponenteAssistenciaFarmaceutica"/>
+      </reference>
+      <name value="Componente da assistência farmacêutica"/>
+      <description value="Identifica o componente da assistência farmacêutica de uma substância ou produto."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/BRDivisaoGeograficaBrasil"/>
+      </reference>
+      <name value="Divisão geográfica do Brasil"/>
+      <description value="As regiões geográficas, estados, distrito federal e municípios do Brasil."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/BRDose"/>
+      </reference>
+      <name value="Dose de vacina"/>
+      <description value="Define a dose da administração de uma substância."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/BREstadoMedicamentoLista"/>
+      </reference>
+      <name value="Estado de medicamento"/>
+      <description value="Classificação do estado de um medicamento na lista de medicamentos da Rede Nacional de Dados em Saúde."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/BREstrategiaVacinacao"/>
+      </reference>
+      <name value="Estratégia de vacinação"/>
+      <description value="Classifica a estratégia de vacinação adotada."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/BREtniaIndigena"/>
+      </reference>
+      <name value="Etnia indígena"/>
+      <description value="Códigos para representação de etnias indígenas no Brasil."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/BRNomeExameLOINC"/>
+      </reference>
+      <name value="Exame laboratorial (LOINC)"/>
+      <description value="Classifica o exame laboratorial realizado em amostra biológica para diagnóstico laboratorial, de acordo com a terminologia LOINC."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/BRNomeExameGAL"/>
+      </reference>
+      <name value="Exame laboratorial (GAL)"/>
+      <description value="Classifica o exame laboratorial realizado em amostra biológica para diagnóstico laboratorial, de acordo com o Gerenciador de Ambiente Laboratorial (GAL)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/BRGrupoAtendimento"/>
+      </reference>
+      <name value="Grupo de atendimento"/>
+      <description value="Domínio que identifica o tipo de grupo de atendimento que o indivíduo apresentou para a vacinação em campanha."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/BRJustificativaIndividuoNaoIdentificado"/>
+      </reference>
+      <name value="Justificativa para não identificação de indivíduo"/>
+      <description value="Classifica as razões pelo qual não foi possível obter os dados de identificação do indivíduo em um contato assistencial. (Port. nº 84/SAS/MS/1997 e Port. nº02/SAS/SGEP/MS/2012)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/BRLocalAfericao"/>
+      </reference>
+      <name value="Local de aferição"/>
+      <description value="Identifica a parte do corpo utilizada para realizar uma mensuração ou aferição."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/BRLocalAplicacao"/>
+      </reference>
+      <name value="Local anatômico de aplicação de injetável"/>
+      <description value="Define a localização anatômica de aplicação de um injetável"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/BRModalidadeAssistencial"/>
+      </reference>
+      <name value="Modalidade de assistência"/>
+      <description value="Classifica os contatos assistenciais de acordo com as especificidades do modo, local e duração do atendimento"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/BRMotivoDesfecho"/>
+      </reference>
+      <name value="Motivo do desfecho"/>
+      <description value="Caracteriza o motivo de conclusão total ou parcial do contato assistencial."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/BRNaturezaJuridica"/>
+      </reference>
+      <name value="Constituição jurídica de entidades"/>
+      <description value="Identifica a constituição jurídico-institucional das entidades públicas e privadas nos cadastros da administração pública do Brasil."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/BRNomeCampanhaVacinacao"/>
+      </reference>
+      <name value="Nome de campanha de vacinação"/>
+      <description value="Domínio que identifica o nome da campanha de vacinação."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/BRPosicaoIndividuo"/>
+      </reference>
+      <name value="Posição do indivíduo"/>
+      <description value="Identifica a posição de um indivíduo em um determinado contexto."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/BRProgramaSaude"/>
+      </reference>
+      <name value="Programa de saúde"/>
+      <description value="Identifica um programa nacional de saúde brasileiro ou uma situação específica que exija monitoramento no mesmo formato de uma política pública."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/BRResponsabilidadeParticipante"/>
+      </reference>
+      <name value="Papel do profissional no contato assistencial"/>
+      <description value="Classifica o tipo de responsabilidade de indivíduos ou profissionais no Contato Assisntecial."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/BRResultadoQualitativoExame"/>
+      </reference>
+      <name value="Resultado qualitativo"/>
+      <description value="Code System utilizado para definir o valor atribuído ao resultado de um exame laboratorial realizado por método de análise qualitativo."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/BRSituacaoCondicaoIndividuo"/>
+      </reference>
+      <name value="Situação/condição de um indivíduo"/>
+      <description value="Classifica a situação/condição de um indivíudo em um contexto."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/BRSubgrupoTabelaSUS"/>
+      </reference>
+      <name value="Subgrupo Tabela SUS"/>
+      <description value="O subgrupo é o segundo nível da hierarquia da Tabela SUS e seus códigos ajudam a classificar e localizar procedimentos."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/BRTabelaSUS"/>
+      </reference>
+      <name value="Procedimentos da Tabela SUS"/>
+      <description value="Padroniza os códigos e as nomenclaturas dos procedimentos, medicamentos e OPM para as informações trafegadas no SUS."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/BRTipoAmostraGAL"/>
+      </reference>
+      <name value="Tipo de amostra biológica (GAL)"/>
+      <description value="Classifica o tipo de amostra biológica utilizada em exames de acordo com a terminologia Gerenciador de Ambiente Laboratorial (GAL)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/BRTipoDocumento"/>
+      </reference>
+      <name value="Tipo de documento"/>
+      <description value="Classificação dos tipos de documentos compartilhados no Brasil."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/BRTipoEstabelecimentoSaude"/>
+      </reference>
+      <name value="Tipo de estabelecimento de saúde"/>
+      <description value="Códigos para representação de tipos de estabelecimentos de saúde, de acordo com codificação já existente para o Cadastro Nacional de Estabelecimentos de Saúde (CNES)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/BRTipoIdentificador"/>
+      </reference>
+      <name value="Tipo de identificador"/>
+      <description value="Classifica o tipo de indicador que está sendo utilizado."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/BRTipoLogradouro"/>
+      </reference>
+      <name value="Tipo de logradouro"/>
+      <description value="Classificação os tipos de logradouros existentes para uso em endereços estruturados."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/BRTipoObservacao"/>
+      </reference>
+      <name value="Tipo de observação"/>
+      <description value="Tipo de Observação."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/BRUnidadeFarmaceutica"/>
+      </reference>
+      <name value="Unidade farmacêutica de uma substância"/>
+      <description value="Identifica a unidade farmacêutica de uma substância."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/BRViaAdministracao"/>
+      </reference>
+      <name value="Via empregada para administrar substância"/>
+      <description value="Classifica a via na qual foi administrada uma substância em um indivíduo."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/BROrgaoExpedidor"/>
+      </reference>
+      <name value="Órgão expedidor de documento"/>
+      <description value="Órgãos responsáveis por expedir documentos no Brasil."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <page>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <nameUrl value="index.html"/>
+        <title value="Home"/>
+        <generation value="markdown"/>
+      </page>
+    </page>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/capabilities"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/extensions"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/models"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/operations"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/profiles"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/vocabulary"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/maps"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/history"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="fsh-generated/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="template/config"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/images"/>
+    </parameter>
+    <parameter>
+      <code value="path-tx-cache"/>
+      <value value="input-cache/txcache"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

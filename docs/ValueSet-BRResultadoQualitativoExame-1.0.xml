@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="BRResultadoQualitativoExame-1.0"/>
+  <meta>
+    <lastUpdated value="2020-03-26T10:21:39.798-03:00"/>
+  </meta>
+  <language value="pt-BR"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-BR" lang="pt-BR"><ul><li>Include all codes defined in <a href="CodeSystem-BRResultadoQualitativoExame.html"><code>http://www.saude.gov.br/fhir/r4/CodeSystem/BRResultadoQualitativoExame</code></a></li></ul></div>
+  </text>
+  <url value="http://www.saude.gov.br/fhir/r4/ValueSet/BRResultadoQualitativoExame-1.0"/>
+  <version value="0.1.0"/>
+  <name value="BRResultadoQualitativoExame"/>
+  <title value="Resultado Qualitativo do Exame"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2020-03-26T13:21:38.6543319+00:00"/>
+  <publisher value="Rede Nacional de Dados em Saúde"/>
+  <contact>
+    <name value="Rede Nacional de Dados em Saúde"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/kyriosdata"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rnds@saude.gov.br"/>
+    </telecom>
+  </contact>
+  <description value="ValueSet utilizado para definir o valor atribuído ao resultado de um exame laboratorial realizado por método de análise qualitativo."/>
+  <immutable value="false"/>
+  <compose>
+    <include>
+      <system value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRResultadoQualitativoExame"/>
+      <version value="*"/>
+    </include>
+  </compose>
+</ValueSet>

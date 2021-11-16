@@ -1,0 +1,54 @@
+{
+  "resourceType": "ValueSet",
+  "id": "BREstadoContatoAssistencial-1.0",
+  "meta": {
+    "lastUpdated": "2020-04-07T18:01:37.692-03:00"
+  },
+  "language": "pt-BR",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><ul><li>Include these codes as defined in <a href=\"http://hl7.org/fhir/R4/codesystem-encounter-status.html\"><code>http://hl7.org/fhir/encounter-status</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-encounter-status.html#encounter-status-finished\">finished</a></td><td>Contato Assistencial finalizado ou concluído</td><td>The Encounter has ended.</td></tr><tr><td><a href=\"http://hl7.org/fhir/R4/codesystem-encounter-status.html#encounter-status-entered-in-error\">entered-in-error</a></td><td>Contato Assistencial anulado por informação errada</td><td>This instance should not have been part of this patient's medical record.</td></tr></table></li></ul></div>"
+  },
+  "url": "http://www.saude.gov.br/fhir/r4/ValueSet/BREstadoContatoAssistencial-1.0",
+  "version": "0.1.0",
+  "name": "BREstadoContatoAssistencial",
+  "title": "Estado do Contato Assistencial",
+  "status": "active",
+  "experimental": false,
+  "date": "2020-04-07T21:01:35.632661+00:00",
+  "publisher": "Rede Nacional de Dados em Saúde",
+  "contact": [
+    {
+      "name": "Rede Nacional de Dados em Saúde",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://github.com/kyriosdata"
+        },
+        {
+          "system": "email",
+          "value": "rnds@saude.gov.br"
+        }
+      ]
+    }
+  ],
+  "description": "Classifica o estado de um Contato Assistencial.",
+  "immutable": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/encounter-status",
+        "concept": [
+          {
+            "code": "finished",
+            "display": "Contato Assistencial finalizado ou concluído"
+          },
+          {
+            "code": "entered-in-error",
+            "display": "Contato Assistencial anulado por informação errada"
+          }
+        ]
+      }
+    ]
+  }
+}

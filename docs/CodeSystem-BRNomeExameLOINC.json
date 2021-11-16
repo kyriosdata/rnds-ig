@@ -1,0 +1,148 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "BRNomeExameLOINC",
+  "meta": {
+    "lastUpdated": "2020-04-29T17:29:50.976-03:00"
+  },
+  "language": "pt-BR",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p>This code system http://www.saude.gov.br/fhir/r4/CodeSystem/BRNomeExameLOINC defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">94307-6<a name=\"BRNomeExameLOINC-94307-6\"> </a></td><td>SARS Coronavírus, [presença de] gene 2 N em amostra não especificada por amplificação de ácido nucleico usando conjunto de sonda / primer N1</td></tr><tr><td style=\"white-space:nowrap\">94308-4<a name=\"BRNomeExameLOINC-94308-4\"> </a></td><td>SARS Coronavírus 2, [presença de] gene N em amostra não especificada, por amplificação de ácido nucleico usando conjunto de sonda / primer N2</td></tr><tr><td style=\"white-space:nowrap\">94309-2<a name=\"BRNomeExameLOINC-94309-2\"> </a></td><td>SARS Coronavírus 2, [presença de] RNA em amostra não especificada, por amplificação do ácido nucleico com detecção por sonda</td></tr><tr><td style=\"white-space:nowrap\">94311-8<a name=\"BRNomeExameLOINC-94311-8\"> </a></td><td>SARS Coronavírus 2, [limiar de ciclo] de gene N em amostra não especificada por amplificação de ácido nucleico usando conjunto de sonda / primer N1</td></tr><tr><td style=\"white-space:nowrap\">94312-6<a name=\"BRNomeExameLOINC-94312-6\"> </a></td><td>SARS Coronavírus 2, [limiar de ciclo] de gene N em amostra não especificada por amplificação de ácido nucleico usando conjunto de sonda / primer N2</td></tr><tr><td style=\"white-space:nowrap\">94314-2<a name=\"BRNomeExameLOINC-94314-2\"> </a></td><td>SARS Coronavírus 2, [presença de] gene RdRp em amostra não especificada por amplificação do ácido nucleico com detecção por sonda</td></tr><tr><td style=\"white-space:nowrap\">94315-9<a name=\"BRNomeExameLOINC-94315-9\"> </a></td><td>SARS Coronavírus 2, [presença de] gene E em amostra não especificada por amplificação de ácido nucleico com detecção por sonda</td></tr><tr><td style=\"white-space:nowrap\">94316-7<a name=\"BRNomeExameLOINC-94316-7\"> </a></td><td>SARS Coronavírus 2, [presença de] gene N em amostra não especificada por amplificação de ácido nucleico com detecção por sonda</td></tr><tr><td style=\"white-space:nowrap\">94500-6<a name=\"BRNomeExameLOINC-94500-6\"> </a></td><td>SARS Coronavírus 2, [presença de] RNA em amostra respiratória por amplificação do ácido nucleico com detecção por sonda</td></tr><tr><td style=\"white-space:nowrap\">94502-2<a name=\"BRNomeExameLOINC-94502-2\"> </a></td><td>SARS Coronavírus relacionado, [presença de] RNA em amostra respiratória por amplificação do ácido nucleico com detecção por sonda</td></tr><tr><td style=\"white-space:nowrap\">94505-5<a name=\"BRNomeExameLOINC-94505-5\"> </a></td><td>SARS Coronavírus 2, [dosagem de] anticorpos IgG [Unidades/Volume] em soro ou plasma por imunoensaio</td></tr><tr><td style=\"white-space:nowrap\">94506-3<a name=\"BRNomeExameLOINC-94506-3\"> </a></td><td>SARS Coronavírus 2, [dosagem de] anticorpos IgM [Unidades/Volume] em soro ou plasma por imunoensaio</td></tr><tr><td style=\"white-space:nowrap\">94507-1<a name=\"BRNomeExameLOINC-94507-1\"> </a></td><td>SARS Coronavírus 2, [presença de] anticorpos IgG em soro ou plasma por imunoensaio</td></tr><tr><td style=\"white-space:nowrap\">94508-9<a name=\"BRNomeExameLOINC-94508-9\"> </a></td><td>SARS Coronavírus 2, [presença de] anticorpos IgM em soro ou plasma por imunoensaio</td></tr><tr><td style=\"white-space:nowrap\">94509-7<a name=\"BRNomeExameLOINC-94509-7\"> </a></td><td>SARS Coronavírus 2, [limiar de ciclo de] gene E em amostra não especificada por amplificação do ácido nucleico com detecção por sonda</td></tr><tr><td style=\"white-space:nowrap\">94510-5<a name=\"BRNomeExameLOINC-94510-5\"> </a></td><td>SARS Coronavírus 2, [limiar de ciclo de] gene 2 N em amostra não especificada por amplificação de ácido nucleico com detecção por sonda</td></tr><tr><td style=\"white-space:nowrap\">94511-3<a name=\"BRNomeExameLOINC-94511-3\"> </a></td><td>SARS Coronavírus 2, [limiar de ciclo da] região ORF1ab em amostra não especificada por amplificação de ácido nucleico com detecção por sonda</td></tr><tr><td style=\"white-space:nowrap\">94532-9<a name=\"BRNomeExameLOINC-94532-9\"> </a></td><td>SARS Coronavírus relacionado + MERS Coronavírus, [presença de] RNA em amostra respiratória por amplificação do ácido nucleico com detecção por sonda</td></tr><tr><td style=\"white-space:nowrap\">94533-7<a name=\"BRNomeExameLOINC-94533-7\"> </a></td><td>SARS Coronavírus 2, [presença de] gene N em amostra respiratória por amplificação do ácido nucleico com detecção por sonda</td></tr><tr><td style=\"white-space:nowrap\">94534-5<a name=\"BRNomeExameLOINC-94534-5\"> </a></td><td>SARS Coronavírus 2, [presença de] gene RdRp em amostra respiratória por amplificação do ácido nucleico com detecção por sonda</td></tr><tr><td style=\"white-space:nowrap\">94547-7<a name=\"BRNomeExameLOINC-94547-7\"> </a></td><td>SARS Coronavírus 2, [presença de] anticorpos IgG e IgM em soro ou plasma por imunoensaio</td></tr><tr><td style=\"white-space:nowrap\">94558-4<a name=\"BRNomeExameLOINC-94558-4\"> </a></td><td>SARS Coronavírus 2, [presença de] antígenos Ag em amostra respiratória por imunoensaio rápido</td></tr><tr><td style=\"white-space:nowrap\">94559-2<a name=\"BRNomeExameLOINC-94559-2\"> </a></td><td>SARS Coronavírus 2, [presença de] gene da regição ORF1ab em amostra respiratória por amplificação do ácido nucléico com detecção por sonda</td></tr><tr><td style=\"white-space:nowrap\">94562-6<a name=\"BRNomeExameLOINC-94562-6\"> </a></td><td>SARS Coronavírus 2, [presença de] anticorpos IgA Ab em soro ou plasma por imunoensaio</td></tr><tr><td style=\"white-space:nowrap\">94563-4<a name=\"BRNomeExameLOINC-94563-4\"> </a></td><td>SARS Coronavírus 2, [presença de] anticorpos IgG Ab em soro ou plasma por imunoensaio</td></tr><tr><td style=\"white-space:nowrap\">94564-2<a name=\"BRNomeExameLOINC-94564-2\"> </a></td><td>SARS Coronavírus 2, [presença de] anticorpos IgM Ab em soro ou plasma por imunoensaio</td></tr><tr><td style=\"white-space:nowrap\">94565-9<a name=\"BRNomeExameLOINC-94565-9\"> </a></td><td>SARS Coronavírus 2, [presença de] DNA em rinofaringe por NAA por detecção sem sonda</td></tr></table></div>"
+  },
+  "url": "http://www.saude.gov.br/fhir/r4/CodeSystem/BRNomeExameLOINC",
+  "version": "0.1.0",
+  "name": "Exames LOINC",
+  "title": "Exame laboratorial (LOINC)",
+  "status": "active",
+  "experimental": false,
+  "date": "2020-04-29T20:29:49.3397125+00:00",
+  "publisher": "Rede Nacional de Dados em Saúde",
+  "contact": [
+    {
+      "name": "Rede Nacional de Dados em Saúde",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://github.com/kyriosdata"
+        },
+        {
+          "system": "email",
+          "value": "rnds@saude.gov.br"
+        }
+      ]
+    }
+  ],
+  "description": "Classifica o exame laboratorial realizado em amostra biológica para diagnóstico laboratorial, de acordo com a terminologia LOINC.",
+  "content": "complete",
+  "count": 27,
+  "concept": [
+    {
+      "code": "94307-6",
+      "display": "SARS Coronavírus, [presença de] gene 2 N em amostra não especificada por amplificação de ácido nucleico usando conjunto de sonda / primer N1"
+    },
+    {
+      "code": "94308-4",
+      "display": "SARS Coronavírus 2, [presença de] gene N em amostra não especificada, por amplificação de ácido nucleico usando conjunto de sonda / primer N2"
+    },
+    {
+      "code": "94309-2",
+      "display": "SARS Coronavírus 2, [presença de] RNA em amostra não especificada, por amplificação do ácido nucleico com detecção por sonda"
+    },
+    {
+      "code": "94311-8",
+      "display": "SARS Coronavírus 2, [limiar de ciclo] de gene N em amostra não especificada por amplificação de ácido nucleico usando conjunto de sonda / primer N1"
+    },
+    {
+      "code": "94312-6",
+      "display": "SARS Coronavírus 2, [limiar de ciclo] de gene N em amostra não especificada por amplificação de ácido nucleico usando conjunto de sonda / primer N2"
+    },
+    {
+      "code": "94314-2",
+      "display": "SARS Coronavírus 2, [presença de] gene RdRp em amostra não especificada por amplificação do ácido nucleico com detecção por sonda"
+    },
+    {
+      "code": "94315-9",
+      "display": "SARS Coronavírus 2, [presença de] gene E em amostra não especificada por amplificação de ácido nucleico com detecção por sonda"
+    },
+    {
+      "code": "94316-7",
+      "display": "SARS Coronavírus 2, [presença de] gene N em amostra não especificada por amplificação de ácido nucleico com detecção por sonda"
+    },
+    {
+      "code": "94500-6",
+      "display": "SARS Coronavírus 2, [presença de] RNA em amostra respiratória por amplificação do ácido nucleico com detecção por sonda"
+    },
+    {
+      "code": "94502-2",
+      "display": "SARS Coronavírus relacionado, [presença de] RNA em amostra respiratória por amplificação do ácido nucleico com detecção por sonda"
+    },
+    {
+      "code": "94505-5",
+      "display": "SARS Coronavírus 2, [dosagem de] anticorpos IgG [Unidades/Volume] em soro ou plasma por imunoensaio"
+    },
+    {
+      "code": "94506-3",
+      "display": "SARS Coronavírus 2, [dosagem de] anticorpos IgM [Unidades/Volume] em soro ou plasma por imunoensaio"
+    },
+    {
+      "code": "94507-1",
+      "display": "SARS Coronavírus 2, [presença de] anticorpos IgG em soro ou plasma por imunoensaio"
+    },
+    {
+      "code": "94508-9",
+      "display": "SARS Coronavírus 2, [presença de] anticorpos IgM em soro ou plasma por imunoensaio"
+    },
+    {
+      "code": "94509-7",
+      "display": "SARS Coronavírus 2, [limiar de ciclo de] gene E em amostra não especificada por amplificação do ácido nucleico com detecção por sonda"
+    },
+    {
+      "code": "94510-5",
+      "display": "SARS Coronavírus 2, [limiar de ciclo de] gene 2 N em amostra não especificada por amplificação de ácido nucleico com detecção por sonda"
+    },
+    {
+      "code": "94511-3",
+      "display": "SARS Coronavírus 2, [limiar de ciclo da] região ORF1ab em amostra não especificada por amplificação de ácido nucleico com detecção por sonda"
+    },
+    {
+      "code": "94532-9",
+      "display": "SARS Coronavírus relacionado + MERS Coronavírus, [presença de] RNA em amostra respiratória por amplificação do ácido nucleico com detecção por sonda"
+    },
+    {
+      "code": "94533-7",
+      "display": "SARS Coronavírus 2, [presença de] gene N em amostra respiratória por amplificação do ácido nucleico com detecção por sonda"
+    },
+    {
+      "code": "94534-5",
+      "display": "SARS Coronavírus 2, [presença de] gene RdRp em amostra respiratória por amplificação do ácido nucleico com detecção por sonda"
+    },
+    {
+      "code": "94547-7",
+      "display": "SARS Coronavírus 2, [presença de] anticorpos IgG e IgM em soro ou plasma por imunoensaio"
+    },
+    {
+      "code": "94558-4",
+      "display": "SARS Coronavírus 2, [presença de] antígenos Ag em amostra respiratória por imunoensaio rápido"
+    },
+    {
+      "code": "94559-2",
+      "display": "SARS Coronavírus 2, [presença de] gene da regição ORF1ab em amostra respiratória por amplificação do ácido nucléico com detecção por sonda"
+    },
+    {
+      "code": "94562-6",
+      "display": "SARS Coronavírus 2, [presença de] anticorpos IgA Ab em soro ou plasma por imunoensaio"
+    },
+    {
+      "code": "94563-4",
+      "display": "SARS Coronavírus 2, [presença de] anticorpos IgG Ab em soro ou plasma por imunoensaio"
+    },
+    {
+      "code": "94564-2",
+      "display": "SARS Coronavírus 2, [presença de] anticorpos IgM Ab em soro ou plasma por imunoensaio"
+    },
+    {
+      "code": "94565-9",
+      "display": "SARS Coronavírus 2, [presença de] DNA em rinofaringe por NAA por detecção sem sonda"
+    }
+  ]
+}

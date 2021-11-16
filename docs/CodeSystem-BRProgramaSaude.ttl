@@ -1,0 +1,424 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://www.saude.gov.br/fhir/r4/CodeSystem/BRProgramaSaude> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "BRProgramaSaude"];
+  fhir:Resource.meta [
+     fhir:Meta.lastUpdated [ fhir:value "2020-03-11T15:20:11.411-03:00"^^xsd:dateTime ]
+  ];
+  fhir:Resource.language [ fhir:value "pt-BR"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p>This code system http://www.saude.gov.br/fhir/r4/CodeSystem/BRProgramaSaude defines the following codes:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">1<a name=\"BRProgramaSaude-1\"> </a></td><td>Hanseníase</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">2<a name=\"BRProgramaSaude-2\"> </a></td><td>Diabetes</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">3<a name=\"BRProgramaSaude-3\"> </a></td><td>DST/AIDS</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">4<a name=\"BRProgramaSaude-4\"> </a></td><td>Judicialização</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">5<a name=\"BRProgramaSaude-5\"> </a></td><td>Hipertensão</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">6<a name=\"BRProgramaSaude-6\"> </a></td><td>Saúde da Mulher</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">7<a name=\"BRProgramaSaude-7\"> </a></td><td>Saúde Mental</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">8<a name=\"BRProgramaSaude-8\"> </a></td><td>Hospitalar</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">261<a name=\"BRProgramaSaude-261\"> </a></td><td>Tuberculose</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">281<a name=\"BRProgramaSaude-281\"> </a></td><td>Tabagismo</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">341<a name=\"BRProgramaSaude-341\"> </a></td><td>Assistência Farmacêutica Básica</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">361<a name=\"BRProgramaSaude-361\"> </a></td><td>Assitência Farmacêutica</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">381<a name=\"BRProgramaSaude-381\"> </a></td><td>Saúde da Criança</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">401<a name=\"BRProgramaSaude-401\"> </a></td><td>SAMU</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">421<a name=\"BRProgramaSaude-421\"> </a></td><td>Especializado</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">441<a name=\"BRProgramaSaude-441\"> </a></td><td>UPA</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">461<a name=\"BRProgramaSaude-461\"> </a></td><td>Cólera</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">481<a name=\"BRProgramaSaude-481\"> </a></td><td>Assistência Social</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">501<a name=\"BRProgramaSaude-501\"> </a></td><td>Estratégicos</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">521<a name=\"BRProgramaSaude-521\"> </a></td><td>Urgência e Emergência</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">541<a name=\"BRProgramaSaude-541\"> </a></td><td>Glaucoma</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">561<a name=\"BRProgramaSaude-561\"> </a></td><td>Sem dor</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">581<a name=\"BRProgramaSaude-581\"> </a></td><td>Suplementação de Ferro</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">601<a name=\"BRProgramaSaude-601\"> </a></td><td>Estratégicos - Estado</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">621<a name=\"BRProgramaSaude-621\"> </a></td><td>Ação Civil Pública</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">641<a name=\"BRProgramaSaude-641\"> </a></td><td>Infecções Oportunistas DST/AIDS</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">661<a name=\"BRProgramaSaude-661\"> </a></td><td>Lúpus Eritematoso Sistêmico</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">662<a name=\"BRProgramaSaude-662\"> </a></td><td>Insumos</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">681<a name=\"BRProgramaSaude-681\"> </a></td><td>Suplementos Alimentares</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">682<a name=\"BRProgramaSaude-682\"> </a></td><td>Infecções Oportunistas DST/AIDS</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">683<a name=\"BRProgramaSaude-683\"> </a></td><td>Lúpus Eritematoso Sistêmico</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">701<a name=\"BRProgramaSaude-701\"> </a></td><td>Antimicrobianos</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">721<a name=\"BRProgramaSaude-721\"> </a></td><td>Mieloma Múltiplo</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">761<a name=\"BRProgramaSaude-761\"> </a></td><td>DPOC</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">762<a name=\"BRProgramaSaude-762\"> </a></td><td>Alzheimer</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">763<a name=\"BRProgramaSaude-763\"> </a></td><td>Oncologia</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">764<a name=\"BRProgramaSaude-764\"> </a></td><td>Diversos</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">765<a name=\"BRProgramaSaude-765\"> </a></td><td>Administrativos</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">766<a name=\"BRProgramaSaude-766\"> </a></td><td>Fraldas</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">767<a name=\"BRProgramaSaude-767\"> </a></td><td>Suplementos Alimentares</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">781<a name=\"BRProgramaSaude-781\"> </a></td><td>Atenção Secundária</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">801<a name=\"BRProgramaSaude-801\"> </a></td><td>Doença Enxerto Hospedeiro</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">861<a name=\"BRProgramaSaude-861\"> </a></td><td>Saúde Prisional</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">881<a name=\"BRProgramaSaude-881\"> </a></td><td>Edemias Focais</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">882<a name=\"BRProgramaSaude-882\"> </a></td><td>Epidemias</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">901<a name=\"BRProgramaSaude-901\"> </a></td><td>Tracoma</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">902<a name=\"BRProgramaSaude-902\"> </a></td><td>Leishmaniose</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">903<a name=\"BRProgramaSaude-903\"> </a></td><td>Meningite</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">921<a name=\"BRProgramaSaude-921\"> </a></td><td>Chagas</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">922<a name=\"BRProgramaSaude-922\"> </a></td><td>Influenza</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">923<a name=\"BRProgramaSaude-923\"> </a></td><td>Infecções Oportunistas</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">941<a name=\"BRProgramaSaude-941\"> </a></td><td>Malária</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">961<a name=\"BRProgramaSaude-961\"> </a></td><td>Estratégico</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">981<a name=\"BRProgramaSaude-981\"> </a></td><td>Alimentação e Nutrição</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">1001<a name=\"BRProgramaSaude-1001\"> </a></td><td>Insulino-Dependente- DM I</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">1021<a name=\"BRProgramaSaude-1021\"> </a></td><td>Insulino-Dependente- DM II</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">1081<a name=\"BRProgramaSaude-1081\"> </a></td><td>Cólera</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">1101<a name=\"BRProgramaSaude-1101\"> </a></td><td>Dengue</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">1102<a name=\"BRProgramaSaude-1102\"> </a></td><td>Esquitossomose</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">1121<a name=\"BRProgramaSaude-1121\"> </a></td><td>Nutrição</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">1141<a name=\"BRProgramaSaude-1141\"> </a></td><td>Imunização</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">1161<a name=\"BRProgramaSaude-1161\"> </a></td><td>Toxoplasmose</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">1181<a name=\"BRProgramaSaude-1181\"> </a></td><td>Remédio em Casa</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">1201<a name=\"BRProgramaSaude-1201\"> </a></td><td>Filariose</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">1202<a name=\"BRProgramaSaude-1202\"> </a></td><td>Coagulopatias</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">1221<a name=\"BRProgramaSaude-1221\"> </a></td><td>Micoses Sistêmicas</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">1241<a name=\"BRProgramaSaude-1241\"> </a></td><td>Micoses Sistêmicas</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">1261<a name=\"BRProgramaSaude-1261\"> </a></td><td>Peste</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">1281<a name=\"BRProgramaSaude-1281\"> </a></td><td>Assitência Farmacêutica SESAI</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">1301<a name=\"BRProgramaSaude-1301\"> </a></td><td>Assistência Farmacêutica SESAI</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">1321<a name=\"BRProgramaSaude-1321\"> </a></td><td>DPOC</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">1341<a name=\"BRProgramaSaude-1341\"> </a></td><td>DPOC</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">1361<a name=\"BRProgramaSaude-1361\"> </a></td><td>Calamidade Pública</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">1381<a name=\"BRProgramaSaude-1381\"> </a></td><td>SESAI</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">1401<a name=\"BRProgramaSaude-1401\"> </a></td><td>Multidroga Resistente</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">1421<a name=\"BRProgramaSaude-1421\"> </a></td><td>Órteses e Prósteses</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">1441<a name=\"BRProgramaSaude-1441\"> </a></td><td>Esquitossomose</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">1461<a name=\"BRProgramaSaude-1461\"> </a></td><td>Estrate</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">1481<a name=\"BRProgramaSaude-1481\"> </a></td><td>Zoonoses</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  1482<a name=\"BRProgramaSaude-1482\"> </a></td><td>Zoonoses</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  1501<a name=\"BRProgramaSaude-1501\"> </a></td><td>Produtos para Saúde</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  1541<a name=\"BRProgramaSaude-1541\"> </a></td><td>Geohelmintíases</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  1561<a name=\"BRProgramaSaude-1561\"> </a></td><td>Coqueluche</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  1562<a name=\"BRProgramaSaude-1562\"> </a></td><td>Febre Maculosa</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  1601<a name=\"BRProgramaSaude-1601\"> </a></td><td>Odontologia</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  1621<a name=\"BRProgramaSaude-1621\"> </a></td><td>Manipulados</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  1641<a name=\"BRProgramaSaude-1641\"> </a></td><td>Síndrome Mielodisplásica - SMD</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  1661<a name=\"BRProgramaSaude-1661\"> </a></td><td>Sífilis</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  1681<a name=\"BRProgramaSaude-1681\"> </a></td><td>Programa de Toxicologia</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  1701<a name=\"BRProgramaSaude-1701\"> </a></td><td>Sarampo</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  1721<a name=\"BRProgramaSaude-1721\"> </a></td><td>Doença de Parkinson</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  1761<a name=\"BRProgramaSaude-1761\"> </a></td><td>Doença Falciforme</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  1762<a name=\"BRProgramaSaude-1762\"> </a></td><td>Brucelose</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://www.saude.gov.br/fhir/r4/CodeSystem/BRProgramaSaude"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "Programa de Saúde"];
+  fhir:CodeSystem.title [ fhir:value "Programa de saúde"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean];
+  fhir:CodeSystem.date [ fhir:value "2020-03-11T18:20:31.915229+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "Rede Nacional de Dados em Saúde"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Rede Nacional de Dados em Saúde" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://github.com/kyriosdata" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "rnds@saude.gov.br" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Identifica um programa nacional de saúde brasileiro ou uma situação específica que exija monitoramento no mesmo formato de uma política pública."];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "93"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hanseníase" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "2" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Diabetes" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "3" ];
+     fhir:CodeSystem.concept.display [ fhir:value "DST/AIDS" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "4" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Judicialização" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "5" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hipertensão" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "6" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Saúde da Mulher" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "7" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Saúde Mental" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "8" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hospitalar" ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "261" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tuberculose" ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "281" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tabagismo" ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "341" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Assistência Farmacêutica Básica" ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.concept.code [ fhir:value "361" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Assitência Farmacêutica" ]
+  ], [
+     fhir:index 12;
+     fhir:CodeSystem.concept.code [ fhir:value "381" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Saúde da Criança" ]
+  ], [
+     fhir:index 13;
+     fhir:CodeSystem.concept.code [ fhir:value "401" ];
+     fhir:CodeSystem.concept.display [ fhir:value "SAMU" ]
+  ], [
+     fhir:index 14;
+     fhir:CodeSystem.concept.code [ fhir:value "421" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Especializado" ]
+  ], [
+     fhir:index 15;
+     fhir:CodeSystem.concept.code [ fhir:value "441" ];
+     fhir:CodeSystem.concept.display [ fhir:value "UPA" ]
+  ], [
+     fhir:index 16;
+     fhir:CodeSystem.concept.code [ fhir:value "461" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cólera" ]
+  ], [
+     fhir:index 17;
+     fhir:CodeSystem.concept.code [ fhir:value "481" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Assistência Social" ]
+  ], [
+     fhir:index 18;
+     fhir:CodeSystem.concept.code [ fhir:value "501" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Estratégicos" ]
+  ], [
+     fhir:index 19;
+     fhir:CodeSystem.concept.code [ fhir:value "521" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Urgência e Emergência" ]
+  ], [
+     fhir:index 20;
+     fhir:CodeSystem.concept.code [ fhir:value "541" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Glaucoma" ]
+  ], [
+     fhir:index 21;
+     fhir:CodeSystem.concept.code [ fhir:value "561" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Sem dor" ]
+  ], [
+     fhir:index 22;
+     fhir:CodeSystem.concept.code [ fhir:value "581" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Suplementação de Ferro" ]
+  ], [
+     fhir:index 23;
+     fhir:CodeSystem.concept.code [ fhir:value "601" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Estratégicos - Estado" ]
+  ], [
+     fhir:index 24;
+     fhir:CodeSystem.concept.code [ fhir:value "621" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ação Civil Pública" ]
+  ], [
+     fhir:index 25;
+     fhir:CodeSystem.concept.code [ fhir:value "641" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Infecções Oportunistas DST/AIDS" ]
+  ], [
+     fhir:index 26;
+     fhir:CodeSystem.concept.code [ fhir:value "661" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Lúpus Eritematoso Sistêmico" ]
+  ], [
+     fhir:index 27;
+     fhir:CodeSystem.concept.code [ fhir:value "662" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Insumos" ]
+  ], [
+     fhir:index 28;
+     fhir:CodeSystem.concept.code [ fhir:value "681" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Suplementos Alimentares" ]
+  ], [
+     fhir:index 29;
+     fhir:CodeSystem.concept.code [ fhir:value "682" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Infecções Oportunistas DST/AIDS" ]
+  ], [
+     fhir:index 30;
+     fhir:CodeSystem.concept.code [ fhir:value "683" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Lúpus Eritematoso Sistêmico" ]
+  ], [
+     fhir:index 31;
+     fhir:CodeSystem.concept.code [ fhir:value "701" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Antimicrobianos" ]
+  ], [
+     fhir:index 32;
+     fhir:CodeSystem.concept.code [ fhir:value "721" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Mieloma Múltiplo" ]
+  ], [
+     fhir:index 33;
+     fhir:CodeSystem.concept.code [ fhir:value "761" ];
+     fhir:CodeSystem.concept.display [ fhir:value "DPOC" ]
+  ], [
+     fhir:index 34;
+     fhir:CodeSystem.concept.code [ fhir:value "762" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Alzheimer" ]
+  ], [
+     fhir:index 35;
+     fhir:CodeSystem.concept.code [ fhir:value "763" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Oncologia" ]
+  ], [
+     fhir:index 36;
+     fhir:CodeSystem.concept.code [ fhir:value "764" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Diversos" ]
+  ], [
+     fhir:index 37;
+     fhir:CodeSystem.concept.code [ fhir:value "765" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Administrativos" ]
+  ], [
+     fhir:index 38;
+     fhir:CodeSystem.concept.code [ fhir:value "766" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Fraldas" ]
+  ], [
+     fhir:index 39;
+     fhir:CodeSystem.concept.code [ fhir:value "767" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Suplementos Alimentares" ]
+  ], [
+     fhir:index 40;
+     fhir:CodeSystem.concept.code [ fhir:value "781" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Atenção Secundária" ]
+  ], [
+     fhir:index 41;
+     fhir:CodeSystem.concept.code [ fhir:value "801" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Doença Enxerto Hospedeiro" ]
+  ], [
+     fhir:index 42;
+     fhir:CodeSystem.concept.code [ fhir:value "861" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Saúde Prisional" ]
+  ], [
+     fhir:index 43;
+     fhir:CodeSystem.concept.code [ fhir:value "881" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Edemias Focais" ]
+  ], [
+     fhir:index 44;
+     fhir:CodeSystem.concept.code [ fhir:value "882" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Epidemias" ]
+  ], [
+     fhir:index 45;
+     fhir:CodeSystem.concept.code [ fhir:value "901" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Tracoma" ]
+  ], [
+     fhir:index 46;
+     fhir:CodeSystem.concept.code [ fhir:value "902" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Leishmaniose" ]
+  ], [
+     fhir:index 47;
+     fhir:CodeSystem.concept.code [ fhir:value "903" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Meningite" ]
+  ], [
+     fhir:index 48;
+     fhir:CodeSystem.concept.code [ fhir:value "921" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Chagas" ]
+  ], [
+     fhir:index 49;
+     fhir:CodeSystem.concept.code [ fhir:value "922" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Influenza" ]
+  ], [
+     fhir:index 50;
+     fhir:CodeSystem.concept.code [ fhir:value "923" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Infecções Oportunistas" ]
+  ], [
+     fhir:index 51;
+     fhir:CodeSystem.concept.code [ fhir:value "941" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Malária" ]
+  ], [
+     fhir:index 52;
+     fhir:CodeSystem.concept.code [ fhir:value "961" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Estratégico" ]
+  ], [
+     fhir:index 53;
+     fhir:CodeSystem.concept.code [ fhir:value "981" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Alimentação e Nutrição" ]
+  ], [
+     fhir:index 54;
+     fhir:CodeSystem.concept.code [ fhir:value "1001" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Insulino-Dependente- DM I" ]
+  ], [
+     fhir:index 55;
+     fhir:CodeSystem.concept.code [ fhir:value "1021" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Insulino-Dependente- DM II" ]
+  ], [
+     fhir:index 56;
+     fhir:CodeSystem.concept.code [ fhir:value "1081" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cólera" ]
+  ], [
+     fhir:index 57;
+     fhir:CodeSystem.concept.code [ fhir:value "1101" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Dengue" ]
+  ], [
+     fhir:index 58;
+     fhir:CodeSystem.concept.code [ fhir:value "1102" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Esquitossomose" ]
+  ], [
+     fhir:index 59;
+     fhir:CodeSystem.concept.code [ fhir:value "1121" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nutrição" ]
+  ], [
+     fhir:index 60;
+     fhir:CodeSystem.concept.code [ fhir:value "1141" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Imunização" ]
+  ], [
+     fhir:index 61;
+     fhir:CodeSystem.concept.code [ fhir:value "1161" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Toxoplasmose" ]
+  ], [
+     fhir:index 62;
+     fhir:CodeSystem.concept.code [ fhir:value "1181" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Remédio em Casa" ]
+  ], [
+     fhir:index 63;
+     fhir:CodeSystem.concept.code [ fhir:value "1201" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Filariose" ]
+  ], [
+     fhir:index 64;
+     fhir:CodeSystem.concept.code [ fhir:value "1202" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Coagulopatias" ]
+  ], [
+     fhir:index 65;
+     fhir:CodeSystem.concept.code [ fhir:value "1221" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Micoses Sistêmicas" ]
+  ], [
+     fhir:index 66;
+     fhir:CodeSystem.concept.code [ fhir:value "1241" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Micoses Sistêmicas" ]
+  ], [
+     fhir:index 67;
+     fhir:CodeSystem.concept.code [ fhir:value "1261" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Peste" ]
+  ], [
+     fhir:index 68;
+     fhir:CodeSystem.concept.code [ fhir:value "1281" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Assitência Farmacêutica SESAI" ]
+  ], [
+     fhir:index 69;
+     fhir:CodeSystem.concept.code [ fhir:value "1301" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Assistência Farmacêutica SESAI" ]
+  ], [
+     fhir:index 70;
+     fhir:CodeSystem.concept.code [ fhir:value "1321" ];
+     fhir:CodeSystem.concept.display [ fhir:value "DPOC" ]
+  ], [
+     fhir:index 71;
+     fhir:CodeSystem.concept.code [ fhir:value "1341" ];
+     fhir:CodeSystem.concept.display [ fhir:value "DPOC" ]
+  ], [
+     fhir:index 72;
+     fhir:CodeSystem.concept.code [ fhir:value "1361" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Calamidade Pública" ]
+  ], [
+     fhir:index 73;
+     fhir:CodeSystem.concept.code [ fhir:value "1381" ];
+     fhir:CodeSystem.concept.display [ fhir:value "SESAI" ]
+  ], [
+     fhir:index 74;
+     fhir:CodeSystem.concept.code [ fhir:value "1401" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Multidroga Resistente" ]
+  ], [
+     fhir:index 75;
+     fhir:CodeSystem.concept.code [ fhir:value "1421" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Órteses e Prósteses" ]
+  ], [
+     fhir:index 76;
+     fhir:CodeSystem.concept.code [ fhir:value "1441" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Esquitossomose" ]
+  ], [
+     fhir:index 77;
+     fhir:CodeSystem.concept.code [ fhir:value "1461" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Estrate" ]
+  ], [
+     fhir:index 78;
+     fhir:CodeSystem.concept.code [ fhir:value "1481" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Zoonoses" ];
+     fhir:CodeSystem.concept.concept [
+       fhir:index 0;
+       fhir:CodeSystem.concept.code [ fhir:value "1482" ];
+       fhir:CodeSystem.concept.display [ fhir:value "Zoonoses" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.code [ fhir:value "1501" ];
+       fhir:CodeSystem.concept.display [ fhir:value "Produtos para Saúde" ]
+     ], [
+       fhir:index 2;
+       fhir:CodeSystem.concept.code [ fhir:value "1541" ];
+       fhir:CodeSystem.concept.display [ fhir:value "Geohelmintíases" ]
+     ], [
+       fhir:index 3;
+       fhir:CodeSystem.concept.code [ fhir:value "1561" ];
+       fhir:CodeSystem.concept.display [ fhir:value "Coqueluche" ]
+     ], [
+       fhir:index 4;
+       fhir:CodeSystem.concept.code [ fhir:value "1562" ];
+       fhir:CodeSystem.concept.display [ fhir:value "Febre Maculosa" ]
+     ], [
+       fhir:index 5;
+       fhir:CodeSystem.concept.code [ fhir:value "1601" ];
+       fhir:CodeSystem.concept.display [ fhir:value "Odontologia" ]
+     ], [
+       fhir:index 6;
+       fhir:CodeSystem.concept.code [ fhir:value "1621" ];
+       fhir:CodeSystem.concept.display [ fhir:value "Manipulados" ]
+     ], [
+       fhir:index 7;
+       fhir:CodeSystem.concept.code [ fhir:value "1641" ];
+       fhir:CodeSystem.concept.display [ fhir:value "Síndrome Mielodisplásica - SMD" ]
+     ], [
+       fhir:index 8;
+       fhir:CodeSystem.concept.code [ fhir:value "1661" ];
+       fhir:CodeSystem.concept.display [ fhir:value "Sífilis" ]
+     ], [
+       fhir:index 9;
+       fhir:CodeSystem.concept.code [ fhir:value "1681" ];
+       fhir:CodeSystem.concept.display [ fhir:value "Programa de Toxicologia" ]
+     ], [
+       fhir:index 10;
+       fhir:CodeSystem.concept.code [ fhir:value "1701" ];
+       fhir:CodeSystem.concept.display [ fhir:value "Sarampo" ]
+     ], [
+       fhir:index 11;
+       fhir:CodeSystem.concept.code [ fhir:value "1721" ];
+       fhir:CodeSystem.concept.display [ fhir:value "Doença de Parkinson" ]
+     ], [
+       fhir:index 12;
+       fhir:CodeSystem.concept.code [ fhir:value "1761" ];
+       fhir:CodeSystem.concept.display [ fhir:value "Doença Falciforme" ]
+     ], [
+       fhir:index 13;
+       fhir:CodeSystem.concept.code [ fhir:value "1762" ];
+       fhir:CodeSystem.concept.display [ fhir:value "Brucelose" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://www.saude.gov.br/fhir/r4/CodeSystem/BRProgramaSaude.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,2560 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "rnds",
+  "language": "pt-BR",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><h2>GuiaImplementacaoFhirRnds</h2><p>The official URL for this implementation guide is: </p><pre>http://www.saude.gov.br/fhir/r4/ImplementationGuide/rnds</pre><div><p>Experimento com o SUSHI para geração de Guia de Implementação</p>\n</div></div>"
+  },
+  "url": "http://www.saude.gov.br/fhir/r4/ImplementationGuide/rnds",
+  "version": "0.1.0",
+  "name": "GuiaImplementacaoFhirRnds",
+  "title": "RNDS (Guia de Implementação)",
+  "status": "draft",
+  "date": "2021-11-16T07:50:50-03:00",
+  "publisher": "Rede Nacional de Dados em Saúde",
+  "contact": [
+    {
+      "name": "Rede Nacional de Dados em Saúde",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://github.com/kyriosdata"
+        },
+        {
+          "system": "email",
+          "value": "rnds@saude.gov.br"
+        }
+      ]
+    }
+  ],
+  "description": "Experimento com o SUSHI para geração de Guia de Implementação",
+  "packageId": "rnds",
+  "license": "CC0-1.0",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "definition": {
+    "extension": [
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "copyrightyear"
+          },
+          {
+            "url": "value",
+            "valueString": "2021+"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "releaselabel"
+          },
+          {
+            "url": "value",
+            "valueString": "ci-build"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-liquid"
+          },
+          {
+            "url": "value",
+            "valueString": "template/liquid"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-liquid"
+          },
+          {
+            "url": "value",
+            "valueString": "input/liquid"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-qa"
+          },
+          {
+            "url": "value",
+            "valueString": "temp/qa"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-temp"
+          },
+          {
+            "url": "value",
+            "valueString": "temp/pages"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-output"
+          },
+          {
+            "url": "value",
+            "valueString": "output"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-suppressed-warnings"
+          },
+          {
+            "url": "value",
+            "valueString": "input/ignoreWarnings.txt"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-history"
+          },
+          {
+            "url": "value",
+            "valueString": "http://www.saude.gov.br/fhir/r4/history.html"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "template-html"
+          },
+          {
+            "url": "value",
+            "valueString": "template-page.html"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "template-md"
+          },
+          {
+            "url": "value",
+            "valueString": "template-page-md.html"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-contact"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-context"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-copyright"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-jurisdiction"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-license"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-publisher"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-version"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "active-tables"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      }
+    ],
+    "resource": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/BRAmostraBiologica"
+        },
+        "name": "Amostra Biológica",
+        "description": "Amostra de origem humana/animal usada em investigações biológicas/laboratoriais para fins diagnósticos.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/8e81a097-e1cb-422f-8262-014d7ca329b2"
+        },
+        "name": "CIAP2 Avaliado",
+        "description": "Problema atribuído pelo profissional de saúde ao indivíduo no contato assistencial.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/d3d10a8f-46bc-4d9d-850f-b8ab5b778709"
+        },
+        "name": "CID10 Avaliado",
+        "description": "Diagnóstico atribuído pelo profissional de saúde ao indivíduo no contato assistencial.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/e95fd8e8-3e10-4824-8227-99576192fb81"
+        },
+        "name": "Conjunto Mínimo de Dados",
+        "description": "Documento público que coleta os dados dos atendimentos em saúde realizados em qualquer estabelecimento de saúde do país, público ou privado, em cada contato assistencial",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/521287f6-fd07-498d-aec2-1dff41af31ba"
+        },
+        "name": "Conjunto Mínimo de Dados",
+        "description": "Documento público que coleta os dados dos atendimentos em saúde realizados em qualquer estabelecimento de saúde do país, público ou privado, em cada contato assistencial",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/9e02be1a-ccd7-41d3-a10e-2c031a4979b4"
+        },
+        "name": "Contato Assistencial",
+        "description": "Resumo ou sumário referente a um atendimento ininterrupto dispensado a um indivíduo em uma mesma modalidade assistencial e em um mesmo estabelecimento de saúde, gerado após a conclusão deste atendimento.\nReferência: <a href=\"https://wiki.saude.gov.br/cmd/index.php/Página_principal#Contato_Assistencial\">https://wiki.saude.gov.br/cmd/index.php/Página_principal#Contato_Assistencial</a>",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/10adbc3a-b1e9-4620-8c02-6f530e2caae0"
+        },
+        "name": "Diagnóstico em Laboratório Clínico",
+        "description": "Exame ou teste realizado em laboratório com finalidade diagnóstica ou investigativa.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:complex-type"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/BRDocumentoIndividuo"
+        },
+        "name": "Documento do Indivíduo",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:complex-type"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/BREndereco"
+        },
+        "name": "Endereço",
+        "description": "Padronização de endereços no Brasil.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/a3bc0180-3d3d-469f-af04-7117f87db5be"
+        },
+        "name": "Estabelecimento de Saúde",
+        "description": "Espaço físico delimitado e permanente onde são realizadas ações e serviços de saúde humana sob responsabilidade técnica.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/31468be2-a66e-427d-b07e-c217627c069d"
+        },
+        "name": "Imunobiológico Administrado",
+        "description": "Representa um imunobiológico administrado.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/BRImunobiologicoAdministradoCampanha"
+        },
+        "name": "Imunobiológico Administrado em Campanha",
+        "description": "Representa um imunobiológico administrado em campanha vacinal.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/BRImunobiologicoAdministradoCarga"
+        },
+        "name": "Imunobiologico Administrado - Carga",
+        "description": "Registro de imunobiológicos administrados no legado do SIPNI.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/7ba7dc20-9251-417f-bc02-0a08c2986710"
+        },
+        "name": "Indivíduo",
+        "description": "Indíviduo, sujeito da assistência à saúde.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/270156fd-40f7-44b0-979d-1165022df8da"
+        },
+        "name": "Lista da Timeline",
+        "description": "Lista de de itens agregados na timeline um paciente.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/BRLocalAtendimento"
+        },
+        "name": "Local de Atendimento",
+        "description": "Uma referência genérica aos locais onde um Contato Assistencial pode acontecer.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/abe19423-94f2-490a-911e-a82ff5665164"
+        },
+        "name": "Lotação Profissional",
+        "description": "Lotação de um profissional em um Estabelecimento de Saúde.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/af21adb7-867b-4862-8e26-814b2e805f37"
+        },
+        "name": "Medicamento",
+        "description": "Drogas dirigidas para uso humano.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/17e2d3ae-3c74-4b22-8e95-560ab209d7df"
+        },
+        "name": "Medicamento Dispensado",
+        "description": "Detalha os atos de dispensação de medicamentos.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:complex-type"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/BRMeioContato"
+        },
+        "name": "Meio de Contato",
+        "description": "Padronização de meios de contato no Brasil.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:complex-type"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/BRNomeIndividuo"
+        },
+        "name": "Nome de Indivíduos",
+        "description": "Padronização de uso de nomes de indivíduo no Brasil.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/f0d41273-772c-425f-bb60-2507efddff01"
+        },
+        "name": "Observação Descritiva",
+        "description": "Descrições textuais simples sobre um paciente.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/BRPessoaJuridicaProfissionalLiberal"
+        },
+        "name": "Pessoa Jurídica e Profissional Liberal",
+        "description": "Pessoa jurídica identificada no âmbito da Receita Federal do Brasil pelo Cadastro Nacional da Pessoa Jurídica (CNPJ) ou profissional liberal identificado pelo Cadastro de Pessoas Físicas (CPF).",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/33f94efe-eda9-4cdf-b3a1-4b2e0d5dfba9"
+        },
+        "name": "Procedimento Realizado",
+        "description": "Procedimento realizado em um indivíduo.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/BRProfissional"
+        },
+        "name": "Profissional",
+        "description": "Indivíduo que realiza atividades profissionais.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/BRRegistroImunobiologicoAdministrado"
+        },
+        "name": "Registro de Imunobiológico Administrado",
+        "description": "Documento que representa o registro da administração de imunobiológicos.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/BRRegistroImunobiologicoAdministradoCampanha"
+        },
+        "name": "Registro de Imunobiológico Administrado na Campanha",
+        "description": "Documento que aprepresenta o registro da administração de imunobiológicos em campanha vacinal.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/BRRegistroImunobiologicoAdministradoCarga"
+        },
+        "name": "Registro de Imunobiológico Administrado - Carga",
+        "description": "Documento que representa o registro da administração de imunobiológicos, provenientes da carga do SIPNI.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/BRResultadoExameLaboratorial-1.0"
+        },
+        "name": "Resultado de Exame Laboratorial",
+        "description": "Documento que apresenta resultados de exames laboratoriais.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/43822493-10c2-41dc-9fae-962bab3a59e4"
+        },
+        "name": "Resultado de Exame Laboratorial",
+        "description": "Documento que apresenta resultados de exames laboratoriais.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/BRAdministradorTerceiro"
+        },
+        "name": "Gerente/Administrador (Terceiro) ou Interveniente",
+        "description": "Identifica organizações que são gerentes/administradoras (terceiras) ou intervenientes de outras.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/BRAtendeSUS"
+        },
+        "name": "Atende SUS?",
+        "description": "Extensão utilizada para identificar se um profissional ou Estabelecimento de Saúde oferece atendimento pelo Sistema Único de Saúde (SUS).",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/6ca9186a-6b71-4837-9ee6-50cb5da88645"
+        },
+        "name": "Componente da Assistência Farmacêutica",
+        "description": "Extensão para identificar o componente de Assistência Farmacêutica.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/BREstrategiaCampanha"
+        },
+        "name": "Estratégia de campanha de vacinação",
+        "description": "Informações sobre as caracteríticas da campanha.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/BREstrategiaVacinacao"
+        },
+        "name": "Estratégia de Vacinação",
+        "description": "Identifica a estratégia de vacinação adotada.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/3d75211e-ccb6-4e01-b965-05382abfae5d"
+        },
+        "name": "Financiamento",
+        "description": "Extensão utilizada para identificar financiamento.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/BRGrupoAtendimento"
+        },
+        "name": "Grupo de Atendimento",
+        "description": "Identificação do grupo de atendimento para vacinação.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/2cc4e4e3-0f97-4b54-ab87-e73fe0758cc7"
+        },
+        "name": "Identificador Nacional de Equipe",
+        "description": "Extensão para permitir informar o código do Identificador Nacional de Equipe.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/66fe4a9e-184c-435c-ac3e-680bac8346cf"
+        },
+        "name": "Indicador de Presença na Admissão",
+        "description": "Extensão para a informação do Indicador de Presença na Admissão.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/BRIndividuoNaoIdentificado"
+        },
+        "name": "Informações Complementares de Indivíduos Não Identificados",
+        "description": "Informações complementares necessárias ao Contato Assistencial na hipótese do indivíduo não poder ser identificado.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/bd2268df-7a8f-4e9b-8674-547f3b20a52b"
+        },
+        "name": "Indivíduo Protegido?",
+        "description": "Extensão utilizada para identificar indivíduos que possuem  maior restrição à disponibilização de seus dados, por possuirem grande exposição pública (ex.: político, esportista, artista famoso etc.), estarem em programa de proteção à testemunha, o objeto de seu trabalho colocá-los em risco (investigadores da inteligência, p.ex.), dentre outros.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/e93a2b50-3f50-4670-8242-8b9af26a3584"
+        },
+        "name": "Jurisdição do Órgão Expedidor",
+        "description": "Jurisdição de Órgãos Expedidores",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/BRMunicipio"
+        },
+        "name": "Município",
+        "description": "Extensão para informar um município.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/209cde9a-5393-4f3d-b456-294c954ea6fc"
+        },
+        "name": "Dados de Naturalização",
+        "description": "Extensão para as informações de naturalização de um indivíduo.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/c8f43e8f-28c7-4872-9aa1-1405d22f0f51"
+        },
+        "name": "Ocupação",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/BROperadorDigitador"
+        },
+        "name": "Identificador do digitador",
+        "description": "Identificação do operador / digitador que realizou a entrada de dados a partir da transcrição do registro de um profissional de saúde.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/26b68721-2e7f-48a1-84b2-4d71cc9751f5"
+        },
+        "name": "País",
+        "description": "Extensão para representar um país.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/BRParentesIndividuo"
+        },
+        "name": "Parentes do Indivíduo",
+        "description": "Resource para representar parentescos de indivíduo.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/BRPosicaoIndividuo"
+        },
+        "name": "Posição do Indivíduo",
+        "description": "Extensão para indicar a posição do indivíduo.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/a495e791-173d-4175-bced-da4b42fa0ce1"
+        },
+        "name": "Programa de Saúde",
+        "description": "Extensão para identificar o programa de saúde.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/BRQualidadeCadastroIndividuo"
+        },
+        "name": "Qualidade do Cadastro do Indivíduo",
+        "description": "Grau de qualidade de um registro de um indivíduo, vai de 0 até 100.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/ee0344fa-7d1d-488d-9356-479b885bfedd"
+        },
+        "name": "Quantidade",
+        "description": "Extensão para identificar quantidades.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/0d945af8-3a09-4663-8ce2-0e4175d5cb09"
+        },
+        "name": "Raça/Cor e Etnina",
+        "description": "Extensão para para representar dados relacionados à raça/cor e etnia de um indivíduo.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/BRReferencia"
+        },
+        "name": "Referência",
+        "description": "Uma referência para qualquer finalidade.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/BRSituacaoCondicaoIndividuo"
+        },
+        "name": "Situação/Condição do Indivíduo",
+        "description": "Extensão para especificar a situação ou condicação de um indivíduo num contexto.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/0a10269f-4d8d-4cbc-b06f-762fb595e248"
+        },
+        "name": "Valor Monetário",
+        "description": "Um valor monetário em Reais brasileiros / BRL / R$ para qualquer finalidade.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/BRAbrangencia-1.0"
+        },
+        "name": "BRAbrangencia",
+        "description": "Identifica a abrangência territorial da atividade adotada.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/BRCBO-1.0"
+        },
+        "name": "Classificação Brasileira de Ocupações",
+        "description": "Classifica as ocupações no mercado brasileiro",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/BRCIAP2-1.0"
+        },
+        "name": "Classificação Internacional de Atenção Primária - Segunda Edição - CIAP2",
+        "description": "Classifica os problemas identificados no contato assistencial pelos profissionais de saúde, os motivos da contato assistencial e as respostas propostas pela equipe seguindo a sistematização SOA.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/BRCID10-1.0"
+        },
+        "name": "Classificação Internacional de Doenças - Décima Revisão - CID-10",
+        "description": "Classificação Internacional de Doenças - Décima Revisão - CID-10",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/BRCampanhaVacinacao-1.0"
+        },
+        "name": "Nome da campanha de vacinação",
+        "description": "Identifica a campanha de vacinação adotada.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/BRCaraterAtendimento-1.0"
+        },
+        "name": "Caráter de atendimento do Contato Assistencial",
+        "description": "ValueSet utilizado para classificar a prioridade de realização de um Contato Assistencial.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/BRCategoriaExame-1.0"
+        },
+        "name": "Categoria do exame",
+        "description": "Categoriza exames ou testes utilizando os subgrupos do grupo 02 - Procedimentos com finalidade diagnóstica da Tabela SUS.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/BRClassificacaoLista-1.0"
+        },
+        "name": "Classificação das Listas",
+        "description": "ValueSet utilizado para classificar os tipos de listas utilizados na Rede Nacional de Dados em Saúde.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/BRComponenteAssistenciaFarmaceutica-1.0"
+        },
+        "name": "Componente da Assistência Farmacêutica",
+        "description": "Classifica o componente da assistência farmacêutica o qual o produto dispensado é vinculado.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/BRDose-1.0"
+        },
+        "name": "Dose do Imunobiológico",
+        "description": "ValueSet utilizado para definir o tipo da dose administrada no indivíduo.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/BREstadoCivil-1.0"
+        },
+        "name": "Estado Civil",
+        "description": "Complexo das qualidades de um indivíudo referentes à ordem pública, à ordem privada e à ordem física do ser humano. Refere-se, assim, à cidadania, à família, e à capacidade civil.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/BREstadoContatoAssistencial-1.0"
+        },
+        "name": "Estado do Contato Assistencial",
+        "description": "Classifica o estado de um Contato Assistencial.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/BREstadoDocumento-1.0"
+        },
+        "name": "Estados de um documento",
+        "description": "Classifica o estado de um documento.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/BREstadoEvento-1.0"
+        },
+        "name": "Estado do Evento",
+        "description": "Identificação do estado de um evento.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/BREstadoMedicamentoLista-1.0"
+        },
+        "name": "Estados do Medicamento numa Lista.",
+        "description": "Classifica os estados de um medicamento em uma lista.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/BREstadoObservacao-1.0"
+        },
+        "name": "Estado da Observação.",
+        "description": "Tipos de estados de uma observação.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/BREstadoResolucaoDiagnosticoProblema-1.0"
+        },
+        "name": "Estado da Resolução de Diagnóstico ou Problema.",
+        "description": "Estado da resolução de um diagnóstico ou problema.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/BREstrategiaVacinacao-1.0"
+        },
+        "name": "Estratégia de Vacinação",
+        "description": "Identifica a estratégia de vacinação adotada.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/BREstrategiaVacinacaoCampanha-1.0"
+        },
+        "name": "Estratégia de Vacinação em Campanha",
+        "description": "Identifica a estratégia de vacinação adotada.na campanha",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/BREtniaIndigena-1.0"
+        },
+        "name": "Etnia Indígena",
+        "description": "Códigos para representação de etnias indígenas no Brasil.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/BRFinanciamento-1.0"
+        },
+        "name": "Financiamento do procedimento realizado",
+        "description": "Descreve o agente, instituição ou entidade responsável por custear as ações e serviços de saúde.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/BRGrupoAtendimento-1.0"
+        },
+        "name": "Tipo de grupo de atendimento",
+        "description": "Identifica o tipo de grupo de atendimento que o indivíduo apresentou para a vacinação em campanha.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/BRImunobiologico-1.0"
+        },
+        "name": "Imunobiológico",
+        "description": "Tipos de imunobiológicos disponíveis no Brasil.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/BRJustificativaIndividuoNaoIdentificado-1.0"
+        },
+        "name": "Justificativa para não identificação do indivíduo",
+        "description": "Classifica as razões pelo qual não foi possível obter os dados de identificação do indivíduo em um contato assistencial. (Port. nº 84/SAS/MS/1997 e Port. nº02/SAS/SGEP/MS/2012)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/ValueSetBRLocalAfericao"
+        },
+        "name": "Local de Aferição",
+        "description": "ValueSet utilizado para identificar a parte do corpo utilizada para aferir a pressão arterial.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/BRLocalAPlicacao-1.0"
+        },
+        "name": "Local de Aplicação",
+        "description": "Localização anatômica para aplicação de um injetável.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/BRMedicamento-1.0"
+        },
+        "name": "Medicamento",
+        "description": "Identifica um medicamento.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/BRModalidadeAssistencial-1.0"
+        },
+        "name": "Modalidade Assistencial",
+        "description": "Classificação dos documentos e contatos assistenciais de acordo com as especificidades do modo, local e duração do atendimento.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/BRMotivoDesfecho-1.0"
+        },
+        "name": "Motivo do desfecho do Contato assistencial",
+        "description": "ValueSet utilizado para classificar o motivo de conclusão total ou parcial do contato assistencial.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/BRMunicipio-1.0"
+        },
+        "name": "Município",
+        "description": "Municípios brasileiros, entes subnacionais.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/BRNaturezaJuridica-1.0"
+        },
+        "name": "Natureza Jurídica",
+        "description": "Identifica a constituição jurídico-institucional das entidades públicas e privadas nos cadastros da administração pública do Brasil.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/BRNomeExame-1.0"
+        },
+        "name": "Nome do Exame",
+        "description": "Classifica o exame laboratorial realizado.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/BROcupacao-1.0"
+        },
+        "name": "Classificação Brasileira de Ocupações - CBO",
+        "description": "Classifica as profissões do mercado de trabalho brasileiro.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/BROrgaoExpedidor-1.0"
+        },
+        "name": "Órgão Expedidor",
+        "description": "Lista de órgãos responsáveis por expedir documentos no Brasil.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/BRPais-1.0"
+        },
+        "name": "País",
+        "description": "Códigos para representação de países.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/BRParentesco-1.0"
+        },
+        "name": "Parentesco",
+        "description": "Classificação da relação familiar entre indivíduos.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/BRPosicaoIndividuo-1.0"
+        },
+        "name": "Posição do Indivíduo",
+        "description": "ValueSet utilizado para identificar a posição do indivíduo no momento da ação / procedimento.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/BRProcedencia-1.0"
+        },
+        "name": "Procedência do Contato Assistencial",
+        "description": "Classifica o serviço que encaminhou o indivíduo ou a sua iniciativa/de seu responsável na busca pelo acesso ao serviço de saúde.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/BRProcedimentosNacionais-1.0"
+        },
+        "name": "Procedimento realizado",
+        "description": "Value Set das classificações brasileiras para procedimentos adotadas em contexto nacional.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/BRProgramaSaude-1.0"
+        },
+        "name": "Programa de Saúde",
+        "description": "Identifica programas de saúde.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/BRRacaCor-1.0"
+        },
+        "name": "Raça/Cor",
+        "description": "Códigos para representação de raça/cor no Brasil.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/BRResponsabilidadeParticipante-1.0"
+        },
+        "name": "Reponsabilidade no Contato Assistencial",
+        "description": "Classifica o tipo de responsabilidade de indivíduos ou profissionais no Contato Assistencial.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/BRResultadoQualitativoExame-1.0"
+        },
+        "name": "Resultado Qualitativo do Exame",
+        "description": "ValueSet utilizado para definir o valor atribuído ao resultado de um exame laboratorial realizado por método de análise qualitativo.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/BRSexo-1.0"
+        },
+        "name": "Sexo",
+        "description": "Sexo de um indivíduo.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/BRSituacaoCOndicaoIndividuo-1.0"
+        },
+        "name": "Situação/Condição do Indivíduo na Administração de Imunobiológico",
+        "description": "Classifica a situação/condição de um indivíudo em um contexto.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/BRTipoAmostra-1.0"
+        },
+        "name": "Tipo de Amostra de Exame",
+        "description": "Tipo da amostra de um exame ou teste.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/BRTipoDocumento-1.0"
+        },
+        "name": "Tipo de Documento",
+        "description": "Classifica o tipo de documento que está sendo trafegado.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/BRTipoDocumentoIndividuo-1.0"
+        },
+        "name": "Tipo de Documento do Indivíduo",
+        "description": "Classifica o tipo de documento que está sendo utilizado para identificar o indivíduo.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/BRTipoEstabelecimentoSaude-1.0"
+        },
+        "name": "Tipo de Estabelecimento de Saúde",
+        "description": "ValueSet utilizado para classificar o tipo de estabelecimento de saúde.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/BRTipoIdentificadorProcedimento-1.0"
+        },
+        "name": "Tipo de Identificador do Procedimento",
+        "description": "Classifica o tipo de identificador que está sendo utilizado para o procedimento.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/BRTipoLogradouro-1.0"
+        },
+        "name": "Tipo de Logradouro",
+        "description": "Classifica o tipo de logradouro.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/BRTipoObservacao-1.0"
+        },
+        "name": "Tipo de Observação",
+        "description": "Tipo de Observação.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/BRUnidadeFarmaceutica-1.0"
+        },
+        "name": "Unidade Farmacêutica",
+        "description": "Identifica a unidade farmacêutica do medicamento conforme Base Nacional da Assistência Farmacêutica (BNAFAR).",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/BRUnidadeFederativa-1.0"
+        },
+        "name": "Unidade Federativa",
+        "description": "Os estados e o Distrito Federal, entes subnacionais brasileiros.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/BRViaAdministracao-1.0"
+        },
+        "name": "Via de Administração do Imunobiológico",
+        "description": "Via de administração de um imunobiológico.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/BRAbrangencia"
+        },
+        "name": "Abrangência territorial",
+        "description": "Classifica a abrangência territorial da atividade.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/BRCaraterAtendimento"
+        },
+        "name": "Caráter de atendimento",
+        "description": "Terminologia que classifica a prioridade de realização de um Contato Assistencial.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/BRFinanciamento"
+        },
+        "name": "Forma de financiamento",
+        "description": "Terminologia que descreve o agente, instituição ou entidade responsável por custear as ações e serviços de saúde.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/BRImunobiologico"
+        },
+        "name": "Tipo de imunobiológico",
+        "description": "Classifica os tipos de imunobiológicos.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/BRMedicamento"
+        },
+        "name": "Medicamento",
+        "description": "Drogas dirigidas para uso humano, apresentadas em sua formulação final.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/BRPais"
+        },
+        "name": "País",
+        "description": "Códigos para representação de países.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/BRParentesco"
+        },
+        "name": "Parentesco",
+        "description": "Classificação da relação familiar entre indivíduos.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/BRProcedencia"
+        },
+        "name": "Procedência",
+        "description": "Identifica o serviço que encaminhou o indivíduo ou a sua iniciativa/de seu responsável na busca pelo acesso ao serviço de saúde.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/BRRacaCor"
+        },
+        "name": "Raça/cor",
+        "description": "Códigos para representação de raça/cor.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/BRCBHPMTUSS"
+        },
+        "name": "Procedimentos",
+        "description": "Classificações de procedimentos utilizadas no Brasil, no contexto da assistência à saúde privada, não complementar ao SUS, e eventualmente no SUS para classificar procedimento inexistente na Tabela SUS.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/BRCBO"
+        },
+        "name": "Ocupações do mercado de trabalho brasileiro",
+        "description": "Classifica as profissões do mercado de trabalho brasileiro.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/BRCIAP2"
+        },
+        "name": "Problema identificado no contato assistencial",
+        "description": "Classifica os problemas identificados no contato assistencial pelos profissionais de saúde, os motivos da contato assistencial e as respostas propostas pela equipe seguindo a sistematização SOAP.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/BRCID10"
+        },
+        "name": "Doenças",
+        "description": "Classifica as doenças e outros problemas em saúde registrados em diversos tipos de documentos clínicos.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/BRClassificacaoLista"
+        },
+        "name": "Listas",
+        "description": "Classificações das listas utilizadas na Rede Nacional de Dados em Saúde.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/BRComponenteAssistenciaFarmaceutica"
+        },
+        "name": "Componente da assistência farmacêutica",
+        "description": "Identifica o componente da assistência farmacêutica de uma substância ou produto.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/BRDivisaoGeograficaBrasil"
+        },
+        "name": "Divisão geográfica do Brasil",
+        "description": "As regiões geográficas, estados, distrito federal e municípios do Brasil.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/BRDose"
+        },
+        "name": "Dose de vacina",
+        "description": "Define a dose da administração de uma substância.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/BREstadoMedicamentoLista"
+        },
+        "name": "Estado de medicamento",
+        "description": "Classificação do estado de um medicamento na lista de medicamentos da Rede Nacional de Dados em Saúde.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/BREstrategiaVacinacao"
+        },
+        "name": "Estratégia de vacinação",
+        "description": "Classifica a estratégia de vacinação adotada.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/BREtniaIndigena"
+        },
+        "name": "Etnia indígena",
+        "description": "Códigos para representação de etnias indígenas no Brasil.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/BRNomeExameLOINC"
+        },
+        "name": "Exame laboratorial (LOINC)",
+        "description": "Classifica o exame laboratorial realizado em amostra biológica para diagnóstico laboratorial, de acordo com a terminologia LOINC.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/BRNomeExameGAL"
+        },
+        "name": "Exame laboratorial (GAL)",
+        "description": "Classifica o exame laboratorial realizado em amostra biológica para diagnóstico laboratorial, de acordo com o Gerenciador de Ambiente Laboratorial (GAL).",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/BRGrupoAtendimento"
+        },
+        "name": "Grupo de atendimento",
+        "description": "Domínio que identifica o tipo de grupo de atendimento que o indivíduo apresentou para a vacinação em campanha.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/BRJustificativaIndividuoNaoIdentificado"
+        },
+        "name": "Justificativa para não identificação de indivíduo",
+        "description": "Classifica as razões pelo qual não foi possível obter os dados de identificação do indivíduo em um contato assistencial. (Port. nº 84/SAS/MS/1997 e Port. nº02/SAS/SGEP/MS/2012)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/BRLocalAfericao"
+        },
+        "name": "Local de aferição",
+        "description": "Identifica a parte do corpo utilizada para realizar uma mensuração ou aferição.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/BRLocalAplicacao"
+        },
+        "name": "Local anatômico de aplicação de injetável",
+        "description": "Define a localização anatômica de aplicação de um injetável",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/BRModalidadeAssistencial"
+        },
+        "name": "Modalidade de assistência",
+        "description": "Classifica os contatos assistenciais de acordo com as especificidades do modo, local e duração do atendimento",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/BRMotivoDesfecho"
+        },
+        "name": "Motivo do desfecho",
+        "description": "Caracteriza o motivo de conclusão total ou parcial do contato assistencial.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/BRNaturezaJuridica"
+        },
+        "name": "Constituição jurídica de entidades",
+        "description": "Identifica a constituição jurídico-institucional das entidades públicas e privadas nos cadastros da administração pública do Brasil.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/BRNomeCampanhaVacinacao"
+        },
+        "name": "Nome de campanha de vacinação",
+        "description": "Domínio que identifica o nome da campanha de vacinação.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/BRPosicaoIndividuo"
+        },
+        "name": "Posição do indivíduo",
+        "description": "Identifica a posição de um indivíduo em um determinado contexto.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/BRProgramaSaude"
+        },
+        "name": "Programa de saúde",
+        "description": "Identifica um programa nacional de saúde brasileiro ou uma situação específica que exija monitoramento no mesmo formato de uma política pública.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/BRResponsabilidadeParticipante"
+        },
+        "name": "Papel do profissional no contato assistencial",
+        "description": "Classifica o tipo de responsabilidade de indivíduos ou profissionais no Contato Assisntecial.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/BRResultadoQualitativoExame"
+        },
+        "name": "Resultado qualitativo",
+        "description": "Code System utilizado para definir o valor atribuído ao resultado de um exame laboratorial realizado por método de análise qualitativo.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/BRSituacaoCondicaoIndividuo"
+        },
+        "name": "Situação/condição de um indivíduo",
+        "description": "Classifica a situação/condição de um indivíudo em um contexto.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/BRSubgrupoTabelaSUS"
+        },
+        "name": "Subgrupo Tabela SUS",
+        "description": "O subgrupo é o segundo nível da hierarquia da Tabela SUS e seus códigos ajudam a classificar e localizar procedimentos.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/BRTabelaSUS"
+        },
+        "name": "Procedimentos da Tabela SUS",
+        "description": "Padroniza os códigos e as nomenclaturas dos procedimentos, medicamentos e OPM para as informações trafegadas no SUS.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/BRTipoAmostraGAL"
+        },
+        "name": "Tipo de amostra biológica (GAL)",
+        "description": "Classifica o tipo de amostra biológica utilizada em exames de acordo com a terminologia Gerenciador de Ambiente Laboratorial (GAL).",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/BRTipoDocumento"
+        },
+        "name": "Tipo de documento",
+        "description": "Classificação dos tipos de documentos compartilhados no Brasil.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/BRTipoEstabelecimentoSaude"
+        },
+        "name": "Tipo de estabelecimento de saúde",
+        "description": "Códigos para representação de tipos de estabelecimentos de saúde, de acordo com codificação já existente para o Cadastro Nacional de Estabelecimentos de Saúde (CNES).",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/BRTipoIdentificador"
+        },
+        "name": "Tipo de identificador",
+        "description": "Classifica o tipo de indicador que está sendo utilizado.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/BRTipoLogradouro"
+        },
+        "name": "Tipo de logradouro",
+        "description": "Classificação os tipos de logradouros existentes para uso em endereços estruturados.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/BRTipoObservacao"
+        },
+        "name": "Tipo de observação",
+        "description": "Tipo de Observação.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/BRUnidadeFarmaceutica"
+        },
+        "name": "Unidade farmacêutica de uma substância",
+        "description": "Identifica a unidade farmacêutica de uma substância.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/BRViaAdministracao"
+        },
+        "name": "Via empregada para administrar substância",
+        "description": "Classifica a via na qual foi administrada uma substância em um indivíduo.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/BROrgaoExpedidor"
+        },
+        "name": "Órgão expedidor de documento",
+        "description": "Órgãos responsáveis por expedir documentos no Brasil.",
+        "exampleBoolean": false
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "path-resource",
+        "value": "input/capabilities"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/examples"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/extensions"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/models"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/operations"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/profiles"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/resources"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/vocabulary"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/maps"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/testing"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/history"
+      },
+      {
+        "code": "path-resource",
+        "value": "fsh-generated/resources"
+      },
+      {
+        "code": "path-pages",
+        "value": "template/config"
+      },
+      {
+        "code": "path-pages",
+        "value": "input/images"
+      },
+      {
+        "code": "path-tx-cache",
+        "value": "input-cache/txcache"
+      }
+    ]
+  }
+}

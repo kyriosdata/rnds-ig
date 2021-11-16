@@ -1,0 +1,48 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "BRClassificacaoLista",
+  "meta": {
+    "lastUpdated": "2020-03-11T16:12:17.622-03:00"
+  },
+  "language": "pt-BR",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p>This code system http://www.saude.gov.br/fhir/r4/CodeSystem/BRClassificacaoLista defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">immunizations<a name=\"BRClassificacaoLista-immunizations\"> </a></td><td>Lista de Imunobiológicos</td></tr><tr><td style=\"white-space:nowrap\">medications<a name=\"BRClassificacaoLista-medications\"> </a></td><td>Lista de Medicamentos</td></tr></table></div>"
+  },
+  "url": "http://www.saude.gov.br/fhir/r4/CodeSystem/BRClassificacaoLista",
+  "version": "0.1.0",
+  "name": "Classificações das listas",
+  "title": "Listas",
+  "status": "active",
+  "experimental": false,
+  "date": "2020-03-11T19:12:38.106929+00:00",
+  "publisher": "Rede Nacional de Dados em Saúde",
+  "contact": [
+    {
+      "name": "Rede Nacional de Dados em Saúde",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://github.com/kyriosdata"
+        },
+        {
+          "system": "email",
+          "value": "rnds@saude.gov.br"
+        }
+      ]
+    }
+  ],
+  "description": "Classificações das listas utilizadas na Rede Nacional de Dados em Saúde.",
+  "content": "complete",
+  "count": 2,
+  "concept": [
+    {
+      "code": "immunizations",
+      "display": "Lista de Imunobiológicos"
+    },
+    {
+      "code": "medications",
+      "display": "Lista de Medicamentos"
+    }
+  ]
+}

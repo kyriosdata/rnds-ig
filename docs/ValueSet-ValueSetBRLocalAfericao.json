@@ -1,0 +1,45 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ValueSetBRLocalAfericao",
+  "meta": {
+    "lastUpdated": "2020-03-12T10:11:09.671-03:00"
+  },
+  "language": "pt-BR",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><ul><li>Include all codes defined in <a href=\"CodeSystem-BRLocalAfericao.html\"><code>http://www.saude.gov.br/fhir/r4/CodeSystem/BRLocalAfericao</code></a></li></ul></div>"
+  },
+  "url": "http://www.saude.gov.br/fhir/r4/ValueSet/ValueSetBRLocalAfericao",
+  "version": "0.1.0",
+  "name": "BRLocalAfericao",
+  "title": "Local de Aferição",
+  "status": "active",
+  "experimental": false,
+  "date": "2020-03-12T13:11:08.642377+00:00",
+  "publisher": "Rede Nacional de Dados em Saúde",
+  "contact": [
+    {
+      "name": "Rede Nacional de Dados em Saúde",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://github.com/kyriosdata"
+        },
+        {
+          "system": "email",
+          "value": "rnds@saude.gov.br"
+        }
+      ]
+    }
+  ],
+  "description": "ValueSet utilizado para identificar a parte do corpo utilizada para aferir a pressão arterial.",
+  "immutable": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://www.saude.gov.br/fhir/r4/CodeSystem/BRLocalAfericao",
+        "version": "*"
+      }
+    ]
+  }
+}

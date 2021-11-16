@@ -1,0 +1,510 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://www.saude.gov.br/fhir/r4/CodeSystem/BRDivisaoGeograficaBrasil> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "BRDivisaoGeograficaBrasil"];
+  fhir:Resource.meta [
+     fhir:Meta.lastUpdated [ fhir:value "2020-03-11T16:12:55.862-03:00"^^xsd:dateTime ]
+  ];
+  fhir:Resource.language [ fhir:value "pt-BR"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p><b>Properties</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>URL</b></td><td><b>Description</b></td><td><b>Type</b></td></tr><tr><td>type</td><td/><td>tipo</td><td>code</td></tr><tr><td>ethnical</td><td/><td>Gentílico</td><td>string</td></tr><tr><td>initials</td><td/><td>Sigla</td><td>code</td></tr></table><p>This code system http://www.saude.gov.br/fhir/r4/CodeSystem/BRDivisaoGeograficaBrasil defines the following codes:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">1<a name=\"BRDivisaoGeograficaBrasil-1\"> </a></td><td>Norte</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  11<a name=\"BRDivisaoGeograficaBrasil-11\"> </a></td><td>Rondônia</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  12<a name=\"BRDivisaoGeograficaBrasil-12\"> </a></td><td>Acre</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  13<a name=\"BRDivisaoGeograficaBrasil-13\"> </a></td><td>Amazonas</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  14<a name=\"BRDivisaoGeograficaBrasil-14\"> </a></td><td>Roraima</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  15<a name=\"BRDivisaoGeograficaBrasil-15\"> </a></td><td>Pará</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  16<a name=\"BRDivisaoGeograficaBrasil-16\"> </a></td><td>Amapá</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  17<a name=\"BRDivisaoGeograficaBrasil-17\"> </a></td><td>Tocantins</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">2<a name=\"BRDivisaoGeograficaBrasil-2\"> </a></td><td>Nordeste</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  21<a name=\"BRDivisaoGeograficaBrasil-21\"> </a></td><td>Maranhão</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  22<a name=\"BRDivisaoGeograficaBrasil-22\"> </a></td><td>Piauí</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  23<a name=\"BRDivisaoGeograficaBrasil-23\"> </a></td><td>Ceará</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  24<a name=\"BRDivisaoGeograficaBrasil-24\"> </a></td><td>Rio Grande do Norte</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  25<a name=\"BRDivisaoGeograficaBrasil-25\"> </a></td><td>Paraíba</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  26<a name=\"BRDivisaoGeograficaBrasil-26\"> </a></td><td>Pernambuco</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  27<a name=\"BRDivisaoGeograficaBrasil-27\"> </a></td><td>Alagoas</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  28<a name=\"BRDivisaoGeograficaBrasil-28\"> </a></td><td>Sergipe</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  29<a name=\"BRDivisaoGeograficaBrasil-29\"> </a></td><td>Bahia</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">3<a name=\"BRDivisaoGeograficaBrasil-3\"> </a></td><td>Sudeste</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  31<a name=\"BRDivisaoGeograficaBrasil-31\"> </a></td><td>Minas Gerais</td></tr><tr><td>3</td><td style=\"white-space:nowrap\">    315780<a name=\"BRDivisaoGeograficaBrasil-315780\"> </a></td><td>Santa Luzia</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  32<a name=\"BRDivisaoGeograficaBrasil-32\"> </a></td><td>Espírito Santo</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  33<a name=\"BRDivisaoGeograficaBrasil-33\"> </a></td><td>Rio de Janeiro</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  34<a name=\"BRDivisaoGeograficaBrasil-34\"> </a></td><td>São Paulo</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">4<a name=\"BRDivisaoGeograficaBrasil-4\"> </a></td><td>Sul</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  41<a name=\"BRDivisaoGeograficaBrasil-41\"> </a></td><td>Paraná</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  42<a name=\"BRDivisaoGeograficaBrasil-42\"> </a></td><td>Santa Catarina</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  43<a name=\"BRDivisaoGeograficaBrasil-43\"> </a></td><td>Rio Grande do Sul</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">5<a name=\"BRDivisaoGeograficaBrasil-5\"> </a></td><td>Centro-Oeste</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  50<a name=\"BRDivisaoGeograficaBrasil-50\"> </a></td><td>Mato Grosso do Sul</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  51<a name=\"BRDivisaoGeograficaBrasil-51\"> </a></td><td>Mato Grosso</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  52<a name=\"BRDivisaoGeograficaBrasil-52\"> </a></td><td>Goiás</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  53<a name=\"BRDivisaoGeograficaBrasil-53\"> </a></td><td>Distrito Federal</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://www.saude.gov.br/fhir/r4/CodeSystem/BRDivisaoGeograficaBrasil"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "Divisão Geográfica do Brasil"];
+  fhir:CodeSystem.title [ fhir:value "Divisão geográfica do Brasil"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean];
+  fhir:CodeSystem.date [ fhir:value "2020-03-11T19:13:16.339365+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "Rede Nacional de Dados em Saúde"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Rede Nacional de Dados em Saúde" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://github.com/kyriosdata" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "rnds@saude.gov.br" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "As regiões geográficas, estados, distrito federal e municípios do Brasil."];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "33"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.property [
+     fhir:index 0;
+     fhir:CodeSystem.property.code [ fhir:value "type" ];
+     fhir:CodeSystem.property.description [ fhir:value "tipo" ];
+     fhir:CodeSystem.property.type [ fhir:value "code" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.property.code [ fhir:value "ethnical" ];
+     fhir:CodeSystem.property.description [ fhir:value "Gentílico" ];
+     fhir:CodeSystem.property.type [ fhir:value "string" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.property.code [ fhir:value "initials" ];
+     fhir:CodeSystem.property.description [ fhir:value "Sigla" ];
+     fhir:CodeSystem.property.type [ fhir:value "code" ]
+  ];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Norte" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "region" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.property.code [ fhir:value "initials" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "N" ]
+     ];
+     fhir:CodeSystem.concept.concept [
+       fhir:index 0;
+       fhir:CodeSystem.concept.code [ fhir:value "11" ];
+       fhir:CodeSystem.concept.display [ fhir:value "Rondônia" ];
+       fhir:CodeSystem.concept.property [
+         fhir:index 0;
+         fhir:CodeSystem.concept.property.code [ fhir:value "type" ];
+         fhir:CodeSystem.concept.property.valueCode [ fhir:value "state" ]
+       ], [
+         fhir:index 1;
+         fhir:CodeSystem.concept.property.code [ fhir:value "initials" ];
+         fhir:CodeSystem.concept.property.valueCode [ fhir:value "RO" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.code [ fhir:value "12" ];
+       fhir:CodeSystem.concept.display [ fhir:value "Acre" ];
+       fhir:CodeSystem.concept.property [
+         fhir:index 0;
+         fhir:CodeSystem.concept.property.code [ fhir:value "type" ];
+         fhir:CodeSystem.concept.property.valueCode [ fhir:value "state" ]
+       ], [
+         fhir:index 1;
+         fhir:CodeSystem.concept.property.code [ fhir:value "initials" ];
+         fhir:CodeSystem.concept.property.valueCode [ fhir:value "AC" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:CodeSystem.concept.code [ fhir:value "13" ];
+       fhir:CodeSystem.concept.display [ fhir:value "Amazonas" ];
+       fhir:CodeSystem.concept.property [
+         fhir:index 0;
+         fhir:CodeSystem.concept.property.code [ fhir:value "type" ];
+         fhir:CodeSystem.concept.property.valueCode [ fhir:value "state" ]
+       ], [
+         fhir:index 1;
+         fhir:CodeSystem.concept.property.code [ fhir:value "initials" ];
+         fhir:CodeSystem.concept.property.valueCode [ fhir:value "AM" ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:CodeSystem.concept.code [ fhir:value "14" ];
+       fhir:CodeSystem.concept.display [ fhir:value "Roraima" ];
+       fhir:CodeSystem.concept.property [
+         fhir:index 0;
+         fhir:CodeSystem.concept.property.code [ fhir:value "type" ];
+         fhir:CodeSystem.concept.property.valueCode [ fhir:value "state" ]
+       ], [
+         fhir:index 1;
+         fhir:CodeSystem.concept.property.code [ fhir:value "initials" ];
+         fhir:CodeSystem.concept.property.valueCode [ fhir:value "RR" ]
+       ]
+     ], [
+       fhir:index 4;
+       fhir:CodeSystem.concept.code [ fhir:value "15" ];
+       fhir:CodeSystem.concept.display [ fhir:value "Pará" ];
+       fhir:CodeSystem.concept.property [
+         fhir:index 0;
+         fhir:CodeSystem.concept.property.code [ fhir:value "type" ];
+         fhir:CodeSystem.concept.property.valueCode [ fhir:value "state" ]
+       ], [
+         fhir:index 1;
+         fhir:CodeSystem.concept.property.code [ fhir:value "initials" ];
+         fhir:CodeSystem.concept.property.valueCode [ fhir:value "PA" ]
+       ]
+     ], [
+       fhir:index 5;
+       fhir:CodeSystem.concept.code [ fhir:value "16" ];
+       fhir:CodeSystem.concept.display [ fhir:value "Amapá" ];
+       fhir:CodeSystem.concept.property [
+         fhir:index 0;
+         fhir:CodeSystem.concept.property.code [ fhir:value "type" ];
+         fhir:CodeSystem.concept.property.valueCode [ fhir:value "state" ]
+       ], [
+         fhir:index 1;
+         fhir:CodeSystem.concept.property.code [ fhir:value "initials" ];
+         fhir:CodeSystem.concept.property.valueCode [ fhir:value "AP" ]
+       ]
+     ], [
+       fhir:index 6;
+       fhir:CodeSystem.concept.code [ fhir:value "17" ];
+       fhir:CodeSystem.concept.display [ fhir:value "Tocantins" ];
+       fhir:CodeSystem.concept.property [
+         fhir:index 0;
+         fhir:CodeSystem.concept.property.code [ fhir:value "type" ];
+         fhir:CodeSystem.concept.property.valueCode [ fhir:value "state" ]
+       ], [
+         fhir:index 1;
+         fhir:CodeSystem.concept.property.code [ fhir:value "initials" ];
+         fhir:CodeSystem.concept.property.valueCode [ fhir:value "TO" ]
+       ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "2" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nordeste" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "region" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.property.code [ fhir:value "initials" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "NE" ]
+     ];
+     fhir:CodeSystem.concept.concept [
+       fhir:index 0;
+       fhir:CodeSystem.concept.code [ fhir:value "21" ];
+       fhir:CodeSystem.concept.display [ fhir:value "Maranhão" ];
+       fhir:CodeSystem.concept.property [
+         fhir:index 0;
+         fhir:CodeSystem.concept.property.code [ fhir:value "type" ];
+         fhir:CodeSystem.concept.property.valueCode [ fhir:value "state" ]
+       ], [
+         fhir:index 1;
+         fhir:CodeSystem.concept.property.code [ fhir:value "initials" ];
+         fhir:CodeSystem.concept.property.valueCode [ fhir:value "MA" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.code [ fhir:value "22" ];
+       fhir:CodeSystem.concept.display [ fhir:value "Piauí" ];
+       fhir:CodeSystem.concept.property [
+         fhir:index 0;
+         fhir:CodeSystem.concept.property.code [ fhir:value "type" ];
+         fhir:CodeSystem.concept.property.valueCode [ fhir:value "state" ]
+       ], [
+         fhir:index 1;
+         fhir:CodeSystem.concept.property.code [ fhir:value "initials" ];
+         fhir:CodeSystem.concept.property.valueCode [ fhir:value "PI" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:CodeSystem.concept.code [ fhir:value "23" ];
+       fhir:CodeSystem.concept.display [ fhir:value "Ceará" ];
+       fhir:CodeSystem.concept.property [
+         fhir:index 0;
+         fhir:CodeSystem.concept.property.code [ fhir:value "type" ];
+         fhir:CodeSystem.concept.property.valueCode [ fhir:value "state" ]
+       ], [
+         fhir:index 1;
+         fhir:CodeSystem.concept.property.code [ fhir:value "initials" ];
+         fhir:CodeSystem.concept.property.valueCode [ fhir:value "CE" ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:CodeSystem.concept.code [ fhir:value "24" ];
+       fhir:CodeSystem.concept.display [ fhir:value "Rio Grande do Norte" ];
+       fhir:CodeSystem.concept.property [
+         fhir:index 0;
+         fhir:CodeSystem.concept.property.code [ fhir:value "type" ];
+         fhir:CodeSystem.concept.property.valueCode [ fhir:value "state" ]
+       ], [
+         fhir:index 1;
+         fhir:CodeSystem.concept.property.code [ fhir:value "initials" ];
+         fhir:CodeSystem.concept.property.valueCode [ fhir:value "RN" ]
+       ]
+     ], [
+       fhir:index 4;
+       fhir:CodeSystem.concept.code [ fhir:value "25" ];
+       fhir:CodeSystem.concept.display [ fhir:value "Paraíba" ];
+       fhir:CodeSystem.concept.property [
+         fhir:index 0;
+         fhir:CodeSystem.concept.property.code [ fhir:value "type" ];
+         fhir:CodeSystem.concept.property.valueCode [ fhir:value "state" ]
+       ], [
+         fhir:index 1;
+         fhir:CodeSystem.concept.property.code [ fhir:value "initials" ];
+         fhir:CodeSystem.concept.property.valueCode [ fhir:value "PB" ]
+       ]
+     ], [
+       fhir:index 5;
+       fhir:CodeSystem.concept.code [ fhir:value "26" ];
+       fhir:CodeSystem.concept.display [ fhir:value "Pernambuco" ];
+       fhir:CodeSystem.concept.property [
+         fhir:index 0;
+         fhir:CodeSystem.concept.property.code [ fhir:value "type" ];
+         fhir:CodeSystem.concept.property.valueCode [ fhir:value "state" ]
+       ], [
+         fhir:index 1;
+         fhir:CodeSystem.concept.property.code [ fhir:value "initials" ];
+         fhir:CodeSystem.concept.property.valueCode [ fhir:value "PE" ]
+       ]
+     ], [
+       fhir:index 6;
+       fhir:CodeSystem.concept.code [ fhir:value "27" ];
+       fhir:CodeSystem.concept.display [ fhir:value "Alagoas" ];
+       fhir:CodeSystem.concept.property [
+         fhir:index 0;
+         fhir:CodeSystem.concept.property.code [ fhir:value "type" ];
+         fhir:CodeSystem.concept.property.valueCode [ fhir:value "state" ]
+       ], [
+         fhir:index 1;
+         fhir:CodeSystem.concept.property.code [ fhir:value "initials" ];
+         fhir:CodeSystem.concept.property.valueCode [ fhir:value "AL" ]
+       ]
+     ], [
+       fhir:index 7;
+       fhir:CodeSystem.concept.code [ fhir:value "28" ];
+       fhir:CodeSystem.concept.display [ fhir:value "Sergipe" ];
+       fhir:CodeSystem.concept.property [
+         fhir:index 0;
+         fhir:CodeSystem.concept.property.code [ fhir:value "type" ];
+         fhir:CodeSystem.concept.property.valueCode [ fhir:value "state" ]
+       ], [
+         fhir:index 1;
+         fhir:CodeSystem.concept.property.code [ fhir:value "initials" ];
+         fhir:CodeSystem.concept.property.valueCode [ fhir:value "SE" ]
+       ]
+     ], [
+       fhir:index 8;
+       fhir:CodeSystem.concept.code [ fhir:value "29" ];
+       fhir:CodeSystem.concept.display [ fhir:value "Bahia" ];
+       fhir:CodeSystem.concept.property [
+         fhir:index 0;
+         fhir:CodeSystem.concept.property.code [ fhir:value "type" ];
+         fhir:CodeSystem.concept.property.valueCode [ fhir:value "state" ]
+       ], [
+         fhir:index 1;
+         fhir:CodeSystem.concept.property.code [ fhir:value "initials" ];
+         fhir:CodeSystem.concept.property.valueCode [ fhir:value "BA" ]
+       ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "3" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Sudeste" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "region" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.property.code [ fhir:value "initials" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "SE" ]
+     ];
+     fhir:CodeSystem.concept.concept [
+       fhir:index 0;
+       fhir:CodeSystem.concept.code [ fhir:value "31" ];
+       fhir:CodeSystem.concept.display [ fhir:value "Minas Gerais" ];
+       fhir:CodeSystem.concept.property [
+         fhir:index 0;
+         fhir:CodeSystem.concept.property.code [ fhir:value "type" ];
+         fhir:CodeSystem.concept.property.valueCode [ fhir:value "state" ]
+       ], [
+         fhir:index 1;
+         fhir:CodeSystem.concept.property.code [ fhir:value "type" ];
+         fhir:CodeSystem.concept.property.valueCode [ fhir:value "state" ]
+       ], [
+         fhir:index 2;
+         fhir:CodeSystem.concept.property.code [ fhir:value "initials" ];
+         fhir:CodeSystem.concept.property.valueCode [ fhir:value "MG" ]
+       ], [
+         fhir:index 3;
+         fhir:CodeSystem.concept.property.code [ fhir:value "ethnical" ];
+         fhir:CodeSystem.concept.property.valueString [ fhir:value "mineiro" ]
+       ];
+       fhir:CodeSystem.concept.concept [
+         fhir:index 0;
+         fhir:CodeSystem.concept.code [ fhir:value "315780" ];
+         fhir:CodeSystem.concept.display [ fhir:value "Santa Luzia" ];
+         fhir:CodeSystem.concept.property [
+           fhir:index 0;
+           fhir:CodeSystem.concept.property.code [ fhir:value "type" ];
+           fhir:CodeSystem.concept.property.valueCode [ fhir:value "city" ]
+         ], [
+           fhir:index 1;
+           fhir:CodeSystem.concept.property.code [ fhir:value "ethnical" ];
+           fhir:CodeSystem.concept.property.valueString [ fhir:value "luziense" ]
+         ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.code [ fhir:value "32" ];
+       fhir:CodeSystem.concept.display [ fhir:value "Espírito Santo" ];
+       fhir:CodeSystem.concept.property [
+         fhir:index 0;
+         fhir:CodeSystem.concept.property.code [ fhir:value "type" ];
+         fhir:CodeSystem.concept.property.valueCode [ fhir:value "state" ]
+       ], [
+         fhir:index 1;
+         fhir:CodeSystem.concept.property.code [ fhir:value "initials" ];
+         fhir:CodeSystem.concept.property.valueCode [ fhir:value "ES" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:CodeSystem.concept.code [ fhir:value "33" ];
+       fhir:CodeSystem.concept.display [ fhir:value "Rio de Janeiro" ];
+       fhir:CodeSystem.concept.property [
+         fhir:index 0;
+         fhir:CodeSystem.concept.property.code [ fhir:value "type" ];
+         fhir:CodeSystem.concept.property.valueCode [ fhir:value "state" ]
+       ], [
+         fhir:index 1;
+         fhir:CodeSystem.concept.property.code [ fhir:value "initials" ];
+         fhir:CodeSystem.concept.property.valueCode [ fhir:value "RJ" ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:CodeSystem.concept.code [ fhir:value "34" ];
+       fhir:CodeSystem.concept.display [ fhir:value "São Paulo" ];
+       fhir:CodeSystem.concept.property [
+         fhir:index 0;
+         fhir:CodeSystem.concept.property.code [ fhir:value "type" ];
+         fhir:CodeSystem.concept.property.valueCode [ fhir:value "state" ]
+       ], [
+         fhir:index 1;
+         fhir:CodeSystem.concept.property.code [ fhir:value "initials" ];
+         fhir:CodeSystem.concept.property.valueCode [ fhir:value "SP" ]
+       ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "4" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Sul" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "region" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.property.code [ fhir:value "initials" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "S" ]
+     ];
+     fhir:CodeSystem.concept.concept [
+       fhir:index 0;
+       fhir:CodeSystem.concept.code [ fhir:value "41" ];
+       fhir:CodeSystem.concept.display [ fhir:value "Paraná" ];
+       fhir:CodeSystem.concept.property [
+         fhir:index 0;
+         fhir:CodeSystem.concept.property.code [ fhir:value "type" ];
+         fhir:CodeSystem.concept.property.valueCode [ fhir:value "state" ]
+       ], [
+         fhir:index 1;
+         fhir:CodeSystem.concept.property.code [ fhir:value "initials" ];
+         fhir:CodeSystem.concept.property.valueCode [ fhir:value "PR" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.code [ fhir:value "42" ];
+       fhir:CodeSystem.concept.display [ fhir:value "Santa Catarina" ];
+       fhir:CodeSystem.concept.property [
+         fhir:index 0;
+         fhir:CodeSystem.concept.property.code [ fhir:value "type" ];
+         fhir:CodeSystem.concept.property.valueCode [ fhir:value "state" ]
+       ], [
+         fhir:index 1;
+         fhir:CodeSystem.concept.property.code [ fhir:value "initials" ];
+         fhir:CodeSystem.concept.property.valueCode [ fhir:value "SC" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:CodeSystem.concept.code [ fhir:value "43" ];
+       fhir:CodeSystem.concept.display [ fhir:value "Rio Grande do Sul" ];
+       fhir:CodeSystem.concept.property [
+         fhir:index 0;
+         fhir:CodeSystem.concept.property.code [ fhir:value "type" ];
+         fhir:CodeSystem.concept.property.valueCode [ fhir:value "state" ]
+       ], [
+         fhir:index 1;
+         fhir:CodeSystem.concept.property.code [ fhir:value "initials" ];
+         fhir:CodeSystem.concept.property.valueCode [ fhir:value "RS" ]
+       ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "5" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Centro-Oeste" ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "type" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "region" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.property.code [ fhir:value "initials" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "CO" ]
+     ];
+     fhir:CodeSystem.concept.concept [
+       fhir:index 0;
+       fhir:CodeSystem.concept.code [ fhir:value "50" ];
+       fhir:CodeSystem.concept.display [ fhir:value "Mato Grosso do Sul" ];
+       fhir:CodeSystem.concept.property [
+         fhir:index 0;
+         fhir:CodeSystem.concept.property.code [ fhir:value "type" ];
+         fhir:CodeSystem.concept.property.valueCode [ fhir:value "state" ]
+       ], [
+         fhir:index 1;
+         fhir:CodeSystem.concept.property.code [ fhir:value "initials" ];
+         fhir:CodeSystem.concept.property.valueCode [ fhir:value "MS" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.code [ fhir:value "51" ];
+       fhir:CodeSystem.concept.display [ fhir:value "Mato Grosso" ];
+       fhir:CodeSystem.concept.property [
+         fhir:index 0;
+         fhir:CodeSystem.concept.property.code [ fhir:value "type" ];
+         fhir:CodeSystem.concept.property.valueCode [ fhir:value "state" ]
+       ], [
+         fhir:index 1;
+         fhir:CodeSystem.concept.property.code [ fhir:value "initials" ];
+         fhir:CodeSystem.concept.property.valueCode [ fhir:value "MT" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:CodeSystem.concept.code [ fhir:value "52" ];
+       fhir:CodeSystem.concept.display [ fhir:value "Goiás" ];
+       fhir:CodeSystem.concept.property [
+         fhir:index 0;
+         fhir:CodeSystem.concept.property.code [ fhir:value "type" ];
+         fhir:CodeSystem.concept.property.valueCode [ fhir:value "state" ]
+       ], [
+         fhir:index 1;
+         fhir:CodeSystem.concept.property.code [ fhir:value "initials" ];
+         fhir:CodeSystem.concept.property.valueCode [ fhir:value "GO" ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:CodeSystem.concept.code [ fhir:value "53" ];
+       fhir:CodeSystem.concept.display [ fhir:value "Distrito Federal" ];
+       fhir:CodeSystem.concept.property [
+         fhir:index 0;
+         fhir:CodeSystem.concept.property.code [ fhir:value "type" ];
+         fhir:CodeSystem.concept.property.valueCode [ fhir:value "state" ]
+       ], [
+         fhir:index 1;
+         fhir:CodeSystem.concept.property.code [ fhir:value "initials" ];
+         fhir:CodeSystem.concept.property.valueCode [ fhir:value "DF" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://www.saude.gov.br/fhir/r4/CodeSystem/BRDivisaoGeograficaBrasil.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

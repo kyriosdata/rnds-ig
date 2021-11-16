@@ -1,0 +1,45 @@
+{
+  "resourceType": "ValueSet",
+  "id": "BRImunobiologico-1.0",
+  "meta": {
+    "lastUpdated": "2020-03-12T10:10:48.440-03:00"
+  },
+  "language": "pt-BR",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><ul><li>Include all codes defined in <a href=\"CodeSystem-BRImunobiologico.html\"><code>http://www.saude.gov.br/fhir/r4/CodeSystem/BRImunobiologico</code></a></li></ul></div>"
+  },
+  "url": "http://www.saude.gov.br/fhir/r4/ValueSet/BRImunobiologico-1.0",
+  "version": "0.1.0",
+  "name": "BRImunobiologico",
+  "title": "Imunobiológico",
+  "status": "active",
+  "experimental": false,
+  "date": "2020-03-12T13:10:47.5330686+00:00",
+  "publisher": "Rede Nacional de Dados em Saúde",
+  "contact": [
+    {
+      "name": "Rede Nacional de Dados em Saúde",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://github.com/kyriosdata"
+        },
+        {
+          "system": "email",
+          "value": "rnds@saude.gov.br"
+        }
+      ]
+    }
+  ],
+  "description": "Tipos de imunobiológicos disponíveis no Brasil.",
+  "immutable": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://www.saude.gov.br/fhir/r4/CodeSystem/BRImunobiologico",
+        "version": "*"
+      }
+    ]
+  }
+}

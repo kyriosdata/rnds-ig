@@ -1,0 +1,207 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoEstabelecimentoSaude> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "BRTipoEstabelecimentoSaude"];
+  fhir:Resource.meta [
+     fhir:Meta.lastUpdated [ fhir:value "2020-03-11T15:25:07.005-03:00"^^xsd:dateTime ]
+  ];
+  fhir:Resource.language [ fhir:value "pt-BR"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p>This code system http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoEstabelecimentoSaude defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">84<a name=\"BRTipoEstabelecimentoSaude-84\"> </a></td><td>CENTRAL DE ABASTECIMENTO</td></tr><tr><td style=\"white-space:nowrap\">68<a name=\"BRTipoEstabelecimentoSaude-68\"> </a></td><td>CENTRAL DE GESTAO EM SAUDE</td></tr><tr><td style=\"white-space:nowrap\">82<a name=\"BRTipoEstabelecimentoSaude-82\"> </a></td><td>CENTRAL DE NOTIFICACAO,CAPTACAO E DISTRIB DE ORGAOS ESTADUAL</td></tr><tr><td style=\"white-space:nowrap\">64<a name=\"BRTipoEstabelecimentoSaude-64\"> </a></td><td>CENTRAL DE REGULACAO DE SERVICOS DE SAUDE</td></tr><tr><td style=\"white-space:nowrap\">81<a name=\"BRTipoEstabelecimentoSaude-81\"> </a></td><td>CENTRAL DE REGULACAO DO ACESSO</td></tr><tr><td style=\"white-space:nowrap\">76<a name=\"BRTipoEstabelecimentoSaude-76\"> </a></td><td>CENTRAL DE REGULACAO MEDICA DAS URGENCIAS</td></tr><tr><td style=\"white-space:nowrap\">71<a name=\"BRTipoEstabelecimentoSaude-71\"> </a></td><td>CENTRO DE APOIO A SAUDE DA FAMILIA</td></tr><tr><td style=\"white-space:nowrap\">69<a name=\"BRTipoEstabelecimentoSaude-69\"> </a></td><td>CENTRO DE ATENCAO HEMOTERAPIA E OU HEMATOLOGICA</td></tr><tr><td style=\"white-space:nowrap\">70<a name=\"BRTipoEstabelecimentoSaude-70\"> </a></td><td>CENTRO DE ATENCAO PSICOSSOCIAL</td></tr><tr><td style=\"white-space:nowrap\">85<a name=\"BRTipoEstabelecimentoSaude-85\"> </a></td><td>CENTRO DE IMUNIZACAO</td></tr><tr><td style=\"white-space:nowrap\">61<a name=\"BRTipoEstabelecimentoSaude-61\"> </a></td><td>CENTRO DE PARTO NORMAL - ISOLADO</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"BRTipoEstabelecimentoSaude-2\"> </a></td><td>CENTRO DE SAUDE/UNIDADE BASICA</td></tr><tr><td style=\"white-space:nowrap\">36<a name=\"BRTipoEstabelecimentoSaude-36\"> </a></td><td>CLINICA/CENTRO DE ESPECIALIDADE</td></tr><tr><td style=\"white-space:nowrap\">22<a name=\"BRTipoEstabelecimentoSaude-22\"> </a></td><td>CONSULTORIO ISOLADO</td></tr><tr><td style=\"white-space:nowrap\">60<a name=\"BRTipoEstabelecimentoSaude-60\"> </a></td><td>COOPERATIVA OU EMPRESA DE CESSAO DE TRABALHADORES NA SAUDE</td></tr><tr><td style=\"white-space:nowrap\">43<a name=\"BRTipoEstabelecimentoSaude-43\"> </a></td><td>FARMACIA</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"BRTipoEstabelecimentoSaude-7\"> </a></td><td>HOSPITAL ESPECIALIZADO</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"BRTipoEstabelecimentoSaude-5\"> </a></td><td>HOSPITAL GERAL</td></tr><tr><td style=\"white-space:nowrap\">62<a name=\"BRTipoEstabelecimentoSaude-62\"> </a></td><td>HOSPITAL/DIA - ISOLADO</td></tr><tr><td style=\"white-space:nowrap\">67<a name=\"BRTipoEstabelecimentoSaude-67\"> </a></td><td>LABORATORIO CENTRAL DE SAUDE PUBLICA LACEN</td></tr><tr><td style=\"white-space:nowrap\">80<a name=\"BRTipoEstabelecimentoSaude-80\"> </a></td><td>LABORATORIO DE SAUDE PUBLICA</td></tr><tr><td style=\"white-space:nowrap\">79<a name=\"BRTipoEstabelecimentoSaude-79\"> </a></td><td>OFICINA ORTOPEDICA</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"BRTipoEstabelecimentoSaude-4\"> </a></td><td>POLICLINICA</td></tr><tr><td style=\"white-space:nowrap\">74<a name=\"BRTipoEstabelecimentoSaude-74\"> </a></td><td>POLO ACADEMIA DA SAUDE</td></tr><tr><td style=\"white-space:nowrap\">83<a name=\"BRTipoEstabelecimentoSaude-83\"> </a></td><td>POLO DE PREVENCAO DE DOENCAS E AGRAVOS E PROMOCAO DA SAUDE</td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"BRTipoEstabelecimentoSaude-1\"> </a></td><td>POSTO DE SAUDE</td></tr><tr><td style=\"white-space:nowrap\">73<a name=\"BRTipoEstabelecimentoSaude-73\"> </a></td><td>PRONTO ATENDIMENTO</td></tr><tr><td style=\"white-space:nowrap\">21<a name=\"BRTipoEstabelecimentoSaude-21\"> </a></td><td>PRONTO SOCORRO ESPECIALIZADO</td></tr><tr><td style=\"white-space:nowrap\">20<a name=\"BRTipoEstabelecimentoSaude-20\"> </a></td><td>PRONTO SOCORRO GERAL</td></tr><tr><td style=\"white-space:nowrap\">77<a name=\"BRTipoEstabelecimentoSaude-77\"> </a></td><td>SERVICO DE ATENCAO DOMICILIAR ISOLADO(HOME CARE)</td></tr><tr><td style=\"white-space:nowrap\">75<a name=\"BRTipoEstabelecimentoSaude-75\"> </a></td><td>TELESSAUDE</td></tr><tr><td style=\"white-space:nowrap\">39<a name=\"BRTipoEstabelecimentoSaude-39\"> </a></td><td>UNIDADE DE APOIO DIAGNOSE E TERAPIA (SADT ISOLADO)</td></tr><tr><td style=\"white-space:nowrap\">72<a name=\"BRTipoEstabelecimentoSaude-72\"> </a></td><td>UNIDADE DE ATENCAO A SAUDE INDIGENA</td></tr><tr><td style=\"white-space:nowrap\">78<a name=\"BRTipoEstabelecimentoSaude-78\"> </a></td><td>UNIDADE DE ATENCAO EM REGIME RESIDENCIAL</td></tr><tr><td style=\"white-space:nowrap\">50<a name=\"BRTipoEstabelecimentoSaude-50\"> </a></td><td>UNIDADE DE VIGILANCIA EM SAUDE</td></tr><tr><td style=\"white-space:nowrap\">15<a name=\"BRTipoEstabelecimentoSaude-15\"> </a></td><td>UNIDADE MISTA</td></tr><tr><td style=\"white-space:nowrap\">42<a name=\"BRTipoEstabelecimentoSaude-42\"> </a></td><td>UNIDADE MOVEL DE NIVEL PRE-HOSPITALAR NA AREA DE URGENCIA</td></tr><tr><td style=\"white-space:nowrap\">32<a name=\"BRTipoEstabelecimentoSaude-32\"> </a></td><td>UNIDADE MOVEL FLUVIAL</td></tr><tr><td style=\"white-space:nowrap\">40<a name=\"BRTipoEstabelecimentoSaude-40\"> </a></td><td>UNIDADE MOVEL TERRESTRE</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoEstabelecimentoSaude"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "Tipo de Estabelecimento de Saúde"];
+  fhir:CodeSystem.title [ fhir:value "Tipo de estabelecimento de saúde"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean];
+  fhir:CodeSystem.date [ fhir:value "2020-03-11T18:25:27.5167216+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "Rede Nacional de Dados em Saúde"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Rede Nacional de Dados em Saúde" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://github.com/kyriosdata" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "rnds@saude.gov.br" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Códigos para representação de tipos de estabelecimentos de saúde, de acordo com codificação já existente para o Cadastro Nacional de Estabelecimentos de Saúde (CNES)."];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "39"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "84" ];
+     fhir:CodeSystem.concept.display [ fhir:value "CENTRAL DE ABASTECIMENTO" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "68" ];
+     fhir:CodeSystem.concept.display [ fhir:value "CENTRAL DE GESTAO EM SAUDE" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "82" ];
+     fhir:CodeSystem.concept.display [ fhir:value "CENTRAL DE NOTIFICACAO,CAPTACAO E DISTRIB DE ORGAOS ESTADUAL" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "64" ];
+     fhir:CodeSystem.concept.display [ fhir:value "CENTRAL DE REGULACAO DE SERVICOS DE SAUDE" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "81" ];
+     fhir:CodeSystem.concept.display [ fhir:value "CENTRAL DE REGULACAO DO ACESSO" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "76" ];
+     fhir:CodeSystem.concept.display [ fhir:value "CENTRAL DE REGULACAO MEDICA DAS URGENCIAS" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "71" ];
+     fhir:CodeSystem.concept.display [ fhir:value "CENTRO DE APOIO A SAUDE DA FAMILIA" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "69" ];
+     fhir:CodeSystem.concept.display [ fhir:value "CENTRO DE ATENCAO HEMOTERAPIA E OU HEMATOLOGICA" ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "70" ];
+     fhir:CodeSystem.concept.display [ fhir:value "CENTRO DE ATENCAO PSICOSSOCIAL" ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "85" ];
+     fhir:CodeSystem.concept.display [ fhir:value "CENTRO DE IMUNIZACAO" ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "61" ];
+     fhir:CodeSystem.concept.display [ fhir:value "CENTRO DE PARTO NORMAL - ISOLADO" ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.concept.code [ fhir:value "2" ];
+     fhir:CodeSystem.concept.display [ fhir:value "CENTRO DE SAUDE/UNIDADE BASICA" ]
+  ], [
+     fhir:index 12;
+     fhir:CodeSystem.concept.code [ fhir:value "36" ];
+     fhir:CodeSystem.concept.display [ fhir:value "CLINICA/CENTRO DE ESPECIALIDADE" ]
+  ], [
+     fhir:index 13;
+     fhir:CodeSystem.concept.code [ fhir:value "22" ];
+     fhir:CodeSystem.concept.display [ fhir:value "CONSULTORIO ISOLADO" ]
+  ], [
+     fhir:index 14;
+     fhir:CodeSystem.concept.code [ fhir:value "60" ];
+     fhir:CodeSystem.concept.display [ fhir:value "COOPERATIVA OU EMPRESA DE CESSAO DE TRABALHADORES NA SAUDE" ]
+  ], [
+     fhir:index 15;
+     fhir:CodeSystem.concept.code [ fhir:value "43" ];
+     fhir:CodeSystem.concept.display [ fhir:value "FARMACIA" ]
+  ], [
+     fhir:index 16;
+     fhir:CodeSystem.concept.code [ fhir:value "7" ];
+     fhir:CodeSystem.concept.display [ fhir:value "HOSPITAL ESPECIALIZADO" ]
+  ], [
+     fhir:index 17;
+     fhir:CodeSystem.concept.code [ fhir:value "5" ];
+     fhir:CodeSystem.concept.display [ fhir:value "HOSPITAL GERAL" ]
+  ], [
+     fhir:index 18;
+     fhir:CodeSystem.concept.code [ fhir:value "62" ];
+     fhir:CodeSystem.concept.display [ fhir:value "HOSPITAL/DIA - ISOLADO" ]
+  ], [
+     fhir:index 19;
+     fhir:CodeSystem.concept.code [ fhir:value "67" ];
+     fhir:CodeSystem.concept.display [ fhir:value "LABORATORIO CENTRAL DE SAUDE PUBLICA LACEN" ]
+  ], [
+     fhir:index 20;
+     fhir:CodeSystem.concept.code [ fhir:value "80" ];
+     fhir:CodeSystem.concept.display [ fhir:value "LABORATORIO DE SAUDE PUBLICA" ]
+  ], [
+     fhir:index 21;
+     fhir:CodeSystem.concept.code [ fhir:value "79" ];
+     fhir:CodeSystem.concept.display [ fhir:value "OFICINA ORTOPEDICA" ]
+  ], [
+     fhir:index 22;
+     fhir:CodeSystem.concept.code [ fhir:value "4" ];
+     fhir:CodeSystem.concept.display [ fhir:value "POLICLINICA" ]
+  ], [
+     fhir:index 23;
+     fhir:CodeSystem.concept.code [ fhir:value "74" ];
+     fhir:CodeSystem.concept.display [ fhir:value "POLO ACADEMIA DA SAUDE" ]
+  ], [
+     fhir:index 24;
+     fhir:CodeSystem.concept.code [ fhir:value "83" ];
+     fhir:CodeSystem.concept.display [ fhir:value "POLO DE PREVENCAO DE DOENCAS E AGRAVOS E PROMOCAO DA SAUDE" ]
+  ], [
+     fhir:index 25;
+     fhir:CodeSystem.concept.code [ fhir:value "1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "POSTO DE SAUDE" ]
+  ], [
+     fhir:index 26;
+     fhir:CodeSystem.concept.code [ fhir:value "73" ];
+     fhir:CodeSystem.concept.display [ fhir:value "PRONTO ATENDIMENTO" ]
+  ], [
+     fhir:index 27;
+     fhir:CodeSystem.concept.code [ fhir:value "21" ];
+     fhir:CodeSystem.concept.display [ fhir:value "PRONTO SOCORRO ESPECIALIZADO" ]
+  ], [
+     fhir:index 28;
+     fhir:CodeSystem.concept.code [ fhir:value "20" ];
+     fhir:CodeSystem.concept.display [ fhir:value "PRONTO SOCORRO GERAL" ]
+  ], [
+     fhir:index 29;
+     fhir:CodeSystem.concept.code [ fhir:value "77" ];
+     fhir:CodeSystem.concept.display [ fhir:value "SERVICO DE ATENCAO DOMICILIAR ISOLADO(HOME CARE)" ]
+  ], [
+     fhir:index 30;
+     fhir:CodeSystem.concept.code [ fhir:value "75" ];
+     fhir:CodeSystem.concept.display [ fhir:value "TELESSAUDE" ]
+  ], [
+     fhir:index 31;
+     fhir:CodeSystem.concept.code [ fhir:value "39" ];
+     fhir:CodeSystem.concept.display [ fhir:value "UNIDADE DE APOIO DIAGNOSE E TERAPIA (SADT ISOLADO)" ]
+  ], [
+     fhir:index 32;
+     fhir:CodeSystem.concept.code [ fhir:value "72" ];
+     fhir:CodeSystem.concept.display [ fhir:value "UNIDADE DE ATENCAO A SAUDE INDIGENA" ]
+  ], [
+     fhir:index 33;
+     fhir:CodeSystem.concept.code [ fhir:value "78" ];
+     fhir:CodeSystem.concept.display [ fhir:value "UNIDADE DE ATENCAO EM REGIME RESIDENCIAL" ]
+  ], [
+     fhir:index 34;
+     fhir:CodeSystem.concept.code [ fhir:value "50" ];
+     fhir:CodeSystem.concept.display [ fhir:value "UNIDADE DE VIGILANCIA EM SAUDE" ]
+  ], [
+     fhir:index 35;
+     fhir:CodeSystem.concept.code [ fhir:value "15" ];
+     fhir:CodeSystem.concept.display [ fhir:value "UNIDADE MISTA" ]
+  ], [
+     fhir:index 36;
+     fhir:CodeSystem.concept.code [ fhir:value "42" ];
+     fhir:CodeSystem.concept.display [ fhir:value "UNIDADE MOVEL DE NIVEL PRE-HOSPITALAR NA AREA DE URGENCIA" ]
+  ], [
+     fhir:index 37;
+     fhir:CodeSystem.concept.code [ fhir:value "32" ];
+     fhir:CodeSystem.concept.display [ fhir:value "UNIDADE MOVEL FLUVIAL" ]
+  ], [
+     fhir:index 38;
+     fhir:CodeSystem.concept.code [ fhir:value "40" ];
+     fhir:CodeSystem.concept.display [ fhir:value "UNIDADE MOVEL TERRESTRE" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoEstabelecimentoSaude.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

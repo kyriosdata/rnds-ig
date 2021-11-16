@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="BRNomeCampanhaVacinacao"/>
+  <language value="pt-BR"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-BR" lang="pt-BR"><p>This code system http://www.saude.gov.br/fhir/r4/CodeSystem/BRNomeCampanhaVacinacao defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">COV<a name="BRNomeCampanhaVacinacao-COV"> </a></td><td>COVID</td></tr><tr><td style="white-space:nowrap">SAR<a name="BRNomeCampanhaVacinacao-SAR"> </a></td><td>Sarampo</td></tr><tr><td style="white-space:nowrap">POL<a name="BRNomeCampanhaVacinacao-POL"> </a></td><td>Poliomielite</td></tr><tr><td style="white-space:nowrap">INFLU<a name="BRNomeCampanhaVacinacao-INFLU"> </a></td><td>Influenza</td></tr><tr><td style="white-space:nowrap">MULTI<a name="BRNomeCampanhaVacinacao-MULTI"> </a></td><td>Multivacinação</td></tr></table></div>
+  </text>
+  <url value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRNomeCampanhaVacinacao"/>
+  <version value="0.1.0"/>
+  <name value="Nome da Campanha de Vacinação"/>
+  <title value="Nome de campanha de vacinação"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2020-12-08T13:49:02Z"/>
+  <publisher value="Rede Nacional de Dados em Saúde"/>
+  <contact>
+    <name value="Rede Nacional de Dados em Saúde"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/kyriosdata"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rnds@saude.gov.br"/>
+    </telecom>
+  </contact>
+  <description value="Domínio que identifica o nome da campanha de vacinação."/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="COV"/>
+    <display value="COVID"/>
+  </concept>
+  <concept>
+    <code value="SAR"/>
+    <display value="Sarampo"/>
+  </concept>
+  <concept>
+    <code value="POL"/>
+    <display value="Poliomielite"/>
+  </concept>
+  <concept>
+    <code value="INFLU"/>
+    <display value="Influenza"/>
+  </concept>
+  <concept>
+    <code value="MULTI"/>
+    <display value="Multivacinação"/>
+  </concept>
+</CodeSystem>

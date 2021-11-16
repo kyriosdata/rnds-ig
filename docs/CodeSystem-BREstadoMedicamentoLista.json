@@ -1,0 +1,44 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "BREstadoMedicamentoLista",
+  "meta": {
+    "lastUpdated": "2020-03-11T15:11:32.203-03:00"
+  },
+  "language": "pt-BR",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p>This code system http://www.saude.gov.br/fhir/r4/CodeSystem/BREstadoMedicamentoLista defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">dispensed<a name=\"BREstadoMedicamentoLista-dispensed\"> </a></td><td>Medicamento dispensado</td></tr></table></div>"
+  },
+  "url": "http://www.saude.gov.br/fhir/r4/CodeSystem/BREstadoMedicamentoLista",
+  "version": "0.1.0",
+  "name": "Estado do Medicamento na Lista",
+  "title": "Estado de medicamento",
+  "status": "active",
+  "experimental": false,
+  "date": "2020-03-11T18:11:52.7140537+00:00",
+  "publisher": "Rede Nacional de Dados em Saúde",
+  "contact": [
+    {
+      "name": "Rede Nacional de Dados em Saúde",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://github.com/kyriosdata"
+        },
+        {
+          "system": "email",
+          "value": "rnds@saude.gov.br"
+        }
+      ]
+    }
+  ],
+  "description": "Classificação do estado de um medicamento na lista de medicamentos da Rede Nacional de Dados em Saúde.",
+  "content": "complete",
+  "count": 1,
+  "concept": [
+    {
+      "code": "dispensed",
+      "display": "Medicamento dispensado"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "BRComponenteAssistenciaFarmaceutica",
+  "meta": {
+    "lastUpdated": "2020-03-11T15:10:50.522-03:00"
+  },
+  "language": "pt-BR",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p>This code system http://www.saude.gov.br/fhir/r4/CodeSystem/BRComponenteAssistenciaFarmaceutica defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">B<a name=\"BRComponenteAssistenciaFarmaceutica-B\"> </a></td><td>Básico</td></tr><tr><td style=\"white-space:nowrap\">S<a name=\"BRComponenteAssistenciaFarmaceutica-S\"> </a></td><td>Estratégico</td></tr><tr><td style=\"white-space:nowrap\">E<a name=\"BRComponenteAssistenciaFarmaceutica-E\"> </a></td><td>Especializado</td></tr><tr><td style=\"white-space:nowrap\">O<a name=\"BRComponenteAssistenciaFarmaceutica-O\"> </a></td><td>Outros</td></tr></table></div>"
+  },
+  "url": "http://www.saude.gov.br/fhir/r4/CodeSystem/BRComponenteAssistenciaFarmaceutica",
+  "version": "0.1.0",
+  "name": "Componente da Assistência Farmacêutica",
+  "title": "Componente da assistência farmacêutica",
+  "status": "active",
+  "experimental": false,
+  "date": "2020-03-11T18:11:11.0252109+00:00",
+  "publisher": "Rede Nacional de Dados em Saúde",
+  "contact": [
+    {
+      "name": "Rede Nacional de Dados em Saúde",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://github.com/kyriosdata"
+        },
+        {
+          "system": "email",
+          "value": "rnds@saude.gov.br"
+        }
+      ]
+    }
+  ],
+  "description": "Identifica o componente da assistência farmacêutica de uma substância ou produto.",
+  "content": "complete",
+  "count": 4,
+  "concept": [
+    {
+      "code": "B",
+      "display": "Básico"
+    },
+    {
+      "code": "S",
+      "display": "Estratégico"
+    },
+    {
+      "code": "E",
+      "display": "Especializado"
+    },
+    {
+      "code": "O",
+      "display": "Outros"
+    }
+  ]
+}

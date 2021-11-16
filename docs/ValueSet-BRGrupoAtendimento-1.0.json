@@ -1,0 +1,42 @@
+{
+  "resourceType": "ValueSet",
+  "id": "BRGrupoAtendimento-1.0",
+  "language": "pt-BR",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><ul><li>Include all codes defined in <a href=\"CodeSystem-BRGrupoAtendimento.html\"><code>http://www.saude.gov.br/fhir/r4/CodeSystem/BRGrupoAtendimento</code></a></li></ul></div>"
+  },
+  "url": "http://www.saude.gov.br/fhir/r4/ValueSet/BRGrupoAtendimento-1.0",
+  "version": "0.1.0",
+  "name": "BRGrupoAtendimento",
+  "title": "Tipo de grupo de atendimento",
+  "status": "active",
+  "experimental": false,
+  "date": "2020-12-15T16:29:40Z",
+  "publisher": "Rede Nacional de Dados em Saúde",
+  "contact": [
+    {
+      "name": "Rede Nacional de Dados em Saúde",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://github.com/kyriosdata"
+        },
+        {
+          "system": "email",
+          "value": "rnds@saude.gov.br"
+        }
+      ]
+    }
+  ],
+  "description": "Identifica o tipo de grupo de atendimento que o indivíduo apresentou para a vacinação em campanha.",
+  "immutable": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://www.saude.gov.br/fhir/r4/CodeSystem/BRGrupoAtendimento",
+        "version": "*"
+      }
+    ]
+  }
+}

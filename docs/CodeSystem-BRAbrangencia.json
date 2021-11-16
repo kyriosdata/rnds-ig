@@ -1,0 +1,53 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "BRAbrangencia",
+  "language": "pt-BR",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p>This code system http://www.saude.gov.br/fhir/r4/CodeSystem/BRAbrangencia defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">01<a name=\"BRAbrangencia-01\"> </a></td><td>falta descrever</td></tr><tr><td style=\"white-space:nowrap\">02<a name=\"BRAbrangencia-02\"> </a></td><td>falta descrever</td></tr><tr><td style=\"white-space:nowrap\">03<a name=\"BRAbrangencia-03\"> </a></td><td>falta descrever</td></tr><tr><td style=\"white-space:nowrap\">04<a name=\"BRAbrangencia-04\"> </a></td><td>falta descrever</td></tr></table></div>"
+  },
+  "url": "http://www.saude.gov.br/fhir/r4/CodeSystem/BRAbrangencia",
+  "version": "0.1.0",
+  "name": "BRAbrangencia",
+  "title": "Abrangência territorial",
+  "status": "active",
+  "experimental": false,
+  "date": "2020-12-08T17:34:45Z",
+  "publisher": "Rede Nacional de Dados em Saúde",
+  "contact": [
+    {
+      "name": "Rede Nacional de Dados em Saúde",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://github.com/kyriosdata"
+        },
+        {
+          "system": "email",
+          "value": "rnds@saude.gov.br"
+        }
+      ]
+    }
+  ],
+  "description": "Classifica a abrangência territorial da atividade.",
+  "content": "complete",
+  "count": 4,
+  "concept": [
+    {
+      "code": "01",
+      "display": "falta descrever"
+    },
+    {
+      "code": "02",
+      "display": "falta descrever"
+    },
+    {
+      "code": "03",
+      "display": "falta descrever"
+    },
+    {
+      "code": "04",
+      "display": "falta descrever"
+    }
+  ]
+}

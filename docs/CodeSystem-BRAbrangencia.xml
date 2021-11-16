@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="BRAbrangencia"/>
+  <language value="pt-BR"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-BR" lang="pt-BR"><p>This code system http://www.saude.gov.br/fhir/r4/CodeSystem/BRAbrangencia defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">01<a name="BRAbrangencia-01"> </a></td><td>falta descrever</td></tr><tr><td style="white-space:nowrap">02<a name="BRAbrangencia-02"> </a></td><td>falta descrever</td></tr><tr><td style="white-space:nowrap">03<a name="BRAbrangencia-03"> </a></td><td>falta descrever</td></tr><tr><td style="white-space:nowrap">04<a name="BRAbrangencia-04"> </a></td><td>falta descrever</td></tr></table></div>
+  </text>
+  <url value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRAbrangencia"/>
+  <version value="0.1.0"/>
+  <name value="BRAbrangencia"/>
+  <title value="Abrangência territorial"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2020-12-08T17:34:45Z"/>
+  <publisher value="Rede Nacional de Dados em Saúde"/>
+  <contact>
+    <name value="Rede Nacional de Dados em Saúde"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/kyriosdata"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rnds@saude.gov.br"/>
+    </telecom>
+  </contact>
+  <description value="Classifica a abrangência territorial da atividade."/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="01"/>
+    <display value="falta descrever"/>
+  </concept>
+  <concept>
+    <code value="02"/>
+    <display value="falta descrever"/>
+  </concept>
+  <concept>
+    <code value="03"/>
+    <display value="falta descrever"/>
+  </concept>
+  <concept>
+    <code value="04"/>
+    <display value="falta descrever"/>
+  </concept>
+</CodeSystem>

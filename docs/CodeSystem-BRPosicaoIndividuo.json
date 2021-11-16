@@ -1,0 +1,60 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "BRPosicaoIndividuo",
+  "meta": {
+    "lastUpdated": "2020-03-11T15:19:54.794-03:00"
+  },
+  "language": "pt-BR",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p>This code system http://www.saude.gov.br/fhir/r4/CodeSystem/BRPosicaoIndividuo defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"BRPosicaoIndividuo-1\"> </a></td><td>Em pé</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"BRPosicaoIndividuo-2\"> </a></td><td>Sentado</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"BRPosicaoIndividuo-3\"> </a></td><td>Reclinado</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"BRPosicaoIndividuo-4\"> </a></td><td>Deitado</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"BRPosicaoIndividuo-5\"> </a></td><td>Deitado com inclinação para esquerda</td></tr></table></div>"
+  },
+  "url": "http://www.saude.gov.br/fhir/r4/CodeSystem/BRPosicaoIndividuo",
+  "version": "0.1.0",
+  "name": "Posição do Indivíduo",
+  "title": "Posição do indivíduo",
+  "status": "active",
+  "experimental": false,
+  "date": "2020-03-11T18:20:15.3085069+00:00",
+  "publisher": "Rede Nacional de Dados em Saúde",
+  "contact": [
+    {
+      "name": "Rede Nacional de Dados em Saúde",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://github.com/kyriosdata"
+        },
+        {
+          "system": "email",
+          "value": "rnds@saude.gov.br"
+        }
+      ]
+    }
+  ],
+  "description": "Identifica a posição de um indivíduo em um determinado contexto.",
+  "content": "complete",
+  "count": 5,
+  "concept": [
+    {
+      "code": "1",
+      "display": "Em pé"
+    },
+    {
+      "code": "2",
+      "display": "Sentado"
+    },
+    {
+      "code": "3",
+      "display": "Reclinado"
+    },
+    {
+      "code": "4",
+      "display": "Deitado"
+    },
+    {
+      "code": "5",
+      "display": "Deitado com inclinação para esquerda"
+    }
+  ]
+}

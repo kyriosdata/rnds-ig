@@ -1,0 +1,505 @@
+﻿GuiaImplementacaoFhirRnds : Validation Results
+=========================================
+
+err = 72, warn = 105, info = 3
+IG Publisher Version: 1.1.86
+Generated Tue Nov 16 07:56:03 BRT 2021. FHIR version 4.0.1 for rnds#0.1.0 (canonical = http://www.saude.gov.br/fhir/r4)
+ Build Errors : 0 / 2 / 0
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\ImplementationGuide-rnds : 0 / 0 / 2
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\codesystem-BRAbrangencia : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\codesystem-BRCBHPMTUSS : 0 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\codesystem-BRCBO : 0 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\codesystem-BRCIAP2 : 0 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\codesystem-BRCID10 : 0 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\codesystem-BRCaraterAtendimento : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\codesystem-BRClassificacaoLista : 0 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\codesystem-BRComponenteAssistenciaFarmaceutica : 0 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\codesystem-BRDivisaoGeograficaBrasil : 0 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\codesystem-BRDose : 0 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\codesystem-BREstadoMedicamentoLista : 0 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\codesystem-BREstrategiaVacinacao : 0 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\codesystem-BREtniaIndigena : 0 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\codesystem-BRFinanciamento : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\codesystem-BRGrupoAtendimento : 0 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\codesystem-BRImunobiologico : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\codesystem-BRJustificativaIndividuoNaoIdentificado : 0 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\codesystem-BRLocalAfericao : 0 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\codesystem-BRLocalAplicacao : 0 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\codesystem-BRMedicamento : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\codesystem-BRModalidadeAssistencial : 0 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\codesystem-BRMotivoDesfecho : 0 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\codesystem-BRNaturezaJuridica : 0 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\codesystem-BRNomeCampanhaVacinacao : 0 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\codesystem-BRNomeExameGAL : 0 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\codesystem-BRNomeExameLOINC : 0 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\codesystem-BROrgaoExpedidor : 0 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\codesystem-BRPais : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\codesystem-BRParentesco : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\codesystem-BRPosicaoIndividuo : 0 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\codesystem-BRProcedencia : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\codesystem-BRProgramaSaude : 0 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\codesystem-BRRacaCor : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\codesystem-BRResponsabilidadeParticipante : 0 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\codesystem-BRResultadoQualitativoExame : 0 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\codesystem-BRSituacaoCondicaoIndividuo : 0 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\codesystem-BRSubgrupoTabelaSUS : 0 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\codesystem-BRTabelaSUS : 0 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\codesystem-BRTipoAmostraGAL : 0 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\codesystem-BRTipoDocumento : 0 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\codesystem-BRTipoEstabelecimentoSaude : 0 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\codesystem-BRTipoIdentificador : 0 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\codesystem-BRTipoLogradouro : 0 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\codesystem-BRTipoObservacao : 0 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\codesystem-BRUnidadeFarmaceutica : 0 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\codesystem-BRViaAdministracao : 0 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\structuredefinition-0a10269f-4d8d-4cbc-b06f-762fb595e248 : 1 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\structuredefinition-0d945af8-3a09-4663-8ce2-0e4175d5cb09 : 3 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\structuredefinition-10adbc3a-b1e9-4620-8c02-6f530e2caae0 : 1 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\structuredefinition-17e2d3ae-3c74-4b22-8e95-560ab209d7df : 1 / 1 / 2
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\structuredefinition-209cde9a-5393-4f3d-b456-294c954ea6fc : 1 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\structuredefinition-26b68721-2e7f-48a1-84b2-4d71cc9751f5 : 1 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\structuredefinition-270156fd-40f7-44b0-979d-1165022df8da : 1 / 3 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\structuredefinition-2cc4e4e3-0f97-4b54-ab87-e73fe0758cc7 : 1 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\structuredefinition-31468be2-a66e-427d-b07e-c217627c069d : 3 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\structuredefinition-33f94efe-eda9-4cdf-b3a1-4b2e0d5dfba9 : 1 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\structuredefinition-3d75211e-ccb6-4e01-b965-05382abfae5d : 1 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\structuredefinition-43822493-10c2-41dc-9fae-962bab3a59e4 : 1 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\structuredefinition-521287f6-fd07-498d-aec2-1dff41af31ba : 1 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\structuredefinition-66fe4a9e-184c-435c-ac3e-680bac8346cf : 1 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\structuredefinition-6ca9186a-6b71-4837-9ee6-50cb5da88645 : 1 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\structuredefinition-7ba7dc20-9251-417f-bc02-0a08c2986710 : 5 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\structuredefinition-8e81a097-e1cb-422f-8262-014d7ca329b2 : 1 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\structuredefinition-9e02be1a-ccd7-41d3-a10e-2c031a4979b4 : 1 / 1 / 2
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\structuredefinition-BRAdministradorTerceiro : 1 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\structuredefinition-BRAmostraBiologica : 1 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\structuredefinition-BRAtendeSUS : 1 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\structuredefinition-BRDocumentoIndividuo : 1 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\structuredefinition-BREndereco : 1 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\structuredefinition-BREstrategiaCampanha : 4 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\structuredefinition-BREstrategiaVacinacao : 1 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\structuredefinition-BRGrupoAtendimento : 0 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\structuredefinition-BRImunobiologicoAdministradoCampanha : 3 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\structuredefinition-BRImunobiologicoAdministradoCarga : 3 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\structuredefinition-BRIndividuoNaoIdentificado : 1 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\structuredefinition-BRLocalAtendimento : 1 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\structuredefinition-BRMeioContato : 1 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\structuredefinition-BRMunicipio : 1 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\structuredefinition-BRNomeIndividuo : 1 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\structuredefinition-BROperadorDigitador : 1 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\structuredefinition-BRParentesIndividuo : 2 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\structuredefinition-BRPessoaJuridicaProfissionalLiberal : 1 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\structuredefinition-BRPosicaoIndividuo : 1 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\structuredefinition-BRProfissional : 1 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\structuredefinition-BRQualidadeCadastroIndividuo : 1 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\structuredefinition-BRReferencia : 1 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\structuredefinition-BRRegistroImunobiologicoAdministrado : 1 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\structuredefinition-BRRegistroImunobiologicoAdministradoCampanha : 1 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\structuredefinition-BRRegistroImunobiologicoAdministradoCarga : 1 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\structuredefinition-BRResultadoExameLaboratorial-1.0 : 0 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\structuredefinition-BRSituacaoCondicaoIndividuo : 1 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\structuredefinition-a3bc0180-3d3d-469f-af04-7117f87db5be : 1 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\structuredefinition-a495e791-173d-4175-bced-da4b42fa0ce1 : 1 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\structuredefinition-abe19423-94f2-490a-911e-a82ff5665164 : 1 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\structuredefinition-af21adb7-867b-4862-8e26-814b2e805f37 : 1 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\structuredefinition-bd2268df-7a8f-4e9b-8674-547f3b20a52b : 1 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\structuredefinition-c8f43e8f-28c7-4872-9aa1-1405d22f0f51 : 1 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\structuredefinition-d3d10a8f-46bc-4d9d-850f-b8ab5b778709 : 1 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\structuredefinition-e93a2b50-3f50-4670-8242-8b9af26a3584 : 1 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\structuredefinition-e95fd8e8-3e10-4824-8227-99576192fb81 : 1 / 5 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\structuredefinition-ee0344fa-7d1d-488d-9356-479b885bfedd : 1 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\structuredefinition-f0d41273-772c-425f-bb60-2507efddff01 : 1 / 1 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\valueset-BRAbrangencia-1.0 : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\valueset-BRCBO-1.0 : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\valueset-BRCIAP2-1.0 : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\valueset-BRCID10-1.0 : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\valueset-BRCampanhaVacinacao-1.0 : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\valueset-BRCaraterAtendimento-1.0 : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\valueset-BRCategoriaExame-1.0 : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\valueset-BRClassificacaoLista-1.0 : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\valueset-BRComponenteAssistenciaFarmaceutica-1.0 : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\valueset-BRDose-1.0 : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\valueset-BREstadoCivil-1.0 : 0 / 2 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\valueset-BREstadoContatoAssistencial-1.0 : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\valueset-BREstadoDocumento-1.0 : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\valueset-BREstadoEvento-1.0 : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\valueset-BREstadoMedicamentoLista-1.0 : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\valueset-BREstadoObservacao-1.0 : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\valueset-BREstadoResolucaoDiagnosticoProblema-1.0 : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\valueset-BREstrategiaVacinacao-1.0 : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\valueset-BREstrategiaVacinacaoCampanha-1.0 : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\valueset-BREtniaIndigena-1.0 : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\valueset-BRFinanciamento-1.0 : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\valueset-BRGrupoAtendimento-1.0 : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\valueset-BRImunobiologico-1.0 : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\valueset-BRJustificativaIndividuoNaoIdentificado-1.0 : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\valueset-BRLocalAPlicacao-1.0 : 1 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\valueset-BRMedicamento-1.0 : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\valueset-BRModalidadeAssistencial-1.0 : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\valueset-BRMotivoDesfecho-1.0 : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\valueset-BRMunicipio-1.0 : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\valueset-BRNaturezaJuridica-1.0 : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\valueset-BRNomeExame-1.0 : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\valueset-BROcupacao-1.0 : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\valueset-BROrgaoExpedidor-1.0 : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\valueset-BRPais-1.0 : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\valueset-BRParentesco-1.0 : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\valueset-BRPosicaoIndividuo-1.0 : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\valueset-BRProcedencia-1.0 : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\valueset-BRProcedimentosNacionais-1.0 : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\valueset-BRProgramaSaude-1.0 : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\valueset-BRRacaCor-1.0 : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\valueset-BRResponsabilidadeParticipante-1.0 : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\valueset-BRResultadoQualitativoExame-1.0 : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\valueset-BRSexo-1.0 : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\valueset-BRSituacaoCOndicaoIndividuo-1.0 : 1 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\valueset-BRTipoAmostra-1.0 : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\valueset-BRTipoDocumento-1.0 : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\valueset-BRTipoDocumentoIndividuo-1.0 : 0 / 2 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\valueset-BRTipoEstabelecimentoSaude-1.0 : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\valueset-BRTipoIdentificadorProcedimento-1.0 : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\valueset-BRTipoLogradouro-1.0 : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\valueset-BRTipoObservacao-1.0 : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\valueset-BRUnidadeFarmaceutica-1.0 : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\valueset-BRUnidadeFederativa-1.0 : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\valueset-BRViaAdministracao-1.0 : 0 / 0 / 1
+ C:\Users\fabio\rnds-ig\fsh-generated\resources\valueset-ValueSetBRLocalAfericao : 0 / 0 / 1
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/BRDocumentoIndividuo.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/c8f43e8f-28c7-4872-9aa1-1405d22f0f51.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+== fsh-generated\resources\ImplementationGuide-rnds.json ==
+INFORMATION: ImplementationGuide/rnds: ImplementationGuide.definition.resource[5].description: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+== fsh-generated\resources\CodeSystem-BRAbrangencia.json ==
+== fsh-generated\resources\CodeSystem-BRCBHPMTUSS.json ==
+WARNING: CodeSystem/BRCBHPMTUSS: CodeSystem: csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\CodeSystem-BRCBO.json ==
+WARNING: CodeSystem/BRCBO: CodeSystem: csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\CodeSystem-BRCIAP2.json ==
+WARNING: CodeSystem/BRCIAP2: CodeSystem: csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\CodeSystem-BRCID10.json ==
+WARNING: CodeSystem/BRCID10: CodeSystem: csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\CodeSystem-BRCaraterAtendimento.json ==
+== fsh-generated\resources\CodeSystem-BRClassificacaoLista.json ==
+WARNING: CodeSystem/BRClassificacaoLista: CodeSystem: csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\CodeSystem-BRComponenteAssistenciaFarmaceutica.json ==
+WARNING: CodeSystem/BRComponenteAssistenciaFarmaceutica: CodeSystem: csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\CodeSystem-BRDivisaoGeograficaBrasil.json ==
+WARNING: CodeSystem/BRDivisaoGeograficaBrasil: CodeSystem: csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\CodeSystem-BRDose.json ==
+WARNING: CodeSystem/BRDose: CodeSystem: csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\CodeSystem-BREstadoMedicamentoLista.json ==
+WARNING: CodeSystem/BREstadoMedicamentoLista: CodeSystem: csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\CodeSystem-BREstrategiaVacinacao.json ==
+WARNING: CodeSystem/BREstrategiaVacinacao: CodeSystem: csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\CodeSystem-BREtniaIndigena.json ==
+WARNING: CodeSystem/BREtniaIndigena: CodeSystem: csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\CodeSystem-BRFinanciamento.json ==
+== fsh-generated\resources\CodeSystem-BRGrupoAtendimento.json ==
+WARNING: CodeSystem/BRGrupoAtendimento: CodeSystem: csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\CodeSystem-BRImunobiologico.json ==
+== fsh-generated\resources\CodeSystem-BRJustificativaIndividuoNaoIdentificado.json ==
+WARNING: CodeSystem/BRJustificativaIndividuoNaoIdentificado: CodeSystem: csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\CodeSystem-BRLocalAfericao.json ==
+WARNING: CodeSystem/BRLocalAfericao: CodeSystem: csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\CodeSystem-BRLocalAplicacao.json ==
+WARNING: CodeSystem/BRLocalAplicacao: CodeSystem: csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\CodeSystem-BRMedicamento.json ==
+== fsh-generated\resources\CodeSystem-BRModalidadeAssistencial.json ==
+WARNING: CodeSystem/BRModalidadeAssistencial: CodeSystem: csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\CodeSystem-BRMotivoDesfecho.json ==
+WARNING: CodeSystem/BRMotivoDesfecho: CodeSystem: csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\CodeSystem-BRNaturezaJuridica.json ==
+WARNING: CodeSystem/BRNaturezaJuridica: CodeSystem: csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\CodeSystem-BRNomeCampanhaVacinacao.json ==
+WARNING: CodeSystem/BRNomeCampanhaVacinacao: CodeSystem: csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\CodeSystem-BRNomeExameGAL.json ==
+WARNING: CodeSystem/BRNomeExameGAL: CodeSystem: csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\CodeSystem-BRNomeExameLOINC.json ==
+WARNING: CodeSystem/BRNomeExameLOINC: CodeSystem: csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\CodeSystem-BROrgaoExpedidor.json ==
+WARNING: CodeSystem/BROrgaoExpedidor: CodeSystem: csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\CodeSystem-BRPais.json ==
+== fsh-generated\resources\CodeSystem-BRParentesco.json ==
+== fsh-generated\resources\CodeSystem-BRPosicaoIndividuo.json ==
+WARNING: CodeSystem/BRPosicaoIndividuo: CodeSystem: csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\CodeSystem-BRProcedencia.json ==
+== fsh-generated\resources\CodeSystem-BRProgramaSaude.json ==
+WARNING: CodeSystem/BRProgramaSaude: CodeSystem: csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\CodeSystem-BRRacaCor.json ==
+== fsh-generated\resources\CodeSystem-BRResponsabilidadeParticipante.json ==
+WARNING: CodeSystem/BRResponsabilidadeParticipante: CodeSystem: csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\CodeSystem-BRResultadoQualitativoExame.json ==
+WARNING: CodeSystem/BRResultadoQualitativoExame: CodeSystem: csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\CodeSystem-BRSituacaoCondicaoIndividuo.json ==
+WARNING: CodeSystem/BRSituacaoCondicaoIndividuo: CodeSystem: csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\CodeSystem-BRSubgrupoTabelaSUS.json ==
+WARNING: CodeSystem/BRSubgrupoTabelaSUS: CodeSystem: csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\CodeSystem-BRTabelaSUS.json ==
+WARNING: CodeSystem/BRTabelaSUS: CodeSystem: csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\CodeSystem-BRTipoAmostraGAL.json ==
+WARNING: CodeSystem/BRTipoAmostraGAL: CodeSystem: csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\CodeSystem-BRTipoDocumento.json ==
+WARNING: CodeSystem/BRTipoDocumento: CodeSystem: csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\CodeSystem-BRTipoEstabelecimentoSaude.json ==
+WARNING: CodeSystem/BRTipoEstabelecimentoSaude: CodeSystem: csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\CodeSystem-BRTipoIdentificador.json ==
+WARNING: CodeSystem/BRTipoIdentificador: CodeSystem: csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\CodeSystem-BRTipoLogradouro.json ==
+WARNING: CodeSystem/BRTipoLogradouro: CodeSystem: csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\CodeSystem-BRTipoObservacao.json ==
+WARNING: CodeSystem/BRTipoObservacao: CodeSystem: csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\CodeSystem-BRUnidadeFarmaceutica.json ==
+WARNING: CodeSystem/BRUnidadeFarmaceutica: CodeSystem: csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\CodeSystem-BRViaAdministracao.json ==
+WARNING: CodeSystem/BRViaAdministracao: CodeSystem: csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated\resources\StructureDefinition-0a10269f-4d8d-4cbc-b06f-762fb595e248.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: 0a10269f-4d8d-4cbc-b06f-762fb595e248/http://www.saude.gov.br/fhir/r4/StructureDefinition/BRValorMonetario-1.0
+WARNING: StructureDefinition.where(url = 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRValorMonetario-1.0'): The Implementation Guide contains no examples for this extension
+== fsh-generated\resources\StructureDefinition-0d945af8-3a09-4663-8ce2-0e4175d5cb09.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: 0d945af8-3a09-4663-8ce2-0e4175d5cb09/http://www.saude.gov.br/fhir/r4/StructureDefinition/BRRacaCorEtnia-1.0
+ERROR: StructureDefinition/0d945af8-3a09-4663-8ce2-0e4175d5cb09: StructureDefinition.differential.element[2].binding: ElementDefinition.binding.strength: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition)
+ERROR: StructureDefinition/0d945af8-3a09-4663-8ce2-0e4175d5cb09: StructureDefinition.differential.element[12].binding: ElementDefinition.binding.strength: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition)
+WARNING: StructureDefinition.where(url = 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRRacaCorEtnia-1.0'): The Implementation Guide contains no examples for this extension
+== fsh-generated\resources\StructureDefinition-10adbc3a-b1e9-4620-8c02-6f530e2caae0.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: 10adbc3a-b1e9-4620-8c02-6f530e2caae0/http://www.saude.gov.br/fhir/r4/StructureDefinition/BRDiagnosticoLaboratorioClinico-1.0
+WARNING: StructureDefinition.where(url = 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRDiagnosticoLaboratorioClinico-1.0'): The Implementation Guide contains no examples for this profile
+== fsh-generated\resources\StructureDefinition-17e2d3ae-3c74-4b22-8e95-560ab209d7df.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: 17e2d3ae-3c74-4b22-8e95-560ab209d7df/http://www.saude.gov.br/fhir/r4/StructureDefinition/BRMedicamentoDispensado-1.0
+INFORMATION: StructureDefinition/17e2d3ae-3c74-4b22-8e95-560ab209d7df: StructureDefinition.snapshot.element[72].mapping[0].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+WARNING: StructureDefinition.where(url = 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRMedicamentoDispensado-1.0'): The Implementation Guide contains no examples for this profile
+== fsh-generated\resources\StructureDefinition-209cde9a-5393-4f3d-b456-294c954ea6fc.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: 209cde9a-5393-4f3d-b456-294c954ea6fc/http://www.saude.gov.br/fhir/r4/StructureDefinition/BRNaturalizacao-1.0
+WARNING: StructureDefinition.where(url = 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRNaturalizacao-1.0'): The Implementation Guide contains no examples for this extension
+== fsh-generated\resources\StructureDefinition-26b68721-2e7f-48a1-84b2-4d71cc9751f5.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: 26b68721-2e7f-48a1-84b2-4d71cc9751f5/http://www.saude.gov.br/fhir/r4/StructureDefinition/BRPais-1.0
+WARNING: StructureDefinition.where(url = 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRPais-1.0'): The Implementation Guide contains no examples for this extension
+== fsh-generated\resources\StructureDefinition-270156fd-40f7-44b0-979d-1165022df8da.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: 270156fd-40f7-44b0-979d-1165022df8da/http://www.saude.gov.br/fhir/r4/StructureDefinition/BRListaTimeline-1.0
+WARNING: StructureDefinition/270156fd-40f7-44b0-979d-1165022df8da: StructureDefinition.differential.element[39].binding: The valueSet reference http://www.saude.gov.br/fhir/r4/ValueSet/BRImunobiologicoDose-1.0 on element List.entry.flag could not be resolved
+WARNING: StructureDefinition/270156fd-40f7-44b0-979d-1165022df8da: StructureDefinition.snapshot.element[74].binding: The valueSet reference http://www.saude.gov.br/fhir/r4/ValueSet/BRImunobiologicoDose-1.0 on element List.entry.flag could not be resolved
+WARNING: StructureDefinition.where(url = 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRListaTimeline-1.0'): The Implementation Guide contains no examples for this profile
+== fsh-generated\resources\StructureDefinition-2cc4e4e3-0f97-4b54-ab87-e73fe0758cc7.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: 2cc4e4e3-0f97-4b54-ab87-e73fe0758cc7/http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIdentificacaoEquipe-1.0
+WARNING: StructureDefinition.where(url = 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIdentificacaoEquipe-1.0'): The Implementation Guide contains no examples for this extension
+== fsh-generated\resources\StructureDefinition-31468be2-a66e-427d-b07e-c217627c069d.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: 31468be2-a66e-427d-b07e-c217627c069d/http://www.saude.gov.br/fhir/r4/StructureDefinition/BRImunobiologicoAdministrado-1.0
+ERROR: Imunobiológico Administrado.Immunization.status: Binding http://www.saude.gov.br/fhir/r4/ValueSet/BREstadoEvento-1.0 is not a subset of binding http://hl7.org/fhir/ValueSet/immunization-status|4.0.1
+ERROR: StructureDefinition/31468be2-a66e-427d-b07e-c217627c069d: StructureDefinition: Binding http://www.saude.gov.br/fhir/r4/ValueSet/BREstadoEvento-1.0 is not a subset of binding http://hl7.org/fhir/ValueSet/immunization-status|4.0.1
+WARNING: StructureDefinition.where(url = 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRImunobiologicoAdministrado-1.0'): The Implementation Guide contains no examples for this profile
+== fsh-generated\resources\StructureDefinition-33f94efe-eda9-4cdf-b3a1-4b2e0d5dfba9.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: 33f94efe-eda9-4cdf-b3a1-4b2e0d5dfba9/http://www.saude.gov.br/fhir/r4/StructureDefinition/BRProcedimentoRealizado-1.0
+WARNING: StructureDefinition.where(url = 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRProcedimentoRealizado-1.0'): The Implementation Guide contains no examples for this profile
+== fsh-generated\resources\StructureDefinition-3d75211e-ccb6-4e01-b965-05382abfae5d.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: 3d75211e-ccb6-4e01-b965-05382abfae5d/http://www.saude.gov.br/fhir/r4/StructureDefinition/BRFinanciamento-1.0
+WARNING: StructureDefinition.where(url = 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRFinanciamento-1.0'): The Implementation Guide contains no examples for this extension
+== fsh-generated\resources\StructureDefinition-43822493-10c2-41dc-9fae-962bab3a59e4.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: 43822493-10c2-41dc-9fae-962bab3a59e4/http://www.saude.gov.br/fhir/r4/StructureDefinition/BRResultadoExameLaboratorial-1.1
+WARNING: StructureDefinition.where(url = 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRResultadoExameLaboratorial-1.1'): The Implementation Guide contains no examples for this profile
+== fsh-generated\resources\StructureDefinition-521287f6-fd07-498d-aec2-1dff41af31ba.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: 521287f6-fd07-498d-aec2-1dff41af31ba/http://www.saude.gov.br/fhir/r4/StructureDefinition/BRConjuntoMinimoDados-1.1
+WARNING: StructureDefinition.where(url = 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRConjuntoMinimoDados-1.1'): The Implementation Guide contains no examples for this profile
+== fsh-generated\resources\StructureDefinition-66fe4a9e-184c-435c-ac3e-680bac8346cf.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: 66fe4a9e-184c-435c-ac3e-680bac8346cf/http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndicadorPresencaAdmissao-1.0
+WARNING: StructureDefinition.where(url = 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndicadorPresencaAdmissao-1.0'): The Implementation Guide contains no examples for this extension
+== fsh-generated\resources\StructureDefinition-6ca9186a-6b71-4837-9ee6-50cb5da88645.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: 6ca9186a-6b71-4837-9ee6-50cb5da88645/http://www.saude.gov.br/fhir/r4/StructureDefinition/BRComponenteAssistenciaFarmaceutica-1.0
+WARNING: StructureDefinition.where(url = 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRComponenteAssistenciaFarmaceutica-1.0'): The Implementation Guide contains no examples for this extension
+== fsh-generated\resources\StructureDefinition-7ba7dc20-9251-417f-bc02-0a08c2986710.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: 7ba7dc20-9251-417f-bc02-0a08c2986710/http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndividuo-1.0
+ERROR: Indivíduo.extension[[CanonicalType[http://www.saude.gov.br/fhir/r4/StructureDefinition/BRQualidadeCadastroIndividuo-1.0]]].Patient.extension: Element Patient.extension: derived max (*) cannot be greater than base max (1)
+ERROR: Indivíduo.extension[[CanonicalType[http://www.saude.gov.br/fhir/r4/StructureDefinition/BRRacaCorEtnia-1.0]]].Patient.extension: Element Patient.extension: derived max (*) cannot be greater than base max (1)
+ERROR: StructureDefinition/7ba7dc20-9251-417f-bc02-0a08c2986710: StructureDefinition: Element Patient.extension: derived max (*) cannot be greater than base max (1)
+ERROR: StructureDefinition/7ba7dc20-9251-417f-bc02-0a08c2986710: StructureDefinition: Element Patient.extension: derived max (*) cannot be greater than base max (1)
+WARNING: StructureDefinition.where(url = 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndividuo-1.0'): The Implementation Guide contains no examples for this profile
+== fsh-generated\resources\StructureDefinition-8e81a097-e1cb-422f-8262-014d7ca329b2.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: 8e81a097-e1cb-422f-8262-014d7ca329b2/http://www.saude.gov.br/fhir/r4/StructureDefinition/BRCIAP2Avaliado-1.0
+WARNING: StructureDefinition.where(url = 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRCIAP2Avaliado-1.0'): The Implementation Guide contains no examples for this profile
+== fsh-generated\resources\StructureDefinition-9e02be1a-ccd7-41d3-a10e-2c031a4979b4.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: 9e02be1a-ccd7-41d3-a10e-2c031a4979b4/http://www.saude.gov.br/fhir/r4/StructureDefinition/BRContatoAssistencial-1.0
+INFORMATION: StructureDefinition/9e02be1a-ccd7-41d3-a10e-2c031a4979b4: StructureDefinition.description: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+WARNING: StructureDefinition.where(url = 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRContatoAssistencial-1.0'): The Implementation Guide contains no examples for this profile
+== fsh-generated\resources\StructureDefinition-BRAdministradorTerceiro.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: BRAdministradorTerceiro/http://www.saude.gov.br/fhir/r4/StructureDefinition/BRAdministradorTerceiro-1.0
+WARNING: StructureDefinition.where(url = 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRAdministradorTerceiro-1.0'): The Implementation Guide contains no examples for this extension
+== fsh-generated\resources\StructureDefinition-BRAmostraBiologica.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: BRAmostraBiologica/http://www.saude.gov.br/fhir/r4/StructureDefinition/BRAmostraBiologica-1.0
+WARNING: StructureDefinition.where(url = 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRAmostraBiologica-1.0'): The Implementation Guide contains no examples for this profile
+== fsh-generated\resources\StructureDefinition-BRAtendeSUS.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: BRAtendeSUS/http://www.saude.gov.br/fhir/r4/StructureDefinition/BRAtendeSUS-1.0
+WARNING: StructureDefinition.where(url = 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRAtendeSUS-1.0'): The Implementation Guide contains no examples for this extension
+== fsh-generated\resources\StructureDefinition-BRDocumentoIndividuo.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: BRDocumentoIndividuo/http://www.saude.gov.br/fhir/r4/StructureDefinition/BRDocumentoIndividuo-1.0
+WARNING: StructureDefinition.where(url = 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRDocumentoIndividuo-1.0'): The Implementation Guide contains no examples for this data type profile
+== fsh-generated\resources\StructureDefinition-BREndereco.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: BREndereco/http://www.saude.gov.br/fhir/r4/StructureDefinition/BREndereco-1.0
+WARNING: StructureDefinition.where(url = 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BREndereco-1.0'): The Implementation Guide contains no examples for this data type profile
+== fsh-generated\resources\StructureDefinition-BREstrategiaCampanha.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: BREstrategiaCampanha/http://www.saude.gov.br/fhir/r4/StructureDefinition/BREstrategiaCampanha-1.0
+ERROR: StructureDefinition/BREstrategiaCampanha: StructureDefinition.differential.element[2].binding: ElementDefinition.binding.strength: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition)
+ERROR: StructureDefinition/BREstrategiaCampanha: StructureDefinition.differential.element[6].binding: ElementDefinition.binding.strength: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition)
+ERROR: StructureDefinition/BREstrategiaCampanha: StructureDefinition.differential.element[18].binding: ElementDefinition.binding.strength: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition)
+WARNING: StructureDefinition.where(url = 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BREstrategiaCampanha-1.0'): The Implementation Guide contains no examples for this extension
+== fsh-generated\resources\StructureDefinition-BREstrategiaVacinacao.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: BREstrategiaVacinacao/http://www.saude.gov.br/fhir/r4/StructureDefinition/BREstrategiaVacinacao-1.0
+WARNING: StructureDefinition.where(url = 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BREstrategiaVacinacao-1.0'): The Implementation Guide contains no examples for this extension
+== fsh-generated\resources\StructureDefinition-BRGrupoAtendimento.json ==
+WARNING: StructureDefinition.where(url = 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRGrupoAtendimento'): The Implementation Guide contains no examples for this extension
+== fsh-generated\resources\StructureDefinition-BRImunobiologicoAdministradoCampanha.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: BRImunobiologicoAdministradoCampanha/http://www.saude.gov.br/fhir/r4/StructureDefinition/BRImunobiologicoAdministradoCampanha-1.0
+ERROR: Imunobiológico Administrado em Campanha.Immunization.status: Binding http://www.saude.gov.br/fhir/r4/ValueSet/BREstadoEvento-1.0 is not a subset of binding http://hl7.org/fhir/ValueSet/immunization-status|4.0.1
+ERROR: StructureDefinition/BRImunobiologicoAdministradoCampanha: StructureDefinition: Binding http://www.saude.gov.br/fhir/r4/ValueSet/BREstadoEvento-1.0 is not a subset of binding http://hl7.org/fhir/ValueSet/immunization-status|4.0.1
+WARNING: StructureDefinition.where(url = 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRImunobiologicoAdministradoCampanha-1.0'): The Implementation Guide contains no examples for this profile
+== fsh-generated\resources\StructureDefinition-BRImunobiologicoAdministradoCarga.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: BRImunobiologicoAdministradoCarga/http://www.saude.gov.br/fhir/r4/StructureDefinition/BRImunobiologicoAdministradoCarga-1.0
+ERROR: Imunobiologico Administrado - Carga.Immunization.status: Binding http://www.saude.gov.br/fhir/r4/ValueSet/BREstadoEvento-1.0 is not a subset of binding http://hl7.org/fhir/ValueSet/immunization-status|4.0.1
+ERROR: StructureDefinition/BRImunobiologicoAdministradoCarga: StructureDefinition: Binding http://www.saude.gov.br/fhir/r4/ValueSet/BREstadoEvento-1.0 is not a subset of binding http://hl7.org/fhir/ValueSet/immunization-status|4.0.1
+WARNING: StructureDefinition.where(url = 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRImunobiologicoAdministradoCarga-1.0'): The Implementation Guide contains no examples for this profile
+== fsh-generated\resources\StructureDefinition-BRIndividuoNaoIdentificado.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: BRIndividuoNaoIdentificado/http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndividuoNaoIdentificado-1.0
+WARNING: StructureDefinition.where(url = 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndividuoNaoIdentificado-1.0'): The Implementation Guide contains no examples for this extension
+== fsh-generated\resources\StructureDefinition-BRLocalAtendimento.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: BRLocalAtendimento/http://www.saude.gov.br/fhir/r4/StructureDefinition/BRLocalAtendimento-1.0
+WARNING: StructureDefinition.where(url = 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRLocalAtendimento-1.0'): The Implementation Guide contains no examples for this profile
+== fsh-generated\resources\StructureDefinition-BRMeioContato.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: BRMeioContato/http://www.saude.gov.br/fhir/r4/StructureDefinition/BRMeioContato-1.0
+WARNING: StructureDefinition.where(url = 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRMeioContato-1.0'): The Implementation Guide contains no examples for this data type profile
+== fsh-generated\resources\StructureDefinition-BRMunicipio.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: BRMunicipio/http://www.saude.gov.br/fhir/r4/StructureDefinition/BRMunicipio-1.0
+WARNING: StructureDefinition.where(url = 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRMunicipio-1.0'): The Implementation Guide contains no examples for this extension
+== fsh-generated\resources\StructureDefinition-BRNomeIndividuo.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: BRNomeIndividuo/http://www.saude.gov.br/fhir/r4/StructureDefinition/BRNomeIndividuo-1.0
+WARNING: StructureDefinition.where(url = 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRNomeIndividuo-1.0'): The Implementation Guide contains no examples for this data type profile
+== fsh-generated\resources\StructureDefinition-BROperadorDigitador.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: BROperadorDigitador/http://www.saude.gov.br/fhir/r4/StructureDefinition/BROperadorDigitador-1.0
+WARNING: StructureDefinition.where(url = 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BROperadorDigitador-1.0'): The Implementation Guide contains no examples for this extension
+== fsh-generated\resources\StructureDefinition-BRParentesIndividuo.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: BRParentesIndividuo/http://www.saude.gov.br/fhir/r4/StructureDefinition/BRParentesIndividuo-1.0
+ERROR: StructureDefinition/BRParentesIndividuo: StructureDefinition.differential.element[2].binding: ElementDefinition.binding.strength: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition)
+WARNING: StructureDefinition.where(url = 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRParentesIndividuo-1.0'): The Implementation Guide contains no examples for this extension
+== fsh-generated\resources\StructureDefinition-BRPessoaJuridicaProfissionalLiberal.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: BRPessoaJuridicaProfissionalLiberal/http://www.saude.gov.br/fhir/r4/StructureDefinition/BRPessoaJuridicaProfissionalLiberal-1.0
+WARNING: StructureDefinition.where(url = 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRPessoaJuridicaProfissionalLiberal-1.0'): The Implementation Guide contains no examples for this profile
+== fsh-generated\resources\StructureDefinition-BRPosicaoIndividuo.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: BRPosicaoIndividuo/http://www.saude.gov.br/fhir/r4/StructureDefinition/BRPosicaoIndividuo-1.0
+WARNING: StructureDefinition.where(url = 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRPosicaoIndividuo-1.0'): The Implementation Guide contains no examples for this extension
+== fsh-generated\resources\StructureDefinition-BRProfissional.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: BRProfissional/http://www.saude.gov.br/fhir/r4/StructureDefinition/BRProfissional-1.0
+WARNING: StructureDefinition.where(url = 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRProfissional-1.0'): The Implementation Guide contains no examples for this profile
+== fsh-generated\resources\StructureDefinition-BRQualidadeCadastroIndividuo.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: BRQualidadeCadastroIndividuo/http://www.saude.gov.br/fhir/r4/StructureDefinition/BRQualidadeCadastroIndividuo-1.0
+WARNING: StructureDefinition.where(url = 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRQualidadeCadastroIndividuo-1.0'): The Implementation Guide contains no examples for this extension
+== fsh-generated\resources\StructureDefinition-BRReferencia.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: BRReferencia/http://www.saude.gov.br/fhir/r4/StructureDefinition/BRReferencia-1.0
+WARNING: StructureDefinition.where(url = 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRReferencia-1.0'): The Implementation Guide contains no examples for this extension
+== fsh-generated\resources\StructureDefinition-BRRegistroImunobiologicoAdministrado.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: BRRegistroImunobiologicoAdministrado/http://www.saude.gov.br/fhir/r4/StructureDefinition/BRRegistroImunobiologicoAdministrado-1.0
+WARNING: StructureDefinition.where(url = 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRRegistroImunobiologicoAdministrado-1.0'): The Implementation Guide contains no examples for this profile
+== fsh-generated\resources\StructureDefinition-BRRegistroImunobiologicoAdministradoCampanha.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: BRRegistroImunobiologicoAdministradoCampanha/http://www.saude.gov.br/fhir/r4/StructureDefinition/BRRegistroImunobiologicoAdministradoCampanha-1.0
+WARNING: StructureDefinition.where(url = 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRRegistroImunobiologicoAdministradoCampanha-1.0'): The Implementation Guide contains no examples for this profile
+== fsh-generated\resources\StructureDefinition-BRRegistroImunobiologicoAdministradoCarga.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: BRRegistroImunobiologicoAdministradoCarga/http://www.saude.gov.br/fhir/r4/StructureDefinition/BRRegistroImunobiologicoAdministradoCarga-1.0
+WARNING: StructureDefinition.where(url = 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRRegistroImunobiologicoAdministradoCarga-1.0'): The Implementation Guide contains no examples for this profile
+== fsh-generated\resources\StructureDefinition-BRResultadoExameLaboratorial-1.0.json ==
+WARNING: StructureDefinition.where(url = 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRResultadoExameLaboratorial-1.0'): The Implementation Guide contains no examples for this profile
+== fsh-generated\resources\StructureDefinition-BRSituacaoCondicaoIndividuo.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: BRSituacaoCondicaoIndividuo/http://www.saude.gov.br/fhir/r4/StructureDefinition/BRSituacaoCondicaoIndividuo-1.0
+WARNING: StructureDefinition.where(url = 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRSituacaoCondicaoIndividuo-1.0'): The Implementation Guide contains no examples for this extension
+== fsh-generated\resources\StructureDefinition-a3bc0180-3d3d-469f-af04-7117f87db5be.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: a3bc0180-3d3d-469f-af04-7117f87db5be/http://www.saude.gov.br/fhir/r4/StructureDefinition/BREstabelecimentoSaude-1.0
+WARNING: StructureDefinition.where(url = 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BREstabelecimentoSaude-1.0'): The Implementation Guide contains no examples for this profile
+== fsh-generated\resources\StructureDefinition-a495e791-173d-4175-bced-da4b42fa0ce1.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: a495e791-173d-4175-bced-da4b42fa0ce1/http://www.saude.gov.br/fhir/r4/StructureDefinition/BRProgramaSaude-1.0
+WARNING: StructureDefinition.where(url = 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRProgramaSaude-1.0'): The Implementation Guide contains no examples for this extension
+== fsh-generated\resources\StructureDefinition-abe19423-94f2-490a-911e-a82ff5665164.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: abe19423-94f2-490a-911e-a82ff5665164/http://www.saude.gov.br/fhir/r4/StructureDefinition/BRLotacaoProfissional-1.0
+WARNING: StructureDefinition.where(url = 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRLotacaoProfissional-1.0'): The Implementation Guide contains no examples for this profile
+== fsh-generated\resources\StructureDefinition-af21adb7-867b-4862-8e26-814b2e805f37.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: af21adb7-867b-4862-8e26-814b2e805f37/http://www.saude.gov.br/fhir/r4/StructureDefinition/BRMedicamento-1.0
+WARNING: StructureDefinition.where(url = 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRMedicamento-1.0'): The Implementation Guide contains no examples for this profile
+== fsh-generated\resources\StructureDefinition-bd2268df-7a8f-4e9b-8674-547f3b20a52b.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: bd2268df-7a8f-4e9b-8674-547f3b20a52b/http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndividuoProtegido-1.0
+WARNING: StructureDefinition.where(url = 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndividuoProtegido-1.0'): The Implementation Guide contains no examples for this extension
+== fsh-generated\resources\StructureDefinition-c8f43e8f-28c7-4872-9aa1-1405d22f0f51.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: c8f43e8f-28c7-4872-9aa1-1405d22f0f51/http://www.saude.gov.br/fhir/r4/StructureDefinition/BROcupacao-1.0
+WARNING: StructureDefinition.where(url = 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BROcupacao-1.0'): The Implementation Guide contains no examples for this extension
+== fsh-generated\resources\StructureDefinition-d3d10a8f-46bc-4d9d-850f-b8ab5b778709.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: d3d10a8f-46bc-4d9d-850f-b8ab5b778709/http://www.saude.gov.br/fhir/r4/StructureDefinition/BRCID10Avaliado-1.0
+WARNING: StructureDefinition.where(url = 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRCID10Avaliado-1.0'): The Implementation Guide contains no examples for this profile
+== fsh-generated\resources\StructureDefinition-e93a2b50-3f50-4670-8242-8b9af26a3584.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: e93a2b50-3f50-4670-8242-8b9af26a3584/http://www.saude.gov.br/fhir/r4/StructureDefinition/BRJurisdicaoOrgaoEmissor-1.0
+WARNING: StructureDefinition.where(url = 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRJurisdicaoOrgaoEmissor-1.0'): The Implementation Guide contains no examples for this extension
+== fsh-generated\resources\StructureDefinition-e95fd8e8-3e10-4824-8227-99576192fb81.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: e95fd8e8-3e10-4824-8227-99576192fb81/http://www.saude.gov.br/fhir/r4/StructureDefinition/BRConjuntoMinimoDados-1.0
+WARNING: StructureDefinition/e95fd8e8-3e10-4824-8227-99576192fb81: StructureDefinition.differential.element[79].binding: The valueSet reference http://www.saude.gov.br/fhir/r4/ValueSet/BRMotivoInformacaoAusente-1.0 on element Composition.section.emptyReason could not be resolved
+WARNING: StructureDefinition/e95fd8e8-3e10-4824-8227-99576192fb81: StructureDefinition.differential.element[100].binding: The valueSet reference http://www.saude.gov.br/fhir/r4/ValueSet/BRMotivoInformacaoAusente-1.0 on element Composition.section.emptyReason could not be resolved
+WARNING: StructureDefinition/e95fd8e8-3e10-4824-8227-99576192fb81: StructureDefinition.snapshot.element[162].binding: The valueSet reference http://www.saude.gov.br/fhir/r4/ValueSet/BRMotivoInformacaoAusente-1.0 on element Composition.section.emptyReason could not be resolved
+WARNING: StructureDefinition/e95fd8e8-3e10-4824-8227-99576192fb81: StructureDefinition.snapshot.element[193].binding: The valueSet reference http://www.saude.gov.br/fhir/r4/ValueSet/BRMotivoInformacaoAusente-1.0 on element Composition.section.emptyReason could not be resolved
+WARNING: StructureDefinition.where(url = 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRConjuntoMinimoDados-1.0'): The Implementation Guide contains no examples for this profile
+== fsh-generated\resources\StructureDefinition-ee0344fa-7d1d-488d-9356-479b885bfedd.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: ee0344fa-7d1d-488d-9356-479b885bfedd/http://www.saude.gov.br/fhir/r4/StructureDefinition/BRQuantidade-1.0
+WARNING: StructureDefinition.where(url = 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRQuantidade-1.0'): The Implementation Guide contains no examples for this extension
+== fsh-generated\resources\StructureDefinition-f0d41273-772c-425f-bb60-2507efddff01.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: f0d41273-772c-425f-bb60-2507efddff01/http://www.saude.gov.br/fhir/r4/StructureDefinition/BRObservacaoDescritiva-1.0
+WARNING: StructureDefinition.where(url = 'http://www.saude.gov.br/fhir/r4/StructureDefinition/BRObservacaoDescritiva-1.0'): The Implementation Guide contains no examples for this profile
+== fsh-generated\resources\ValueSet-BRAbrangencia-1.0.json ==
+== fsh-generated\resources\ValueSet-BRCBO-1.0.json ==
+== fsh-generated\resources\ValueSet-BRCIAP2-1.0.json ==
+== fsh-generated\resources\ValueSet-BRCID10-1.0.json ==
+== fsh-generated\resources\ValueSet-BRCampanhaVacinacao-1.0.json ==
+== fsh-generated\resources\ValueSet-BRCaraterAtendimento-1.0.json ==
+== fsh-generated\resources\ValueSet-BRCategoriaExame-1.0.json ==
+== fsh-generated\resources\ValueSet-BRClassificacaoLista-1.0.json ==
+== fsh-generated\resources\ValueSet-BRComponenteAssistenciaFarmaceutica-1.0.json ==
+== fsh-generated\resources\ValueSet-BRDose-1.0.json ==
+== fsh-generated\resources\ValueSet-BREstadoCivil-1.0.json ==
+WARNING: ValueSet/BREstadoCivil-1.0: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
+WARNING: ValueSet.where(id = 'BREstadoCivil-1.0'): Error from server: Unable to provide support for code system http://hl7.org/fhir/ValueSet/marital-status
+== fsh-generated\resources\ValueSet-BREstadoContatoAssistencial-1.0.json ==
+== fsh-generated\resources\ValueSet-BREstadoDocumento-1.0.json ==
+== fsh-generated\resources\ValueSet-BREstadoEvento-1.0.json ==
+== fsh-generated\resources\ValueSet-BREstadoMedicamentoLista-1.0.json ==
+== fsh-generated\resources\ValueSet-BREstadoObservacao-1.0.json ==
+== fsh-generated\resources\ValueSet-BREstadoResolucaoDiagnosticoProblema-1.0.json ==
+== fsh-generated\resources\ValueSet-BREstrategiaVacinacao-1.0.json ==
+== fsh-generated\resources\ValueSet-BREstrategiaVacinacaoCampanha-1.0.json ==
+== fsh-generated\resources\ValueSet-BREtniaIndigena-1.0.json ==
+== fsh-generated\resources\ValueSet-BRFinanciamento-1.0.json ==
+== fsh-generated\resources\ValueSet-BRGrupoAtendimento-1.0.json ==
+== fsh-generated\resources\ValueSet-BRImunobiologico-1.0.json ==
+== fsh-generated\resources\ValueSet-BRJustificativaIndividuoNaoIdentificado-1.0.json ==
+== fsh-generated\resources\ValueSet-BRLocalAPlicacao-1.0.json ==
+ERROR: ValueSet.url: Resource id/url mismatch: BRLocalAPlicacao-1.0/http://www.saude.gov.br/fhir/r4/ValueSet/BRLocalAplicacao-1.0
+== fsh-generated\resources\ValueSet-BRMedicamento-1.0.json ==
+== fsh-generated\resources\ValueSet-BRModalidadeAssistencial-1.0.json ==
+== fsh-generated\resources\ValueSet-BRMotivoDesfecho-1.0.json ==
+== fsh-generated\resources\ValueSet-BRMunicipio-1.0.json ==
+== fsh-generated\resources\ValueSet-BRNaturezaJuridica-1.0.json ==
+== fsh-generated\resources\ValueSet-BRNomeExame-1.0.json ==
+== fsh-generated\resources\ValueSet-BROcupacao-1.0.json ==
+== fsh-generated\resources\ValueSet-BROrgaoExpedidor-1.0.json ==
+== fsh-generated\resources\ValueSet-BRPais-1.0.json ==
+== fsh-generated\resources\ValueSet-BRParentesco-1.0.json ==
+== fsh-generated\resources\ValueSet-BRPosicaoIndividuo-1.0.json ==
+== fsh-generated\resources\ValueSet-BRProcedencia-1.0.json ==
+== fsh-generated\resources\ValueSet-BRProcedimentosNacionais-1.0.json ==
+== fsh-generated\resources\ValueSet-BRProgramaSaude-1.0.json ==
+== fsh-generated\resources\ValueSet-BRRacaCor-1.0.json ==
+== fsh-generated\resources\ValueSet-BRResponsabilidadeParticipante-1.0.json ==
+== fsh-generated\resources\ValueSet-BRResultadoQualitativoExame-1.0.json ==
+== fsh-generated\resources\ValueSet-BRSexo-1.0.json ==
+== fsh-generated\resources\ValueSet-BRSituacaoCOndicaoIndividuo-1.0.json ==
+ERROR: ValueSet.url: Resource id/url mismatch: BRSituacaoCOndicaoIndividuo-1.0/http://www.saude.gov.br/fhir/r4/ValueSet/BRSituacaoCondicaoIndividuo-1.0
+== fsh-generated\resources\ValueSet-BRTipoAmostra-1.0.json ==
+== fsh-generated\resources\ValueSet-BRTipoDocumento-1.0.json ==
+== fsh-generated\resources\ValueSet-BRTipoDocumentoIndividuo-1.0.json ==
+WARNING: ValueSet/BRTipoDocumentoIndividuo-1.0: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
+WARNING: ValueSet.where(id = 'BRTipoDocumentoIndividuo-1.0'): Error from server: Unable to provide support for code system http://hl7.org/fhir/ValueSet/identifier-type
+== fsh-generated\resources\ValueSet-BRTipoEstabelecimentoSaude-1.0.json ==
+== fsh-generated\resources\ValueSet-BRTipoIdentificadorProcedimento-1.0.json ==
+== fsh-generated\resources\ValueSet-BRTipoLogradouro-1.0.json ==
+== fsh-generated\resources\ValueSet-BRTipoObservacao-1.0.json ==
+== fsh-generated\resources\ValueSet-BRUnidadeFarmaceutica-1.0.json ==
+== fsh-generated\resources\ValueSet-BRUnidadeFederativa-1.0.json ==
+== fsh-generated\resources\ValueSet-BRViaAdministracao-1.0.json ==
+== fsh-generated\resources\ValueSet-ValueSetBRLocalAfericao.json ==

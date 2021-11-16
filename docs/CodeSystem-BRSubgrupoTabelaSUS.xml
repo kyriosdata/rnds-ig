@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="BRSubgrupoTabelaSUS"/>
+  <meta>
+    <lastUpdated value="2020-03-26T10:16:25.364-03:00"/>
+  </meta>
+  <language value="pt-BR"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-BR" lang="pt-BR"><p>This code system http://www.saude.gov.br/fhir/r4/CodeSystem/BRSubgrupoTabelaSUS defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">0202<a name="BRSubgrupoTabelaSUS-0202"> </a></td><td>Diagnóstico em laboratório clínico</td></tr><tr><td style="white-space:nowrap">0203<a name="BRSubgrupoTabelaSUS-0203"> </a></td><td>Diagnóstico em anatomia patológica e citopatologia</td></tr><tr><td style="white-space:nowrap">0204<a name="BRSubgrupoTabelaSUS-0204"> </a></td><td>Diagnóstico em radiologia</td></tr><tr><td style="white-space:nowrap">0205<a name="BRSubgrupoTabelaSUS-0205"> </a></td><td>Diagnóstico em ultrassonografia</td></tr><tr><td style="white-space:nowrap">0206<a name="BRSubgrupoTabelaSUS-0206"> </a></td><td>Diagnóstico em tomografia</td></tr><tr><td style="white-space:nowrap">0207<a name="BRSubgrupoTabelaSUS-0207"> </a></td><td>Diagnóstico em ressonância magnética</td></tr><tr><td style="white-space:nowrap">0208<a name="BRSubgrupoTabelaSUS-0208"> </a></td><td>Diagnóstico em medicina nuclear in vitro</td></tr><tr><td style="white-space:nowrap">0209<a name="BRSubgrupoTabelaSUS-0209"> </a></td><td>Diagnóstico em endoscopia</td></tr><tr><td style="white-space:nowrap">0210<a name="BRSubgrupoTabelaSUS-0210"> </a></td><td>Diagnóstico em radiologia intervencionista</td></tr><tr><td style="white-space:nowrap">0211<a name="BRSubgrupoTabelaSUS-0211"> </a></td><td>Métodos diagnósticos em especialidades</td></tr><tr><td style="white-space:nowrap">0212<a name="BRSubgrupoTabelaSUS-0212"> </a></td><td>Diagnóstico e procedimentos especiais em hemoterapia</td></tr><tr><td style="white-space:nowrap">0213<a name="BRSubgrupoTabelaSUS-0213"> </a></td><td>Diagnóstico em vigilância epidemiológica e ambiental</td></tr><tr><td style="white-space:nowrap">0214<a name="BRSubgrupoTabelaSUS-0214"> </a></td><td>Diagnóstico por teste rápido</td></tr></table></div>
+  </text>
+  <url value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRSubgrupoTabelaSUS"/>
+  <version value="0.1.0"/>
+  <name value="Subgrupo da Tabela SUS"/>
+  <title value="Subgrupo Tabela SUS"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2020-03-26T13:16:24.2409223+00:00"/>
+  <publisher value="Rede Nacional de Dados em Saúde"/>
+  <contact>
+    <name value="Rede Nacional de Dados em Saúde"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/kyriosdata"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rnds@saude.gov.br"/>
+    </telecom>
+  </contact>
+  <description value="O subgrupo é o segundo nível da hierarquia da Tabela SUS e seus códigos ajudam a classificar e localizar procedimentos."/>
+  <content value="complete"/>
+  <count value="13"/>
+  <concept>
+    <code value="0202"/>
+    <display value="Diagnóstico em laboratório clínico"/>
+  </concept>
+  <concept>
+    <code value="0203"/>
+    <display value="Diagnóstico em anatomia patológica e citopatologia"/>
+  </concept>
+  <concept>
+    <code value="0204"/>
+    <display value="Diagnóstico em radiologia"/>
+  </concept>
+  <concept>
+    <code value="0205"/>
+    <display value="Diagnóstico em ultrassonografia"/>
+  </concept>
+  <concept>
+    <code value="0206"/>
+    <display value="Diagnóstico em tomografia"/>
+  </concept>
+  <concept>
+    <code value="0207"/>
+    <display value="Diagnóstico em ressonância magnética"/>
+  </concept>
+  <concept>
+    <code value="0208"/>
+    <display value="Diagnóstico em medicina nuclear in vitro"/>
+  </concept>
+  <concept>
+    <code value="0209"/>
+    <display value="Diagnóstico em endoscopia"/>
+  </concept>
+  <concept>
+    <code value="0210"/>
+    <display value="Diagnóstico em radiologia intervencionista"/>
+  </concept>
+  <concept>
+    <code value="0211"/>
+    <display value="Métodos diagnósticos em especialidades"/>
+  </concept>
+  <concept>
+    <code value="0212"/>
+    <display value="Diagnóstico e procedimentos especiais em hemoterapia"/>
+  </concept>
+  <concept>
+    <code value="0213"/>
+    <display value="Diagnóstico em vigilância epidemiológica e ambiental"/>
+  </concept>
+  <concept>
+    <code value="0214"/>
+    <display value="Diagnóstico por teste rápido"/>
+  </concept>
+</CodeSystem>

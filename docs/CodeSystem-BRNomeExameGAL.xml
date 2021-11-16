@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="BRNomeExameGAL"/>
+  <meta>
+    <lastUpdated value="2020-05-05T08:53:58.110-03:00"/>
+  </meta>
+  <language value="pt-BR"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-BR" lang="pt-BR"><p>This code system http://www.saude.gov.br/fhir/r4/CodeSystem/BRNomeExameGAL defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">coronavirusnCoV<a name="BRNomeExameGAL-coronavirusnCoV"> </a></td><td>Novo coronavírus (2019-nCoV)</td></tr><tr><td style="white-space:nowrap">COVID<a name="BRNomeExameGAL-COVID"> </a></td><td>COVID-19, Biologia Molecular</td></tr><tr><td style="white-space:nowrap">CVIDGG<a name="BRNomeExameGAL-CVIDGG"> </a></td><td>COVID-19, IgG</td></tr><tr><td style="white-space:nowrap">CVIDGM<a name="BRNomeExameGAL-CVIDGM"> </a></td><td>COVID-19, IgM</td></tr></table></div>
+  </text>
+  <url value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRNomeExameGAL"/>
+  <version value="0.1.0"/>
+  <name value="Exames do GAL"/>
+  <title value="Exame laboratorial (GAL)"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2020-05-05T11:53:58.0082379+00:00"/>
+  <publisher value="Rede Nacional de Dados em Saúde"/>
+  <contact>
+    <name value="Rede Nacional de Dados em Saúde"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/kyriosdata"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rnds@saude.gov.br"/>
+    </telecom>
+  </contact>
+  <description value="Classifica o exame laboratorial realizado em amostra biológica para diagnóstico laboratorial, de acordo com o Gerenciador de Ambiente Laboratorial (GAL)."/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="coronavirusnCoV"/>
+    <display value="Novo coronavírus (2019-nCoV)"/>
+  </concept>
+  <concept>
+    <code value="COVID"/>
+    <display value="COVID-19, Biologia Molecular"/>
+  </concept>
+  <concept>
+    <code value="CVIDGG"/>
+    <display value="COVID-19, IgG"/>
+  </concept>
+  <concept>
+    <code value="CVIDGM"/>
+    <display value="COVID-19, IgM"/>
+  </concept>
+</CodeSystem>

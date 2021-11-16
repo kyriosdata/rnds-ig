@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="BREstrategiaVacinacao-1.0"/>
+  <meta>
+    <lastUpdated value="2020-03-12T10:10:06.201-03:00"/>
+  </meta>
+  <language value="pt-BR"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-BR" lang="pt-BR"><ul><li>Include these codes as defined in <a href="CodeSystem-BREstrategiaVacinacao.html"><code>http://www.saude.gov.br/fhir/r4/CodeSystem/BREstrategiaVacinacao</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-BREstrategiaVacinacao.html#BREstrategiaVacinacao-1">1</a></td><td>Rotina</td></tr><tr><td><a href="CodeSystem-BREstrategiaVacinacao.html#BREstrategiaVacinacao-2">2</a></td><td>Especial</td></tr><tr><td><a href="CodeSystem-BREstrategiaVacinacao.html#BREstrategiaVacinacao-3">3</a></td><td>Bloqueio</td></tr><tr><td><a href="CodeSystem-BREstrategiaVacinacao.html#BREstrategiaVacinacao-4">4</a></td><td>Intensificação</td></tr><tr><td><a href="CodeSystem-BREstrategiaVacinacao.html#BREstrategiaVacinacao-7">7</a></td><td>Soroterapia</td></tr><tr><td><a href="CodeSystem-BREstrategiaVacinacao.html#BREstrategiaVacinacao-8">8</a></td><td>Serviço Privado</td></tr><tr><td><a href="CodeSystem-BREstrategiaVacinacao.html#BREstrategiaVacinacao-9">9</a></td><td>Monitoramento rápido de cobertura vacinal</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://www.saude.gov.br/fhir/r4/ValueSet/BREstrategiaVacinacao-1.0"/>
+  <version value="0.1.0"/>
+  <name value="BREstrategiaVacinacao"/>
+  <title value="Estratégia de Vacinação"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2020-03-12T13:10:03.2986924+00:00"/>
+  <publisher value="Rede Nacional de Dados em Saúde"/>
+  <contact>
+    <name value="Rede Nacional de Dados em Saúde"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/kyriosdata"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rnds@saude.gov.br"/>
+    </telecom>
+  </contact>
+  <description value="Identifica a estratégia de vacinação adotada."/>
+  <immutable value="false"/>
+  <compose>
+    <include>
+      <system value="http://www.saude.gov.br/fhir/r4/CodeSystem/BREstrategiaVacinacao"/>
+      <concept>
+        <code value="1"/>
+        <display value="Rotina"/>
+      </concept>
+      <concept>
+        <code value="2"/>
+        <display value="Especial"/>
+      </concept>
+      <concept>
+        <code value="3"/>
+        <display value="Bloqueio"/>
+      </concept>
+      <concept>
+        <code value="4"/>
+        <display value="Intensificação"/>
+      </concept>
+      <concept>
+        <code value="7"/>
+        <display value="Soroterapia"/>
+      </concept>
+      <concept>
+        <code value="8"/>
+        <display value="Serviço Privado"/>
+      </concept>
+      <concept>
+        <code value="9"/>
+        <display value="Monitoramento rápido de cobertura vacinal"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

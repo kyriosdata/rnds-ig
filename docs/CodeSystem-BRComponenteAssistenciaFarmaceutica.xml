@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="BRComponenteAssistenciaFarmaceutica"/>
+  <meta>
+    <lastUpdated value="2020-03-11T15:10:50.522-03:00"/>
+  </meta>
+  <language value="pt-BR"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-BR" lang="pt-BR"><p>This code system http://www.saude.gov.br/fhir/r4/CodeSystem/BRComponenteAssistenciaFarmaceutica defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">B<a name="BRComponenteAssistenciaFarmaceutica-B"> </a></td><td>Básico</td></tr><tr><td style="white-space:nowrap">S<a name="BRComponenteAssistenciaFarmaceutica-S"> </a></td><td>Estratégico</td></tr><tr><td style="white-space:nowrap">E<a name="BRComponenteAssistenciaFarmaceutica-E"> </a></td><td>Especializado</td></tr><tr><td style="white-space:nowrap">O<a name="BRComponenteAssistenciaFarmaceutica-O"> </a></td><td>Outros</td></tr></table></div>
+  </text>
+  <url value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRComponenteAssistenciaFarmaceutica"/>
+  <version value="0.1.0"/>
+  <name value="Componente da Assistência Farmacêutica"/>
+  <title value="Componente da assistência farmacêutica"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2020-03-11T18:11:11.0252109+00:00"/>
+  <publisher value="Rede Nacional de Dados em Saúde"/>
+  <contact>
+    <name value="Rede Nacional de Dados em Saúde"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/kyriosdata"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rnds@saude.gov.br"/>
+    </telecom>
+  </contact>
+  <description value="Identifica o componente da assistência farmacêutica de uma substância ou produto."/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="B"/>
+    <display value="Básico"/>
+  </concept>
+  <concept>
+    <code value="S"/>
+    <display value="Estratégico"/>
+  </concept>
+  <concept>
+    <code value="E"/>
+    <display value="Especializado"/>
+  </concept>
+  <concept>
+    <code value="O"/>
+    <display value="Outros"/>
+  </concept>
+</CodeSystem>

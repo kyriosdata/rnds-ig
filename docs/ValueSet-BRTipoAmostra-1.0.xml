@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="BRTipoAmostra-1.0"/>
+  <meta>
+    <versionId value="5"/>
+    <lastUpdated value="2020-06-30T15:56:50.241-03:00"/>
+  </meta>
+  <language value="pt-BR"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-BR" lang="pt-BR"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v2-0487.html"><code>http://terminology.hl7.org/CodeSystem/v2-0487</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="http://terminology.hl7.org/2.1.0/CodeSystem-v2-0487.html#v2-0487-FRS">FRS</a></td><td>Fluido Respiratório</td><td>Fluid, Respiratory</td></tr><tr><td><a href="http://terminology.hl7.org/2.1.0/CodeSystem-v2-0487.html#v2-0487-LAVG">LAVG</a></td><td>Lavado Brônquico</td><td>Lavage, Bronhial</td></tr><tr><td><a href="http://terminology.hl7.org/2.1.0/CodeSystem-v2-0487.html#v2-0487-NSECR">NSECR</a></td><td>Secreção Nasal</td><td>Secretion, Nasal</td></tr><tr><td><a href="http://terminology.hl7.org/2.1.0/CodeSystem-v2-0487.html#v2-0487-PLAS">PLAS</a></td><td>Plasma</td><td>Plasma</td></tr><tr><td><a href="http://terminology.hl7.org/2.1.0/CodeSystem-v2-0487.html#v2-0487-SPT">SPT</a></td><td>Escarro</td><td>Sputum</td></tr><tr><td><a href="http://terminology.hl7.org/2.1.0/CodeSystem-v2-0487.html#v2-0487-TASP">TASP</a></td><td>Aspirado Traqueal</td><td>Aspirate, Tracheal</td></tr><tr><td><a href="http://terminology.hl7.org/2.1.0/CodeSystem-v2-0487.html#v2-0487-WB">WB</a></td><td>Sangue Total</td><td>Blood, Whole</td></tr><tr><td><a href="http://terminology.hl7.org/2.1.0/CodeSystem-v2-0487.html#v2-0487-SER">SER</a></td><td>Soro</td><td>Serum</td></tr><tr><td><a href="http://terminology.hl7.org/2.1.0/CodeSystem-v2-0487.html#v2-0487-SECRE">SECRE</a></td><td>Secreção Não Especificada</td><td>Secretion(s)</td></tr><tr><td><a href="http://terminology.hl7.org/2.1.0/CodeSystem-v2-0487.html#v2-0487-ASP">ASP</a></td><td>Aspirado Não Especificado</td><td>Aspirate</td></tr><tr><td><a href="http://terminology.hl7.org/2.1.0/CodeSystem-v2-0487.html#v2-0487-SPUTIN">SPUTIN</a></td><td>Escarro induzido</td><td>Sputum, Inducted</td></tr><tr><td><a href="http://terminology.hl7.org/2.1.0/CodeSystem-v2-0487.html#v2-0487-WASH">WASH</a></td><td>Lavado</td><td>Wash</td></tr><tr><td><a href="http://terminology.hl7.org/2.1.0/CodeSystem-v2-0487.html#v2-0487-CSF">CSF</a></td><td>Líquor</td><td>Cerebral spinal fluid</td></tr><tr><td><a href="http://terminology.hl7.org/2.1.0/CodeSystem-v2-0487.html#v2-0487-SAL">SAL</a></td><td>Saliva</td><td>Saliva</td></tr><tr><td><a href="http://terminology.hl7.org/2.1.0/CodeSystem-v2-0487.html#v2-0487-UR">UR</a></td><td>Urina</td><td>Urine</td></tr></table></li><li>Include all codes defined in <a href="CodeSystem-BRTipoAmostraGAL.html"><code>http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoAmostraGAL</code></a></li></ul></div>
+  </text>
+  <url value="http://www.saude.gov.br/fhir/r4/ValueSet/BRTipoAmostra-1.0"/>
+  <version value="0.1.0"/>
+  <name value="BRTipoAmostra"/>
+  <title value="Tipo de Amostra de Exame"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2020-06-30T18:56:47.6561959+00:00"/>
+  <publisher value="Rede Nacional de Dados em Saúde"/>
+  <contact>
+    <name value="Rede Nacional de Dados em Saúde"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/kyriosdata"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="rnds@saude.gov.br"/>
+    </telecom>
+  </contact>
+  <description value="Tipo da amostra de um exame ou teste."/>
+  <immutable value="false"/>
+  <compose>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0487"/>
+      <concept>
+        <code value="FRS"/>
+        <display value="Fluido Respiratório"/>
+      </concept>
+      <concept>
+        <code value="LAVG"/>
+        <display value="Lavado Brônquico"/>
+      </concept>
+      <concept>
+        <code value="NSECR"/>
+        <display value="Secreção Nasal"/>
+      </concept>
+      <concept>
+        <code value="PLAS"/>
+        <display value="Plasma"/>
+      </concept>
+      <concept>
+        <code value="SPT"/>
+        <display value="Escarro"/>
+      </concept>
+      <concept>
+        <code value="TASP"/>
+        <display value="Aspirado Traqueal"/>
+      </concept>
+      <concept>
+        <code value="WB"/>
+        <display value="Sangue Total"/>
+      </concept>
+      <concept>
+        <code value="SER"/>
+        <display value="Soro"/>
+      </concept>
+      <concept>
+        <code value="SECRE"/>
+        <display value="Secreção Não Especificada"/>
+      </concept>
+      <concept>
+        <code value="ASP"/>
+        <display value="Aspirado Não Especificado"/>
+      </concept>
+      <concept>
+        <code value="SPUTIN"/>
+        <display value="Escarro induzido"/>
+      </concept>
+      <concept>
+        <code value="WASH"/>
+        <display value="Lavado"/>
+      </concept>
+      <concept>
+        <code value="CSF"/>
+        <display value="Líquor"/>
+      </concept>
+      <concept>
+        <code value="SAL"/>
+        <display value="Saliva"/>
+      </concept>
+      <concept>
+        <code value="UR"/>
+        <display value="Urina"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://www.saude.gov.br/fhir/r4/CodeSystem/BRTipoAmostraGAL"/>
+      <version value="*"/>
+    </include>
+  </compose>
+</ValueSet>

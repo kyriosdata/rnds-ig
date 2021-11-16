@@ -1,0 +1,392 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "BRImunobiologico",
+  "meta": {
+    "lastUpdated": "2020-01-06T15:40:15.325-03:00"
+  },
+  "language": "pt-BR",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p>This code system http://www.saude.gov.br/fhir/r4/CodeSystem/BRImunobiologico defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"BRImunobiologico-1\"> </a></td><td>Imunoglobulina anti tetânica</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"BRImunobiologico-2\"> </a></td><td>Soro antitetânico</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"BRImunobiologico-3\"> </a></td><td>soro antiaracnídico (Loxosceles, Phoneutria e Tityus)</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"BRImunobiologico-4\"> </a></td><td>Soro antiescorpiônico</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"BRImunobiologico-5\"> </a></td><td>Vacina adsorvida difteria e tétano infantil</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"BRImunobiologico-6\"> </a></td><td>Soro antielapídico (bivalente)</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"BRImunobiologico-7\"> </a></td><td>Soro anti-rábico</td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"BRImunobiologico-8\"> </a></td><td>Soro antibotrópico (pentavalente)</td></tr><tr><td style=\"white-space:nowrap\">9<a name=\"BRImunobiologico-9\"> </a></td><td>Vacina hepatite B (recombinante)</td></tr><tr><td style=\"white-space:nowrap\">10<a name=\"BRImunobiologico-10\"> </a></td><td>Soro antidiftérico</td></tr><tr><td style=\"white-space:nowrap\">11<a name=\"BRImunobiologico-11\"> </a></td><td>Soro antibotrópico (pentavalente) e anticrotálico</td></tr><tr><td style=\"white-space:nowrap\">12<a name=\"BRImunobiologico-12\"> </a></td><td>Soro antibotrópico (pentavalente) e antilaquético</td></tr><tr><td style=\"white-space:nowrap\">13<a name=\"BRImunobiologico-13\"> </a></td><td>Vacina meningocócica AC (polissacarídica)</td></tr><tr><td style=\"white-space:nowrap\">14<a name=\"BRImunobiologico-14\"> </a></td><td>Vacina febre amarela (atenuada)</td></tr><tr><td style=\"white-space:nowrap\">15<a name=\"BRImunobiologico-15\"> </a></td><td>Vacina BCG</td></tr><tr><td style=\"white-space:nowrap\">16<a name=\"BRImunobiologico-16\"> </a></td><td>Soro  anticrotálico</td></tr><tr><td style=\"white-space:nowrap\">17<a name=\"BRImunobiologico-17\"> </a></td><td>Vacina Haemophilus influenza b (conjugada)</td></tr><tr><td style=\"white-space:nowrap\">18<a name=\"BRImunobiologico-18\"> </a></td><td>Raiva em cultivo celular Embrião de Galinha</td></tr><tr><td style=\"white-space:nowrap\">19<a name=\"BRImunobiologico-19\"> </a></td><td>Imunoglobulina anti varicela zoster</td></tr><tr><td style=\"white-space:nowrap\">20<a name=\"BRImunobiologico-20\"> </a></td><td>Imunoglobulina da hepatite B</td></tr><tr><td style=\"white-space:nowrap\">21<a name=\"BRImunobiologico-21\"> </a></td><td>Vacina pneumocócica 23-valente (polissacarídica)</td></tr><tr><td style=\"white-space:nowrap\">22<a name=\"BRImunobiologico-22\"> </a></td><td>Vacina poliomelite 1, 2 e 3 (inativada)</td></tr><tr><td style=\"white-space:nowrap\">23<a name=\"BRImunobiologico-23\"> </a></td><td>Imunoglobulina anti rábica</td></tr><tr><td style=\"white-space:nowrap\">24<a name=\"BRImunobiologico-24\"> </a></td><td>Vacina sarampo, caxumba, rubéola</td></tr><tr><td style=\"white-space:nowrap\">25<a name=\"BRImunobiologico-25\"> </a></td><td>Vacina adsorvida difteria e tétano adulto</td></tr><tr><td style=\"white-space:nowrap\">26<a name=\"BRImunobiologico-26\"> </a></td><td>Vacina pneumocócica 10-valente(conjugada)</td></tr><tr><td style=\"white-space:nowrap\">27<a name=\"BRImunobiologico-27\"> </a></td><td>Soro antilatrodectus</td></tr><tr><td style=\"white-space:nowrap\">28<a name=\"BRImunobiologico-28\"> </a></td><td>Vacina poliomielite 1 e 3 (atenuada)</td></tr><tr><td style=\"white-space:nowrap\">29<a name=\"BRImunobiologico-29\"> </a></td><td>Vacina acelular adsorvida difteria, tétano, pertussis, poliomielite 1, 2, 3 (inativada), Haemophilus influenzae b (conjugada)</td></tr><tr><td style=\"white-space:nowrap\">30<a name=\"BRImunobiologico-30\"> </a></td><td>Vacina febre tifóide (polissacarídica)</td></tr><tr><td style=\"white-space:nowrap\">31<a name=\"BRImunobiologico-31\"> </a></td><td>Soro antiloxoscélico (trivalente)</td></tr><tr><td style=\"white-space:nowrap\">32<a name=\"BRImunobiologico-32\"> </a></td><td>Soro antilonômico</td></tr><tr><td style=\"white-space:nowrap\">33<a name=\"BRImunobiologico-33\"> </a></td><td>Vacina influenza Trivalente (fracionada, inativada)</td></tr><tr><td style=\"white-space:nowrap\">34<a name=\"BRImunobiologico-34\"> </a></td><td>Vacina varicela (atenuada)</td></tr><tr><td style=\"white-space:nowrap\">35<a name=\"BRImunobiologico-35\"> </a></td><td>Vacina adsorvida hepatite A (inativada, virossomal)</td></tr><tr><td style=\"white-space:nowrap\">36<a name=\"BRImunobiologico-36\"> </a></td><td>Vacina sarampo, rubéola</td></tr><tr><td style=\"white-space:nowrap\">37<a name=\"BRImunobiologico-37\"> </a></td><td>Raiva em cultivo celular Vero</td></tr><tr><td style=\"white-space:nowrap\">38<a name=\"BRImunobiologico-38\"> </a></td><td>Soro antibotulínico (trivalente)</td></tr><tr><td style=\"white-space:nowrap\">39<a name=\"BRImunobiologico-39\"> </a></td><td>Vacina adsorvida difteria, tétano, pertussis* e Haemophilus influenzae b (conjugada)</td></tr><tr><td style=\"white-space:nowrap\">40<a name=\"BRImunobiologico-40\"> </a></td><td>Vacina pneumocócica 7-valente (conjugada)</td></tr><tr><td style=\"white-space:nowrap\">41<a name=\"BRImunobiologico-41\"> </a></td><td>Vacina meningocócica C (conjugada)</td></tr><tr><td style=\"white-space:nowrap\">42<a name=\"BRImunobiologico-42\"> </a></td><td>Vacina adsorvida difteria, tétano, pertussis*, hepatite B (recombinante) e Haemophilus influenzae b (conjugada)</td></tr><tr><td style=\"white-space:nowrap\">43<a name=\"BRImunobiologico-43\"> </a></td><td>Vacina acelular adsorvida difteria, tétano, pertussis, poliomielite 1, 2, 3 (inativada), Haemophilus influenzae b e hepatite b (conbinada)</td></tr><tr><td style=\"white-space:nowrap\">44<a name=\"BRImunobiologico-44\"> </a></td><td>Vacina influenza H1N1</td></tr><tr><td style=\"white-space:nowrap\">45<a name=\"BRImunobiologico-45\"> </a></td><td>Vacina rotavírus humano G1P1[8] (atenuada)</td></tr><tr><td style=\"white-space:nowrap\">46<a name=\"BRImunobiologico-46\"> </a></td><td>Vacina adsorvida difteria, tétano e pertussis</td></tr><tr><td style=\"white-space:nowrap\">47<a name=\"BRImunobiologico-47\"> </a></td><td>Vacina adsorvida difteria, tétano e pertussis (acelular)</td></tr><tr><td style=\"white-space:nowrap\">48<a name=\"BRImunobiologico-48\"> </a></td><td>Diluente para vacina sarampo, caxumba, rubéola</td></tr><tr><td style=\"white-space:nowrap\">49<a name=\"BRImunobiologico-49\"> </a></td><td>Diluente para vacina febre amarela (atenuada)</td></tr><tr><td style=\"white-space:nowrap\">50<a name=\"BRImunobiologico-50\"> </a></td><td>Diluente para vacina haemophilus influenzae b</td></tr><tr><td style=\"white-space:nowrap\">51<a name=\"BRImunobiologico-51\"> </a></td><td>Vacina febre tifóide (atenuada)</td></tr><tr><td style=\"white-space:nowrap\">52<a name=\"BRImunobiologico-52\"> </a></td><td>Diluente para vacina meningocócica AC (polissacarídica)</td></tr><tr><td style=\"white-space:nowrap\">53<a name=\"BRImunobiologico-53\"> </a></td><td>Diluente sarampo, rubéola*</td></tr><tr><td style=\"white-space:nowrap\">54<a name=\"BRImunobiologico-54\"> </a></td><td>Diluente para vacina varicela (atenuada)</td></tr><tr><td style=\"white-space:nowrap\">55<a name=\"BRImunobiologico-55\"> </a></td><td>Vacina adsorvida hepatite A (inativada, virossomal), dose pediátrica</td></tr><tr><td style=\"white-space:nowrap\">56<a name=\"BRImunobiologico-56\"> </a></td><td>Vacina sarampo, caxumba, rubéola e varicela</td></tr><tr><td style=\"white-space:nowrap\">57<a name=\"BRImunobiologico-57\"> </a></td><td>Vacina acelular adsorvida difteria, tétano, pertussis, dose adulto</td></tr><tr><td style=\"white-space:nowrap\">58<a name=\"BRImunobiologico-58\"> </a></td><td>Vacina acelular adsorvida difteria, tétano, pertussis, poliomielite1;2;3 (inativada)</td></tr><tr><td style=\"white-space:nowrap\">59<a name=\"BRImunobiologico-59\"> </a></td><td>Vacina pneumocócica 13-valente</td></tr><tr><td style=\"white-space:nowrap\">60<a name=\"BRImunobiologico-60\"> </a></td><td>Vacina papilomavírus humano 16 e 18 (recombinante)</td></tr><tr><td style=\"white-space:nowrap\">61<a name=\"BRImunobiologico-61\"> </a></td><td>Vacina Toxóide tetânico</td></tr><tr><td style=\"white-space:nowrap\">62<a name=\"BRImunobiologico-62\"> </a></td><td>Vacina adsorvida hepatite A, hepatite B(recombinante) pediátrica</td></tr><tr><td style=\"white-space:nowrap\">63<a name=\"BRImunobiologico-63\"> </a></td><td>Vacina adsorvida hepatite A, hepatite B(recombinante)</td></tr><tr><td style=\"white-space:nowrap\">64<a name=\"BRImunobiologico-64\"> </a></td><td>Vacina influenza intradérmica</td></tr><tr><td style=\"white-space:nowrap\">65<a name=\"BRImunobiologico-65\"> </a></td><td>Vacina rotavírus humano(pentavalente)</td></tr><tr><td style=\"white-space:nowrap\">66<a name=\"BRImunobiologico-66\"> </a></td><td>Vacina meningocócica BC</td></tr><tr><td style=\"white-space:nowrap\">67<a name=\"BRImunobiologico-67\"> </a></td><td>Vacina quadrivalente recombinante contra papilomavírus humano (tipos 6, 11, 16 e 18)</td></tr><tr><td style=\"white-space:nowrap\">68<a name=\"BRImunobiologico-68\"> </a></td><td>Vacina Papiloma vírus humano</td></tr><tr><td style=\"white-space:nowrap\">69<a name=\"BRImunobiologico-69\"> </a></td><td>Soro antibotulínico (bivalente) Soroterapia</td></tr><tr><td style=\"white-space:nowrap\">70<a name=\"BRImunobiologico-70\"> </a></td><td>Sarampo Monovalente</td></tr><tr><td style=\"white-space:nowrap\">71<a name=\"BRImunobiologico-71\"> </a></td><td>Rubéola Monovalente</td></tr><tr><td style=\"white-space:nowrap\">72<a name=\"BRImunobiologico-72\"> </a></td><td>Gripe (anual)</td></tr><tr><td style=\"white-space:nowrap\">73<a name=\"BRImunobiologico-73\"> </a></td><td>Quádrupla viral (SCR + varicela)</td></tr><tr><td style=\"white-space:nowrap\">74<a name=\"BRImunobiologico-74\"> </a></td><td>Vacina meningocócica ACYW135(polissacarídica)</td></tr><tr><td style=\"white-space:nowrap\">75<a name=\"BRImunobiologico-75\"> </a></td><td>Vacina Cólera(bivalente)</td></tr><tr><td style=\"white-space:nowrap\">76<a name=\"BRImunobiologico-76\"> </a></td><td>Vacina Herpes Zoster (atenuada)</td></tr><tr><td style=\"white-space:nowrap\">77<a name=\"BRImunobiologico-77\"> </a></td><td>Vacina influenza Tetravalente/Quadrivalente (fracionada, inativada)</td></tr><tr><td style=\"white-space:nowrap\">78<a name=\"BRImunobiologico-78\"> </a></td><td>Vacina adsorvida meningocócica B (recombinante)</td></tr><tr><td style=\"white-space:nowrap\">79<a name=\"BRImunobiologico-79\"> </a></td><td>Diluente para Vacina BCG</td></tr><tr><td style=\"white-space:nowrap\">80<a name=\"BRImunobiologico-80\"> </a></td><td>Diluente vacina para Raiva em cultivo celular Vero</td></tr><tr><td style=\"white-space:nowrap\">81<a name=\"BRImunobiologico-81\"> </a></td><td>Diluente para vacina Meningocócica C  (conjugada)</td></tr><tr><td style=\"white-space:nowrap\">82<a name=\"BRImunobiologico-82\"> </a></td><td>Dengvaxia</td></tr><tr><td style=\"white-space:nowrap\">83<a name=\"BRImunobiologico-83\"> </a></td><td>Hepatite A Adulto (1ml)</td></tr><tr><td style=\"white-space:nowrap\">84<a name=\"BRImunobiologico-84\"> </a></td><td>Febre Amarela-Dose fracionada (0,1 ml)</td></tr><tr><td style=\"white-space:nowrap\">85<a name=\"BRImunobiologico-85\"> </a></td><td>Vacina Covid-19 - ChAdOx1 nCoV-19</td></tr><tr><td style=\"white-space:nowrap\">86<a name=\"BRImunobiologico-86\"> </a></td><td>Vacina Covid-19 - Coronavac</td></tr><tr><td style=\"white-space:nowrap\">87<a name=\"BRImunobiologico-87\"> </a></td><td>Vacina Covid-19 - BNT162b2</td></tr><tr><td style=\"white-space:nowrap\">88<a name=\"BRImunobiologico-88\"> </a></td><td>Vacina Covid-19 - Ad26.COV2.S</td></tr></table></div>"
+  },
+  "url": "http://www.saude.gov.br/fhir/r4/CodeSystem/BRImunobiologico",
+  "version": "0.1.0",
+  "name": "BRImunobiologico",
+  "title": "Tipo de imunobiológico",
+  "status": "active",
+  "experimental": false,
+  "date": "2020-01-06T18:40:15.6103207+00:00",
+  "publisher": "Rede Nacional de Dados em Saúde",
+  "contact": [
+    {
+      "name": "Rede Nacional de Dados em Saúde",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://github.com/kyriosdata"
+        },
+        {
+          "system": "email",
+          "value": "rnds@saude.gov.br"
+        }
+      ]
+    }
+  ],
+  "description": "Classifica os tipos de imunobiológicos.",
+  "content": "complete",
+  "count": 88,
+  "concept": [
+    {
+      "code": "1",
+      "display": "Imunoglobulina anti tetânica"
+    },
+    {
+      "code": "2",
+      "display": "Soro antitetânico"
+    },
+    {
+      "code": "3",
+      "display": "soro antiaracnídico (Loxosceles, Phoneutria e Tityus)"
+    },
+    {
+      "code": "4",
+      "display": "Soro antiescorpiônico"
+    },
+    {
+      "code": "5",
+      "display": "Vacina adsorvida difteria e tétano infantil"
+    },
+    {
+      "code": "6",
+      "display": "Soro antielapídico (bivalente)"
+    },
+    {
+      "code": "7",
+      "display": "Soro anti-rábico"
+    },
+    {
+      "code": "8",
+      "display": "Soro antibotrópico (pentavalente)"
+    },
+    {
+      "code": "9",
+      "display": "Vacina hepatite B (recombinante)"
+    },
+    {
+      "code": "10",
+      "display": "Soro antidiftérico"
+    },
+    {
+      "code": "11",
+      "display": "Soro antibotrópico (pentavalente) e anticrotálico"
+    },
+    {
+      "code": "12",
+      "display": "Soro antibotrópico (pentavalente) e antilaquético"
+    },
+    {
+      "code": "13",
+      "display": "Vacina meningocócica AC (polissacarídica)"
+    },
+    {
+      "code": "14",
+      "display": "Vacina febre amarela (atenuada)"
+    },
+    {
+      "code": "15",
+      "display": "Vacina BCG"
+    },
+    {
+      "code": "16",
+      "display": "Soro  anticrotálico"
+    },
+    {
+      "code": "17",
+      "display": "Vacina Haemophilus influenza b (conjugada)"
+    },
+    {
+      "code": "18",
+      "display": "Raiva em cultivo celular Embrião de Galinha"
+    },
+    {
+      "code": "19",
+      "display": "Imunoglobulina anti varicela zoster"
+    },
+    {
+      "code": "20",
+      "display": "Imunoglobulina da hepatite B"
+    },
+    {
+      "code": "21",
+      "display": "Vacina pneumocócica 23-valente (polissacarídica)"
+    },
+    {
+      "code": "22",
+      "display": "Vacina poliomelite 1, 2 e 3 (inativada)"
+    },
+    {
+      "code": "23",
+      "display": "Imunoglobulina anti rábica"
+    },
+    {
+      "code": "24",
+      "display": "Vacina sarampo, caxumba, rubéola"
+    },
+    {
+      "code": "25",
+      "display": "Vacina adsorvida difteria e tétano adulto"
+    },
+    {
+      "code": "26",
+      "display": "Vacina pneumocócica 10-valente(conjugada)"
+    },
+    {
+      "code": "27",
+      "display": "Soro antilatrodectus"
+    },
+    {
+      "code": "28",
+      "display": "Vacina poliomielite 1 e 3 (atenuada)"
+    },
+    {
+      "code": "29",
+      "display": "Vacina acelular adsorvida difteria, tétano, pertussis, poliomielite 1, 2, 3 (inativada), Haemophilus influenzae b (conjugada)"
+    },
+    {
+      "code": "30",
+      "display": "Vacina febre tifóide (polissacarídica)"
+    },
+    {
+      "code": "31",
+      "display": "Soro antiloxoscélico (trivalente)"
+    },
+    {
+      "code": "32",
+      "display": "Soro antilonômico"
+    },
+    {
+      "code": "33",
+      "display": "Vacina influenza Trivalente (fracionada, inativada)"
+    },
+    {
+      "code": "34",
+      "display": "Vacina varicela (atenuada)"
+    },
+    {
+      "code": "35",
+      "display": "Vacina adsorvida hepatite A (inativada, virossomal)"
+    },
+    {
+      "code": "36",
+      "display": "Vacina sarampo, rubéola"
+    },
+    {
+      "code": "37",
+      "display": "Raiva em cultivo celular Vero"
+    },
+    {
+      "code": "38",
+      "display": "Soro antibotulínico (trivalente)"
+    },
+    {
+      "code": "39",
+      "display": "Vacina adsorvida difteria, tétano, pertussis* e Haemophilus influenzae b (conjugada)"
+    },
+    {
+      "code": "40",
+      "display": "Vacina pneumocócica 7-valente (conjugada)"
+    },
+    {
+      "code": "41",
+      "display": "Vacina meningocócica C (conjugada)"
+    },
+    {
+      "code": "42",
+      "display": "Vacina adsorvida difteria, tétano, pertussis*, hepatite B (recombinante) e Haemophilus influenzae b (conjugada)"
+    },
+    {
+      "code": "43",
+      "display": "Vacina acelular adsorvida difteria, tétano, pertussis, poliomielite 1, 2, 3 (inativada), Haemophilus influenzae b e hepatite b (conbinada)"
+    },
+    {
+      "code": "44",
+      "display": "Vacina influenza H1N1"
+    },
+    {
+      "code": "45",
+      "display": "Vacina rotavírus humano G1P1[8] (atenuada)"
+    },
+    {
+      "code": "46",
+      "display": "Vacina adsorvida difteria, tétano e pertussis"
+    },
+    {
+      "code": "47",
+      "display": "Vacina adsorvida difteria, tétano e pertussis (acelular)"
+    },
+    {
+      "code": "48",
+      "display": "Diluente para vacina sarampo, caxumba, rubéola"
+    },
+    {
+      "code": "49",
+      "display": "Diluente para vacina febre amarela (atenuada)"
+    },
+    {
+      "code": "50",
+      "display": "Diluente para vacina haemophilus influenzae b"
+    },
+    {
+      "code": "51",
+      "display": "Vacina febre tifóide (atenuada)"
+    },
+    {
+      "code": "52",
+      "display": "Diluente para vacina meningocócica AC (polissacarídica)"
+    },
+    {
+      "code": "53",
+      "display": "Diluente sarampo, rubéola*"
+    },
+    {
+      "code": "54",
+      "display": "Diluente para vacina varicela (atenuada)"
+    },
+    {
+      "code": "55",
+      "display": "Vacina adsorvida hepatite A (inativada, virossomal), dose pediátrica"
+    },
+    {
+      "code": "56",
+      "display": "Vacina sarampo, caxumba, rubéola e varicela"
+    },
+    {
+      "code": "57",
+      "display": "Vacina acelular adsorvida difteria, tétano, pertussis, dose adulto"
+    },
+    {
+      "code": "58",
+      "display": "Vacina acelular adsorvida difteria, tétano, pertussis, poliomielite1;2;3 (inativada)"
+    },
+    {
+      "code": "59",
+      "display": "Vacina pneumocócica 13-valente"
+    },
+    {
+      "code": "60",
+      "display": "Vacina papilomavírus humano 16 e 18 (recombinante)"
+    },
+    {
+      "code": "61",
+      "display": "Vacina Toxóide tetânico"
+    },
+    {
+      "code": "62",
+      "display": "Vacina adsorvida hepatite A, hepatite B(recombinante) pediátrica"
+    },
+    {
+      "code": "63",
+      "display": "Vacina adsorvida hepatite A, hepatite B(recombinante)"
+    },
+    {
+      "code": "64",
+      "display": "Vacina influenza intradérmica"
+    },
+    {
+      "code": "65",
+      "display": "Vacina rotavírus humano(pentavalente)"
+    },
+    {
+      "code": "66",
+      "display": "Vacina meningocócica BC"
+    },
+    {
+      "code": "67",
+      "display": "Vacina quadrivalente recombinante contra papilomavírus humano (tipos 6, 11, 16 e 18)"
+    },
+    {
+      "code": "68",
+      "display": "Vacina Papiloma vírus humano"
+    },
+    {
+      "code": "69",
+      "display": "Soro antibotulínico (bivalente) Soroterapia"
+    },
+    {
+      "code": "70",
+      "display": "Sarampo Monovalente"
+    },
+    {
+      "code": "71",
+      "display": "Rubéola Monovalente"
+    },
+    {
+      "code": "72",
+      "display": "Gripe (anual)"
+    },
+    {
+      "code": "73",
+      "display": "Quádrupla viral (SCR + varicela)"
+    },
+    {
+      "code": "74",
+      "display": "Vacina meningocócica ACYW135(polissacarídica)"
+    },
+    {
+      "code": "75",
+      "display": "Vacina Cólera(bivalente)"
+    },
+    {
+      "code": "76",
+      "display": "Vacina Herpes Zoster (atenuada)"
+    },
+    {
+      "code": "77",
+      "display": "Vacina influenza Tetravalente/Quadrivalente (fracionada, inativada)"
+    },
+    {
+      "code": "78",
+      "display": "Vacina adsorvida meningocócica B (recombinante)"
+    },
+    {
+      "code": "79",
+      "display": "Diluente para Vacina BCG"
+    },
+    {
+      "code": "80",
+      "display": "Diluente vacina para Raiva em cultivo celular Vero"
+    },
+    {
+      "code": "81",
+      "display": "Diluente para vacina Meningocócica C  (conjugada)"
+    },
+    {
+      "code": "82",
+      "display": "Dengvaxia"
+    },
+    {
+      "code": "83",
+      "display": "Hepatite A Adulto (1ml)"
+    },
+    {
+      "code": "84",
+      "display": "Febre Amarela-Dose fracionada (0,1 ml)"
+    },
+    {
+      "code": "85",
+      "display": "Vacina Covid-19 - ChAdOx1 nCoV-19"
+    },
+    {
+      "code": "86",
+      "display": "Vacina Covid-19 - Coronavac"
+    },
+    {
+      "code": "87",
+      "display": "Vacina Covid-19 - BNT162b2"
+    },
+    {
+      "code": "88",
+      "display": "Vacina Covid-19 - Ad26.COV2.S"
+    }
+  ]
+}

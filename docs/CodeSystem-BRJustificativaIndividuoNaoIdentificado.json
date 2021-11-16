@@ -1,0 +1,60 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "BRJustificativaIndividuoNaoIdentificado",
+  "meta": {
+    "lastUpdated": "2020-03-11T15:15:05.557-03:00"
+  },
+  "language": "pt-BR",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p>This code system http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">01<a name=\"BRJustificativaIndividuoNaoIdentificado-01\"> </a></td><td>Indivíduo acidentado grave</td></tr><tr><td style=\"white-space:nowrap\">02<a name=\"BRJustificativaIndividuoNaoIdentificado-02\"> </a></td><td>Indivíduo em sofrimento mental encontrado em via pública</td></tr><tr><td style=\"white-space:nowrap\">03<a name=\"BRJustificativaIndividuoNaoIdentificado-03\"> </a></td><td>Indivíduo com problema neurológico grave ou comatoso</td></tr><tr><td style=\"white-space:nowrap\">04<a name=\"BRJustificativaIndividuoNaoIdentificado-04\"> </a></td><td>Indivíduo incapacitado por motivos sociais e/ou culturais</td></tr><tr><td style=\"white-space:nowrap\">05<a name=\"BRJustificativaIndividuoNaoIdentificado-05\"> </a></td><td>Indivíduo doador de órgãos falecido</td></tr></table></div>"
+  },
+  "url": "http://www.saude.gov.br/fhir/r4/CodeSystem/BRJustificativaIndividuoNaoIdentificado",
+  "version": "0.1.0",
+  "name": "Justificativa da Impossibilidade de Identificação do Indivíduo",
+  "title": "Justificativa para não identificação de indivíduo",
+  "status": "active",
+  "experimental": false,
+  "date": "2020-03-11T18:15:25.4061393+00:00",
+  "publisher": "Rede Nacional de Dados em Saúde",
+  "contact": [
+    {
+      "name": "Rede Nacional de Dados em Saúde",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://github.com/kyriosdata"
+        },
+        {
+          "system": "email",
+          "value": "rnds@saude.gov.br"
+        }
+      ]
+    }
+  ],
+  "description": "Classifica as razões pelo qual não foi possível obter os dados de identificação do indivíduo em um contato assistencial. (Port. nº 84/SAS/MS/1997 e Port. nº02/SAS/SGEP/MS/2012)",
+  "content": "complete",
+  "count": 5,
+  "concept": [
+    {
+      "code": "01",
+      "display": "Indivíduo acidentado grave"
+    },
+    {
+      "code": "02",
+      "display": "Indivíduo em sofrimento mental encontrado em via pública"
+    },
+    {
+      "code": "03",
+      "display": "Indivíduo com problema neurológico grave ou comatoso"
+    },
+    {
+      "code": "04",
+      "display": "Indivíduo incapacitado por motivos sociais e/ou culturais"
+    },
+    {
+      "code": "05",
+      "display": "Indivíduo doador de órgãos falecido"
+    }
+  ]
+}

@@ -1,0 +1,865 @@
+{
+  "package": "rnds",
+  "version": "0.1.0",
+  "fhirVersion": "4.0.1",
+  "extensions": [
+    {
+      "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRAdministradorTerceiro-1.0",
+      "title": "Gerente/Administrador (Terceiro) ou Interveniente",
+      "types": [
+        "Reference",
+        "string",
+        "Extension",
+        "string",
+        "uri",
+        "Identifier",
+        "string"
+      ]
+    },
+    {
+      "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRAtendeSUS-1.0",
+      "title": "Atende SUS?",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRComponenteAssistenciaFarmaceutica-1.0",
+      "title": "Componente da Assistência Farmacêutica",
+      "types": [
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
+      "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BREstrategiaCampanha-1.0",
+      "title": "Estratégia de campanha de vacinação",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "date",
+        "date",
+        "CodeableConcept",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BREstrategiaVacinacao-1.0",
+      "title": "Estratégia de Vacinação",
+      "types": [
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
+      "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRFinanciamento-1.0",
+      "title": "Financiamento",
+      "types": [
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
+      "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRGrupoAtendimento",
+      "title": "Grupo de Atendimento",
+      "types": [
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
+      "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIdentificacaoEquipe-1.0",
+      "title": "Identificador Nacional de Equipe",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndicadorPresencaAdmissao-1.0",
+      "title": "Indicador de Presença na Admissão",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndividuoNaoIdentificado-1.0",
+      "title": "Informações Complementares de Indivíduos Não Identificados",
+      "types": [
+        "code",
+        "date",
+        "CodeableConcept",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndividuoProtegido-1.0",
+      "title": "Indivíduo Protegido?",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRJurisdicaoOrgaoEmissor-1.0",
+      "title": "Jurisdição do Órgão Expedidor",
+      "types": [
+        "positiveInt",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRMunicipio-1.0",
+      "title": "Município",
+      "types": [
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
+      "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRNaturalizacao-1.0",
+      "title": "Dados de Naturalização",
+      "types": [
+        "date",
+        "date",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BROcupacao-1.0",
+      "title": "Ocupação",
+      "types": [
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
+      "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BROperadorDigitador-1.0",
+      "title": "Identificador do digitador",
+      "types": [
+        "Reference",
+        "string",
+        "Extension",
+        "string",
+        "uri",
+        "Identifier",
+        "string",
+        "Extension",
+        "code",
+        "CodeableConcept",
+        "uri",
+        "string",
+        "Period",
+        "Reference",
+        "string"
+      ]
+    },
+    {
+      "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRPais-1.0",
+      "title": "País",
+      "types": [
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
+      "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRParentesIndividuo-1.0",
+      "title": "Parentes do Indivíduo",
+      "types": [
+        "code",
+        "HumanName",
+        "Reference",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRPosicaoIndividuo-1.0",
+      "title": "Posição do Indivíduo",
+      "types": [
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
+      "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRProgramaSaude-1.0",
+      "title": "Programa de Saúde",
+      "types": [
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
+      "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRQualidadeCadastroIndividuo-1.0",
+      "title": "Qualidade do Cadastro do Indivíduo",
+      "types": [
+        "positiveInt"
+      ]
+    },
+    {
+      "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRQuantidade-1.0",
+      "title": "Quantidade",
+      "types": [
+        "decimal",
+        "integer",
+        "positiveInt",
+        "unsignedInt"
+      ]
+    },
+    {
+      "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRRacaCorEtnia-1.0",
+      "title": "Raça/Cor e Etnina",
+      "types": [
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string",
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRReferencia-1.0",
+      "title": "Referência",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRSituacaoCondicaoIndividuo-1.0",
+      "title": "Situação/Condição do Indivíduo",
+      "types": [
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
+      "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRValorMonetario-1.0",
+      "title": "Valor Monetário",
+      "types": [
+        "Money",
+        "string",
+        "Extension",
+        "decimal",
+        "code"
+      ]
+    }
+  ],
+  "profiles": {
+    "Specimen": [
+      {
+        "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRAmostraBiologica-1.0",
+        "title": "Amostra Biológica"
+      }
+    ],
+    "Condition": [
+      {
+        "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRCIAP2Avaliado-1.0",
+        "title": "CIAP2 Avaliado"
+      },
+      {
+        "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRCID10Avaliado-1.0",
+        "title": "CID10 Avaliado"
+      }
+    ],
+    "Composition": [
+      {
+        "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRRegistroImunobiologicoAdministrado-1.0",
+        "title": "Registro de Imunobiológico Administrado"
+      },
+      {
+        "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRRegistroImunobiologicoAdministradoCampanha-1.0",
+        "title": "Registro de Imunobiológico Administrado na Campanha"
+      },
+      {
+        "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRRegistroImunobiologicoAdministradoCarga-1.0",
+        "title": "Registro de Imunobiológico Administrado - Carga"
+      },
+      {
+        "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRResultadoExameLaboratorial-1.0",
+        "title": "Resultado de Exame Laboratorial"
+      },
+      {
+        "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRResultadoExameLaboratorial-1.1",
+        "title": "Resultado de Exame Laboratorial"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRContatoAssistencial-1.0",
+        "title": "Contato Assistencial"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRObservacaoDescritiva-1.0",
+        "title": "Observação Descritiva"
+      }
+    ],
+    "Organization": [
+      {
+        "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRPessoaJuridicaProfissionalLiberal-1.0",
+        "title": "Pessoa Jurídica e Profissional Liberal"
+      }
+    ],
+    "Immunization": [
+      {
+        "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRImunobiologicoAdministrado-1.0",
+        "title": "Imunobiológico Administrado"
+      },
+      {
+        "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRImunobiologicoAdministradoCampanha-1.0",
+        "title": "Imunobiológico Administrado em Campanha"
+      },
+      {
+        "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRImunobiologicoAdministradoCarga-1.0",
+        "title": "Imunobiologico Administrado - Carga"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndividuo-1.0",
+        "title": "Indivíduo"
+      }
+    ],
+    "List": [
+      {
+        "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRListaTimeline-1.0",
+        "title": "Lista da Timeline"
+      }
+    ],
+    "Location": [
+      {
+        "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRLocalAtendimento-1.0",
+        "title": "Local de Atendimento"
+      }
+    ],
+    "PractitionerRole": [
+      {
+        "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRLotacaoProfissional-1.0",
+        "title": "Lotação Profissional"
+      }
+    ],
+    "Medication": [
+      {
+        "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRMedicamento-1.0",
+        "title": "Medicamento"
+      }
+    ],
+    "MedicationDispense": [
+      {
+        "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRMedicamentoDispensado-1.0",
+        "title": "Medicamento Dispensado"
+      }
+    ],
+    "Procedure": [
+      {
+        "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRProcedimentoRealizado-1.0",
+        "title": "Procedimento Realizado"
+      }
+    ],
+    "Practitioner": [
+      {
+        "url": "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRProfissional-1.0",
+        "title": "Profissional"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.differential.element",
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.differential.element.type",
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version": [
+      "StructureDefinition.differential.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "StructureDefinition.differential.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRAdministradorTerceiro-1.0": [
+      "Organization"
+    ],
+    "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRAtendeSUS-1.0": [
+      "Organization",
+      "PractitionerRole"
+    ],
+    "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRComponenteAssistenciaFarmaceutica-1.0": [
+      "MedicationDispense"
+    ],
+    "http://www.saude.gov.br/fhir/r4/StructureDefinition/BREstrategiaVacinacao-1.0": [
+      "Immunization.protocolApplied"
+    ],
+    "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRFinanciamento-1.0": [
+      "Encounter.diagnosis.condition"
+    ],
+    "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRGrupoAtendimento": [
+      "Immunization"
+    ],
+    "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIdentificacaoEquipe-1.0": [
+      "Encounter.participant"
+    ],
+    "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndicadorPresencaAdmissao-1.0": [
+      "Encounter.diagnosis.condition",
+      "Encounter.reasonReference"
+    ],
+    "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndividuoNaoIdentificado-1.0": [
+      "Composition.subject",
+      "Condition.subject",
+      "Encounter.subject",
+      "Immunization.patient",
+      "Patient",
+      "Procedure.subject"
+    ],
+    "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRIndividuoProtegido-1.0": [
+      "Patient"
+    ],
+    "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRJurisdicaoOrgaoEmissor-1.0": [
+      "Identifier",
+      "Practitioner.identifier"
+    ],
+    "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRMunicipio-1.0": [
+      "Patient"
+    ],
+    "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRNaturalizacao-1.0": [
+      "Patient"
+    ],
+    "http://www.saude.gov.br/fhir/r4/StructureDefinition/BROcupacao-1.0": [
+      "Encounter.participant"
+    ],
+    "http://www.saude.gov.br/fhir/r4/StructureDefinition/BROperadorDigitador-1.0": [
+      "Composition"
+    ],
+    "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRPais-1.0": [
+      "Patient"
+    ],
+    "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRParentesIndividuo-1.0": [
+      "Patient"
+    ],
+    "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRProgramaSaude-1.0": [
+      "MedicationDispense"
+    ],
+    "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRQualidadeCadastroIndividuo-1.0": [
+      "Patient"
+    ],
+    "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRQuantidade-1.0": [
+      "Procedure"
+    ],
+    "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRRacaCorEtnia-1.0": [
+      "Patient"
+    ],
+    "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRSituacaoCondicaoIndividuo-1.0": [
+      "Immunization"
+    ],
+    "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRValorMonetario-1.0": [
+      "MedicationDispense"
+    ]
+  }
+}

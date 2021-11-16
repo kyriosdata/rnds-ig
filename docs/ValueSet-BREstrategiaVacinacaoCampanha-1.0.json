@@ -1,0 +1,54 @@
+{
+  "resourceType": "ValueSet",
+  "id": "BREstrategiaVacinacaoCampanha-1.0",
+  "meta": {
+    "lastUpdated": "2020-12-07T12:41:00.201-03:00"
+  },
+  "language": "pt-BR",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-BREstrategiaVacinacao.html\"><code>http://www.saude.gov.br/fhir/r4/CodeSystem/BREstrategiaVacinacao</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-BREstrategiaVacinacao.html#BREstrategiaVacinacao-5\">5</a></td><td>Campanha indiscriminada</td></tr><tr><td><a href=\"CodeSystem-BREstrategiaVacinacao.html#BREstrategiaVacinacao-6\">6</a></td><td>Campanha seletiva</td></tr></table></li></ul></div>"
+  },
+  "url": "http://www.saude.gov.br/fhir/r4/ValueSet/BREstrategiaVacinacaoCampanha-1.0",
+  "version": "0.1.0",
+  "name": "BREstrategiaVacinacaoCampanha",
+  "title": "Estratégia de Vacinação em Campanha",
+  "status": "active",
+  "experimental": false,
+  "date": "2020-12-07T15:41:00.2986924+00:00",
+  "publisher": "Rede Nacional de Dados em Saúde",
+  "contact": [
+    {
+      "name": "Rede Nacional de Dados em Saúde",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://github.com/kyriosdata"
+        },
+        {
+          "system": "email",
+          "value": "rnds@saude.gov.br"
+        }
+      ]
+    }
+  ],
+  "description": "Identifica a estratégia de vacinação adotada.na campanha",
+  "immutable": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://www.saude.gov.br/fhir/r4/CodeSystem/BREstrategiaVacinacao",
+        "concept": [
+          {
+            "code": "5",
+            "display": "Campanha indiscriminada"
+          },
+          {
+            "code": "6",
+            "display": "Campanha seletiva"
+          }
+        ]
+      }
+    ]
+  }
+}

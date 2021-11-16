@@ -1,0 +1,41 @@
+{
+  "resourceType": "ValueSet",
+  "id": "BRAbrangencia-1.0",
+  "language": "pt-BR",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><ul><li>Include all codes defined in <a href=\"CodeSystem-BRAbrangencia.html\"><code>http://www.saude.gov.br/fhir/r4/CodeSystem/BRAbrangencia</code></a></li></ul></div>"
+  },
+  "url": "http://www.saude.gov.br/fhir/r4/ValueSet/BRAbrangencia-1.0",
+  "version": "0.1.0",
+  "name": "BRAbrangencia",
+  "status": "active",
+  "experimental": false,
+  "date": "2020-12-08T17:23:03Z",
+  "publisher": "Rede Nacional de Dados em Saúde",
+  "contact": [
+    {
+      "name": "Rede Nacional de Dados em Saúde",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://github.com/kyriosdata"
+        },
+        {
+          "system": "email",
+          "value": "rnds@saude.gov.br"
+        }
+      ]
+    }
+  ],
+  "description": "Identifica a abrangência territorial da atividade adotada.",
+  "immutable": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://www.saude.gov.br/fhir/r4/CodeSystem/BRAbrangencia",
+        "version": "*"
+      }
+    ]
+  }
+}

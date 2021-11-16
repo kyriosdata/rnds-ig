@@ -1,0 +1,324 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://www.saude.gov.br/fhir/r4/CodeSystem/BRGrupoAtendimento> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "BRGrupoAtendimento"];
+  fhir:Resource.language [ fhir:value "pt-BR"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p>This code system http://www.saude.gov.br/fhir/r4/CodeSystem/BRGrupoAtendimento defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">000101<a name=\"BRGrupoAtendimento-000101\"> </a></td><td>Anemia Falciforme</td></tr><tr><td style=\"white-space:nowrap\">000102<a name=\"BRGrupoAtendimento-000102\"> </a></td><td>Câncer</td></tr><tr><td style=\"white-space:nowrap\">000103<a name=\"BRGrupoAtendimento-000103\"> </a></td><td>Diabetes Mellitus</td></tr><tr><td style=\"white-space:nowrap\">000104<a name=\"BRGrupoAtendimento-000104\"> </a></td><td>Doença Pulmonar Obstrutiva Crônica</td></tr><tr><td style=\"white-space:nowrap\">000105<a name=\"BRGrupoAtendimento-000105\"> </a></td><td>Doença Renal</td></tr><tr><td style=\"white-space:nowrap\">000106<a name=\"BRGrupoAtendimento-000106\"> </a></td><td>Doenças Cardiovasculares e Cerebrovasculares</td></tr><tr><td style=\"white-space:nowrap\">000107<a name=\"BRGrupoAtendimento-000107\"> </a></td><td>Hipertensão de difícil controle ou com compilcações/lesão de órgão alvo</td></tr><tr><td style=\"white-space:nowrap\">000108<a name=\"BRGrupoAtendimento-000108\"> </a></td><td>Indivíduos Transplantados de Órgão Sólido</td></tr><tr><td style=\"white-space:nowrap\">000109<a name=\"BRGrupoAtendimento-000109\"> </a></td><td>Obesidade Grave (Imc≥40)</td></tr><tr><td style=\"white-space:nowrap\">000201<a name=\"BRGrupoAtendimento-000201\"> </a></td><td>Pessoas de 60 a 64 anos</td></tr><tr><td style=\"white-space:nowrap\">000202<a name=\"BRGrupoAtendimento-000202\"> </a></td><td>Pessoas de 65 a 69 anos</td></tr><tr><td style=\"white-space:nowrap\">000203<a name=\"BRGrupoAtendimento-000203\"> </a></td><td>Pessoas de 70 a 74 anos</td></tr><tr><td style=\"white-space:nowrap\">000204<a name=\"BRGrupoAtendimento-000204\"> </a></td><td>Pessoas de 75 a 79 anos</td></tr><tr><td style=\"white-space:nowrap\">000205<a name=\"BRGrupoAtendimento-000205\"> </a></td><td>Pessoas de 80 anos ou mais</td></tr><tr><td style=\"white-space:nowrap\">000301<a name=\"BRGrupoAtendimento-000301\"> </a></td><td>Pessoas de 60 nos ou mais Institucionalizadas</td></tr><tr><td style=\"white-space:nowrap\">000401<a name=\"BRGrupoAtendimento-000401\"> </a></td><td>Marinha do Brasil - MB</td></tr><tr><td style=\"white-space:nowrap\">000402<a name=\"BRGrupoAtendimento-000402\"> </a></td><td>Exército Brasileiro - EB</td></tr><tr><td style=\"white-space:nowrap\">000403<a name=\"BRGrupoAtendimento-000403\"> </a></td><td>Força Aérea Brasileira - FAB</td></tr><tr><td style=\"white-space:nowrap\">000501<a name=\"BRGrupoAtendimento-000501\"> </a></td><td>Bombeiro Civil</td></tr><tr><td style=\"white-space:nowrap\">000502<a name=\"BRGrupoAtendimento-000502\"> </a></td><td>Bombeiro Militar</td></tr><tr><td style=\"white-space:nowrap\">000503<a name=\"BRGrupoAtendimento-000503\"> </a></td><td>Guarda Municipal</td></tr><tr><td style=\"white-space:nowrap\">000504<a name=\"BRGrupoAtendimento-000504\"> </a></td><td>Policial Rodoviário Federal</td></tr><tr><td style=\"white-space:nowrap\">000505<a name=\"BRGrupoAtendimento-000505\"> </a></td><td>Policial Civil</td></tr><tr><td style=\"white-space:nowrap\">000506<a name=\"BRGrupoAtendimento-000506\"> </a></td><td>Policial Federal</td></tr><tr><td style=\"white-space:nowrap\">000507<a name=\"BRGrupoAtendimento-000507\"> </a></td><td>Policial Militar</td></tr><tr><td style=\"white-space:nowrap\">000601<a name=\"BRGrupoAtendimento-000601\"> </a></td><td>Quilombola</td></tr><tr><td style=\"white-space:nowrap\">000602<a name=\"BRGrupoAtendimento-000602\"> </a></td><td>Ribeirinha</td></tr><tr><td style=\"white-space:nowrap\">000701<a name=\"BRGrupoAtendimento-000701\"> </a></td><td>População indígena em terras indígenas</td></tr><tr><td style=\"white-space:nowrap\">000801<a name=\"BRGrupoAtendimento-000801\"> </a></td><td>Ensino Básico</td></tr><tr><td style=\"white-space:nowrap\">000802<a name=\"BRGrupoAtendimento-000802\"> </a></td><td>Ensino Superior</td></tr><tr><td style=\"white-space:nowrap\">000901<a name=\"BRGrupoAtendimento-000901\"> </a></td><td>Auxiliare Veterinário</td></tr><tr><td style=\"white-space:nowrap\">000902<a name=\"BRGrupoAtendimento-000902\"> </a></td><td>Biólogo</td></tr><tr><td style=\"white-space:nowrap\">000903<a name=\"BRGrupoAtendimento-000903\"> </a></td><td>Biomédico</td></tr><tr><td style=\"white-space:nowrap\">000904<a name=\"BRGrupoAtendimento-000904\"> </a></td><td>Cozinheiro e Auxiliare</td></tr><tr><td style=\"white-space:nowrap\">000905<a name=\"BRGrupoAtendimento-000905\"> </a></td><td>Cuidador de Idosos</td></tr><tr><td style=\"white-space:nowrap\">000906<a name=\"BRGrupoAtendimento-000906\"> </a></td><td>Doula/Parteira</td></tr><tr><td style=\"white-space:nowrap\">000907<a name=\"BRGrupoAtendimento-000907\"> </a></td><td>Enfermeiro(a)</td></tr><tr><td style=\"white-space:nowrap\">000908<a name=\"BRGrupoAtendimento-000908\"> </a></td><td>Farmacêutico</td></tr><tr><td style=\"white-space:nowrap\">000909<a name=\"BRGrupoAtendimento-000909\"> </a></td><td>Fisioterapeutas</td></tr><tr><td style=\"white-space:nowrap\">000910<a name=\"BRGrupoAtendimento-000910\"> </a></td><td>Fonoaudiólogo</td></tr><tr><td style=\"white-space:nowrap\">000911<a name=\"BRGrupoAtendimento-000911\"> </a></td><td>Funcionário do Sistema Funerário que tenham contato com cadáveres potencialmente contaminados</td></tr><tr><td style=\"white-space:nowrap\">000912<a name=\"BRGrupoAtendimento-000912\"> </a></td><td>Médico</td></tr><tr><td style=\"white-space:nowrap\">000913<a name=\"BRGrupoAtendimento-000913\"> </a></td><td>Médico Veterinário</td></tr><tr><td style=\"white-space:nowrap\">000914<a name=\"BRGrupoAtendimento-000914\"> </a></td><td>Motorista de Ambulância</td></tr><tr><td style=\"white-space:nowrap\">000915<a name=\"BRGrupoAtendimento-000915\"> </a></td><td>Nutricionista</td></tr><tr><td style=\"white-space:nowrap\">000916<a name=\"BRGrupoAtendimento-000916\"> </a></td><td>Odontologista</td></tr><tr><td style=\"white-space:nowrap\">000917<a name=\"BRGrupoAtendimento-000917\"> </a></td><td>Pessoal da Limpeza</td></tr><tr><td style=\"white-space:nowrap\">000918<a name=\"BRGrupoAtendimento-000918\"> </a></td><td>Profissionais de Educação Física</td></tr><tr><td style=\"white-space:nowrap\">000919<a name=\"BRGrupoAtendimento-000919\"> </a></td><td>Psicólogo</td></tr><tr><td style=\"white-space:nowrap\">000920<a name=\"BRGrupoAtendimento-000920\"> </a></td><td>Recepcionista</td></tr><tr><td style=\"white-space:nowrap\">000921<a name=\"BRGrupoAtendimento-000921\"> </a></td><td>Segurança</td></tr><tr><td style=\"white-space:nowrap\">000922<a name=\"BRGrupoAtendimento-000922\"> </a></td><td>Serviço Social</td></tr><tr><td style=\"white-space:nowrap\">000923<a name=\"BRGrupoAtendimento-000923\"> </a></td><td>Técnico de Enfermagem</td></tr><tr><td style=\"white-space:nowrap\">000924<a name=\"BRGrupoAtendimento-000924\"> </a></td><td>Técnico Veterinário</td></tr><tr><td style=\"white-space:nowrap\">000925<a name=\"BRGrupoAtendimento-000925\"> </a></td><td>Terapeuta Ocupacional</td></tr><tr><td style=\"white-space:nowrap\">000926<a name=\"BRGrupoAtendimento-000926\"> </a></td><td>Outros</td></tr><tr><td style=\"white-space:nowrap\">001001<a name=\"BRGrupoAtendimento-001001\"> </a></td><td>Aéreo</td></tr><tr><td style=\"white-space:nowrap\">001002<a name=\"BRGrupoAtendimento-001002\"> </a></td><td>Caminhoneiro</td></tr><tr><td style=\"white-space:nowrap\">001003<a name=\"BRGrupoAtendimento-001003\"> </a></td><td>Coletivo Rodoviário de Passageiros</td></tr><tr><td style=\"white-space:nowrap\">001004<a name=\"BRGrupoAtendimento-001004\"> </a></td><td>Ferroviário de Cargas</td></tr><tr><td style=\"white-space:nowrap\">001005<a name=\"BRGrupoAtendimento-001005\"> </a></td><td>Metroferroviário de Passageiros</td></tr><tr><td style=\"white-space:nowrap\">001006<a name=\"BRGrupoAtendimento-001006\"> </a></td><td>Aquaviário</td></tr><tr><td style=\"white-space:nowrap\">001101<a name=\"BRGrupoAtendimento-001101\"> </a></td><td>Pessoas com Deficiência Institucionalizadas</td></tr><tr><td style=\"white-space:nowrap\">001102<a name=\"BRGrupoAtendimento-001102\"> </a></td><td>Pessoas com Deficiência Permanente Severa</td></tr><tr><td style=\"white-space:nowrap\">001201<a name=\"BRGrupoAtendimento-001201\"> </a></td><td>Pessoas em Situação de Rua</td></tr><tr><td style=\"white-space:nowrap\">001301<a name=\"BRGrupoAtendimento-001301\"> </a></td><td>Trabalhadores Portuários</td></tr><tr><td style=\"white-space:nowrap\">001401<a name=\"BRGrupoAtendimento-001401\"> </a></td><td>Funcionário do Sistema de Privação de Liberdade</td></tr><tr><td style=\"white-space:nowrap\">001501<a name=\"BRGrupoAtendimento-001501\"> </a></td><td>População Privada de Liberdade</td></tr><tr><td style=\"white-space:nowrap\">001601<a name=\"BRGrupoAtendimento-001601\"> </a></td><td>Trabalhadores Industriais</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://www.saude.gov.br/fhir/r4/CodeSystem/BRGrupoAtendimento"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "Grupo de Atendimento"];
+  fhir:CodeSystem.title [ fhir:value "Grupo de atendimento"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean];
+  fhir:CodeSystem.date [ fhir:value "2020-12-15T16:32:27Z"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "Rede Nacional de Dados em Saúde"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Rede Nacional de Dados em Saúde" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://github.com/kyriosdata" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "rnds@saude.gov.br" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Domínio que identifica o tipo de grupo de atendimento que o indivíduo apresentou para a vacinação em campanha."];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "69"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "000101" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Anemia Falciforme" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "000102" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Câncer" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "000103" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Diabetes Mellitus" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "000104" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Doença Pulmonar Obstrutiva Crônica" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "000105" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Doença Renal" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "000106" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Doenças Cardiovasculares e Cerebrovasculares" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "000107" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Hipertensão de difícil controle ou com compilcações/lesão de órgão alvo" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "000108" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Indivíduos Transplantados de Órgão Sólido" ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "000109" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Obesidade Grave (Imc≥40)" ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "000201" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pessoas de 60 a 64 anos" ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "000202" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pessoas de 65 a 69 anos" ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.concept.code [ fhir:value "000203" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pessoas de 70 a 74 anos" ]
+  ], [
+     fhir:index 12;
+     fhir:CodeSystem.concept.code [ fhir:value "000204" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pessoas de 75 a 79 anos" ]
+  ], [
+     fhir:index 13;
+     fhir:CodeSystem.concept.code [ fhir:value "000205" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pessoas de 80 anos ou mais" ]
+  ], [
+     fhir:index 14;
+     fhir:CodeSystem.concept.code [ fhir:value "000301" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pessoas de 60 nos ou mais Institucionalizadas" ]
+  ], [
+     fhir:index 15;
+     fhir:CodeSystem.concept.code [ fhir:value "000401" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Marinha do Brasil - MB" ]
+  ], [
+     fhir:index 16;
+     fhir:CodeSystem.concept.code [ fhir:value "000402" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Exército Brasileiro - EB" ]
+  ], [
+     fhir:index 17;
+     fhir:CodeSystem.concept.code [ fhir:value "000403" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Força Aérea Brasileira - FAB" ]
+  ], [
+     fhir:index 18;
+     fhir:CodeSystem.concept.code [ fhir:value "000501" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Bombeiro Civil" ]
+  ], [
+     fhir:index 19;
+     fhir:CodeSystem.concept.code [ fhir:value "000502" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Bombeiro Militar" ]
+  ], [
+     fhir:index 20;
+     fhir:CodeSystem.concept.code [ fhir:value "000503" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Guarda Municipal" ]
+  ], [
+     fhir:index 21;
+     fhir:CodeSystem.concept.code [ fhir:value "000504" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Policial Rodoviário Federal" ]
+  ], [
+     fhir:index 22;
+     fhir:CodeSystem.concept.code [ fhir:value "000505" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Policial Civil" ]
+  ], [
+     fhir:index 23;
+     fhir:CodeSystem.concept.code [ fhir:value "000506" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Policial Federal" ]
+  ], [
+     fhir:index 24;
+     fhir:CodeSystem.concept.code [ fhir:value "000507" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Policial Militar" ]
+  ], [
+     fhir:index 25;
+     fhir:CodeSystem.concept.code [ fhir:value "000601" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Quilombola" ]
+  ], [
+     fhir:index 26;
+     fhir:CodeSystem.concept.code [ fhir:value "000602" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ribeirinha" ]
+  ], [
+     fhir:index 27;
+     fhir:CodeSystem.concept.code [ fhir:value "000701" ];
+     fhir:CodeSystem.concept.display [ fhir:value "População indígena em terras indígenas" ]
+  ], [
+     fhir:index 28;
+     fhir:CodeSystem.concept.code [ fhir:value "000801" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ensino Básico" ]
+  ], [
+     fhir:index 29;
+     fhir:CodeSystem.concept.code [ fhir:value "000802" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ensino Superior" ]
+  ], [
+     fhir:index 30;
+     fhir:CodeSystem.concept.code [ fhir:value "000901" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Auxiliare Veterinário" ]
+  ], [
+     fhir:index 31;
+     fhir:CodeSystem.concept.code [ fhir:value "000902" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Biólogo" ]
+  ], [
+     fhir:index 32;
+     fhir:CodeSystem.concept.code [ fhir:value "000903" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Biomédico" ]
+  ], [
+     fhir:index 33;
+     fhir:CodeSystem.concept.code [ fhir:value "000904" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cozinheiro e Auxiliare" ]
+  ], [
+     fhir:index 34;
+     fhir:CodeSystem.concept.code [ fhir:value "000905" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cuidador de Idosos" ]
+  ], [
+     fhir:index 35;
+     fhir:CodeSystem.concept.code [ fhir:value "000906" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Doula/Parteira" ]
+  ], [
+     fhir:index 36;
+     fhir:CodeSystem.concept.code [ fhir:value "000907" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Enfermeiro(a)" ]
+  ], [
+     fhir:index 37;
+     fhir:CodeSystem.concept.code [ fhir:value "000908" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Farmacêutico" ]
+  ], [
+     fhir:index 38;
+     fhir:CodeSystem.concept.code [ fhir:value "000909" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Fisioterapeutas" ]
+  ], [
+     fhir:index 39;
+     fhir:CodeSystem.concept.code [ fhir:value "000910" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Fonoaudiólogo" ]
+  ], [
+     fhir:index 40;
+     fhir:CodeSystem.concept.code [ fhir:value "000911" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Funcionário do Sistema Funerário que tenham contato com cadáveres potencialmente contaminados" ]
+  ], [
+     fhir:index 41;
+     fhir:CodeSystem.concept.code [ fhir:value "000912" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Médico" ]
+  ], [
+     fhir:index 42;
+     fhir:CodeSystem.concept.code [ fhir:value "000913" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Médico Veterinário" ]
+  ], [
+     fhir:index 43;
+     fhir:CodeSystem.concept.code [ fhir:value "000914" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Motorista de Ambulância" ]
+  ], [
+     fhir:index 44;
+     fhir:CodeSystem.concept.code [ fhir:value "000915" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nutricionista" ]
+  ], [
+     fhir:index 45;
+     fhir:CodeSystem.concept.code [ fhir:value "000916" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Odontologista" ]
+  ], [
+     fhir:index 46;
+     fhir:CodeSystem.concept.code [ fhir:value "000917" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pessoal da Limpeza" ]
+  ], [
+     fhir:index 47;
+     fhir:CodeSystem.concept.code [ fhir:value "000918" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Profissionais de Educação Física" ]
+  ], [
+     fhir:index 48;
+     fhir:CodeSystem.concept.code [ fhir:value "000919" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Psicólogo" ]
+  ], [
+     fhir:index 49;
+     fhir:CodeSystem.concept.code [ fhir:value "000920" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Recepcionista" ]
+  ], [
+     fhir:index 50;
+     fhir:CodeSystem.concept.code [ fhir:value "000921" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Segurança" ]
+  ], [
+     fhir:index 51;
+     fhir:CodeSystem.concept.code [ fhir:value "000922" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Serviço Social" ]
+  ], [
+     fhir:index 52;
+     fhir:CodeSystem.concept.code [ fhir:value "000923" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Técnico de Enfermagem" ]
+  ], [
+     fhir:index 53;
+     fhir:CodeSystem.concept.code [ fhir:value "000924" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Técnico Veterinário" ]
+  ], [
+     fhir:index 54;
+     fhir:CodeSystem.concept.code [ fhir:value "000925" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Terapeuta Ocupacional" ]
+  ], [
+     fhir:index 55;
+     fhir:CodeSystem.concept.code [ fhir:value "000926" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Outros" ]
+  ], [
+     fhir:index 56;
+     fhir:CodeSystem.concept.code [ fhir:value "001001" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Aéreo" ]
+  ], [
+     fhir:index 57;
+     fhir:CodeSystem.concept.code [ fhir:value "001002" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Caminhoneiro" ]
+  ], [
+     fhir:index 58;
+     fhir:CodeSystem.concept.code [ fhir:value "001003" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Coletivo Rodoviário de Passageiros" ]
+  ], [
+     fhir:index 59;
+     fhir:CodeSystem.concept.code [ fhir:value "001004" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ferroviário de Cargas" ]
+  ], [
+     fhir:index 60;
+     fhir:CodeSystem.concept.code [ fhir:value "001005" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Metroferroviário de Passageiros" ]
+  ], [
+     fhir:index 61;
+     fhir:CodeSystem.concept.code [ fhir:value "001006" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Aquaviário" ]
+  ], [
+     fhir:index 62;
+     fhir:CodeSystem.concept.code [ fhir:value "001101" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pessoas com Deficiência Institucionalizadas" ]
+  ], [
+     fhir:index 63;
+     fhir:CodeSystem.concept.code [ fhir:value "001102" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pessoas com Deficiência Permanente Severa" ]
+  ], [
+     fhir:index 64;
+     fhir:CodeSystem.concept.code [ fhir:value "001201" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pessoas em Situação de Rua" ]
+  ], [
+     fhir:index 65;
+     fhir:CodeSystem.concept.code [ fhir:value "001301" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Trabalhadores Portuários" ]
+  ], [
+     fhir:index 66;
+     fhir:CodeSystem.concept.code [ fhir:value "001401" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Funcionário do Sistema de Privação de Liberdade" ]
+  ], [
+     fhir:index 67;
+     fhir:CodeSystem.concept.code [ fhir:value "001501" ];
+     fhir:CodeSystem.concept.display [ fhir:value "População Privada de Liberdade" ]
+  ], [
+     fhir:index 68;
+     fhir:CodeSystem.concept.code [ fhir:value "001601" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Trabalhadores Industriais" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://www.saude.gov.br/fhir/r4/CodeSystem/BRGrupoAtendimento.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

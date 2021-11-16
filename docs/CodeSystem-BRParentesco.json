@@ -1,0 +1,48 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "BRParentesco",
+  "meta": {
+    "lastUpdated": "2020-03-11T15:19:46.601-03:00"
+  },
+  "language": "pt-BR",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p>This code system http://www.saude.gov.br/fhir/r4/CodeSystem/BRParentesco defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">mother<a name=\"BRParentesco-mother\"> </a></td><td>Mãe</td></tr><tr><td style=\"white-space:nowrap\">father<a name=\"BRParentesco-father\"> </a></td><td>Pai</td></tr></table></div>"
+  },
+  "url": "http://www.saude.gov.br/fhir/r4/CodeSystem/BRParentesco",
+  "version": "0.1.0",
+  "name": "BRParentesco",
+  "title": "Parentesco",
+  "status": "active",
+  "experimental": false,
+  "date": "2020-03-11T18:20:06.3399184+00:00",
+  "publisher": "Rede Nacional de Dados em Saúde",
+  "contact": [
+    {
+      "name": "Rede Nacional de Dados em Saúde",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://github.com/kyriosdata"
+        },
+        {
+          "system": "email",
+          "value": "rnds@saude.gov.br"
+        }
+      ]
+    }
+  ],
+  "description": "Classificação da relação familiar entre indivíduos.",
+  "content": "complete",
+  "count": 2,
+  "concept": [
+    {
+      "code": "mother",
+      "display": "Mãe"
+    },
+    {
+      "code": "father",
+      "display": "Pai"
+    }
+  ]
+}

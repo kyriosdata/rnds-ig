@@ -1,0 +1,219 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://www.saude.gov.br/fhir/r4/CodeSystem/BROrgaoExpedidor> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "BROrgaoExpedidor"];
+  fhir:Resource.meta [
+     fhir:Meta.lastUpdated [ fhir:value "2020-03-11T15:19:26.425-03:00"^^xsd:dateTime ]
+  ];
+  fhir:Resource.language [ fhir:value "pt-BR"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p>This code system http://www.saude.gov.br/fhir/r4/CodeSystem/BROrgaoExpedidor defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">RFB<a name=\"BROrgaoExpedidor-RFB\"> </a></td><td>Receita Federal do Brasil</td></tr><tr><td style=\"white-space:nowrap\">COREN<a name=\"BROrgaoExpedidor-COREN\"> </a></td><td>Conselho Regional de Enfermagem (COREn)</td></tr><tr><td style=\"white-space:nowrap\">CRM<a name=\"BROrgaoExpedidor-CRM\"> </a></td><td>Conselho Regional de Medicina (CRM)</td></tr><tr><td style=\"white-space:nowrap\">CRO<a name=\"BROrgaoExpedidor-CRO\"> </a></td><td>Conselho Regional de Odontologia (CRO)</td></tr><tr><td style=\"white-space:nowrap\">CRA<a name=\"BROrgaoExpedidor-CRA\"> </a></td><td>Conselho Regional de Administração (CRA)</td></tr><tr><td style=\"white-space:nowrap\">CRESS<a name=\"BROrgaoExpedidor-CRESS\"> </a></td><td>Conselho Regional de Serviço Social (CRESS)</td></tr><tr><td style=\"white-space:nowrap\">CRB<a name=\"BROrgaoExpedidor-CRB\"> </a></td><td>Conselho Regional de Biblioteconomia (CRB)</td></tr><tr><td style=\"white-space:nowrap\">CRC<a name=\"BROrgaoExpedidor-CRC\"> </a></td><td>Conselho Regional de Contabilidade (CRC)</td></tr><tr><td style=\"white-space:nowrap\">CRECI<a name=\"BROrgaoExpedidor-CRECI\"> </a></td><td>Conselho Regional de Corretores de Imóveis (CRECI)</td></tr><tr><td style=\"white-space:nowrap\">CORECON<a name=\"BROrgaoExpedidor-CORECON\"> </a></td><td>Conselho Regional de Economia (CORECON)</td></tr><tr><td style=\"white-space:nowrap\">CREA<a name=\"BROrgaoExpedidor-CREA\"> </a></td><td>Conselho Regional de Engenharia e Agronomia (CREA)</td></tr><tr><td style=\"white-space:nowrap\">CONFRE<a name=\"BROrgaoExpedidor-CONFRE\"> </a></td><td>Conselho Regional de Estatística (CONRE)</td></tr><tr><td style=\"white-space:nowrap\">CRF<a name=\"BROrgaoExpedidor-CRF\"> </a></td><td>Conselho Regional de Farmácia (CRF)</td></tr><tr><td style=\"white-space:nowrap\">CREFITO<a name=\"BROrgaoExpedidor-CREFITO\"> </a></td><td>Conselho Regional de Fisioterapia e Terapia Ocupacional (CREFITO)</td></tr><tr><td style=\"white-space:nowrap\">CRMV<a name=\"BROrgaoExpedidor-CRMV\"> </a></td><td>Conselho Regional de Medicina Veterinária (CRMV)</td></tr><tr><td style=\"white-space:nowrap\">CRN<a name=\"BROrgaoExpedidor-CRN\"> </a></td><td>Conselho Regional de Nutrição (CRN)</td></tr><tr><td style=\"white-space:nowrap\">CONRERP<a name=\"BROrgaoExpedidor-CONRERP\"> </a></td><td>Conselho Regional de Reçações Públicas (CONRERP)</td></tr><tr><td style=\"white-space:nowrap\">CRP<a name=\"BROrgaoExpedidor-CRP\"> </a></td><td>Conselho Regional de Psicologia (CRP)</td></tr><tr><td style=\"white-space:nowrap\">CRQ<a name=\"BROrgaoExpedidor-CRQ\"> </a></td><td>Conselho Regional de Química (CRQ)</td></tr><tr><td style=\"white-space:nowrap\">CORE<a name=\"BROrgaoExpedidor-CORE\"> </a></td><td>Conselho Regional de Representantes Comerciais (CORE)</td></tr><tr><td style=\"white-space:nowrap\">CREF<a name=\"BROrgaoExpedidor-CREF\"> </a></td><td>Conselho Regional de Educação Física (CREF)</td></tr><tr><td style=\"white-space:nowrap\">CAU<a name=\"BROrgaoExpedidor-CAU\"> </a></td><td>Conselho Regional de Arquitetura e Urbanismo (CAU)</td></tr><tr><td style=\"white-space:nowrap\">CRBIO<a name=\"BROrgaoExpedidor-CRBIO\"> </a></td><td>Conselho Regional de Biologia (CRBio)</td></tr><tr><td style=\"white-space:nowrap\">CRBM<a name=\"BROrgaoExpedidor-CRBM\"> </a></td><td>Conselho Regional de Biomedicina (CRBM)</td></tr><tr><td style=\"white-space:nowrap\">CRFA<a name=\"BROrgaoExpedidor-CRFA\"> </a></td><td>Conselho Regional de Fonoaudiologia (CRFa/CREFONO)</td></tr><tr><td style=\"white-space:nowrap\">CRTR<a name=\"BROrgaoExpedidor-CRTR\"> </a></td><td>Conselho Regional de Técnicos em Radiologia (CRTR)</td></tr><tr><td style=\"white-space:nowrap\">CRT<a name=\"BROrgaoExpedidor-CRT\"> </a></td><td>Conselho Regional dos Técnicos Industriais (CRT)</td></tr><tr><td style=\"white-space:nowrap\">OAB<a name=\"BROrgaoExpedidor-OAB\"> </a></td><td>Ordem dos Advogados do BRAasil (OAB)</td></tr><tr><td style=\"white-space:nowrap\">EB<a name=\"BROrgaoExpedidor-EB\"> </a></td><td>Exército Brasileiro</td></tr><tr><td style=\"white-space:nowrap\">FAB<a name=\"BROrgaoExpedidor-FAB\"> </a></td><td>Força Aérea Brasileira</td></tr><tr><td style=\"white-space:nowrap\">MB<a name=\"BROrgaoExpedidor-MB\"> </a></td><td>Marinha do Brasil</td></tr><tr><td style=\"white-space:nowrap\">PM<a name=\"BROrgaoExpedidor-PM\"> </a></td><td>Polícia Militar</td></tr><tr><td style=\"white-space:nowrap\">CBM<a name=\"BROrgaoExpedidor-CBM\"> </a></td><td>Corpo de Bombeiros Militar</td></tr><tr><td style=\"white-space:nowrap\">SSP<a name=\"BROrgaoExpedidor-SSP\"> </a></td><td>Serviço de Segurança Pública</td></tr><tr><td style=\"white-space:nowrap\">II<a name=\"BROrgaoExpedidor-II\"> </a></td><td>Instituto de Identificação</td></tr><tr><td style=\"white-space:nowrap\">PCE<a name=\"BROrgaoExpedidor-PCE\"> </a></td><td>Polícia Civil do Estado</td></tr><tr><td style=\"white-space:nowrap\">PF<a name=\"BROrgaoExpedidor-PF\"> </a></td><td>Polícia Federal</td></tr><tr><td style=\"white-space:nowrap\">DETRAN<a name=\"BROrgaoExpedidor-DETRAN\"> </a></td><td>Departamento Estadual de Trânsito</td></tr><tr><td style=\"white-space:nowrap\">MS<a name=\"BROrgaoExpedidor-MS\"> </a></td><td>Ministério da Saúde</td></tr><tr><td style=\"white-space:nowrap\">MC<a name=\"BROrgaoExpedidor-MC\"> </a></td><td>Ministério da Cidadania</td></tr><tr><td style=\"white-space:nowrap\">CARTORIO<a name=\"BROrgaoExpedidor-CARTORIO\"> </a></td><td>Cartório de Registro Civil</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"BROrgaoExpedidor-other\"> </a></td><td>Outro órgão não listado</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://www.saude.gov.br/fhir/r4/CodeSystem/BROrgaoExpedidor"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "Órgão Expedidor"];
+  fhir:CodeSystem.title [ fhir:value "Órgão expedidor de documento"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean];
+  fhir:CodeSystem.date [ fhir:value "2020-03-11T18:19:46.5824974+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "Rede Nacional de Dados em Saúde"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Rede Nacional de Dados em Saúde" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://github.com/kyriosdata" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "rnds@saude.gov.br" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Órgãos responsáveis por expedir documentos no Brasil."];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "42"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "RFB" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Receita Federal do Brasil" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "COREN" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Conselho Regional de Enfermagem (COREn)" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "CRM" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Conselho Regional de Medicina (CRM)" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "CRO" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Conselho Regional de Odontologia (CRO)" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "CRA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Conselho Regional de Administração (CRA)" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "CRESS" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Conselho Regional de Serviço Social (CRESS)" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "CRB" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Conselho Regional de Biblioteconomia (CRB)" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "CRC" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Conselho Regional de Contabilidade (CRC)" ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "CRECI" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Conselho Regional de Corretores de Imóveis (CRECI)" ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "CORECON" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Conselho Regional de Economia (CORECON)" ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "CREA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Conselho Regional de Engenharia e Agronomia (CREA)" ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.concept.code [ fhir:value "CONFRE" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Conselho Regional de Estatística (CONRE)" ]
+  ], [
+     fhir:index 12;
+     fhir:CodeSystem.concept.code [ fhir:value "CRF" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Conselho Regional de Farmácia (CRF)" ]
+  ], [
+     fhir:index 13;
+     fhir:CodeSystem.concept.code [ fhir:value "CREFITO" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Conselho Regional de Fisioterapia e Terapia Ocupacional (CREFITO)" ]
+  ], [
+     fhir:index 14;
+     fhir:CodeSystem.concept.code [ fhir:value "CRMV" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Conselho Regional de Medicina Veterinária (CRMV)" ]
+  ], [
+     fhir:index 15;
+     fhir:CodeSystem.concept.code [ fhir:value "CRN" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Conselho Regional de Nutrição (CRN)" ]
+  ], [
+     fhir:index 16;
+     fhir:CodeSystem.concept.code [ fhir:value "CONRERP" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Conselho Regional de Reçações Públicas (CONRERP)" ]
+  ], [
+     fhir:index 17;
+     fhir:CodeSystem.concept.code [ fhir:value "CRP" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Conselho Regional de Psicologia (CRP)" ]
+  ], [
+     fhir:index 18;
+     fhir:CodeSystem.concept.code [ fhir:value "CRQ" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Conselho Regional de Química (CRQ)" ]
+  ], [
+     fhir:index 19;
+     fhir:CodeSystem.concept.code [ fhir:value "CORE" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Conselho Regional de Representantes Comerciais (CORE)" ]
+  ], [
+     fhir:index 20;
+     fhir:CodeSystem.concept.code [ fhir:value "CREF" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Conselho Regional de Educação Física (CREF)" ]
+  ], [
+     fhir:index 21;
+     fhir:CodeSystem.concept.code [ fhir:value "CAU" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Conselho Regional de Arquitetura e Urbanismo (CAU)" ]
+  ], [
+     fhir:index 22;
+     fhir:CodeSystem.concept.code [ fhir:value "CRBIO" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Conselho Regional de Biologia (CRBio)" ]
+  ], [
+     fhir:index 23;
+     fhir:CodeSystem.concept.code [ fhir:value "CRBM" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Conselho Regional de Biomedicina (CRBM)" ]
+  ], [
+     fhir:index 24;
+     fhir:CodeSystem.concept.code [ fhir:value "CRFA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Conselho Regional de Fonoaudiologia (CRFa/CREFONO)" ]
+  ], [
+     fhir:index 25;
+     fhir:CodeSystem.concept.code [ fhir:value "CRTR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Conselho Regional de Técnicos em Radiologia (CRTR)" ]
+  ], [
+     fhir:index 26;
+     fhir:CodeSystem.concept.code [ fhir:value "CRT" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Conselho Regional dos Técnicos Industriais (CRT)" ]
+  ], [
+     fhir:index 27;
+     fhir:CodeSystem.concept.code [ fhir:value "OAB" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ordem dos Advogados do BRAasil (OAB)" ]
+  ], [
+     fhir:index 28;
+     fhir:CodeSystem.concept.code [ fhir:value "EB" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Exército Brasileiro" ]
+  ], [
+     fhir:index 29;
+     fhir:CodeSystem.concept.code [ fhir:value "FAB" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Força Aérea Brasileira" ]
+  ], [
+     fhir:index 30;
+     fhir:CodeSystem.concept.code [ fhir:value "MB" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Marinha do Brasil" ]
+  ], [
+     fhir:index 31;
+     fhir:CodeSystem.concept.code [ fhir:value "PM" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Polícia Militar" ]
+  ], [
+     fhir:index 32;
+     fhir:CodeSystem.concept.code [ fhir:value "CBM" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Corpo de Bombeiros Militar" ]
+  ], [
+     fhir:index 33;
+     fhir:CodeSystem.concept.code [ fhir:value "SSP" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Serviço de Segurança Pública" ]
+  ], [
+     fhir:index 34;
+     fhir:CodeSystem.concept.code [ fhir:value "II" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Instituto de Identificação" ]
+  ], [
+     fhir:index 35;
+     fhir:CodeSystem.concept.code [ fhir:value "PCE" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Polícia Civil do Estado" ]
+  ], [
+     fhir:index 36;
+     fhir:CodeSystem.concept.code [ fhir:value "PF" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Polícia Federal" ]
+  ], [
+     fhir:index 37;
+     fhir:CodeSystem.concept.code [ fhir:value "DETRAN" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Departamento Estadual de Trânsito" ]
+  ], [
+     fhir:index 38;
+     fhir:CodeSystem.concept.code [ fhir:value "MS" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ministério da Saúde" ]
+  ], [
+     fhir:index 39;
+     fhir:CodeSystem.concept.code [ fhir:value "MC" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ministério da Cidadania" ]
+  ], [
+     fhir:index 40;
+     fhir:CodeSystem.concept.code [ fhir:value "CARTORIO" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cartório de Registro Civil" ]
+  ], [
+     fhir:index 41;
+     fhir:CodeSystem.concept.code [ fhir:value "other" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Outro órgão não listado" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://www.saude.gov.br/fhir/r4/CodeSystem/BROrgaoExpedidor.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
