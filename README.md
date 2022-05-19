@@ -26,3 +26,5 @@ trabalho isolado. Nenhuma garantia é fornecida.
   - `for %f in (*.xml) do fhir push %f & fhir save %~nf.json` 
 - Via browser
   - https://fhir-formats.github.io/  
+- De IG (xml) para FSH:
+  - `gofsh . -o output` (converte todos os arquivos .json no diretório corrente para fsh no diretório output) 
