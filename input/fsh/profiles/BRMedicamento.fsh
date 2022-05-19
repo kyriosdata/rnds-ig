@@ -1,47 +1,46 @@
 Profile: BRMedicamento
 Parent: Medication
-Id: af21adb7-867b-4862-8e26-814b2e805f37
+Id: BRMedicamento
 Title: "Medicamento"
-Description: "Drogas dirigidas para uso humano."
-* ^meta.lastUpdated = "2020-03-13T20:29:58.887+00:00"
-* ^language = #pt-BR
-* ^url = "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRMedicamento-1.0"
-* ^version = "1.0"
+* ^url = "http://www.saude.gov.br/fhir/r4/StructureDefinition/BRMedicamento"
+* ^version = "01.00"
 * ^status = #draft
-* ^date = "2020-03-13T20:30:23.0065133+00:00"
-* ^publisher = "Ministério da Saúde do Brasil"
-* . MS
-* . ^short = "Medicamento"
-* . ^definition = "Identificação do medicamento para fins de prescrição, dispensação e/ou administração."
-* . ^alias[0] = "Droga"
-* . ^alias[+] = "Fármaco"
-* code 1.. MS
-* code from $BRMedicamento-1.0 (required)
-* code ^short = "Medicamento"
-* code ^binding.description = "Medicamento"
+* id ..0
+* implicitRules ..0
+* language ..0
+* text ..0
+* contained ..0
+* extension ^slicing.discriminator.type = #value
+* extension ^slicing.discriminator.path = "url"
+* extension ^slicing.rules = #open
+* extension ^min = 0
+* extension contains BRCodigoSerialMedicamento named serialCode 0..1
+* identifier ..0
+* code 1..
+* code from $BRTerminologiaMedicamento (preferred)
+* code ^short = "Nome do Medicamento"
+* code ^definition = "Nome e terminologia do medicamento fabricado."
+* code ^binding.description = "Define a terminologia de um dado medicamento."
+* code.id ..0
 * code.coding 1..1
+* code.coding.id ..0
 * code.coding.system 1..
+* code.coding.version ^short = "Versão da terminologia - se relevante"
 * code.coding.code 1..
 * code.coding.display ..0
 * code.coding.userSelected ..0
-* code.text ..0
-* status 1.. MS
-* status ^short = "Estado do Medicamento"
-* status ^definition = "active: medicamento em uso\r\ninactive: medicamento não utilizado ou não mais em uso.\r\nentered-in-error: cancelado por informação incorreta."
-* manufacturer only Reference(BRPessoaJuridicaProfissionalLiberal)
-* manufacturer MS
-* manufacturer ^short = "Fabricante"
-* manufacturer ^definition = "Fabricante do medicamento."
-* manufacturer.reference 1..
-* manufacturer.type ..0
-* manufacturer.identifier ..0
-* manufacturer.display ..0
-* batch MS
-* batch ^short = "Informações do Rastreio"
-* batch ^definition = "Informações de rastreio do medicamento."
-* batch.lotNumber MS
-* batch.lotNumber ^short = "Lote"
-* batch.lotNumber ^definition = "Código do lote do medicamento."
-* batch.expirationDate MS
-* batch.expirationDate ^short = "Validade do Medicamento"
-* batch.expirationDate ^definition = "Data de validade do medicamento."
+* code.text ^short = "Nome da terminologia"
+* status ..0
+* manufacturer ..0
+* form from $BRUnidadeMedidaMedicamento (required)
+* form ^short = "Unidade de medida do medicamento"
+* form ^definition = "Unidade de medida do medicamento prescrito (ex.: comprimido, cápsula, frasco, caixa etc.)."
+* form ^binding.description = "Unidade de medida do medicamento"
+* amount ..0
+* ingredient ..0
+* batch ^short = "Detalhes sobre a medicação."
+* batch ^definition = "Informação sobre lote e validade da medicação."
+* batch.id ..0
+* batch.lotNumber ^short = "Lote de medicamento."
+* batch.lotNumber ^definition = "RN14: Se medicamento serializado/Datamatrix - Elemento lot do XML para grupo  IUM."
+* batch.expirationDate ^short = "Data de validade do medicamento."
