@@ -1,3 +1,7 @@
+# Tarefas
+
+- Corrigir erros gerados pelo acréscimo de RPM e RDM.
+
 # Guia de Implementação
 
 Uso de FSH para gerar guia de implementação
