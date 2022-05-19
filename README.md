@@ -22,5 +22,7 @@ trabalho isolado. Nenhuma garantia é fornecida.
 - Via linha de comandos usando Firely Terminal
   - `fhir push arquivo.xml`
   - `fhir save --json`
+- Todo o conteúdo de um diretório
+  - `for %f in (*.xml) do fhir push %f & fhir save %~nf.json` 
 - Via browser
   - https://fhir-formats.github.io/  
