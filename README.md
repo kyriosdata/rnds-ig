@@ -19,6 +19,8 @@ trabalho isolado. Nenhuma garantia é fornecida.
 
 # Conversão de XML para JSON
 
-- `fhir push arquivo.xml`
-- `fhir save --json`
-- 
+- Via linha de comandos usando Firely Terminal
+  - `fhir push arquivo.xml`
+  - `fhir save --json`
+- Via browser
+  - https://fhir-formats.github.io/  
