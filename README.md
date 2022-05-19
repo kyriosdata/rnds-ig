@@ -16,3 +16,9 @@ trabalho isolado. Nenhuma garantia é fornecida.
 
 - `_updatePublisher`
 - `_genonce`
+
+# Conversão de XML para JSON
+
+- `fhir push arquivo.xml`
+- `fhir save --json`
+- 
