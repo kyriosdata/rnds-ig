@@ -11,7 +11,7 @@ Description: "Extensão para descrever uma unidade de tempo referenciada pelo UC
 * extension contains
     periodUnit 1..1 and
     period 1..1
-* extension[periodUnit] from $BRUnidadeTempo (required)
+* extension[periodUnit] 
 * extension[periodUnit] ^binding.description = "Define a unidade de tempo segundo o UCUM"
 * extension[periodUnit].id ..0
 * extension[periodUnit].value[x] 1..
@@ -23,4 +23,3 @@ Description: "Extensão para descrever uma unidade de tempo referenciada pelo UC
 * extension[period].value[x] 1..
 * extension[period].value[x] only positiveInt
 * extension[period].value[x] ^short = "Intervalo entre doses"
-* value[x] only base64Binary or boolean or canonical or code or date or dateTime or decimal or id or instant or integer or markdown or oid or positiveInt or string or time or unsignedInt or uri or url or uuid or Address or Age or Annotation or Attachment or CodeableConcept or Coding or ContactPoint or Count or Distance or Duration or HumanName or Identifier or Money or Period or Quantity or Range or Ratio or Reference or SampledData or Signature or Timing or ContactDetail or Contributor or DataRequirement or Expression or ParameterDefinition or RelatedArtifact or TriggerDefinition or UsageContext or Dosage
