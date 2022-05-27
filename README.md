@@ -1,6 +1,7 @@
 # Tarefas
 
 - Corrigir erros gerados pelo acréscimo de RPM e RDM.
+- Acrescentar RAC.
 
 # Guia de Implementação
 
